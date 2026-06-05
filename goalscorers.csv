@@ -1,0 +1,2721 @@
+date,home_team,away_team,team,scorer,assist,minute,own_goal,penalty
+1930-07-13,France,Mexico,France,Lucien Laurent,,19,False,False
+1930-07-13,France,Mexico,France,Marcel Langiller,,40,False,False
+1930-07-13,France,Mexico,France,André Maschinot,,43,False,False
+1930-07-13,France,Mexico,Mexico,Juan Carreño,,70,False,False
+1930-07-13,France,Mexico,France,André Maschinot,,87,False,False
+1930-07-13,United States,Belgium,United States,Bart McGhee,,23,False,False
+1930-07-13,United States,Belgium,United States,Tom Florie,,45,False,False
+1930-07-13,United States,Belgium,United States,Bert Patenaude,,69,False,False
+1930-07-14,Yugoslavia,Brazil,Yugoslavia,Aleksandar Tirnanić,,21,False,False
+1930-07-14,Yugoslavia,Brazil,Yugoslavia,Ivan Bek,,30,False,False
+1930-07-14,Yugoslavia,Brazil,Brazil,not applicable Preguinho,,62,False,False
+1930-07-14,Romania,Peru,Romania,Adalbert Deşu,,1,False,False
+1930-07-14,Romania,Peru,Peru,Luis Souza Ferreira,,75,False,False
+1930-07-14,Romania,Peru,Romania,Constantin Stanciu,,79,False,False
+1930-07-14,Romania,Peru,Romania,Miklós Kovács,,89,False,False
+1930-07-15,Argentina,France,Argentina,Luis Monti,,81,False,False
+1930-07-16,Chile,Mexico,Chile,Carlos Vidal,,3,False,False
+1930-07-16,Chile,Mexico,Chile,Manuel Rosas,,52,True,False
+1930-07-16,Chile,Mexico,Chile,Carlos Vidal,,65,False,False
+1930-07-17,Yugoslavia,Bolivia,Yugoslavia,Ivan Bek,,60,False,False
+1930-07-17,Yugoslavia,Bolivia,Yugoslavia,Blagoje Marjanović,,65,False,False
+1930-07-17,Yugoslavia,Bolivia,Yugoslavia,Ivan Bek,,67,False,False
+1930-07-17,Yugoslavia,Bolivia,Yugoslavia,Đorđe Vujadinović,,85,False,False
+1930-07-17,United States,Paraguay,United States,Bert Patenaude,,10,False,False
+1930-07-17,United States,Paraguay,United States,Bert Patenaude,,15,False,False
+1930-07-17,United States,Paraguay,United States,Bert Patenaude,,50,False,False
+1930-07-18,Uruguay,Peru,Uruguay,Héctor Castro,,65,False,False
+1930-07-19,Chile,France,Chile,Guillermo Subiabre,,67,False,False
+1930-07-19,Argentina,Mexico,Argentina,Guillermo Stábile,,8,False,False
+1930-07-19,Argentina,Mexico,Argentina,Adolfo Zumelzú,,12,False,False
+1930-07-19,Argentina,Mexico,Argentina,Guillermo Stábile,,17,False,False
+1930-07-19,Argentina,Mexico,Mexico,Manuel Rosas,,42,False,True
+1930-07-19,Argentina,Mexico,Argentina,Francisco Varallo,,53,False,False
+1930-07-19,Argentina,Mexico,Argentina,Adolfo Zumelzú,,55,False,False
+1930-07-19,Argentina,Mexico,Mexico,Manuel Rosas,,65,False,False
+1930-07-19,Argentina,Mexico,Mexico,Roberto Gayón,,75,False,False
+1930-07-19,Argentina,Mexico,Argentina,Guillermo Stábile,,80,False,False
+1930-07-20,Brazil,Bolivia,Brazil,not applicable Moderato,,37,False,False
+1930-07-20,Brazil,Bolivia,Brazil,not applicable Preguinho,,57,False,False
+1930-07-20,Brazil,Bolivia,Brazil,not applicable Moderato,,73,False,False
+1930-07-20,Brazil,Bolivia,Brazil,not applicable Preguinho,,83,False,False
+1930-07-20,Paraguay,Belgium,Paraguay,Luis Vargas Peña,,40,False,False
+1930-07-21,Uruguay,Romania,Uruguay,Pablo Dorado,,7,False,False
+1930-07-21,Uruguay,Romania,Uruguay,Héctor Scarone,,26,False,False
+1930-07-21,Uruguay,Romania,Uruguay,Peregrino Anselmo,,31,False,False
+1930-07-21,Uruguay,Romania,Uruguay,Pedro Cea,,35,False,False
+1930-07-22,Argentina,Chile,Argentina,Guillermo Stábile,,12,False,False
+1930-07-22,Argentina,Chile,Argentina,Guillermo Stábile,,13,False,False
+1930-07-22,Argentina,Chile,Chile,Guillermo Subiabre,,15,False,False
+1930-07-22,Argentina,Chile,Argentina,Mario Evaristo,,51,False,False
+1930-07-26,Argentina,United States,Argentina,Luis Monti,,20,False,False
+1930-07-26,Argentina,United States,Argentina,Alejandro Scopelli,,56,False,False
+1930-07-26,Argentina,United States,Argentina,Guillermo Stábile,,69,False,False
+1930-07-26,Argentina,United States,Argentina,Carlos Peucelle,,80,False,False
+1930-07-26,Argentina,United States,Argentina,Carlos Peucelle,,85,False,False
+1930-07-26,Argentina,United States,Argentina,Guillermo Stábile,,87,False,False
+1930-07-26,Argentina,United States,United States,Jim Brown,,89,False,False
+1930-07-27,Uruguay,Yugoslavia,Yugoslavia,Đorđe Vujadinović,,4,False,False
+1930-07-27,Uruguay,Yugoslavia,Uruguay,Pedro Cea,,18,False,False
+1930-07-27,Uruguay,Yugoslavia,Uruguay,Peregrino Anselmo,,20,False,False
+1930-07-27,Uruguay,Yugoslavia,Uruguay,Peregrino Anselmo,,31,False,False
+1930-07-27,Uruguay,Yugoslavia,Uruguay,Santos Iriarte,,61,False,False
+1930-07-27,Uruguay,Yugoslavia,Uruguay,Pedro Cea,,67,False,False
+1930-07-27,Uruguay,Yugoslavia,Uruguay,Pedro Cea,,72,False,False
+1930-07-30,Uruguay,Argentina,Uruguay,Pablo Dorado,,12,False,False
+1930-07-30,Uruguay,Argentina,Argentina,Carlos Peucelle,,20,False,False
+1930-07-30,Uruguay,Argentina,Argentina,Guillermo Stábile,,37,False,False
+1930-07-30,Uruguay,Argentina,Uruguay,Pedro Cea,,57,False,False
+1930-07-30,Uruguay,Argentina,Uruguay,Santos Iriarte,,68,False,False
+1930-07-30,Uruguay,Argentina,Uruguay,Héctor Castro,,89,False,False
+1934-05-27,Austria,France,France,Jean Nicolas,,18,False,False
+1934-05-27,Austria,France,Austria,Matthias Sindelar,,44,False,False
+1934-05-27,Austria,France,Austria,Anton Schall,,93,False,False
+1934-05-27,Austria,France,Austria,Josef Bican,,109,False,False
+1934-05-27,Austria,France,France,Georges Verriest,,116,False,True
+1934-05-27,Czechoslovakia,Romania,Romania,Ștefan Dobay,,11,False,False
+1934-05-27,Czechoslovakia,Romania,Czechoslovakia,Antonín Puč,,50,False,False
+1934-05-27,Czechoslovakia,Romania,Czechoslovakia,Oldřich Nejedlý,,67,False,False
+1934-05-27,Germany,Belgium,Germany,Stanislaus Kobierski,,25,False,False
+1934-05-27,Germany,Belgium,Belgium,Bernard Voorhoof,,29,False,False
+1934-05-27,Germany,Belgium,Belgium,Bernard Voorhoof,,43,False,False
+1934-05-27,Germany,Belgium,Germany,Otto Siffling,,49,False,False
+1934-05-27,Germany,Belgium,Germany,Edmund Conen,,66,False,False
+1934-05-27,Germany,Belgium,Germany,Edmund Conen,,70,False,False
+1934-05-27,Germany,Belgium,Germany,Edmund Conen,,87,False,False
+1934-05-27,Hungary,Egypt,Hungary,Pál Teleki,,11,False,False
+1934-05-27,Hungary,Egypt,Hungary,Géza Toldi,,31,False,False
+1934-05-27,Hungary,Egypt,Egypt,Abdulrahman Fawzi,,35,False,False
+1934-05-27,Hungary,Egypt,Egypt,Abdulrahman Fawzi,,39,False,False
+1934-05-27,Hungary,Egypt,Hungary,Jenő Vincze,,53,False,False
+1934-05-27,Hungary,Egypt,Hungary,Géza Toldi,,61,False,False
+1934-05-27,Italy,United States,Italy,Angelo Schiavio,,18,False,False
+1934-05-27,Italy,United States,Italy,Raimundo Orsi,,20,False,False
+1934-05-27,Italy,United States,Italy,Angelo Schiavio,,29,False,False
+1934-05-27,Italy,United States,United States,Aldo Donelli,,57,False,False
+1934-05-27,Italy,United States,Italy,Giovanni Ferrari,,63,False,False
+1934-05-27,Italy,United States,Italy,Angelo Schiavio,,64,False,False
+1934-05-27,Italy,United States,Italy,Raimundo Orsi,,69,False,False
+1934-05-27,Italy,United States,Italy,Giuseppe Meazza,,90,False,False
+1934-05-27,Spain,Brazil,Spain,José Iraragorri,,18,False,True
+1934-05-27,Spain,Brazil,Spain,José Iraragorri,,25,False,False
+1934-05-27,Spain,Brazil,Spain,Isidro Lángara,,29,False,False
+1934-05-27,Spain,Brazil,Brazil,not applicable Leônidas,,55,False,False
+1934-05-27,Sweden,Argentina,Argentina,Ernesto Belis,,4,False,False
+1934-05-27,Sweden,Argentina,Sweden,Sven Jonasson,,9,False,False
+1934-05-27,Sweden,Argentina,Argentina,Alberto Galateo,,48,False,False
+1934-05-27,Sweden,Argentina,Sweden,Sven Jonasson,,67,False,False
+1934-05-27,Sweden,Argentina,Sweden,Knut Kroon,,79,False,False
+1934-05-27,Switzerland,Netherlands,Switzerland,Leopold Kielholz,,7,False,False
+1934-05-27,Switzerland,Netherlands,Netherlands,Kick Smit,,29,False,False
+1934-05-27,Switzerland,Netherlands,Switzerland,Leopold Kielholz,,43,False,False
+1934-05-27,Switzerland,Netherlands,Switzerland,André Abegglen,,66,False,False
+1934-05-27,Switzerland,Netherlands,Netherlands,Leen Vente,,69,False,False
+1934-05-31,Austria,Hungary,Austria,Johann Horvath,,8,False,False
+1934-05-31,Austria,Hungary,Austria,Karl Zischek,,51,False,False
+1934-05-31,Austria,Hungary,Hungary,György Sárosi,,60,False,True
+1934-05-31,Czechoslovakia,Switzerland,Switzerland,Leopold Kielholz,,18,False,False
+1934-05-31,Czechoslovakia,Switzerland,Czechoslovakia,František Svoboda,,24,False,False
+1934-05-31,Czechoslovakia,Switzerland,Czechoslovakia,Jiří Sobotka,,49,False,False
+1934-05-31,Czechoslovakia,Switzerland,Switzerland,Willy Jäggi,,78,False,False
+1934-05-31,Czechoslovakia,Switzerland,Czechoslovakia,Oldřich Nejedlý,,82,False,False
+1934-05-31,Germany,Sweden,Germany,Karl Hohmann,,60,False,False
+1934-05-31,Germany,Sweden,Germany,Karl Hohmann,,63,False,False
+1934-05-31,Germany,Sweden,Sweden,Gösta Dunker,,82,False,False
+1934-05-31,Italy,Spain,Spain,Luis Regueiro,,30,False,False
+1934-05-31,Italy,Spain,Italy,Giovanni Ferrari,,44,False,False
+1934-06-01,Italy,Spain,Italy,Giuseppe Meazza,,11,False,False
+1934-06-03,Czechoslovakia,Germany,Czechoslovakia,Oldřich Nejedlý,,21,False,False
+1934-06-03,Czechoslovakia,Germany,Germany,Rudolf Noack,,62,False,False
+1934-06-03,Czechoslovakia,Germany,Czechoslovakia,Oldřich Nejedlý,,69,False,False
+1934-06-03,Czechoslovakia,Germany,Czechoslovakia,Oldřich Nejedlý,,80,False,False
+1934-06-03,Italy,Austria,Italy,Enrique Guaita,,19,False,False
+1934-06-07,Germany,Austria,Germany,Ernst Lehner,,1,False,False
+1934-06-07,Germany,Austria,Germany,Edmund Conen,,27,False,False
+1934-06-07,Germany,Austria,Austria,Johann Horvath,,28,False,False
+1934-06-07,Germany,Austria,Germany,Ernst Lehner,,42,False,False
+1934-06-07,Germany,Austria,Austria,Karl Sesta,,54,False,False
+1934-06-10,Italy,Czechoslovakia,Czechoslovakia,Antonín Puč,,71,False,False
+1934-06-10,Italy,Czechoslovakia,Italy,Raimundo Orsi,,81,False,False
+1934-06-10,Italy,Czechoslovakia,Italy,Angelo Schiavio,,95,False,False
+1938-06-04,Switzerland,Germany,Germany,Josef Gauchel,,29,False,False
+1938-06-04,Switzerland,Germany,Switzerland,André Abegglen,,43,False,False
+1938-06-05,Cuba,Romania,Romania,Silviu Bindea,,35,False,False
+1938-06-05,Cuba,Romania,Cuba,Héctor Socorro,,44,False,False
+1938-06-05,Cuba,Romania,Cuba,José Magriñá,,69,False,False
+1938-06-05,Cuba,Romania,Romania,Iuliu Baratky,,88,False,False
+1938-06-05,Cuba,Romania,Cuba,Héctor Socorro,,103,False,False
+1938-06-05,Cuba,Romania,Romania,Ștefan Dobay,,105,False,False
+1938-06-05,France,Belgium,France,Émile Veinante,,1,False,False
+1938-06-05,France,Belgium,France,Jean Nicolas,,16,False,False
+1938-06-05,France,Belgium,Belgium,Hendrik Isemborghs,,38,False,False
+1938-06-05,France,Belgium,France,Jean Nicolas,,69,False,False
+1938-06-05,Hungary,Dutch East Indies,Hungary,Vilmos Kohut,,13,False,False
+1938-06-05,Hungary,Dutch East Indies,Hungary,Géza Toldi,,15,False,False
+1938-06-05,Hungary,Dutch East Indies,Hungary,György Sárosi,,28,False,False
+1938-06-05,Hungary,Dutch East Indies,Hungary,Gyula Zsengellér,,35,False,False
+1938-06-05,Hungary,Dutch East Indies,Hungary,Gyula Zsengellér,,76,False,False
+1938-06-05,Hungary,Dutch East Indies,Hungary,György Sárosi,,89,False,False
+1938-06-05,Italy,Norway,Italy,Pietro Ferraris,,2,False,False
+1938-06-05,Italy,Norway,Norway,Arne Brustad,,83,False,False
+1938-06-05,Italy,Norway,Italy,Silvio Piola,,94,False,False
+1938-06-05,Brazil,Poland,Brazil,not applicable Leônidas,,18,False,False
+1938-06-05,Brazil,Poland,Poland,Fryderyk Scherfke,,23,False,True
+1938-06-05,Brazil,Poland,Brazil,not applicable Romeu,,25,False,False
+1938-06-05,Brazil,Poland,Brazil,not applicable Perácio,,44,False,False
+1938-06-05,Brazil,Poland,Poland,Ernst Wilimowski,,53,False,False
+1938-06-05,Brazil,Poland,Poland,Ernst Wilimowski,,59,False,False
+1938-06-05,Brazil,Poland,Brazil,not applicable Perácio,,71,False,False
+1938-06-05,Brazil,Poland,Poland,Ernst Wilimowski,,89,False,False
+1938-06-05,Brazil,Poland,Brazil,not applicable Leônidas,,93,False,False
+1938-06-05,Brazil,Poland,Brazil,not applicable Leônidas,,104,False,False
+1938-06-05,Brazil,Poland,Poland,Ernst Wilimowski,,118,False,False
+1938-06-05,Czechoslovakia,Netherlands,Czechoslovakia,Josef Košťálek,,93,False,False
+1938-06-05,Czechoslovakia,Netherlands,Czechoslovakia,Josef Zeman,,111,False,False
+1938-06-05,Czechoslovakia,Netherlands,Czechoslovakia,Oldřich Nejedlý,,118,False,False
+1938-06-09,Cuba,Romania,Romania,Ștefan Dobay,,35,False,False
+1938-06-09,Cuba,Romania,Cuba,Héctor Socorro,,51,False,False
+1938-06-09,Cuba,Romania,Cuba,Tomás Fernández,,57,False,False
+1938-06-09,Switzerland,Germany,Germany,Wilhelm Hahnemann,,8,False,False
+1938-06-09,Switzerland,Germany,Germany,Ernst Lörtscher,,22,True,False
+1938-06-09,Switzerland,Germany,Switzerland,Eugen Walaschek,,42,False,False
+1938-06-09,Switzerland,Germany,Switzerland,Alfred Bickel,,64,False,False
+1938-06-09,Switzerland,Germany,Switzerland,André Abegglen,,75,False,False
+1938-06-09,Switzerland,Germany,Switzerland,André Abegglen,,78,False,False
+1938-06-12,Brazil,Czechoslovakia,Brazil,not applicable Leônidas,,30,False,False
+1938-06-12,Brazil,Czechoslovakia,Czechoslovakia,Oldřich Nejedlý,,65,False,True
+1938-06-12,Hungary,Switzerland,Hungary,György Sárosi,,40,False,False
+1938-06-12,Hungary,Switzerland,Hungary,Gyula Zsengellér,,89,False,False
+1938-06-12,Italy,France,Italy,Gino Colaussi,,9,False,False
+1938-06-12,Italy,France,France,Oscar Heisserer,,10,False,False
+1938-06-12,Italy,France,Italy,Silvio Piola,,51,False,False
+1938-06-12,Italy,France,Italy,Silvio Piola,,72,False,False
+1938-06-12,Sweden,Cuba,Sweden,Harry Andersson,,9,False,False
+1938-06-12,Sweden,Cuba,Sweden,Gustav Wetterström,,22,False,False
+1938-06-12,Sweden,Cuba,Sweden,Gustav Wetterström,,37,False,False
+1938-06-12,Sweden,Cuba,Sweden,Gustav Wetterström,,44,False,False
+1938-06-12,Sweden,Cuba,Sweden,Tore Keller,,80,False,False
+1938-06-12,Sweden,Cuba,Sweden,Harry Andersson,,81,False,False
+1938-06-12,Sweden,Cuba,Sweden,Arne Nyberg,,84,False,False
+1938-06-12,Sweden,Cuba,Sweden,Harry Andersson,,89,False,False
+1938-06-14,Brazil,Czechoslovakia,Czechoslovakia,Vlastimil Kopecký,,25,False,False
+1938-06-14,Brazil,Czechoslovakia,Brazil,not applicable Leônidas,,57,False,False
+1938-06-14,Brazil,Czechoslovakia,Brazil,not applicable Roberto,,62,False,False
+1938-06-16,Hungary,Sweden,Sweden,Arne Nyberg,,1,False,False
+1938-06-16,Hungary,Sweden,Hungary,Sven Jacobsson,,19,True,False
+1938-06-16,Hungary,Sweden,Hungary,Pál Titkos,,37,False,False
+1938-06-16,Hungary,Sweden,Hungary,Gyula Zsengellér,,39,False,False
+1938-06-16,Hungary,Sweden,Hungary,György Sárosi,,65,False,False
+1938-06-16,Hungary,Sweden,Hungary,Gyula Zsengellér,,85,False,False
+1938-06-16,Italy,Brazil,Italy,Gino Colaussi,,51,False,False
+1938-06-16,Italy,Brazil,Italy,Giuseppe Meazza,,60,False,True
+1938-06-16,Italy,Brazil,Brazil,not applicable Romeu,,87,False,False
+1938-06-19,Brazil,Sweden,Sweden,Sven Jonasson,,28,False,False
+1938-06-19,Brazil,Sweden,Sweden,Arne Nyberg,,38,False,False
+1938-06-19,Brazil,Sweden,Brazil,not applicable Romeu,,44,False,False
+1938-06-19,Brazil,Sweden,Brazil,not applicable Leônidas,,63,False,False
+1938-06-19,Brazil,Sweden,Brazil,not applicable Leônidas,,74,False,False
+1938-06-19,Brazil,Sweden,Brazil,not applicable Perácio,,80,False,False
+1938-06-19,Italy,Hungary,Italy,Gino Colaussi,,6,False,False
+1938-06-19,Italy,Hungary,Hungary,Pál Titkos,,8,False,False
+1938-06-19,Italy,Hungary,Italy,Silvio Piola,,16,False,False
+1938-06-19,Italy,Hungary,Italy,Gino Colaussi,,35,False,False
+1938-06-19,Italy,Hungary,Hungary,György Sárosi,,70,False,False
+1938-06-19,Italy,Hungary,Italy,Silvio Piola,,82,False,False
+1950-06-24,Brazil,Mexico,Brazil,not applicable Ademir,,30,False,False
+1950-06-24,Brazil,Mexico,Brazil,not applicable Jair,,65,False,False
+1950-06-24,Brazil,Mexico,Brazil,not applicable Baltazar,,71,False,False
+1950-06-24,Brazil,Mexico,Brazil,not applicable Ademir,,79,False,False
+1950-06-25,Yugoslavia,Switzerland,Yugoslavia,Rajko Mitić,,59,False,False
+1950-06-25,Yugoslavia,Switzerland,Yugoslavia,Kosta Tomašević,,70,False,False
+1950-06-25,Yugoslavia,Switzerland,Yugoslavia,Tihomir Ognjanov,,84,False,False
+1950-06-25,England,Chile,England,Stan Mortensen,,39,False,False
+1950-06-25,England,Chile,England,Wilf Mannion,,51,False,False
+1950-06-25,Spain,United States,United States,Gino Pariani,,17,False,False
+1950-06-25,Spain,United States,Spain,Silvestre Igoa,,81,False,False
+1950-06-25,Spain,United States,Spain,Estanislau Basora,,83,False,False
+1950-06-25,Spain,United States,Spain,Telmo Zarra,,89,False,False
+1950-06-25,Sweden,Italy,Italy,Riccardo Carapellese,,7,False,False
+1950-06-25,Sweden,Italy,Sweden,Hasse Jeppson,,25,False,False
+1950-06-25,Sweden,Italy,Sweden,Sune Andersson,,33,False,False
+1950-06-25,Sweden,Italy,Sweden,Hasse Jeppson,,68,False,False
+1950-06-25,Sweden,Italy,Italy,Ermes Muccinelli,,75,False,False
+1950-06-28,Brazil,Switzerland,Brazil,not applicable Alfredo,,3,False,False
+1950-06-28,Brazil,Switzerland,Switzerland,Jacques Fatton,,17,False,False
+1950-06-28,Brazil,Switzerland,Brazil,not applicable Baltazar,,32,False,False
+1950-06-28,Brazil,Switzerland,Switzerland,Jacques Fatton,,88,False,False
+1950-06-28,Yugoslavia,Mexico,Yugoslavia,Stjepan Bobek,,20,False,False
+1950-06-28,Yugoslavia,Mexico,Yugoslavia,Željko Čajkovski,,23,False,False
+1950-06-28,Yugoslavia,Mexico,Yugoslavia,Željko Čajkovski,,51,False,False
+1950-06-28,Yugoslavia,Mexico,Yugoslavia,Kosta Tomašević,,81,False,False
+1950-06-28,Yugoslavia,Mexico,Mexico,Héctor Ortiz,,89,False,True
+1950-06-29,Spain,Chile,Spain,Estanislau Basora,,17,False,False
+1950-06-29,Spain,Chile,Spain,Telmo Zarra,,30,False,False
+1950-06-29,United States,England,United States,Joe Gaetjens,,38,False,False
+1950-06-29,Sweden,Paraguay,Sweden,Stig Sundqvist,,17,False,False
+1950-06-29,Sweden,Paraguay,Sweden,Karl-Erik Palmér,,26,False,False
+1950-06-29,Sweden,Paraguay,Paraguay,Atilio López,,35,False,False
+1950-06-29,Sweden,Paraguay,Paraguay,César López Fretes,,74,False,False
+1950-07-01,Brazil,Yugoslavia,Brazil,not applicable Ademir,,4,False,False
+1950-07-01,Brazil,Yugoslavia,Brazil,not applicable Zizinho,,69,False,False
+1950-07-02,Chile,United States,Chile,George Robledo,,16,False,False
+1950-07-02,Chile,United States,Chile,Atilio Cremaschi,,32,False,False
+1950-07-02,Chile,United States,United States,Frank Wallace,,47,False,False
+1950-07-02,Chile,United States,United States,Joe Maca,,48,False,True
+1950-07-02,Chile,United States,Chile,Andrés Prieto,,54,False,False
+1950-07-02,Chile,United States,Chile,Atilio Cremaschi,,60,False,False
+1950-07-02,Chile,United States,Chile,Fernando Riera,,82,False,False
+1950-07-02,Spain,England,Spain,Telmo Zarra,,48,False,False
+1950-07-02,Italy,Paraguay,Italy,Riccardo Carapellese,,12,False,False
+1950-07-02,Italy,Paraguay,Italy,Egisto Pandolfini,,62,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Oscar Míguez,,14,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Ernesto Vidal,,18,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Juan Alberto Schiaffino,,23,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Oscar Míguez,,40,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Oscar Míguez,,51,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Juan Alberto Schiaffino,,54,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Julio Pérez,,83,False,False
+1950-07-02,Uruguay,Bolivia,Uruguay,Alcides Ghiggia,,87,False,False
+1950-07-02,Switzerland,Mexico,Switzerland,René Bader,,10,False,False
+1950-07-02,Switzerland,Mexico,Switzerland,Charles Antenen,,44,False,False
+1950-07-02,Switzerland,Mexico,Mexico,Horacio Casarín,,89,False,False
+1950-07-09,Brazil,Sweden,Brazil,not applicable Ademir,,17,False,False
+1950-07-09,Brazil,Sweden,Brazil,not applicable Ademir,,36,False,False
+1950-07-09,Brazil,Sweden,Brazil,not applicable Chico,,39,False,False
+1950-07-09,Brazil,Sweden,Brazil,not applicable Ademir,,52,False,False
+1950-07-09,Brazil,Sweden,Brazil,not applicable Ademir,,58,False,False
+1950-07-09,Brazil,Sweden,Sweden,Sune Andersson,,67,False,True
+1950-07-09,Brazil,Sweden,Brazil,not applicable Maneca,,85,False,False
+1950-07-09,Brazil,Sweden,Brazil,not applicable Chico,,88,False,False
+1950-07-09,Uruguay,Spain,Uruguay,Alcides Ghiggia,,29,False,False
+1950-07-09,Uruguay,Spain,Spain,Estanislau Basora,,37,False,False
+1950-07-09,Uruguay,Spain,Spain,Estanislau Basora,,39,False,False
+1950-07-09,Uruguay,Spain,Uruguay,Obdulio Varela,,73,False,False
+1950-07-13,Brazil,Spain,Brazil,not applicable Ademir,,15,False,False
+1950-07-13,Brazil,Spain,Brazil,not applicable Jair,,21,False,False
+1950-07-13,Brazil,Spain,Brazil,not applicable Chico,,31,False,False
+1950-07-13,Brazil,Spain,Brazil,not applicable Chico,,55,False,False
+1950-07-13,Brazil,Spain,Brazil,not applicable Ademir,,57,False,False
+1950-07-13,Brazil,Spain,Brazil,not applicable Zizinho,,67,False,False
+1950-07-13,Brazil,Spain,Spain,Silvestre Igoa,,71,False,False
+1950-07-13,Uruguay,Sweden,Sweden,Karl-Erik Palmér,,5,False,False
+1950-07-13,Uruguay,Sweden,Uruguay,Alcides Ghiggia,,39,False,False
+1950-07-13,Uruguay,Sweden,Sweden,Stig Sundqvist,,40,False,False
+1950-07-13,Uruguay,Sweden,Uruguay,Oscar Míguez,,77,False,False
+1950-07-13,Uruguay,Sweden,Uruguay,Oscar Míguez,,85,False,False
+1950-07-16,Sweden,Spain,Sweden,Stig Sundqvist,,15,False,False
+1950-07-16,Sweden,Spain,Sweden,Bror Mellberg,,33,False,False
+1950-07-16,Sweden,Spain,Sweden,Karl-Erik Palmér,,80,False,False
+1950-07-16,Sweden,Spain,Spain,Telmo Zarra,,82,False,False
+1950-07-16,Uruguay,Brazil,Brazil,not applicable Friaça,,47,False,False
+1950-07-16,Uruguay,Brazil,Uruguay,Juan Alberto Schiaffino,,66,False,False
+1950-07-16,Uruguay,Brazil,Uruguay,Alcides Ghiggia,,79,False,False
+1954-06-16,Brazil,Mexico,Brazil,not applicable Baltazar,,23,False,False
+1954-06-16,Brazil,Mexico,Brazil,not applicable Didi,,30,False,False
+1954-06-16,Brazil,Mexico,Brazil,not applicable Pinga,,34,False,False
+1954-06-16,Brazil,Mexico,Brazil,not applicable Pinga,,43,False,False
+1954-06-16,Brazil,Mexico,Brazil,not applicable Julinho,,69,False,False
+1954-06-16,Yugoslavia,France,Yugoslavia,Miloš Milutinović,,15,False,False
+1954-06-16,Austria,Scotland,Austria,Erich Probst,,33,False,False
+1954-06-16,Uruguay,Czechoslovakia,Uruguay,Oscar Míguez,,71,False,False
+1954-06-16,Uruguay,Czechoslovakia,Uruguay,Juan Alberto Schiaffino,,84,False,False
+1954-06-17,Switzerland,Italy,Switzerland,Robert Ballaman,,18,False,False
+1954-06-17,Switzerland,Italy,Italy,Giampiero Boniperti,,44,False,False
+1954-06-17,Switzerland,Italy,Switzerland,Josef Hügi,,78,False,False
+1954-06-17,Hungary,South Korea,Hungary,Ferenc Puskás,,12,False,False
+1954-06-17,Hungary,South Korea,Hungary,Mihály Lantos,,18,False,False
+1954-06-17,Hungary,South Korea,Hungary,Sándor Kocsis,,24,False,False
+1954-06-17,Hungary,South Korea,Hungary,Sándor Kocsis,,36,False,False
+1954-06-17,Hungary,South Korea,Hungary,Sándor Kocsis,,50,False,False
+1954-06-17,Hungary,South Korea,Hungary,Zoltán Czibor,,59,False,False
+1954-06-17,Hungary,South Korea,Hungary,Péter Palotás,,75,False,False
+1954-06-17,Hungary,South Korea,Hungary,Péter Palotás,,83,False,False
+1954-06-17,Hungary,South Korea,Hungary,Ferenc Puskás,,89,False,False
+1954-06-17,West Germany,Turkey,Turkey,Suat Mamat,,2,False,False
+1954-06-17,West Germany,Turkey,West Germany,Hans Schäfer,,14,False,False
+1954-06-17,West Germany,Turkey,West Germany,Bernhard Klodt,,52,False,False
+1954-06-17,West Germany,Turkey,West Germany,Ottmar Walter,,60,False,False
+1954-06-17,West Germany,Turkey,West Germany,Max Morlock,,84,False,False
+1954-06-17,England,Belgium,Belgium,Léopold Anoul,,5,False,False
+1954-06-17,England,Belgium,England,Ivor Broadis,,26,False,False
+1954-06-17,England,Belgium,England,Nat Lofthouse,,36,False,False
+1954-06-17,England,Belgium,England,Ivor Broadis,,63,False,False
+1954-06-17,England,Belgium,Belgium,Henri Coppens,,67,False,False
+1954-06-17,England,Belgium,Belgium,Léopold Anoul,,71,False,False
+1954-06-17,England,Belgium,England,Nat Lofthouse,,91,False,False
+1954-06-17,England,Belgium,Belgium,Jimmy Dickinson,,94,True,False
+1954-06-19,Uruguay,Scotland,Uruguay,Carlos Borges,,17,False,False
+1954-06-19,Uruguay,Scotland,Uruguay,Oscar Míguez,,30,False,False
+1954-06-19,Uruguay,Scotland,Uruguay,Carlos Borges,,47,False,False
+1954-06-19,Uruguay,Scotland,Uruguay,Julio Abbadie,,54,False,False
+1954-06-19,Uruguay,Scotland,Uruguay,Carlos Borges,,57,False,False
+1954-06-19,Uruguay,Scotland,Uruguay,Oscar Míguez,,83,False,False
+1954-06-19,Uruguay,Scotland,Uruguay,Julio Abbadie,,85,False,False
+1954-06-19,Brazil,Yugoslavia,Yugoslavia,Branko Zebec,,48,False,False
+1954-06-19,Brazil,Yugoslavia,Brazil,not applicable Didi,,69,False,False
+1954-06-19,Austria,Czechoslovakia,Austria,Ernst Stojaspal,,3,False,False
+1954-06-19,Austria,Czechoslovakia,Austria,Erich Probst,,4,False,False
+1954-06-19,Austria,Czechoslovakia,Austria,Erich Probst,,21,False,False
+1954-06-19,Austria,Czechoslovakia,Austria,Erich Probst,,24,False,False
+1954-06-19,Austria,Czechoslovakia,Austria,Ernst Stojaspal,,65,False,False
+1954-06-19,France,Mexico,France,Jean Vincent,,19,False,False
+1954-06-19,France,Mexico,France,Raúl Cárdenas,,46,True,False
+1954-06-19,France,Mexico,Mexico,José Luis Lamadrid,,54,False,False
+1954-06-19,France,Mexico,Mexico,Tomás Balcázar,,85,False,False
+1954-06-19,France,Mexico,France,Raymond Kopa,,88,False,True
+1954-06-20,Hungary,West Germany,Hungary,Sándor Kocsis,,3,False,False
+1954-06-20,Hungary,West Germany,Hungary,Ferenc Puskás,,17,False,False
+1954-06-20,Hungary,West Germany,Hungary,Sándor Kocsis,,21,False,False
+1954-06-20,Hungary,West Germany,West Germany,Alfred Pfaff,,25,False,False
+1954-06-20,Hungary,West Germany,Hungary,Nándor Hidegkuti,,52,False,False
+1954-06-20,Hungary,West Germany,Hungary,Nándor Hidegkuti,,54,False,False
+1954-06-20,Hungary,West Germany,Hungary,Sándor Kocsis,,69,False,False
+1954-06-20,Hungary,West Germany,Hungary,József Tóth,,75,False,False
+1954-06-20,Hungary,West Germany,West Germany,Helmut Rahn,,77,False,False
+1954-06-20,Hungary,West Germany,Hungary,Sándor Kocsis,,78,False,False
+1954-06-20,Hungary,West Germany,West Germany,Richard Herrmann,,84,False,False
+1954-06-20,Turkey,South Korea,Turkey,Suat Mamat,,10,False,False
+1954-06-20,Turkey,South Korea,Turkey,Lefter Küçükandonyadis,,24,False,False
+1954-06-20,Turkey,South Korea,Turkey,Suat Mamat,,30,False,False
+1954-06-20,Turkey,South Korea,Turkey,Burhan Sargun,,37,False,False
+1954-06-20,Turkey,South Korea,Turkey,Burhan Sargun,,64,False,False
+1954-06-20,Turkey,South Korea,Turkey,Burhan Sargun,,70,False,False
+1954-06-20,Turkey,South Korea,Turkey,Erol Keskin,,76,False,False
+1954-06-20,Italy,Belgium,Italy,Egisto Pandolfini,,41,False,True
+1954-06-20,Italy,Belgium,Italy,Carlo Galli,,48,False,False
+1954-06-20,Italy,Belgium,Italy,Amleto Frignani,,58,False,False
+1954-06-20,Italy,Belgium,Italy,Benito Lorenzi,,78,False,False
+1954-06-20,Italy,Belgium,Belgium,Léopold Anoul,,81,False,False
+1954-06-20,England,Switzerland,England,Jimmy Mullen,,43,False,False
+1954-06-20,England,Switzerland,England,Dennis Wilshaw,,69,False,False
+1954-06-23,West Germany,Turkey,West Germany,Ottmar Walter,,7,False,False
+1954-06-23,West Germany,Turkey,West Germany,Hans Schäfer,,12,False,False
+1954-06-23,West Germany,Turkey,Turkey,Mustafa Ertan,,21,False,False
+1954-06-23,West Germany,Turkey,West Germany,Max Morlock,,30,False,False
+1954-06-23,West Germany,Turkey,West Germany,Max Morlock,,60,False,False
+1954-06-23,West Germany,Turkey,West Germany,Fritz Walter,,62,False,False
+1954-06-23,West Germany,Turkey,West Germany,Max Morlock,,77,False,False
+1954-06-23,West Germany,Turkey,West Germany,Hans Schäfer,,79,False,False
+1954-06-23,West Germany,Turkey,Turkey,Lefter Küçükandonyadis,,82,False,False
+1954-06-23,Switzerland,Italy,Switzerland,Josef Hügi,,14,False,False
+1954-06-23,Switzerland,Italy,Switzerland,Robert Ballaman,,48,False,False
+1954-06-23,Switzerland,Italy,Italy,Fulvio Nesti,,67,False,False
+1954-06-23,Switzerland,Italy,Switzerland,Josef Hügi,,85,False,False
+1954-06-23,Switzerland,Italy,Switzerland,Jacques Fatton,,90,False,False
+1954-06-26,Austria,Switzerland,Switzerland,Robert Ballaman,,16,False,False
+1954-06-26,Austria,Switzerland,Switzerland,Josef Hügi,,17,False,False
+1954-06-26,Austria,Switzerland,Switzerland,Josef Hügi,,19,False,False
+1954-06-26,Austria,Switzerland,Austria,Theodor Wagner,,25,False,False
+1954-06-26,Austria,Switzerland,Austria,Alfred Körner,,26,False,False
+1954-06-26,Austria,Switzerland,Austria,Theodor Wagner,,27,False,False
+1954-06-26,Austria,Switzerland,Austria,Ernst Ocwirk,,32,False,False
+1954-06-26,Austria,Switzerland,Austria,Alfred Körner,,34,False,False
+1954-06-26,Austria,Switzerland,Switzerland,Robert Ballaman,,39,False,False
+1954-06-26,Austria,Switzerland,Austria,Theodor Wagner,,53,False,False
+1954-06-26,Austria,Switzerland,Switzerland,Josef Hügi,,60,False,False
+1954-06-26,Austria,Switzerland,Austria,Erich Probst,,76,False,False
+1954-06-26,Uruguay,England,Uruguay,Carlos Borges,,5,False,False
+1954-06-26,Uruguay,England,England,Nat Lofthouse,,16,False,False
+1954-06-26,Uruguay,England,Uruguay,Obdulio Varela,,39,False,False
+1954-06-26,Uruguay,England,Uruguay,Juan Alberto Schiaffino,,46,False,False
+1954-06-26,Uruguay,England,England,Tom Finney,,67,False,False
+1954-06-26,Uruguay,England,Uruguay,Javier Ambrois,,78,False,False
+1954-06-27,Hungary,Brazil,Hungary,Nándor Hidegkuti,,4,False,False
+1954-06-27,Hungary,Brazil,Hungary,Sándor Kocsis,,7,False,False
+1954-06-27,Hungary,Brazil,Brazil,Djalma Santos,,18,False,True
+1954-06-27,Hungary,Brazil,Hungary,Mihály Lantos,,60,False,True
+1954-06-27,Hungary,Brazil,Brazil,not applicable Julinho,,65,False,False
+1954-06-27,Hungary,Brazil,Hungary,Sándor Kocsis,,88,False,False
+1954-06-27,West Germany,Yugoslavia,West Germany,Ivica Horvat,,9,True,False
+1954-06-27,West Germany,Yugoslavia,West Germany,Helmut Rahn,,85,False,False
+1954-06-30,Hungary,Uruguay,Hungary,Zoltán Czibor,,13,False,False
+1954-06-30,Hungary,Uruguay,Hungary,Nándor Hidegkuti,,46,False,False
+1954-06-30,Hungary,Uruguay,Uruguay,Juan Hohberg,,75,False,False
+1954-06-30,Hungary,Uruguay,Uruguay,Juan Hohberg,,86,False,False
+1954-06-30,Hungary,Uruguay,Hungary,Sándor Kocsis,,111,False,False
+1954-06-30,Hungary,Uruguay,Hungary,Sándor Kocsis,,116,False,False
+1954-06-30,West Germany,Austria,West Germany,Hans Schäfer,,31,False,False
+1954-06-30,West Germany,Austria,West Germany,Max Morlock,,47,False,False
+1954-06-30,West Germany,Austria,Austria,Erich Probst,,51,False,False
+1954-06-30,West Germany,Austria,West Germany,Fritz Walter,,54,False,True
+1954-06-30,West Germany,Austria,West Germany,Ottmar Walter,,61,False,False
+1954-06-30,West Germany,Austria,West Germany,Fritz Walter,,64,False,True
+1954-06-30,West Germany,Austria,West Germany,Ottmar Walter,,89,False,False
+1954-07-03,Austria,Uruguay,Austria,Ernst Stojaspal,,16,False,True
+1954-07-03,Austria,Uruguay,Uruguay,Juan Hohberg,,22,False,False
+1954-07-03,Austria,Uruguay,Austria,Luis Cruz,,59,True,False
+1954-07-03,Austria,Uruguay,Austria,Ernst Ocwirk,,89,False,False
+1954-07-04,West Germany,Hungary,Hungary,Ferenc Puskás,,6,False,False
+1954-07-04,West Germany,Hungary,Hungary,Zoltán Czibor,,8,False,False
+1954-07-04,West Germany,Hungary,West Germany,Max Morlock,,10,False,False
+1954-07-04,West Germany,Hungary,West Germany,Helmut Rahn,,18,False,False
+1954-07-04,West Germany,Hungary,West Germany,Helmut Rahn,,84,False,False
+1958-06-08,Sweden,Mexico,Sweden,Agne Simonsson,,17,False,False
+1958-06-08,Sweden,Mexico,Sweden,Nils Liedholm,,57,False,True
+1958-06-08,Sweden,Mexico,Sweden,Agne Simonsson,,64,False,False
+1958-06-08,Argentina,West Germany,Argentina,Oreste Corbatta,,3,False,False
+1958-06-08,Argentina,West Germany,West Germany,Helmut Rahn,,32,False,False
+1958-06-08,Argentina,West Germany,West Germany,Uwe Seeler,,42,False,False
+1958-06-08,Argentina,West Germany,West Germany,Helmut Rahn,,79,False,False
+1958-06-08,Northern Ireland,Czechoslovakia,Northern Ireland,Wilbur Cush,,21,False,False
+1958-06-08,France,Paraguay,Paraguay,Florencio Amarilla,,20,False,False
+1958-06-08,France,Paraguay,France,Just Fontaine,,24,False,False
+1958-06-08,France,Paraguay,France,Just Fontaine,,30,False,False
+1958-06-08,France,Paraguay,Paraguay,Florencio Amarilla,,44,False,True
+1958-06-08,France,Paraguay,Paraguay,Jorge Lino Romero,,50,False,False
+1958-06-08,France,Paraguay,France,Roger Piantoni,,52,False,False
+1958-06-08,France,Paraguay,France,Maryan Wisnieski,,61,False,False
+1958-06-08,France,Paraguay,France,Just Fontaine,,67,False,False
+1958-06-08,France,Paraguay,France,Raymond Kopa,,70,False,False
+1958-06-08,France,Paraguay,France,Jean Vincent,,83,False,False
+1958-06-08,Yugoslavia,Scotland,Yugoslavia,Aleksandar Petaković,,6,False,False
+1958-06-08,Yugoslavia,Scotland,Scotland,Jimmy Murray,,49,False,False
+1958-06-08,Hungary,Wales,Hungary,József Bozsik,,5,False,False
+1958-06-08,Hungary,Wales,Wales,John Charles,,27,False,False
+1958-06-08,Brazil,Austria,Brazil,José Altafini,,37,False,False
+1958-06-08,Brazil,Austria,Brazil,Nílton Santos,,50,False,False
+1958-06-08,Brazil,Austria,Brazil,José Altafini,,85,False,False
+1958-06-08,Soviet Union,England,Soviet Union,Nikita Simonyan,,13,False,False
+1958-06-08,Soviet Union,England,Soviet Union,Aleksandr Ivanov,,56,False,False
+1958-06-08,Soviet Union,England,England,Derek Kevan,,66,False,False
+1958-06-08,Soviet Union,England,England,Tom Finney,,85,False,True
+1958-06-11,Argentina,Northern Ireland,Northern Ireland,Peter McParland,,4,False,False
+1958-06-11,Argentina,Northern Ireland,Argentina,Oreste Corbatta,,37,False,True
+1958-06-11,Argentina,Northern Ireland,Argentina,Norberto Menéndez,,56,False,False
+1958-06-11,Argentina,Northern Ireland,Argentina,Ludovico Avio,,60,False,False
+1958-06-11,West Germany,Czechoslovakia,Czechoslovakia,Milan Dvořák,,24,False,True
+1958-06-11,West Germany,Czechoslovakia,Czechoslovakia,Zdeněk Zikán,,42,False,False
+1958-06-11,West Germany,Czechoslovakia,West Germany,Hans Schäfer,,60,False,False
+1958-06-11,West Germany,Czechoslovakia,West Germany,Helmut Rahn,,71,False,False
+1958-06-11,Paraguay,Scotland,Paraguay,Juan Bautista Agüero,,4,False,False
+1958-06-11,Paraguay,Scotland,Scotland,Jackie Mudie,,24,False,False
+1958-06-11,Paraguay,Scotland,Paraguay,Cayetano Ré,,45,False,False
+1958-06-11,Paraguay,Scotland,Paraguay,José Parodi,,73,False,False
+1958-06-11,Paraguay,Scotland,Scotland,Bobby Collins,,74,False,False
+1958-06-11,Yugoslavia,France,France,Just Fontaine,,4,False,False
+1958-06-11,Yugoslavia,France,Yugoslavia,Aleksandar Petaković,,16,False,False
+1958-06-11,Yugoslavia,France,Yugoslavia,Todor Veselinović,,63,False,False
+1958-06-11,Yugoslavia,France,France,Just Fontaine,,85,False,False
+1958-06-11,Yugoslavia,France,Yugoslavia,Todor Veselinović,,88,False,False
+1958-06-11,Mexico,Wales,Wales,Ivor Allchurch,,32,False,False
+1958-06-11,Mexico,Wales,Mexico,Jaime Belmonte,,89,False,False
+1958-06-11,Soviet Union,Austria,Soviet Union,Anatoli Ilyin,,15,False,False
+1958-06-11,Soviet Union,Austria,Soviet Union,Valentin Ivanov,,62,False,False
+1958-06-12,Sweden,Hungary,Sweden,Kurt Hamrin,,34,False,False
+1958-06-12,Sweden,Hungary,Sweden,Kurt Hamrin,,55,False,False
+1958-06-12,Sweden,Hungary,Hungary,Lajos Tichy,,77,False,False
+1958-06-15,Czechoslovakia,Argentina,Czechoslovakia,Milan Dvořák,,8,False,False
+1958-06-15,Czechoslovakia,Argentina,Czechoslovakia,Zdeněk Zikán,,17,False,False
+1958-06-15,Czechoslovakia,Argentina,Czechoslovakia,Zdeněk Zikán,,40,False,False
+1958-06-15,Czechoslovakia,Argentina,Argentina,Oreste Corbatta,,65,False,True
+1958-06-15,Czechoslovakia,Argentina,Czechoslovakia,Jiří Feureisl,,69,False,False
+1958-06-15,Czechoslovakia,Argentina,Czechoslovakia,Václav Hovorka,,82,False,False
+1958-06-15,Czechoslovakia,Argentina,Czechoslovakia,Václav Hovorka,,89,False,False
+1958-06-15,West Germany,Northern Ireland,Northern Ireland,Peter McParland,,18,False,False
+1958-06-15,West Germany,Northern Ireland,West Germany,Helmut Rahn,,20,False,False
+1958-06-15,West Germany,Northern Ireland,Northern Ireland,Peter McParland,,60,False,False
+1958-06-15,West Germany,Northern Ireland,West Germany,Uwe Seeler,,78,False,False
+1958-06-15,France,Scotland,France,Raymond Kopa,,22,False,False
+1958-06-15,France,Scotland,France,Just Fontaine,,44,False,False
+1958-06-15,France,Scotland,Scotland,Sammy Baird,,58,False,False
+1958-06-15,Paraguay,Yugoslavia,Yugoslavia,Radivoje Ognjanović,,18,False,False
+1958-06-15,Paraguay,Yugoslavia,Paraguay,José Parodi,,20,False,False
+1958-06-15,Paraguay,Yugoslavia,Yugoslavia,Todor Veselinović,,21,False,False
+1958-06-15,Paraguay,Yugoslavia,Paraguay,Juan Bautista Agüero,,52,False,False
+1958-06-15,Paraguay,Yugoslavia,Yugoslavia,Zdravko Rajkov,,73,False,False
+1958-06-15,Paraguay,Yugoslavia,Paraguay,Jorge Lino Romero,,80,False,False
+1958-06-15,Hungary,Mexico,Hungary,Lajos Tichy,,19,False,False
+1958-06-15,Hungary,Mexico,Hungary,Lajos Tichy,,46,False,False
+1958-06-15,Hungary,Mexico,Hungary,Károly Sándor,,54,False,False
+1958-06-15,Hungary,Mexico,Hungary,József Bencsics,,69,False,False
+1958-06-15,Brazil,Soviet Union,Brazil,not applicable Vavá,,3,False,False
+1958-06-15,Brazil,Soviet Union,Brazil,not applicable Vavá,,77,False,False
+1958-06-15,England,Austria,Austria,Karl Koller,,15,False,False
+1958-06-15,England,Austria,England,Johnny Haynes,,56,False,False
+1958-06-15,England,Austria,Austria,Alfred Körner,,71,False,False
+1958-06-15,England,Austria,England,Derek Kevan,,74,False,False
+1958-06-17,Northern Ireland,Czechoslovakia,Czechoslovakia,Zdeněk Zikán,,18,False,False
+1958-06-17,Northern Ireland,Czechoslovakia,Northern Ireland,Peter McParland,,44,False,False
+1958-06-17,Northern Ireland,Czechoslovakia,Northern Ireland,Peter McParland,,97,False,False
+1958-06-17,Wales,Hungary,Hungary,Lajos Tichy,,33,False,False
+1958-06-17,Wales,Hungary,Wales,Ivor Allchurch,,55,False,False
+1958-06-17,Wales,Hungary,Wales,Terry Medwin,,76,False,False
+1958-06-17,Soviet Union,England,Soviet Union,Anatoli Ilyin,,69,False,False
+1958-06-19,Brazil,Wales,Brazil,not applicable Pelé,,66,False,False
+1958-06-19,France,Northern Ireland,France,Maryan Wisnieski,,44,False,False
+1958-06-19,France,Northern Ireland,France,Just Fontaine,,55,False,False
+1958-06-19,France,Northern Ireland,France,Just Fontaine,,63,False,False
+1958-06-19,France,Northern Ireland,France,Roger Piantoni,,68,False,False
+1958-06-19,Sweden,Soviet Union,Sweden,Kurt Hamrin,,49,False,False
+1958-06-19,Sweden,Soviet Union,Sweden,Agne Simonsson,,88,False,False
+1958-06-19,West Germany,Yugoslavia,West Germany,Helmut Rahn,,12,False,False
+1958-06-24,Brazil,France,Brazil,not applicable Vavá,,2,False,False
+1958-06-24,Brazil,France,France,Just Fontaine,,9,False,False
+1958-06-24,Brazil,France,Brazil,not applicable Didi,,39,False,False
+1958-06-24,Brazil,France,Brazil,not applicable Pelé,,52,False,False
+1958-06-24,Brazil,France,Brazil,not applicable Pelé,,64,False,False
+1958-06-24,Brazil,France,Brazil,not applicable Pelé,,75,False,False
+1958-06-24,Brazil,France,France,Roger Piantoni,,83,False,False
+1958-06-24,Sweden,West Germany,West Germany,Hans Schäfer,,24,False,False
+1958-06-24,Sweden,West Germany,Sweden,Lennart Skoglund,,32,False,False
+1958-06-24,Sweden,West Germany,Sweden,Gunnar Gren,,81,False,False
+1958-06-24,Sweden,West Germany,Sweden,Kurt Hamrin,,88,False,False
+1958-06-28,France,West Germany,France,Just Fontaine,,16,False,False
+1958-06-28,France,West Germany,West Germany,Hans Cieslarczyk,,18,False,False
+1958-06-28,France,West Germany,France,Raymond Kopa,,27,False,True
+1958-06-28,France,West Germany,France,Just Fontaine,,36,False,False
+1958-06-28,France,West Germany,France,Yvon Douis,,50,False,False
+1958-06-28,France,West Germany,West Germany,Helmut Rahn,,52,False,False
+1958-06-28,France,West Germany,France,Just Fontaine,,78,False,False
+1958-06-28,France,West Germany,West Germany,Hans Schäfer,,84,False,False
+1958-06-28,France,West Germany,France,Just Fontaine,,89,False,False
+1958-06-29,Brazil,Sweden,Sweden,Nils Liedholm,,4,False,False
+1958-06-29,Brazil,Sweden,Brazil,not applicable Vavá,,9,False,False
+1958-06-29,Brazil,Sweden,Brazil,not applicable Vavá,,32,False,False
+1958-06-29,Brazil,Sweden,Brazil,not applicable Pelé,,55,False,False
+1958-06-29,Brazil,Sweden,Brazil,Mário Zagallo,,68,False,False
+1958-06-29,Brazil,Sweden,Sweden,Agne Simonsson,,80,False,False
+1958-06-29,Brazil,Sweden,Brazil,not applicable Pelé,,90,False,False
+1962-05-30,Uruguay,Colombia,Colombia,Francisco Zuluaga,,19,False,True
+1962-05-30,Uruguay,Colombia,Uruguay,Luis Cubilla,,56,False,False
+1962-05-30,Uruguay,Colombia,Uruguay,José Sasía,,75,False,False
+1962-05-30,Chile,Switzerland,Switzerland,Rolf Wüthrich,,6,False,False
+1962-05-30,Chile,Switzerland,Chile,Leonel Sánchez,,44,False,False
+1962-05-30,Chile,Switzerland,Chile,Jaime Ramírez,,51,False,False
+1962-05-30,Chile,Switzerland,Chile,Leonel Sánchez,,55,False,False
+1962-05-30,Brazil,Mexico,Brazil,Mário Zagallo,,56,False,False
+1962-05-30,Brazil,Mexico,Brazil,not applicable Pelé,,73,False,False
+1962-05-30,Argentina,Bulgaria,Argentina,Héctor Facundo,,4,False,False
+1962-05-31,Soviet Union,Yugoslavia,Soviet Union,Valentin Ivanov,,51,False,False
+1962-05-31,Soviet Union,Yugoslavia,Soviet Union,Viktor Ponedelnik,,83,False,False
+1962-05-31,Czechoslovakia,Spain,Czechoslovakia,Jozef Štibrányi,,80,False,False
+1962-05-31,Hungary,England,Hungary,Lajos Tichy,,17,False,False
+1962-05-31,Hungary,England,England,Ron Flowers,,60,False,True
+1962-05-31,Hungary,England,Hungary,Flórián Albert,,71,False,False
+1962-06-02,Yugoslavia,Uruguay,Uruguay,Ángel Cabrera,,19,False,False
+1962-06-02,Yugoslavia,Uruguay,Yugoslavia,Josip Skoblar,,25,False,True
+1962-06-02,Yugoslavia,Uruguay,Yugoslavia,Milan Galić,,29,False,False
+1962-06-02,Yugoslavia,Uruguay,Yugoslavia,Dražan Jerković,,49,False,False
+1962-06-02,Chile,Italy,Chile,Jaime Ramírez,,73,False,False
+1962-06-02,Chile,Italy,Chile,Jorge Toro,,87,False,False
+1962-06-02,England,Argentina,England,Ron Flowers,,17,False,True
+1962-06-02,England,Argentina,England,Bobby Charlton,,42,False,False
+1962-06-02,England,Argentina,England,Jimmy Greaves,,67,False,False
+1962-06-02,England,Argentina,Argentina,José Sanfilippo,,81,False,False
+1962-06-03,Soviet Union,Colombia,Soviet Union,Valentin Ivanov,,8,False,False
+1962-06-03,Soviet Union,Colombia,Soviet Union,Igor Chislenko,,10,False,False
+1962-06-03,Soviet Union,Colombia,Soviet Union,Valentin Ivanov,,11,False,False
+1962-06-03,Soviet Union,Colombia,Colombia,Germán Aceros,,21,False,False
+1962-06-03,Soviet Union,Colombia,Soviet Union,Viktor Ponedelnik,,56,False,False
+1962-06-03,Soviet Union,Colombia,Colombia,Marcos Coll,,68,False,False
+1962-06-03,Soviet Union,Colombia,Colombia,Antonio Rada,,72,False,False
+1962-06-03,Soviet Union,Colombia,Colombia,Marino Klinger,,86,False,False
+1962-06-03,West Germany,Switzerland,West Germany,Albert Brülls,,45,False,False
+1962-06-03,West Germany,Switzerland,West Germany,Uwe Seeler,,59,False,False
+1962-06-03,West Germany,Switzerland,Switzerland,Heinz Schneiter,,73,False,False
+1962-06-03,Spain,Mexico,Spain,Joaquín Peiró,,90,False,False
+1962-06-03,Hungary,Bulgaria,Hungary,Flórián Albert,,1,False,False
+1962-06-03,Hungary,Bulgaria,Hungary,Flórián Albert,,6,False,False
+1962-06-03,Hungary,Bulgaria,Hungary,Lajos Tichy,,8,False,False
+1962-06-03,Hungary,Bulgaria,Hungary,Ernő Solymosi,,12,False,False
+1962-06-03,Hungary,Bulgaria,Hungary,Flórián Albert,,53,False,False
+1962-06-03,Hungary,Bulgaria,Bulgaria,Georgi Sokolov,,64,False,False
+1962-06-03,Hungary,Bulgaria,Hungary,Lajos Tichy,,70,False,False
+1962-06-06,Soviet Union,Uruguay,Soviet Union,Aleksei Mamykin,,38,False,False
+1962-06-06,Soviet Union,Uruguay,Uruguay,José Sasía,,54,False,False
+1962-06-06,Soviet Union,Uruguay,Soviet Union,Valentin Ivanov,,89,False,False
+1962-06-06,West Germany,Chile,West Germany,Horst Szymaniak,,21,False,True
+1962-06-06,West Germany,Chile,West Germany,Uwe Seeler,,82,False,False
+1962-06-06,Brazil,Spain,Spain,not applicable Adelardo,,35,False,False
+1962-06-06,Brazil,Spain,Brazil,not applicable Amarildo,,72,False,False
+1962-06-06,Brazil,Spain,Brazil,not applicable Amarildo,,86,False,False
+1962-06-07,Yugoslavia,Colombia,Yugoslavia,Milan Galić,,20,False,False
+1962-06-07,Yugoslavia,Colombia,Yugoslavia,Dražan Jerković,,25,False,False
+1962-06-07,Yugoslavia,Colombia,Yugoslavia,Milan Galić,,61,False,False
+1962-06-07,Yugoslavia,Colombia,Yugoslavia,Vojislav Melić,,82,False,False
+1962-06-07,Yugoslavia,Colombia,Yugoslavia,Dražan Jerković,,87,False,False
+1962-06-07,Italy,Switzerland,Italy,Bruno Mora,,2,False,False
+1962-06-07,Italy,Switzerland,Italy,Giacomo Bulgarelli,,65,False,False
+1962-06-07,Italy,Switzerland,Italy,Giacomo Bulgarelli,,67,False,False
+1962-06-07,Mexico,Czechoslovakia,Czechoslovakia,Václav Mašek,,1,False,False
+1962-06-07,Mexico,Czechoslovakia,Mexico,Isidoro Díaz,,12,False,False
+1962-06-07,Mexico,Czechoslovakia,Mexico,Alfredo del Águila,,29,False,False
+1962-06-07,Mexico,Czechoslovakia,Mexico,Héctor Hernández,,90,False,True
+1962-06-10,Brazil,England,Brazil,not applicable Garrincha,,31,False,False
+1962-06-10,Brazil,England,England,Gerry Hitchens,,38,False,False
+1962-06-10,Brazil,England,Brazil,not applicable Vavá,,53,False,False
+1962-06-10,Brazil,England,Brazil,not applicable Garrincha,,59,False,False
+1962-06-10,Chile,Soviet Union,Chile,Leonel Sánchez,,11,False,False
+1962-06-10,Chile,Soviet Union,Soviet Union,Igor Chislenko,,26,False,False
+1962-06-10,Chile,Soviet Union,Chile,Eladio Rojas,,29,False,False
+1962-06-10,Czechoslovakia,Hungary,Czechoslovakia,Adolf Scherer,,13,False,False
+1962-06-10,Yugoslavia,West Germany,Yugoslavia,Petar Radaković,,85,False,False
+1962-06-13,Brazil,Chile,Brazil,not applicable Garrincha,,9,False,False
+1962-06-13,Brazil,Chile,Brazil,not applicable Garrincha,,32,False,False
+1962-06-13,Brazil,Chile,Chile,Jorge Toro,,42,False,False
+1962-06-13,Brazil,Chile,Brazil,not applicable Vavá,,47,False,False
+1962-06-13,Brazil,Chile,Chile,Leonel Sánchez,,61,False,True
+1962-06-13,Brazil,Chile,Brazil,not applicable Vavá,,78,False,False
+1962-06-13,Czechoslovakia,Yugoslavia,Czechoslovakia,Josef Kadraba,,48,False,False
+1962-06-13,Czechoslovakia,Yugoslavia,Yugoslavia,Dražan Jerković,,69,False,False
+1962-06-13,Czechoslovakia,Yugoslavia,Czechoslovakia,Adolf Scherer,,80,False,False
+1962-06-13,Czechoslovakia,Yugoslavia,Czechoslovakia,Adolf Scherer,,84,False,True
+1962-06-16,Chile,Yugoslavia,Chile,Eladio Rojas,,90,False,False
+1962-06-17,Brazil,Czechoslovakia,Czechoslovakia,Josef Masopust,,15,False,False
+1962-06-17,Brazil,Czechoslovakia,Brazil,not applicable Amarildo,,17,False,False
+1962-06-17,Brazil,Czechoslovakia,Brazil,not applicable Zito,,69,False,False
+1962-06-17,Brazil,Czechoslovakia,Brazil,not applicable Vavá,,78,False,False
+1966-07-12,West Germany,Switzerland,West Germany,Sigfried Held,,16,False,False
+1966-07-12,West Germany,Switzerland,West Germany,Helmut Haller,,21,False,False
+1966-07-12,West Germany,Switzerland,West Germany,Franz Beckenbauer,,40,False,False
+1966-07-12,West Germany,Switzerland,West Germany,Franz Beckenbauer,,52,False,False
+1966-07-12,West Germany,Switzerland,West Germany,Helmut Haller,,77,False,True
+1966-07-12,Brazil,Bulgaria,Brazil,not applicable Pelé,,15,False,False
+1966-07-12,Brazil,Bulgaria,Brazil,not applicable Garrincha,,63,False,False
+1966-07-12,Soviet Union,North Korea,Soviet Union,Eduard Malofeyev,,31,False,False
+1966-07-12,Soviet Union,North Korea,Soviet Union,Anatoliy Banishevskiy,,33,False,False
+1966-07-12,Soviet Union,North Korea,Soviet Union,Eduard Malofeyev,,88,False,False
+1966-07-13,France,Mexico,Mexico,Enrique Borja,,48,False,False
+1966-07-13,France,Mexico,France,Gérard Hausser,,62,False,False
+1966-07-13,Argentina,Spain,Argentina,Luis Artime,,65,False,False
+1966-07-13,Argentina,Spain,Spain,not applicable Pirri,,71,False,False
+1966-07-13,Argentina,Spain,Argentina,Luis Artime,,77,False,False
+1966-07-13,Portugal,Hungary,Portugal,José Augusto,,2,False,False
+1966-07-13,Portugal,Hungary,Hungary,Ferenc Bene,,60,False,False
+1966-07-13,Portugal,Hungary,Portugal,José Augusto,,67,False,False
+1966-07-13,Portugal,Hungary,Portugal,José Torres,,90,False,False
+1966-07-13,Italy,Chile,Italy,Sandro Mazzola,,8,False,False
+1966-07-13,Italy,Chile,Italy,Paolo Barison,,88,False,False
+1966-07-15,Uruguay,France,France,Héctor De Bourgoing,,15,False,True
+1966-07-15,Uruguay,France,Uruguay,Pedro Rocha,,26,False,False
+1966-07-15,Uruguay,France,Uruguay,Julio César Cortés,,31,False,False
+1966-07-15,Spain,Switzerland,Switzerland,René-Pierre Quentin,,31,False,False
+1966-07-15,Spain,Switzerland,Spain,Manuel Sanchís,,57,False,False
+1966-07-15,Spain,Switzerland,Spain,not applicable Amancio,,75,False,False
+1966-07-15,Hungary,Brazil,Hungary,Ferenc Bene,,2,False,False
+1966-07-15,Hungary,Brazil,Brazil,not applicable Tostão,,14,False,False
+1966-07-15,Hungary,Brazil,Hungary,János Farkas,,64,False,False
+1966-07-15,Hungary,Brazil,Hungary,Kálmán Mészöly,,73,False,True
+1966-07-15,Chile,North Korea,Chile,Rubén Marcos,,26,False,True
+1966-07-15,Chile,North Korea,North Korea,Seung-zin Pak,,88,False,False
+1966-07-16,Portugal,Bulgaria,Portugal,Ivan Vutsov,,7,True,False
+1966-07-16,Portugal,Bulgaria,Portugal,not applicable Eusébio,,38,False,False
+1966-07-16,Portugal,Bulgaria,Portugal,José Torres,,81,False,False
+1966-07-16,Soviet Union,Italy,Soviet Union,Igor Chislenko,,57,False,False
+1966-07-16,England,Mexico,England,Bobby Charlton,,37,False,False
+1966-07-16,England,Mexico,England,Roger Hunt,,75,False,False
+1966-07-19,Argentina,Switzerland,Argentina,Luis Artime,,52,False,False
+1966-07-19,Argentina,Switzerland,Argentina,Ermindo Onega,,79,False,False
+1966-07-19,Portugal,Brazil,Portugal,António Simões,,15,False,False
+1966-07-19,Portugal,Brazil,Portugal,not applicable Eusébio,,27,False,False
+1966-07-19,Portugal,Brazil,Brazil,not applicable Rildo,,73,False,False
+1966-07-19,Portugal,Brazil,Portugal,not applicable Eusébio,,85,False,False
+1966-07-19,North Korea,Italy,North Korea,Doo-ik Pak,,42,False,False
+1966-07-20,England,France,England,Roger Hunt,,38,False,False
+1966-07-20,England,France,England,Roger Hunt,,75,False,False
+1966-07-20,West Germany,Spain,Spain,Josep Maria Fusté,,23,False,False
+1966-07-20,West Germany,Spain,West Germany,Lothar Emmerich,,39,False,False
+1966-07-20,West Germany,Spain,West Germany,Uwe Seeler,,84,False,False
+1966-07-20,Hungary,Bulgaria,Bulgaria,Georgi Asparuhov,,15,False,False
+1966-07-20,Hungary,Bulgaria,Hungary,Ivan Davidov,,43,True,False
+1966-07-20,Hungary,Bulgaria,Hungary,Kálmán Mészöly,,45,False,False
+1966-07-20,Hungary,Bulgaria,Hungary,Ferenc Bene,,54,False,False
+1966-07-20,Soviet Union,Chile,Soviet Union,Valeriy Porkujan,,28,False,False
+1966-07-20,Soviet Union,Chile,Chile,Rubén Marcos,,32,False,False
+1966-07-20,Soviet Union,Chile,Soviet Union,Valeriy Porkujan,,85,False,False
+1966-07-23,England,Argentina,England,Geoff Hurst,,78,False,False
+1966-07-23,Portugal,North Korea,North Korea,Seung-zin Pak,,1,False,False
+1966-07-23,Portugal,North Korea,North Korea,Dong-woon Li,,22,False,False
+1966-07-23,Portugal,North Korea,North Korea,Seung-kook Yang,,25,False,False
+1966-07-23,Portugal,North Korea,Portugal,not applicable Eusébio,,27,False,False
+1966-07-23,Portugal,North Korea,Portugal,not applicable Eusébio,,43,False,True
+1966-07-23,Portugal,North Korea,Portugal,not applicable Eusébio,,56,False,False
+1966-07-23,Portugal,North Korea,Portugal,not applicable Eusébio,,59,False,True
+1966-07-23,Portugal,North Korea,Portugal,José Augusto,,80,False,False
+1966-07-23,Soviet Union,Hungary,Soviet Union,Igor Chislenko,,5,False,False
+1966-07-23,Soviet Union,Hungary,Soviet Union,Valeriy Porkujan,,46,False,False
+1966-07-23,Soviet Union,Hungary,Hungary,Ferenc Bene,,57,False,False
+1966-07-23,West Germany,Uruguay,West Germany,Helmut Haller,,11,False,False
+1966-07-23,West Germany,Uruguay,West Germany,Franz Beckenbauer,,70,False,False
+1966-07-23,West Germany,Uruguay,West Germany,Uwe Seeler,,75,False,False
+1966-07-23,West Germany,Uruguay,West Germany,Helmut Haller,,83,False,False
+1966-07-25,West Germany,Soviet Union,West Germany,Helmut Haller,,43,False,False
+1966-07-25,West Germany,Soviet Union,West Germany,Franz Beckenbauer,,67,False,False
+1966-07-25,West Germany,Soviet Union,Soviet Union,Valeriy Porkujan,,88,False,False
+1966-07-26,England,Portugal,England,Bobby Charlton,,30,False,False
+1966-07-26,England,Portugal,England,Bobby Charlton,,80,False,False
+1966-07-26,England,Portugal,Portugal,not applicable Eusébio,,82,False,True
+1966-07-28,Portugal,Soviet Union,Portugal,not applicable Eusébio,,12,False,True
+1966-07-28,Portugal,Soviet Union,Soviet Union,Eduard Malofeyev,,43,False,False
+1966-07-28,Portugal,Soviet Union,Portugal,José Torres,,89,False,False
+1966-07-30,England,West Germany,West Germany,Helmut Haller,,12,False,False
+1966-07-30,England,West Germany,England,Geoff Hurst,,18,False,False
+1966-07-30,England,West Germany,England,Martin Peters,,78,False,False
+1966-07-30,England,West Germany,West Germany,Wolfgang Weber,,89,False,False
+1966-07-30,England,West Germany,England,Geoff Hurst,,101,False,False
+1966-07-30,England,West Germany,England,Geoff Hurst,,120,False,False
+1970-06-02,Uruguay,Israel,Uruguay,Ildo Maneiro,,23,False,False
+1970-06-02,Uruguay,Israel,Uruguay,Juan Mujica,,50,False,False
+1970-06-02,England,Romania,England,Geoff Hurst,,65,False,False
+1970-06-02,Peru,Bulgaria,Bulgaria,Dinko Dermendzhiev,,13,False,False
+1970-06-02,Peru,Bulgaria,Bulgaria,Hristo Bonev,,49,False,False
+1970-06-02,Peru,Bulgaria,Peru,Alberto Gallardo,,50,False,False
+1970-06-02,Peru,Bulgaria,Peru,Héctor Chumpitaz,,55,False,False
+1970-06-02,Peru,Bulgaria,Peru,Teófilo Cubillas,,73,False,False
+1970-06-03,Belgium,El Salvador,Belgium,Wilfried Van Moer,,12,False,False
+1970-06-03,Belgium,El Salvador,Belgium,Wilfried Van Moer,,54,False,False
+1970-06-03,Belgium,El Salvador,Belgium,Raoul Lambert,,76,False,True
+1970-06-03,Italy,Sweden,Italy,Angelo Domenghini,,10,False,False
+1970-06-03,Brazil,Czechoslovakia,Czechoslovakia,Ladislav Petráš,,11,False,False
+1970-06-03,Brazil,Czechoslovakia,Brazil,not applicable Rivellino,,24,False,False
+1970-06-03,Brazil,Czechoslovakia,Brazil,not applicable Pelé,,59,False,False
+1970-06-03,Brazil,Czechoslovakia,Brazil,not applicable Jairzinho,,61,False,False
+1970-06-03,Brazil,Czechoslovakia,Brazil,not applicable Jairzinho,,83,False,False
+1970-06-03,West Germany,Morocco,Morocco,Houmane Jarir,,21,False,False
+1970-06-03,West Germany,Morocco,West Germany,Uwe Seeler,,56,False,False
+1970-06-03,West Germany,Morocco,West Germany,Gerd Müller,,80,False,False
+1970-06-06,Soviet Union,Belgium,Soviet Union,Anatoliy Byshovets,,14,False,False
+1970-06-06,Soviet Union,Belgium,Soviet Union,Kakhi Asatiani,,57,False,False
+1970-06-06,Soviet Union,Belgium,Soviet Union,Anatoliy Byshovets,,63,False,False
+1970-06-06,Soviet Union,Belgium,Soviet Union,Vitaly Khmelnitsky,,76,False,False
+1970-06-06,Soviet Union,Belgium,Belgium,Raoul Lambert,,86,False,False
+1970-06-06,Romania,Czechoslovakia,Czechoslovakia,Ladislav Petráš,,5,False,False
+1970-06-06,Romania,Czechoslovakia,Romania,Alexandru Neagu,,52,False,False
+1970-06-06,Romania,Czechoslovakia,Romania,Florea Dumitrache,,75,False,True
+1970-06-06,Peru,Morocco,Peru,Teófilo Cubillas,,65,False,False
+1970-06-06,Peru,Morocco,Peru,Roberto Challe,,67,False,False
+1970-06-06,Peru,Morocco,Peru,Teófilo Cubillas,,75,False,False
+1970-06-07,Mexico,El Salvador,Mexico,Javier Valdivia,,45,False,False
+1970-06-07,Mexico,El Salvador,Mexico,Javier Valdivia,,46,False,False
+1970-06-07,Mexico,El Salvador,Mexico,Javier Fragoso,,58,False,False
+1970-06-07,Mexico,El Salvador,Mexico,Juan Ignacio Basaguren,,83,False,False
+1970-06-07,Sweden,Israel,Sweden,Tom Turesson,,53,False,False
+1970-06-07,Sweden,Israel,Israel,Mordechai Spiegler,,56,False,False
+1970-06-07,Brazil,England,Brazil,not applicable Jairzinho,,59,False,False
+1970-06-07,West Germany,Bulgaria,Bulgaria,Asparuh Nikodimov,,12,False,False
+1970-06-07,West Germany,Bulgaria,West Germany,Reinhard Libuda,,20,False,False
+1970-06-07,West Germany,Bulgaria,West Germany,Gerd Müller,,27,False,False
+1970-06-07,West Germany,Bulgaria,West Germany,Gerd Müller,,52,False,True
+1970-06-07,West Germany,Bulgaria,West Germany,Uwe Seeler,,67,False,False
+1970-06-07,West Germany,Bulgaria,West Germany,Gerd Müller,,88,False,False
+1970-06-07,West Germany,Bulgaria,Bulgaria,Todor Kolev,,89,False,False
+1970-06-10,Soviet Union,El Salvador,Soviet Union,Anatoliy Byshovets,,51,False,False
+1970-06-10,Soviet Union,El Salvador,Soviet Union,Anatoliy Byshovets,,74,False,False
+1970-06-10,Sweden,Uruguay,Sweden,Ove Grahn,,90,False,False
+1970-06-10,Brazil,Romania,Brazil,not applicable Pelé,,19,False,False
+1970-06-10,Brazil,Romania,Brazil,not applicable Jairzinho,,22,False,False
+1970-06-10,Brazil,Romania,Romania,Florea Dumitrache,,34,False,False
+1970-06-10,Brazil,Romania,Brazil,not applicable Pelé,,67,False,False
+1970-06-10,Brazil,Romania,Romania,Emerich Dembrovschi,,84,False,False
+1970-06-10,West Germany,Peru,West Germany,Gerd Müller,,19,False,False
+1970-06-10,West Germany,Peru,West Germany,Gerd Müller,,26,False,False
+1970-06-10,West Germany,Peru,West Germany,Gerd Müller,,39,False,False
+1970-06-10,West Germany,Peru,Peru,Teófilo Cubillas,,44,False,False
+1970-06-11,Mexico,Belgium,Mexico,Gustavo Peña,,14,False,True
+1970-06-11,England,Czechoslovakia,England,Allan Clarke,,50,False,True
+1970-06-11,Bulgaria,Morocco,Bulgaria,Dobromir Zhechev,,40,False,False
+1970-06-11,Bulgaria,Morocco,Morocco,Maouhoub Ghazouani,,61,False,False
+1970-06-14,Brazil,Peru,Brazil,not applicable Rivellino,,11,False,False
+1970-06-14,Brazil,Peru,Brazil,not applicable Tostão,,15,False,False
+1970-06-14,Brazil,Peru,Peru,Alberto Gallardo,,28,False,False
+1970-06-14,Brazil,Peru,Brazil,not applicable Tostão,,52,False,False
+1970-06-14,Brazil,Peru,Peru,Teófilo Cubillas,,70,False,False
+1970-06-14,Brazil,Peru,Brazil,not applicable Jairzinho,,75,False,False
+1970-06-14,Italy,Mexico,Mexico,José Luis González,,13,False,False
+1970-06-14,Italy,Mexico,Italy,Javier Guzmán,,25,True,False
+1970-06-14,Italy,Mexico,Italy,Gigi Riva,,63,False,False
+1970-06-14,Italy,Mexico,Italy,Gianni Rivera,,70,False,False
+1970-06-14,Italy,Mexico,Italy,Gigi Riva,,76,False,False
+1970-06-14,Soviet Union,Uruguay,Uruguay,Víctor Espárrago,,117,False,False
+1970-06-14,West Germany,England,England,Alan Mullery,,31,False,False
+1970-06-14,West Germany,England,England,Martin Peters,,49,False,False
+1970-06-14,West Germany,England,West Germany,Franz Beckenbauer,,68,False,False
+1970-06-14,West Germany,England,West Germany,Uwe Seeler,,82,False,False
+1970-06-14,West Germany,England,West Germany,Gerd Müller,,108,False,False
+1970-06-17,Brazil,Uruguay,Uruguay,Luis Cubilla,,19,False,False
+1970-06-17,Brazil,Uruguay,Brazil,not applicable Clodoaldo,,44,False,False
+1970-06-17,Brazil,Uruguay,Brazil,not applicable Jairzinho,,76,False,False
+1970-06-17,Brazil,Uruguay,Brazil,not applicable Rivellino,,89,False,False
+1970-06-17,Italy,West Germany,Italy,Roberto Boninsegna,,8,False,False
+1970-06-17,Italy,West Germany,West Germany,Karl-Heinz Schnellinger,,90,False,False
+1970-06-17,Italy,West Germany,West Germany,Gerd Müller,,94,False,False
+1970-06-17,Italy,West Germany,Italy,Tarcisio Burgnich,,98,False,False
+1970-06-17,Italy,West Germany,Italy,Gigi Riva,,104,False,False
+1970-06-17,Italy,West Germany,West Germany,Gerd Müller,,110,False,False
+1970-06-17,Italy,West Germany,Italy,Gianni Rivera,,111,False,False
+1970-06-20,West Germany,Uruguay,West Germany,Wolfgang Overath,,26,False,False
+1970-06-21,Brazil,Italy,Brazil,not applicable Pelé,,18,False,False
+1970-06-21,Brazil,Italy,Italy,Roberto Boninsegna,,37,False,False
+1970-06-21,Brazil,Italy,Brazil,not applicable Gérson,,66,False,False
+1970-06-21,Brazil,Italy,Brazil,not applicable Jairzinho,,71,False,False
+1970-06-21,Brazil,Italy,Brazil,Carlos Alberto,,86,False,False
+1974-06-14,West Germany,Chile,West Germany,Paul Breitner,,18,False,False
+1974-06-14,East Germany,Australia,East Germany,Colin Curran,,58,True,False
+1974-06-14,East Germany,Australia,East Germany,Joachim Streich,,72,False,False
+1974-06-14,Zaire,Scotland,Scotland,Peter Lorimer,,26,False,False
+1974-06-14,Zaire,Scotland,Scotland,Joe Jordan,,34,False,False
+1974-06-15,Uruguay,Netherlands,Netherlands,Johnny Rep,,7,False,False
+1974-06-15,Uruguay,Netherlands,Netherlands,Johnny Rep,,86,False,False
+1974-06-15,Italy,Haiti,Haiti,Emmanuel Sanon,,46,False,False
+1974-06-15,Italy,Haiti,Italy,Gianni Rivera,,52,False,False
+1974-06-15,Italy,Haiti,Italy,Romeo Benetti,,66,False,False
+1974-06-15,Italy,Haiti,Italy,Pietro Anastasi,,79,False,False
+1974-06-15,Poland,Argentina,Poland,Grzegorz Lato,,7,False,False
+1974-06-15,Poland,Argentina,Poland,Andrzej Szarmach,,8,False,False
+1974-06-15,Poland,Argentina,Argentina,Ramón Heredia,,60,False,False
+1974-06-15,Poland,Argentina,Poland,Grzegorz Lato,,62,False,False
+1974-06-15,Poland,Argentina,Argentina,Carlos Babington,,66,False,False
+1974-06-18,Australia,West Germany,West Germany,Wolfgang Overath,,12,False,False
+1974-06-18,Australia,West Germany,West Germany,Bernhard Cullmann,,34,False,False
+1974-06-18,Australia,West Germany,West Germany,Gerd Müller,,53,False,False
+1974-06-18,Chile,East Germany,East Germany,Martin Hoffmann,,55,False,False
+1974-06-18,Chile,East Germany,Chile,Sergio Ahumada,,69,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Dušan Bajević,,8,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Dragan Džajić,,14,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Ivica Šurjak,,18,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Josip Katalinski,,22,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Dušan Bajević,,30,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Vladislav Bogićević,,35,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Branko Oblak,,61,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Ilija Petković,,65,False,False
+1974-06-18,Yugoslavia,Zaire,Yugoslavia,Dušan Bajević,,81,False,False
+1974-06-19,Bulgaria,Uruguay,Bulgaria,Hristo Bonev,,75,False,False
+1974-06-19,Bulgaria,Uruguay,Uruguay,Ricardo Pavoni,,87,False,False
+1974-06-19,Argentina,Italy,Argentina,René Houseman,,20,False,False
+1974-06-19,Argentina,Italy,Italy,Roberto Perfumo,,35,True,False
+1974-06-19,Haiti,Poland,Poland,Grzegorz Lato,,17,False,False
+1974-06-19,Haiti,Poland,Poland,Kazimierz Deyna,,18,False,False
+1974-06-19,Haiti,Poland,Poland,Andrzej Szarmach,,30,False,False
+1974-06-19,Haiti,Poland,Poland,Jerzy Gorgoń,,31,False,False
+1974-06-19,Haiti,Poland,Poland,Andrzej Szarmach,,34,False,False
+1974-06-19,Haiti,Poland,Poland,Andrzej Szarmach,,50,False,False
+1974-06-19,Haiti,Poland,Poland,Grzegorz Lato,,87,False,False
+1974-06-22,Scotland,Yugoslavia,Yugoslavia,Stanislav Karasi,,81,False,False
+1974-06-22,Scotland,Yugoslavia,Scotland,Joe Jordan,,88,False,False
+1974-06-22,Zaire,Brazil,Brazil,not applicable Jairzinho,,12,False,False
+1974-06-22,Zaire,Brazil,Brazil,not applicable Rivellino,,66,False,False
+1974-06-22,Zaire,Brazil,Brazil,not applicable Valdomiro,,79,False,False
+1974-06-22,East Germany,West Germany,East Germany,Jürgen Sparwasser,,77,False,False
+1974-06-23,Bulgaria,Netherlands,Netherlands,Johan Neeskens,,5,False,True
+1974-06-23,Bulgaria,Netherlands,Netherlands,Johan Neeskens,,44,False,True
+1974-06-23,Bulgaria,Netherlands,Netherlands,Johnny Rep,,71,False,False
+1974-06-23,Bulgaria,Netherlands,Bulgaria,Ruud Krol,,78,True,False
+1974-06-23,Bulgaria,Netherlands,Netherlands,Theo de Jong,,88,False,False
+1974-06-23,Sweden,Uruguay,Sweden,Ralf Edström,,46,False,False
+1974-06-23,Sweden,Uruguay,Sweden,Roland Sandberg,,74,False,False
+1974-06-23,Sweden,Uruguay,Sweden,Ralf Edström,,77,False,False
+1974-06-23,Argentina,Haiti,Argentina,Héctor Yazalde,,15,False,False
+1974-06-23,Argentina,Haiti,Argentina,René Houseman,,18,False,False
+1974-06-23,Argentina,Haiti,Argentina,Rubén Ayala,,55,False,False
+1974-06-23,Argentina,Haiti,Haiti,Emmanuel Sanon,,63,False,False
+1974-06-23,Argentina,Haiti,Argentina,Héctor Yazalde,,68,False,False
+1974-06-23,Poland,Italy,Poland,Andrzej Szarmach,,38,False,False
+1974-06-23,Poland,Italy,Poland,Kazimierz Deyna,,44,False,False
+1974-06-23,Poland,Italy,Italy,Fabio Capello,,85,False,False
+1974-06-26,Yugoslavia,West Germany,West Germany,Paul Breitner,,39,False,False
+1974-06-26,Yugoslavia,West Germany,West Germany,Gerd Müller,,82,False,False
+1974-06-26,Brazil,East Germany,Brazil,not applicable Rivellino,,60,False,False
+1974-06-26,Netherlands,Argentina,Netherlands,Johan Cruyff,,11,False,False
+1974-06-26,Netherlands,Argentina,Netherlands,Ruud Krol,,25,False,False
+1974-06-26,Netherlands,Argentina,Netherlands,Johnny Rep,,73,False,False
+1974-06-26,Netherlands,Argentina,Netherlands,Johan Cruyff,,90,False,False
+1974-06-26,Sweden,Poland,Poland,Grzegorz Lato,,43,False,False
+1974-06-30,Argentina,Brazil,Brazil,not applicable Rivellino,,32,False,False
+1974-06-30,Argentina,Brazil,Argentina,Miguel Ángel Brindisi,,35,False,False
+1974-06-30,Argentina,Brazil,Brazil,not applicable Jairzinho,,49,False,False
+1974-06-30,East Germany,Netherlands,Netherlands,Johan Neeskens,,7,False,False
+1974-06-30,East Germany,Netherlands,Netherlands,Rob Rensenbrink,,59,False,False
+1974-06-30,Poland,Yugoslavia,Poland,Kazimierz Deyna,,24,False,True
+1974-06-30,Poland,Yugoslavia,Yugoslavia,Stanislav Karasi,,43,False,False
+1974-06-30,Poland,Yugoslavia,Poland,Grzegorz Lato,,62,False,False
+1974-06-30,West Germany,Sweden,Sweden,Ralf Edström,,24,False,False
+1974-06-30,West Germany,Sweden,West Germany,Wolfgang Overath,,51,False,False
+1974-06-30,West Germany,Sweden,West Germany,Rainer Bonhof,,52,False,False
+1974-06-30,West Germany,Sweden,Sweden,Roland Sandberg,,53,False,False
+1974-06-30,West Germany,Sweden,West Germany,Jürgen Grabowski,,76,False,False
+1974-06-30,West Germany,Sweden,West Germany,Uli Hoeneß,,89,False,True
+1974-07-03,Poland,West Germany,West Germany,Gerd Müller,,76,False,False
+1974-07-03,Argentina,East Germany,East Germany,Joachim Streich,,14,False,False
+1974-07-03,Argentina,East Germany,Argentina,René Houseman,,20,False,False
+1974-07-03,Netherlands,Brazil,Netherlands,Johan Neeskens,,50,False,False
+1974-07-03,Netherlands,Brazil,Netherlands,Johan Cruyff,,65,False,False
+1974-07-03,Sweden,Yugoslavia,Yugoslavia,Ivica Šurjak,,27,False,False
+1974-07-03,Sweden,Yugoslavia,Sweden,Ralf Edström,,29,False,False
+1974-07-03,Sweden,Yugoslavia,Sweden,Conny Torstensson,,85,False,False
+1974-07-06,Brazil,Poland,Poland,Grzegorz Lato,,76,False,False
+1974-07-07,Netherlands,West Germany,Netherlands,Johan Neeskens,,2,False,True
+1974-07-07,Netherlands,West Germany,West Germany,Paul Breitner,,25,False,True
+1974-07-07,Netherlands,West Germany,West Germany,Gerd Müller,,43,False,False
+1978-06-02,Italy,France,France,Bernard Lacombe,,1,False,False
+1978-06-02,Italy,France,Italy,Paolo Rossi,,29,False,False
+1978-06-02,Italy,France,Italy,Renato Zaccarelli,,54,False,False
+1978-06-02,Tunisia,Mexico,Mexico,Arturo Vázquez Ayala,,45,False,True
+1978-06-02,Tunisia,Mexico,Tunisia,Ali Kaabi,,55,False,False
+1978-06-02,Tunisia,Mexico,Tunisia,Néjib Ghommidh,,79,False,False
+1978-06-02,Tunisia,Mexico,Tunisia,Mokhtar Dhouib,,87,False,False
+1978-06-02,Argentina,Hungary,Hungary,Károly Csapó,,9,False,False
+1978-06-02,Argentina,Hungary,Argentina,Leopoldo Luque,,14,False,False
+1978-06-02,Argentina,Hungary,Argentina,Daniel Bertoni,,83,False,False
+1978-06-03,Austria,Spain,Austria,Walter Schachner,,10,False,False
+1978-06-03,Austria,Spain,Spain,not applicable Dani,,21,False,False
+1978-06-03,Austria,Spain,Austria,Hans Krankl,,76,False,False
+1978-06-03,Brazil,Sweden,Sweden,Thomas Sjöberg,,37,False,False
+1978-06-03,Brazil,Sweden,Brazil,not applicable Reinaldo,,45,False,False
+1978-06-03,Netherlands,Iran,Netherlands,Rob Rensenbrink,,40,False,True
+1978-06-03,Netherlands,Iran,Netherlands,Rob Rensenbrink,,62,False,False
+1978-06-03,Netherlands,Iran,Netherlands,Rob Rensenbrink,,78,False,True
+1978-06-03,Peru,Scotland,Scotland,Joe Jordan,,14,False,False
+1978-06-03,Peru,Scotland,Peru,César Cueto,,43,False,False
+1978-06-03,Peru,Scotland,Peru,Teófilo Cubillas,,71,False,False
+1978-06-03,Peru,Scotland,Peru,Teófilo Cubillas,,77,False,False
+1978-06-06,Italy,Hungary,Italy,Paolo Rossi,,34,False,False
+1978-06-06,Italy,Hungary,Italy,Roberto Bettega,,35,False,False
+1978-06-06,Italy,Hungary,Italy,Romeo Benetti,,61,False,False
+1978-06-06,Italy,Hungary,Hungary,András Tóth,,81,False,True
+1978-06-06,Poland,Tunisia,Poland,Grzegorz Lato,,43,False,False
+1978-06-06,West Germany,Mexico,West Germany,Dieter Müller,,15,False,False
+1978-06-06,West Germany,Mexico,West Germany,Hansi Müller,,30,False,False
+1978-06-06,West Germany,Mexico,West Germany,Karl-Heinz Rummenigge,,38,False,False
+1978-06-06,West Germany,Mexico,West Germany,Heinz Flohe,,44,False,False
+1978-06-06,West Germany,Mexico,West Germany,Karl-Heinz Rummenigge,,73,False,False
+1978-06-06,West Germany,Mexico,West Germany,Heinz Flohe,,89,False,False
+1978-06-06,Argentina,France,Argentina,Daniel Passarella,,45,False,True
+1978-06-06,Argentina,France,France,Michel Platini,,60,False,False
+1978-06-06,Argentina,France,Argentina,Leopoldo Luque,,73,False,False
+1978-06-07,Austria,Sweden,Austria,Hans Krankl,,42,False,True
+1978-06-07,Scotland,Iran,Scotland,Andranik Eskandarian,,43,True,False
+1978-06-07,Scotland,Iran,Iran,Iraj Danaeifard,,60,False,False
+1978-06-10,France,Hungary,France,Christian Lopez,,23,False,False
+1978-06-10,France,Hungary,France,Marc Berdoll,,38,False,False
+1978-06-10,France,Hungary,Hungary,Sándor Zombori,,41,False,False
+1978-06-10,France,Hungary,France,Dominique Rocheteau,,42,False,False
+1978-06-10,Poland,Mexico,Poland,Zbigniew Boniek,,43,False,False
+1978-06-10,Poland,Mexico,Mexico,Víctor Rangel,,52,False,False
+1978-06-10,Poland,Mexico,Poland,Kazimierz Deyna,,56,False,False
+1978-06-10,Poland,Mexico,Poland,Zbigniew Boniek,,84,False,False
+1978-06-10,Argentina,Italy,Italy,Roberto Bettega,,67,False,False
+1978-06-11,Brazil,Austria,Brazil,Roberto Dinamite,,40,False,False
+1978-06-11,Spain,Sweden,Spain,Juan Manuel Asensi,,75,False,False
+1978-06-11,Peru,Iran,Peru,José Velásquez,,2,False,False
+1978-06-11,Peru,Iran,Peru,Teófilo Cubillas,,36,False,True
+1978-06-11,Peru,Iran,Peru,Teófilo Cubillas,,39,False,True
+1978-06-11,Peru,Iran,Iran,Hassan Roshan,,41,False,False
+1978-06-11,Peru,Iran,Peru,Teófilo Cubillas,,79,False,False
+1978-06-11,Scotland,Netherlands,Netherlands,Rob Rensenbrink,,34,False,True
+1978-06-11,Scotland,Netherlands,Scotland,Kenny Dalglish,,45,False,False
+1978-06-11,Scotland,Netherlands,Scotland,Archie Gemmill,,46,False,True
+1978-06-11,Scotland,Netherlands,Scotland,Archie Gemmill,,68,False,False
+1978-06-11,Scotland,Netherlands,Netherlands,Johnny Rep,,71,False,False
+1978-06-14,Austria,Netherlands,Netherlands,Ernie Brandts,,6,False,False
+1978-06-14,Austria,Netherlands,Netherlands,Rob Rensenbrink,,35,False,True
+1978-06-14,Austria,Netherlands,Netherlands,Johnny Rep,,36,False,False
+1978-06-14,Austria,Netherlands,Netherlands,Johnny Rep,,53,False,False
+1978-06-14,Austria,Netherlands,Austria,Erich Obermayer,,80,False,False
+1978-06-14,Austria,Netherlands,Netherlands,Willy van de Kerkhof,,82,False,False
+1978-06-14,Brazil,Peru,Brazil,not applicable Dirceu,,15,False,False
+1978-06-14,Brazil,Peru,Brazil,not applicable Dirceu,,27,False,False
+1978-06-14,Brazil,Peru,Brazil,not applicable Zico,,72,False,True
+1978-06-14,Argentina,Poland,Argentina,Mario Kempes,,16,False,False
+1978-06-14,Argentina,Poland,Argentina,Mario Kempes,,71,False,False
+1978-06-18,Peru,Poland,Poland,Andrzej Szarmach,,65,False,False
+1978-06-18,Italy,Austria,Italy,Paolo Rossi,,13,False,False
+1978-06-18,Netherlands,West Germany,West Germany,Rüdiger Abramczik,,3,False,False
+1978-06-18,Netherlands,West Germany,Netherlands,Arie Haan,,27,False,False
+1978-06-18,Netherlands,West Germany,West Germany,Dieter Müller,,70,False,False
+1978-06-18,Netherlands,West Germany,Netherlands,René van de Kerkhof,,82,False,False
+1978-06-21,Austria,West Germany,West Germany,Karl-Heinz Rummenigge,,19,False,False
+1978-06-21,Austria,West Germany,Austria,Berti Vogts,,59,True,False
+1978-06-21,Austria,West Germany,Austria,Hans Krankl,,66,False,False
+1978-06-21,Austria,West Germany,West Germany,Bernd Hölzenbein,,68,False,False
+1978-06-21,Austria,West Germany,Austria,Hans Krankl,,87,False,False
+1978-06-21,Italy,Netherlands,Italy,Ernie Brandts,,19,True,False
+1978-06-21,Italy,Netherlands,Netherlands,Ernie Brandts,,49,False,False
+1978-06-21,Italy,Netherlands,Netherlands,Arie Haan,,76,False,False
+1978-06-21,Brazil,Poland,Brazil,not applicable Nelinho,,13,False,False
+1978-06-21,Brazil,Poland,Poland,Grzegorz Lato,,45,False,False
+1978-06-21,Brazil,Poland,Brazil,Roberto Dinamite,,58,False,False
+1978-06-21,Brazil,Poland,Brazil,Roberto Dinamite,,63,False,False
+1978-06-21,Argentina,Peru,Argentina,Mario Kempes,,21,False,False
+1978-06-21,Argentina,Peru,Argentina,Alberto Tarantini,,43,False,False
+1978-06-21,Argentina,Peru,Argentina,Mario Kempes,,49,False,False
+1978-06-21,Argentina,Peru,Argentina,Leopoldo Luque,,50,False,False
+1978-06-21,Argentina,Peru,Argentina,René Houseman,,67,False,False
+1978-06-21,Argentina,Peru,Argentina,Leopoldo Luque,,72,False,False
+1978-06-24,Brazil,Italy,Italy,Franco Causio,,38,False,False
+1978-06-24,Brazil,Italy,Brazil,not applicable Nelinho,,64,False,False
+1978-06-24,Brazil,Italy,Brazil,not applicable Dirceu,,71,False,False
+1978-06-25,Argentina,Netherlands,Argentina,Mario Kempes,,38,False,False
+1978-06-25,Argentina,Netherlands,Netherlands,Dick Nanninga,,82,False,False
+1978-06-25,Argentina,Netherlands,Argentina,Mario Kempes,,105,False,False
+1978-06-25,Argentina,Netherlands,Argentina,Daniel Bertoni,,115,False,False
+1982-06-13,Argentina,Belgium,Belgium,Erwin Vandenbergh,,62,False,False
+1982-06-14,Brazil,Soviet Union,Soviet Union,Andriy Bal,,34,False,False
+1982-06-14,Brazil,Soviet Union,Brazil,not applicable Sócrates,,75,False,False
+1982-06-14,Brazil,Soviet Union,Brazil,not applicable Éder,,88,False,False
+1982-06-15,Hungary,El Salvador,Hungary,Tibor Nyilasi,,4,False,False
+1982-06-15,Hungary,El Salvador,Hungary,Gábor Pölöskei,,11,False,False
+1982-06-15,Hungary,El Salvador,Hungary,László Fazekas,,23,False,False
+1982-06-15,Hungary,El Salvador,Hungary,József Tóth,,50,False,False
+1982-06-15,Hungary,El Salvador,Hungary,László Fazekas,,54,False,False
+1982-06-15,Hungary,El Salvador,El Salvador,Luis Ramírez Zapata,,64,False,False
+1982-06-15,Hungary,El Salvador,Hungary,László Kiss,,69,False,False
+1982-06-15,Hungary,El Salvador,Hungary,Lázár Szentes,,70,False,False
+1982-06-15,Hungary,El Salvador,Hungary,László Kiss,,72,False,False
+1982-06-15,Hungary,El Salvador,Hungary,László Kiss,,76,False,False
+1982-06-15,Hungary,El Salvador,Hungary,Tibor Nyilasi,,83,False,False
+1982-06-15,Scotland,New Zealand,Scotland,Kenny Dalglish,,18,False,False
+1982-06-15,Scotland,New Zealand,Scotland,John Wark,,29,False,False
+1982-06-15,Scotland,New Zealand,Scotland,John Wark,,32,False,False
+1982-06-15,Scotland,New Zealand,New Zealand,Steve Sumner,,54,False,False
+1982-06-15,Scotland,New Zealand,New Zealand,Steve Wooddin,,64,False,False
+1982-06-15,Scotland,New Zealand,Scotland,John Robertson,,73,False,False
+1982-06-15,Scotland,New Zealand,Scotland,Steve Archibald,,79,False,False
+1982-06-16,West Germany,Algeria,Algeria,Rabah Madjer,,54,False,False
+1982-06-16,West Germany,Algeria,West Germany,Karl-Heinz Rummenigge,,67,False,False
+1982-06-16,West Germany,Algeria,Algeria,Lakhdar Belloumi,,68,False,False
+1982-06-16,England,France,England,Bryan Robson,,1,False,False
+1982-06-16,England,France,France,Gérard Soler,,24,False,False
+1982-06-16,England,France,England,Bryan Robson,,67,False,False
+1982-06-16,England,France,England,Paul Mariner,,83,False,False
+1982-06-16,Spain,Honduras,Honduras,Héctor Zelaya,,8,False,False
+1982-06-16,Spain,Honduras,Spain,Roberto López Ufarte,,65,False,True
+1982-06-17,Chile,Austria,Austria,Walter Schachner,,22,False,False
+1982-06-17,Czechoslovakia,Kuwait,Czechoslovakia,Antonín Panenka,,21,False,True
+1982-06-17,Czechoslovakia,Kuwait,Kuwait,Faisal Al-Dakhil,,57,False,False
+1982-06-18,Italy,Peru,Italy,Bruno Conti,,18,False,False
+1982-06-18,Italy,Peru,Peru,Rubén Toribio Díaz,,83,False,False
+1982-06-18,Argentina,Hungary,Argentina,Daniel Bertoni,,26,False,False
+1982-06-18,Argentina,Hungary,Argentina,Diego Maradona,,28,False,False
+1982-06-18,Argentina,Hungary,Argentina,Diego Maradona,,57,False,False
+1982-06-18,Argentina,Hungary,Argentina,Osvaldo Ardiles,,60,False,False
+1982-06-18,Argentina,Hungary,Hungary,Gábor Pölöskei,,76,False,False
+1982-06-18,Brazil,Scotland,Scotland,David Narey,,18,False,False
+1982-06-18,Brazil,Scotland,Brazil,not applicable Zico,,33,False,False
+1982-06-18,Brazil,Scotland,Brazil,not applicable Oscar,,48,False,False
+1982-06-18,Brazil,Scotland,Brazil,not applicable Éder,,63,False,False
+1982-06-18,Brazil,Scotland,Brazil,not applicable Falcão,,87,False,False
+1982-06-19,Belgium,El Salvador,Belgium,Ludo Coeck,,19,False,False
+1982-06-19,Soviet Union,New Zealand,Soviet Union,Yuri Gavrilov,,24,False,False
+1982-06-19,Soviet Union,New Zealand,Soviet Union,Oleh Blokhin,,48,False,False
+1982-06-19,Soviet Union,New Zealand,Soviet Union,Sergei Baltacha,,68,False,False
+1982-06-20,West Germany,Chile,West Germany,Karl-Heinz Rummenigge,,9,False,False
+1982-06-20,West Germany,Chile,West Germany,Karl-Heinz Rummenigge,,57,False,False
+1982-06-20,West Germany,Chile,West Germany,Karl-Heinz Rummenigge,,66,False,False
+1982-06-20,West Germany,Chile,West Germany,Uwe Reinders,,81,False,False
+1982-06-20,West Germany,Chile,Chile,Gustavo Moscoso,,90,False,False
+1982-06-20,England,Czechoslovakia,England,Trevor Francis,,62,False,False
+1982-06-20,England,Czechoslovakia,England,Jozef Barmoš,,66,True,False
+1982-06-20,Spain,Yugoslavia,Yugoslavia,Ivan Gudelj,,10,False,False
+1982-06-20,Spain,Yugoslavia,Spain,not applicable Juanito,,14,False,True
+1982-06-20,Spain,Yugoslavia,Spain,Enrique Saura,,66,False,False
+1982-06-21,Algeria,Austria,Austria,Walter Schachner,,55,False,False
+1982-06-21,Algeria,Austria,Austria,Hans Krankl,,67,False,False
+1982-06-21,France,Kuwait,France,Bernard Genghini,,31,False,False
+1982-06-21,France,Kuwait,France,Michel Platini,,43,False,False
+1982-06-21,France,Kuwait,France,Didier Six,,48,False,False
+1982-06-21,France,Kuwait,Kuwait,Abdullah Al-Buloushi,,75,False,False
+1982-06-21,France,Kuwait,France,Maxime Bossis,,89,False,False
+1982-06-21,Honduras,Northern Ireland,Northern Ireland,Gerry Armstrong,,10,False,False
+1982-06-21,Honduras,Northern Ireland,Honduras,Antonio Laing,,60,False,False
+1982-06-22,Poland,Peru,Poland,Włodzimierz Smolarek,,55,False,False
+1982-06-22,Poland,Peru,Poland,Grzegorz Lato,,58,False,False
+1982-06-22,Poland,Peru,Poland,Zbigniew Boniek,,61,False,False
+1982-06-22,Poland,Peru,Poland,Andrzej Buncol,,68,False,False
+1982-06-22,Poland,Peru,Poland,Włodzimierz Ciołek,,76,False,False
+1982-06-22,Poland,Peru,Peru,Guillermo La Rosa,,83,False,False
+1982-06-22,Belgium,Hungary,Hungary,József Varga,,27,False,False
+1982-06-22,Belgium,Hungary,Belgium,Alexandre Czerniatynski,,76,False,False
+1982-06-22,Soviet Union,Scotland,Scotland,Joe Jordan,,15,False,False
+1982-06-22,Soviet Union,Scotland,Soviet Union,Aleksandr Chivadze,,59,False,False
+1982-06-22,Soviet Union,Scotland,Soviet Union,Ramaz Shengelia,,84,False,False
+1982-06-22,Soviet Union,Scotland,Scotland,Graeme Souness,,86,False,False
+1982-06-23,Italy,Cameroon,Italy,Francesco Graziani,,60,False,False
+1982-06-23,Italy,Cameroon,Cameroon,Grégoire M'Bida,,61,False,False
+1982-06-23,Argentina,El Salvador,Argentina,Daniel Passarella,,22,False,True
+1982-06-23,Argentina,El Salvador,Argentina,Daniel Bertoni,,54,False,False
+1982-06-23,Brazil,New Zealand,Brazil,not applicable Zico,,28,False,False
+1982-06-23,Brazil,New Zealand,Brazil,not applicable Zico,,31,False,False
+1982-06-23,Brazil,New Zealand,Brazil,not applicable Falcão,,64,False,False
+1982-06-23,Brazil,New Zealand,Brazil,not applicable Serginho,,70,False,False
+1982-06-24,Algeria,Chile,Algeria,Salah Assad,,7,False,False
+1982-06-24,Algeria,Chile,Algeria,Salah Assad,,31,False,False
+1982-06-24,Algeria,Chile,Algeria,Tedj Bensaoula,,35,False,False
+1982-06-24,Algeria,Chile,Chile,Miguel Ángel Neira,,59,False,True
+1982-06-24,Algeria,Chile,Chile,Juan Carlos Letelier,,73,False,False
+1982-06-24,France,Czechoslovakia,France,Didier Six,,66,False,False
+1982-06-24,France,Czechoslovakia,Czechoslovakia,Antonín Panenka,,84,False,True
+1982-06-24,Honduras,Yugoslavia,Yugoslavia,Vladimir Petrović,,88,False,True
+1982-06-25,West Germany,Austria,West Germany,Horst Hrubesch,,10,False,False
+1982-06-25,England,Kuwait,England,Trevor Francis,,27,False,False
+1982-06-25,Spain,Northern Ireland,Northern Ireland,Gerry Armstrong,,47,False,False
+1982-06-28,Austria,France,France,Bernard Genghini,,39,False,False
+1982-06-28,Poland,Belgium,Poland,Zbigniew Boniek,,4,False,False
+1982-06-28,Poland,Belgium,Poland,Zbigniew Boniek,,26,False,False
+1982-06-28,Poland,Belgium,Poland,Zbigniew Boniek,,53,False,False
+1982-06-29,Italy,Argentina,Italy,Marco Tardelli,,57,False,False
+1982-06-29,Italy,Argentina,Italy,Antonio Cabrini,,67,False,False
+1982-06-29,Italy,Argentina,Argentina,Daniel Passarella,,83,False,False
+1982-07-01,Austria,Northern Ireland,Northern Ireland,Billy Hamilton,,27,False,False
+1982-07-01,Austria,Northern Ireland,Austria,Bruno Pezzey,,50,False,False
+1982-07-01,Austria,Northern Ireland,Austria,Reinhold Hintermaier,,68,False,False
+1982-07-01,Austria,Northern Ireland,Northern Ireland,Billy Hamilton,,75,False,False
+1982-07-01,Belgium,Soviet Union,Soviet Union,Khoren Hovhannisyan,,48,False,False
+1982-07-02,Argentina,Brazil,Brazil,not applicable Zico,,11,False,False
+1982-07-02,Argentina,Brazil,Brazil,not applicable Serginho,,66,False,False
+1982-07-02,Argentina,Brazil,Brazil,not applicable Júnior,,75,False,False
+1982-07-02,Argentina,Brazil,Argentina,Ramón Díaz,,89,False,False
+1982-07-02,West Germany,Spain,West Germany,Pierre Littbarski,,50,False,False
+1982-07-02,West Germany,Spain,West Germany,Klaus Fischer,,75,False,False
+1982-07-02,West Germany,Spain,Spain,Jesús María Zamora,,82,False,False
+1982-07-04,France,Northern Ireland,France,Alain Giresse,,33,False,False
+1982-07-04,France,Northern Ireland,France,Dominique Rocheteau,,46,False,False
+1982-07-04,France,Northern Ireland,France,Dominique Rocheteau,,68,False,False
+1982-07-04,France,Northern Ireland,Northern Ireland,Gerry Armstrong,,75,False,False
+1982-07-04,France,Northern Ireland,France,Alain Giresse,,80,False,False
+1982-07-05,Italy,Brazil,Italy,Paolo Rossi,,5,False,False
+1982-07-05,Italy,Brazil,Brazil,not applicable Sócrates,,12,False,False
+1982-07-05,Italy,Brazil,Italy,Paolo Rossi,,25,False,False
+1982-07-05,Italy,Brazil,Brazil,not applicable Falcão,,68,False,False
+1982-07-05,Italy,Brazil,Italy,Paolo Rossi,,74,False,False
+1982-07-08,Poland,Italy,Italy,Paolo Rossi,,22,False,False
+1982-07-08,Poland,Italy,Italy,Paolo Rossi,,73,False,False
+1982-07-08,West Germany,France,West Germany,Pierre Littbarski,,17,False,False
+1982-07-08,West Germany,France,France,Michel Platini,,26,False,True
+1982-07-08,West Germany,France,France,Marius Trésor,,92,False,False
+1982-07-08,West Germany,France,France,Alain Giresse,,98,False,False
+1982-07-08,West Germany,France,West Germany,Karl-Heinz Rummenigge,,102,False,False
+1982-07-08,West Germany,France,West Germany,Klaus Fischer,,108,False,False
+1982-07-10,Poland,France,France,René Girard,,13,False,False
+1982-07-10,Poland,France,Poland,Andrzej Szarmach,,40,False,False
+1982-07-10,Poland,France,Poland,Stefan Majewski,,44,False,False
+1982-07-10,Poland,France,Poland,Janusz Kupcewicz,,46,False,False
+1982-07-10,Poland,France,France,Alain Couriol,,72,False,False
+1982-07-11,Italy,West Germany,Italy,Paolo Rossi,,57,False,False
+1982-07-11,Italy,West Germany,Italy,Marco Tardelli,,69,False,False
+1982-07-11,Italy,West Germany,Italy,Alessandro Altobelli,,81,False,False
+1982-07-11,Italy,West Germany,West Germany,Paul Breitner,,83,False,False
+1986-05-31,Bulgaria,Italy,Italy,Alessandro Altobelli,,44,False,False
+1986-05-31,Bulgaria,Italy,Bulgaria,Nasko Sirakov,,85,False,False
+1986-06-01,Spain,Brazil,Brazil,not applicable Sócrates,,62,False,False
+1986-06-01,Canada,France,France,Jean-Pierre Papin,,79,False,False
+1986-06-02,Argentina,South Korea,Argentina,Jorge Valdano,,6,False,False
+1986-06-02,Argentina,South Korea,Argentina,Oscar Ruggeri,,18,False,False
+1986-06-02,Argentina,South Korea,Argentina,Jorge Valdano,,46,False,False
+1986-06-02,Argentina,South Korea,South Korea,Chang-sun Park,,73,False,False
+1986-06-02,Soviet Union,Hungary,Soviet Union,Pavel Yakovenko,,2,False,False
+1986-06-02,Soviet Union,Hungary,Soviet Union,Sergei Aleinikov,,4,False,False
+1986-06-02,Soviet Union,Hungary,Soviet Union,Ihor Belanov,,24,False,True
+1986-06-02,Soviet Union,Hungary,Soviet Union,Ivan Yaremchuk,,66,False,False
+1986-06-02,Soviet Union,Hungary,Soviet Union,László Dajka,,73,True,False
+1986-06-02,Soviet Union,Hungary,Soviet Union,Sergey Rodionov,,80,False,False
+1986-06-03,Belgium,Mexico,Mexico,Fernando Quirarte,,23,False,False
+1986-06-03,Belgium,Mexico,Mexico,Hugo Sánchez,,39,False,False
+1986-06-03,Belgium,Mexico,Belgium,Erwin Vandenbergh,,45,False,False
+1986-06-03,Algeria,Northern Ireland,Northern Ireland,Norman Whiteside,,6,False,False
+1986-06-03,Algeria,Northern Ireland,Algeria,Djamel Zidane,,59,False,False
+1986-06-03,Portugal,England,Portugal,Carlos Manuel,,75,False,False
+1986-06-04,Paraguay,Iraq,Paraguay,Julio César Romero,,35,False,False
+1986-06-04,Uruguay,West Germany,Uruguay,Antonio Alzamendi,,4,False,False
+1986-06-04,Uruguay,West Germany,West Germany,Klaus Allofs,,84,False,False
+1986-06-04,Scotland,Denmark,Denmark,Preben Elkjær,,57,False,False
+1986-06-05,Italy,Argentina,Italy,Alessandro Altobelli,,6,False,True
+1986-06-05,Italy,Argentina,Argentina,Diego Maradona,,34,False,False
+1986-06-05,France,Soviet Union,Soviet Union,Vasyl Rats,,53,False,False
+1986-06-05,France,Soviet Union,France,Luis Fernández,,62,False,False
+1986-06-05,South Korea,Bulgaria,Bulgaria,Plamen Getov,,11,False,False
+1986-06-05,South Korea,Bulgaria,South Korea,Jong-boo Kim,,70,False,False
+1986-06-06,Hungary,Canada,Hungary,Márton Esterházy,,2,False,False
+1986-06-06,Hungary,Canada,Hungary,Lajos Détári,,75,False,False
+1986-06-06,Brazil,Algeria,Brazil,not applicable Careca,,66,False,False
+1986-06-07,Mexico,Paraguay,Mexico,Luis Flores,,3,False,False
+1986-06-07,Mexico,Paraguay,Paraguay,Julio César Romero,,85,False,False
+1986-06-07,Northern Ireland,Spain,Spain,Emilio Butragueño,,1,False,False
+1986-06-07,Northern Ireland,Spain,Spain,Julio Salinas,,18,False,False
+1986-06-07,Northern Ireland,Spain,Northern Ireland,Colin Clarke,,46,False,False
+1986-06-07,Poland,Portugal,Poland,Włodzimierz Smolarek,,68,False,False
+1986-06-08,Iraq,Belgium,Belgium,Enzo Scifo,,16,False,False
+1986-06-08,Iraq,Belgium,Belgium,Nico Claesen,,21,False,True
+1986-06-08,Iraq,Belgium,Iraq,Ahmed Radhi,,59,False,False
+1986-06-08,West Germany,Scotland,Scotland,Gordon Strachan,,18,False,False
+1986-06-08,West Germany,Scotland,West Germany,Rudi Völler,,23,False,False
+1986-06-08,West Germany,Scotland,West Germany,Klaus Allofs,,49,False,False
+1986-06-08,Denmark,Uruguay,Denmark,Preben Elkjær,,11,False,False
+1986-06-08,Denmark,Uruguay,Denmark,Søren Lerby,,41,False,False
+1986-06-08,Denmark,Uruguay,Uruguay,Enzo Francescoli,,45,False,True
+1986-06-08,Denmark,Uruguay,Denmark,Michael Laudrup,,52,False,False
+1986-06-08,Denmark,Uruguay,Denmark,Preben Elkjær,,67,False,False
+1986-06-08,Denmark,Uruguay,Denmark,Preben Elkjær,,80,False,False
+1986-06-08,Denmark,Uruguay,Denmark,Jesper Olsen,,88,False,False
+1986-06-09,Hungary,France,France,Yannick Stopyra,,29,False,False
+1986-06-09,Hungary,France,France,Jean Tigana,,62,False,False
+1986-06-09,Hungary,France,France,Dominique Rocheteau,,84,False,False
+1986-06-09,Soviet Union,Canada,Soviet Union,Oleh Blokhin,,58,False,False
+1986-06-09,Soviet Union,Canada,Soviet Union,Oleksandr Zavarov,,74,False,False
+1986-06-10,Argentina,Bulgaria,Argentina,Jorge Valdano,,4,False,False
+1986-06-10,Argentina,Bulgaria,Argentina,Jorge Burruchaga,,77,False,False
+1986-06-10,South Korea,Italy,Italy,Alessandro Altobelli,,17,False,False
+1986-06-10,South Korea,Italy,South Korea,Soon-ho Choi,,62,False,False
+1986-06-10,South Korea,Italy,Italy,Alessandro Altobelli,,73,False,False
+1986-06-10,South Korea,Italy,Italy,Kwang-rae Cho,,82,True,False
+1986-06-10,South Korea,Italy,South Korea,Jung-moo Huh,,83,False,False
+1986-06-11,Iraq,Mexico,Mexico,Fernando Quirarte,,54,False,False
+1986-06-11,Paraguay,Belgium,Belgium,Franky Vercauteren,,30,False,False
+1986-06-11,Paraguay,Belgium,Paraguay,Roberto Cabañas,,50,False,False
+1986-06-11,Paraguay,Belgium,Belgium,Daniel Veyt,,59,False,False
+1986-06-11,Paraguay,Belgium,Paraguay,Roberto Cabañas,,76,False,False
+1986-06-11,England,Poland,England,Gary Lineker,,9,False,False
+1986-06-11,England,Poland,England,Gary Lineker,,14,False,False
+1986-06-11,England,Poland,England,Gary Lineker,,34,False,False
+1986-06-11,Portugal,Morocco,Morocco,Abderrazak Khairi,,19,False,False
+1986-06-11,Portugal,Morocco,Morocco,Abderrazak Khairi,,26,False,False
+1986-06-11,Portugal,Morocco,Morocco,Abdelkrim Merry,,62,False,False
+1986-06-11,Portugal,Morocco,Portugal,not applicable Diamantino,,80,False,False
+1986-06-12,Algeria,Spain,Spain,Ramón Calderé,,15,False,False
+1986-06-12,Algeria,Spain,Spain,Ramón Calderé,,68,False,False
+1986-06-12,Algeria,Spain,Spain,not applicable Eloy,,70,False,False
+1986-06-12,Northern Ireland,Brazil,Brazil,not applicable Careca,,15,False,False
+1986-06-12,Northern Ireland,Brazil,Brazil,not applicable Josimar,,42,False,False
+1986-06-12,Northern Ireland,Brazil,Brazil,not applicable Careca,,87,False,False
+1986-06-13,Denmark,West Germany,Denmark,Jesper Olsen,,43,False,True
+1986-06-13,Denmark,West Germany,Denmark,John Eriksen,,62,False,False
+1986-06-15,Mexico,Bulgaria,Mexico,Manuel Negrete,,34,False,False
+1986-06-15,Mexico,Bulgaria,Mexico,Raúl Servín,,61,False,False
+1986-06-15,Soviet Union,Belgium,Soviet Union,Ihor Belanov,,27,False,False
+1986-06-15,Soviet Union,Belgium,Belgium,Enzo Scifo,,56,False,False
+1986-06-15,Soviet Union,Belgium,Soviet Union,Ihor Belanov,,70,False,False
+1986-06-15,Soviet Union,Belgium,Belgium,Jan Ceulemans,,77,False,False
+1986-06-15,Soviet Union,Belgium,Belgium,Stéphane Demol,,102,False,False
+1986-06-15,Soviet Union,Belgium,Belgium,Nico Claesen,,110,False,False
+1986-06-15,Soviet Union,Belgium,Soviet Union,Ihor Belanov,,111,False,True
+1986-06-16,Brazil,Poland,Brazil,not applicable Sócrates,,30,False,True
+1986-06-16,Brazil,Poland,Brazil,not applicable Josimar,,55,False,False
+1986-06-16,Brazil,Poland,Brazil,not applicable Edinho,,79,False,False
+1986-06-16,Brazil,Poland,Brazil,not applicable Careca,,83,False,True
+1986-06-16,Argentina,Uruguay,Argentina,Pedro Pasculli,,42,False,False
+1986-06-17,Italy,France,France,Michel Platini,,15,False,False
+1986-06-17,Italy,France,France,Yannick Stopyra,,57,False,False
+1986-06-17,Morocco,West Germany,West Germany,Lothar Matthäus,,87,False,False
+1986-06-18,England,Paraguay,England,Gary Lineker,,31,False,False
+1986-06-18,England,Paraguay,England,Peter Beardsley,,56,False,False
+1986-06-18,England,Paraguay,England,Gary Lineker,,73,False,False
+1986-06-18,Denmark,Spain,Denmark,Jesper Olsen,,33,False,True
+1986-06-18,Denmark,Spain,Spain,Emilio Butragueño,,43,False,False
+1986-06-18,Denmark,Spain,Spain,Emilio Butragueño,,56,False,False
+1986-06-18,Denmark,Spain,Spain,Andoni Goikoetxea,,68,False,True
+1986-06-18,Denmark,Spain,Spain,Emilio Butragueño,,80,False,False
+1986-06-18,Denmark,Spain,Spain,Emilio Butragueño,,88,False,True
+1986-06-21,Brazil,France,Brazil,not applicable Careca,,17,False,False
+1986-06-21,Brazil,France,France,Michel Platini,,40,False,False
+1986-06-22,Argentina,England,Argentina,Diego Maradona,,51,False,False
+1986-06-22,Argentina,England,Argentina,Diego Maradona,,55,False,False
+1986-06-22,Argentina,England,England,Gary Lineker,,81,False,False
+1986-06-22,Spain,Belgium,Belgium,Jan Ceulemans,,35,False,False
+1986-06-22,Spain,Belgium,Spain,Juan Antonio Señor,,85,False,False
+1986-06-25,France,West Germany,West Germany,Andreas Brehme,,9,False,False
+1986-06-25,France,West Germany,West Germany,Rudi Völler,,90,False,False
+1986-06-25,Argentina,Belgium,Argentina,Diego Maradona,,51,False,False
+1986-06-25,Argentina,Belgium,Argentina,Diego Maradona,,63,False,False
+1986-06-28,Belgium,France,Belgium,Jan Ceulemans,,11,False,False
+1986-06-28,Belgium,France,France,Jean-Marc Ferreri,,27,False,False
+1986-06-28,Belgium,France,France,Jean-Pierre Papin,,43,False,False
+1986-06-28,Belgium,France,Belgium,Nico Claesen,,73,False,False
+1986-06-28,Belgium,France,France,Bernard Genghini,,104,False,False
+1986-06-28,Belgium,France,France,Manuel Amoros,,111,False,True
+1986-06-29,Argentina,West Germany,Argentina,José Luis Brown,,23,False,False
+1986-06-29,Argentina,West Germany,Argentina,Jorge Valdano,,56,False,False
+1986-06-29,Argentina,West Germany,West Germany,Karl-Heinz Rummenigge,,74,False,False
+1986-06-29,Argentina,West Germany,West Germany,Rudi Völler,,81,False,False
+1986-06-29,Argentina,West Germany,Argentina,Jorge Burruchaga,,84,False,False
+1990-06-08,Argentina,Cameroon,Cameroon,François Omam-Biyik,,67,False,False
+1990-06-09,Soviet Union,Romania,Romania,Marius Lăcătuș,,41,False,False
+1990-06-09,Soviet Union,Romania,Romania,Marius Lăcătuș,,55,False,True
+1990-06-09,United Arab Emirates,Colombia,Colombia,Bernardo Redín,,50,False,False
+1990-06-09,United Arab Emirates,Colombia,Colombia,Carlos Valderrama,,85,False,False
+1990-06-09,Italy,Austria,Italy,Salvatore Schillaci,,78,False,False
+1990-06-10,United States,Czechoslovakia,Czechoslovakia,Tomáš Skuhravý,,26,False,False
+1990-06-10,United States,Czechoslovakia,Czechoslovakia,Michal Bílek,,40,False,True
+1990-06-10,United States,Czechoslovakia,Czechoslovakia,Ivan Hašek,,50,False,False
+1990-06-10,United States,Czechoslovakia,United States,Paul Caligiuri,,60,False,False
+1990-06-10,United States,Czechoslovakia,Czechoslovakia,Tomáš Skuhravý,,78,False,False
+1990-06-10,United States,Czechoslovakia,Czechoslovakia,Milan Luhový,,93,False,False
+1990-06-10,Brazil,Sweden,Brazil,not applicable Careca,,40,False,False
+1990-06-10,Brazil,Sweden,Brazil,not applicable Careca,,63,False,False
+1990-06-10,Brazil,Sweden,Sweden,Tomas Brolin,,79,False,False
+1990-06-10,West Germany,Yugoslavia,West Germany,Lothar Matthäus,,28,False,False
+1990-06-10,West Germany,Yugoslavia,West Germany,Jürgen Klinsmann,,39,False,False
+1990-06-10,West Germany,Yugoslavia,Yugoslavia,Davor Jozić,,55,False,False
+1990-06-10,West Germany,Yugoslavia,West Germany,Lothar Matthäus,,64,False,False
+1990-06-10,West Germany,Yugoslavia,West Germany,Rudi Völler,,70,False,False
+1990-06-11,Costa Rica,Scotland,Costa Rica,Juan Cayasso,,49,False,False
+1990-06-11,England,Republic of Ireland,England,Gary Lineker,,9,False,False
+1990-06-11,England,Republic of Ireland,Republic of Ireland,Kevin Sheedy,,73,False,False
+1990-06-12,Belgium,South Korea,Belgium,Marc Degryse,,53,False,False
+1990-06-12,Belgium,South Korea,Belgium,Michel De Wolf,,64,False,False
+1990-06-12,Netherlands,Egypt,Netherlands,Wim Kieft,,58,False,False
+1990-06-12,Netherlands,Egypt,Egypt,Magdi Abdelghani,,83,False,True
+1990-06-13,Argentina,Soviet Union,Argentina,Pedro Troglio,,27,False,False
+1990-06-13,Argentina,Soviet Union,Argentina,Jorge Burruchaga,,79,False,False
+1990-06-14,Cameroon,Romania,Cameroon,Roger Milla,,76,False,False
+1990-06-14,Cameroon,Romania,Cameroon,Roger Milla,,86,False,False
+1990-06-14,Cameroon,Romania,Romania,Gabi Balint,,88,False,False
+1990-06-14,Yugoslavia,Colombia,Yugoslavia,Davor Jozić,,75,False,False
+1990-06-14,Italy,United States,Italy,Giuseppe Giannini,,11,False,False
+1990-06-15,Austria,Czechoslovakia,Czechoslovakia,Michal Bílek,,31,False,True
+1990-06-15,West Germany,United Arab Emirates,West Germany,Rudi Völler,,35,False,False
+1990-06-15,West Germany,United Arab Emirates,West Germany,Jürgen Klinsmann,,37,False,False
+1990-06-15,West Germany,United Arab Emirates,United Arab Emirates,Khalid Ismaïl,,46,False,False
+1990-06-15,West Germany,United Arab Emirates,West Germany,Lothar Matthäus,,47,False,False
+1990-06-15,West Germany,United Arab Emirates,West Germany,Uwe Bein,,58,False,False
+1990-06-15,West Germany,United Arab Emirates,West Germany,Rudi Völler,,75,False,False
+1990-06-16,Brazil,Costa Rica,Brazil,not applicable Müller,,33,False,False
+1990-06-16,Sweden,Scotland,Scotland,Stuart McCall,,11,False,False
+1990-06-16,Sweden,Scotland,Scotland,Mo Johnston,,81,False,True
+1990-06-16,Sweden,Scotland,Sweden,Glenn Strömberg,,86,False,False
+1990-06-17,Belgium,Uruguay,Belgium,Leo Clijsters,,15,False,False
+1990-06-17,Belgium,Uruguay,Belgium,Enzo Scifo,,24,False,False
+1990-06-17,Belgium,Uruguay,Belgium,Jan Ceulemans,,47,False,False
+1990-06-17,Belgium,Uruguay,Uruguay,Pablo Bengoechea,,73,False,False
+1990-06-17,South Korea,Spain,Spain,not applicable Míchel,,23,False,False
+1990-06-17,South Korea,Spain,South Korea,Kwan Hwangbo,,43,False,False
+1990-06-17,South Korea,Spain,Spain,not applicable Míchel,,61,False,False
+1990-06-17,South Korea,Spain,Spain,not applicable Míchel,,81,False,False
+1990-06-18,Argentina,Romania,Argentina,Pedro Monzón,,62,False,False
+1990-06-18,Argentina,Romania,Romania,Gabi Balint,,68,False,False
+1990-06-18,Cameroon,Soviet Union,Soviet Union,Oleh Protasov,,20,False,False
+1990-06-18,Cameroon,Soviet Union,Soviet Union,Andrei Zygmantovich,,29,False,False
+1990-06-18,Cameroon,Soviet Union,Soviet Union,Oleksandr Zavarov,,52,False,False
+1990-06-18,Cameroon,Soviet Union,Soviet Union,Igor Dobrovolski,,63,False,False
+1990-06-19,West Germany,Colombia,West Germany,Pierre Littbarski,,88,False,False
+1990-06-19,West Germany,Colombia,Colombia,Freddy Rincón,,93,False,False
+1990-06-19,Yugoslavia,United Arab Emirates,Yugoslavia,Safet Sušić,,5,False,False
+1990-06-19,Yugoslavia,United Arab Emirates,Yugoslavia,Darko Pančev,,9,False,False
+1990-06-19,Yugoslavia,United Arab Emirates,United Arab Emirates,Ali Thani Jumaa,,22,False,False
+1990-06-19,Yugoslavia,United Arab Emirates,Yugoslavia,Darko Pančev,,46,False,False
+1990-06-19,Yugoslavia,United Arab Emirates,Yugoslavia,Robert Prosinečki,,93,False,False
+1990-06-19,Austria,United States,Austria,Andreas Ogris,,49,False,False
+1990-06-19,Austria,United States,Austria,Gerhard Rodax,,63,False,False
+1990-06-19,Austria,United States,United States,Bruce Murray,,83,False,False
+1990-06-19,Italy,Czechoslovakia,Italy,Salvatore Schillaci,,9,False,False
+1990-06-19,Italy,Czechoslovakia,Italy,Roberto Baggio,,78,False,False
+1990-06-20,Brazil,Scotland,Brazil,not applicable Müller,,81,False,False
+1990-06-20,Sweden,Costa Rica,Sweden,Johnny Ekström,,32,False,False
+1990-06-20,Sweden,Costa Rica,Costa Rica,Róger Flores,,75,False,False
+1990-06-20,Sweden,Costa Rica,Costa Rica,Hernán Medford,,87,False,False
+1990-06-21,Belgium,Spain,Spain,not applicable Míchel,,26,False,True
+1990-06-21,Belgium,Spain,Belgium,Patrick Vervoort,,29,False,False
+1990-06-21,Belgium,Spain,Spain,Alberto Górriz,,38,False,False
+1990-06-21,South Korea,Uruguay,Uruguay,Daniel Fonseca,,91,False,False
+1990-06-21,England,Egypt,England,Mark Wright,,58,False,False
+1990-06-21,Republic of Ireland,Netherlands,Netherlands,Ruud Gullit,,11,False,False
+1990-06-21,Republic of Ireland,Netherlands,Republic of Ireland,Niall Quinn,,71,False,False
+1990-06-23,Cameroon,Colombia,Cameroon,Roger Milla,,106,False,False
+1990-06-23,Cameroon,Colombia,Cameroon,Roger Milla,,108,False,False
+1990-06-23,Cameroon,Colombia,Colombia,Bernardo Redín,,115,False,False
+1990-06-23,Czechoslovakia,Costa Rica,Czechoslovakia,Tomáš Skuhravý,,12,False,False
+1990-06-23,Czechoslovakia,Costa Rica,Costa Rica,Rónald González Brenes,,55,False,False
+1990-06-23,Czechoslovakia,Costa Rica,Czechoslovakia,Tomáš Skuhravý,,63,False,False
+1990-06-23,Czechoslovakia,Costa Rica,Czechoslovakia,Luboš Kubík,,76,False,False
+1990-06-23,Czechoslovakia,Costa Rica,Czechoslovakia,Tomáš Skuhravý,,82,False,False
+1990-06-24,Brazil,Argentina,Argentina,Claudio Caniggia,,81,False,False
+1990-06-24,West Germany,Netherlands,West Germany,Jürgen Klinsmann,,51,False,False
+1990-06-24,West Germany,Netherlands,West Germany,Andreas Brehme,,85,False,False
+1990-06-24,West Germany,Netherlands,Netherlands,Ronald Koeman,,89,False,True
+1990-06-25,Italy,Uruguay,Italy,Salvatore Schillaci,,65,False,False
+1990-06-25,Italy,Uruguay,Italy,Aldo Serena,,83,False,False
+1990-06-26,Spain,Yugoslavia,Yugoslavia,Dragan Stojković,,78,False,False
+1990-06-26,Spain,Yugoslavia,Spain,Julio Salinas,,84,False,False
+1990-06-26,Spain,Yugoslavia,Yugoslavia,Dragan Stojković,,93,False,False
+1990-06-26,England,Belgium,England,David Platt,,119,False,False
+1990-06-30,Republic of Ireland,Italy,Italy,Salvatore Schillaci,,38,False,False
+1990-07-01,Czechoslovakia,West Germany,West Germany,Lothar Matthäus,,25,False,True
+1990-07-01,Cameroon,England,England,David Platt,,25,False,False
+1990-07-01,Cameroon,England,Cameroon,Emmanuel Kundé,,61,False,True
+1990-07-01,Cameroon,England,Cameroon,Eugène Ekéké,,65,False,False
+1990-07-01,Cameroon,England,England,Gary Lineker,,83,False,True
+1990-07-01,Cameroon,England,England,Gary Lineker,,105,False,True
+1990-07-03,Argentina,Italy,Italy,Salvatore Schillaci,,17,False,False
+1990-07-03,Argentina,Italy,Argentina,Claudio Caniggia,,67,False,False
+1990-07-04,West Germany,England,West Germany,Andreas Brehme,,60,False,False
+1990-07-04,West Germany,England,England,Gary Lineker,,80,False,False
+1990-07-07,Italy,England,Italy,Roberto Baggio,,71,False,False
+1990-07-07,Italy,England,England,David Platt,,81,False,False
+1990-07-07,Italy,England,Italy,Salvatore Schillaci,,86,False,True
+1990-07-08,West Germany,Argentina,West Germany,Andreas Brehme,,85,False,True
+1994-06-17,Germany,Bolivia,Germany,Jürgen Klinsmann,,61,False,False
+1994-06-17,Spain,South Korea,Spain,Julio Salinas,,51,False,False
+1994-06-17,Spain,South Korea,Spain,Andoni Goikoetxea,,55,False,False
+1994-06-17,Spain,South Korea,South Korea,Myung-bo Hong,,85,False,False
+1994-06-17,Spain,South Korea,South Korea,Jung-won Seo,,90,False,False
+1994-06-18,United States,Switzerland,Switzerland,Georges Bregy,,39,False,False
+1994-06-18,United States,Switzerland,United States,Eric Wynalda,,44,False,False
+1994-06-18,Italy,Republic of Ireland,Republic of Ireland,Ray Houghton,,11,False,False
+1994-06-18,Colombia,Romania,Romania,Florin Răducioiu,,15,False,False
+1994-06-18,Colombia,Romania,Romania,Gheorghe Hagi,,34,False,False
+1994-06-18,Colombia,Romania,Colombia,Adolfo Valencia,,43,False,False
+1994-06-18,Colombia,Romania,Romania,Florin Răducioiu,,89,False,False
+1994-06-19,Belgium,Morocco,Belgium,Marc Degryse,,11,False,False
+1994-06-19,Norway,Mexico,Norway,Kjetil Rekdal,,84,False,False
+1994-06-19,Cameroon,Sweden,Sweden,Roger Ljung,,8,False,False
+1994-06-19,Cameroon,Sweden,Cameroon,David Embé,,31,False,False
+1994-06-19,Cameroon,Sweden,Cameroon,François Omam-Biyik,,47,False,False
+1994-06-19,Cameroon,Sweden,Sweden,Martin Dahlin,,75,False,False
+1994-06-20,Brazil,Russia,Brazil,not applicable Romário,,26,False,False
+1994-06-20,Brazil,Russia,Brazil,not applicable Raí,,52,False,True
+1994-06-20,Netherlands,Saudi Arabia,Saudi Arabia,Fuad Anwar,,18,False,False
+1994-06-20,Netherlands,Saudi Arabia,Netherlands,Wim Jonk,,50,False,False
+1994-06-20,Netherlands,Saudi Arabia,Netherlands,Gaston Taument,,86,False,False
+1994-06-21,Argentina,Greece,Argentina,Gabriel Batistuta,,2,False,False
+1994-06-21,Argentina,Greece,Argentina,Gabriel Batistuta,,44,False,False
+1994-06-21,Argentina,Greece,Argentina,Diego Maradona,,60,False,False
+1994-06-21,Argentina,Greece,Argentina,Gabriel Batistuta,,90,False,True
+1994-06-21,Germany,Spain,Spain,Andoni Goikoetxea,,14,False,False
+1994-06-21,Germany,Spain,Germany,Jürgen Klinsmann,,48,False,False
+1994-06-21,Nigeria,Bulgaria,Nigeria,Rashidi Yekini,,21,False,False
+1994-06-21,Nigeria,Bulgaria,Nigeria,Daniel Amokachi,,43,False,False
+1994-06-21,Nigeria,Bulgaria,Nigeria,Emmanuel Amunike,,55,False,False
+1994-06-22,Romania,Switzerland,Switzerland,Alain Sutter,,16,False,False
+1994-06-22,Romania,Switzerland,Romania,Gheorghe Hagi,,35,False,False
+1994-06-22,Romania,Switzerland,Switzerland,Stéphane Chapuisat,,52,False,False
+1994-06-22,Romania,Switzerland,Switzerland,Adrian Knup,,65,False,False
+1994-06-22,Romania,Switzerland,Switzerland,Adrian Knup,,72,False,False
+1994-06-22,United States,Colombia,United States,Andrés Escobar,,35,True,False
+1994-06-22,United States,Colombia,United States,Earnie Stewart,,52,False,False
+1994-06-22,United States,Colombia,Colombia,Adolfo Valencia,,90,False,False
+1994-06-23,Italy,Norway,Italy,Dino Baggio,,69,False,False
+1994-06-24,Mexico,Republic of Ireland,Mexico,Luis García Postigo,,42,False,False
+1994-06-24,Mexico,Republic of Ireland,Mexico,Luis García Postigo,,65,False,False
+1994-06-24,Mexico,Republic of Ireland,Republic of Ireland,John Aldridge,,84,False,False
+1994-06-24,Brazil,Cameroon,Brazil,not applicable Romário,,39,False,False
+1994-06-24,Brazil,Cameroon,Brazil,Márcio Santos,,66,False,False
+1994-06-24,Brazil,Cameroon,Brazil,not applicable Bebeto,,73,False,False
+1994-06-24,Sweden,Russia,Russia,Oleg Salenko,,4,False,True
+1994-06-24,Sweden,Russia,Sweden,Tomas Brolin,,39,False,True
+1994-06-24,Sweden,Russia,Sweden,Martin Dahlin,,60,False,False
+1994-06-24,Sweden,Russia,Sweden,Martin Dahlin,,82,False,False
+1994-06-25,Belgium,Netherlands,Belgium,Philippe Albert,,65,False,False
+1994-06-25,Saudi Arabia,Morocco,Saudi Arabia,Sami Al-Jaber,,7,False,True
+1994-06-25,Saudi Arabia,Morocco,Morocco,Mohammed Chaouch,,26,False,False
+1994-06-25,Saudi Arabia,Morocco,Saudi Arabia,Fuad Anwar,,45,False,False
+1994-06-25,Argentina,Nigeria,Nigeria,Samson Siasia,,8,False,False
+1994-06-25,Argentina,Nigeria,Argentina,Claudio Caniggia,,21,False,False
+1994-06-25,Argentina,Nigeria,Argentina,Claudio Caniggia,,28,False,False
+1994-06-26,Bulgaria,Greece,Bulgaria,Hristo Stoichkov,,5,False,True
+1994-06-26,Bulgaria,Greece,Bulgaria,Hristo Stoichkov,,55,False,True
+1994-06-26,Bulgaria,Greece,Bulgaria,Yordan Letchkov,,65,False,False
+1994-06-26,Bulgaria,Greece,Bulgaria,Daniel Borimirov,,90,False,False
+1994-06-26,Switzerland,Colombia,Colombia,Hermán Gaviria,,44,False,False
+1994-06-26,Switzerland,Colombia,Colombia,John Harold Lozano,,90,False,False
+1994-06-26,United States,Romania,Romania,Dan Petrescu,,18,False,False
+1994-06-27,Bolivia,Spain,Spain,Josep Guardiola,,19,False,True
+1994-06-27,Bolivia,Spain,Spain,José Luis Caminero,,66,False,False
+1994-06-27,Bolivia,Spain,Bolivia,Erwin Sánchez,,67,False,False
+1994-06-27,Bolivia,Spain,Spain,José Luis Caminero,,70,False,False
+1994-06-27,Germany,South Korea,Germany,Jürgen Klinsmann,,12,False,False
+1994-06-27,Germany,South Korea,Germany,Karl-Heinz Riedle,,20,False,False
+1994-06-27,Germany,South Korea,Germany,Jürgen Klinsmann,,37,False,False
+1994-06-27,Germany,South Korea,South Korea,Sun-hong Hwang,,52,False,False
+1994-06-27,Germany,South Korea,South Korea,Myung-bo Hong,,63,False,False
+1994-06-28,Italy,Mexico,Italy,Daniele Massaro,,48,False,False
+1994-06-28,Italy,Mexico,Mexico,Marcelino Bernal,,57,False,False
+1994-06-28,Russia,Cameroon,Russia,Oleg Salenko,,15,False,False
+1994-06-28,Russia,Cameroon,Russia,Oleg Salenko,,41,False,False
+1994-06-28,Russia,Cameroon,Russia,Oleg Salenko,,44,False,True
+1994-06-28,Russia,Cameroon,Cameroon,Roger Milla,,46,False,False
+1994-06-28,Russia,Cameroon,Russia,Oleg Salenko,,72,False,False
+1994-06-28,Russia,Cameroon,Russia,Oleg Salenko,,75,False,False
+1994-06-28,Russia,Cameroon,Russia,Dmitri Radchenko,,81,False,False
+1994-06-28,Brazil,Sweden,Sweden,Kennet Andersson,,23,False,False
+1994-06-28,Brazil,Sweden,Brazil,not applicable Romário,,47,False,False
+1994-06-29,Belgium,Saudi Arabia,Saudi Arabia,Saeed Al-Owairan,,5,False,False
+1994-06-29,Morocco,Netherlands,Netherlands,Dennis Bergkamp,,43,False,False
+1994-06-29,Morocco,Netherlands,Morocco,Hassan Nader,,47,False,False
+1994-06-29,Morocco,Netherlands,Netherlands,Bryan Roy,,77,False,False
+1994-06-30,Argentina,Bulgaria,Bulgaria,Hristo Stoichkov,,61,False,False
+1994-06-30,Argentina,Bulgaria,Bulgaria,Nasko Sirakov,,93,False,False
+1994-06-30,Greece,Nigeria,Nigeria,Finidi George,,47,False,False
+1994-06-30,Greece,Nigeria,Nigeria,Daniel Amokachi,,95,False,False
+1994-07-02,Germany,Belgium,Germany,Rudi Völler,,6,False,False
+1994-07-02,Germany,Belgium,Belgium,Georges Grün,,8,False,False
+1994-07-02,Germany,Belgium,Germany,Jürgen Klinsmann,,11,False,False
+1994-07-02,Germany,Belgium,Germany,Rudi Völler,,38,False,False
+1994-07-02,Germany,Belgium,Belgium,Philippe Albert,,90,False,False
+1994-07-02,Spain,Switzerland,Spain,Fernando Hierro,,15,False,False
+1994-07-02,Spain,Switzerland,Spain,Luis Enrique,,74,False,False
+1994-07-02,Spain,Switzerland,Spain,Txiki Begiristain,,86,False,True
+1994-07-03,Saudi Arabia,Sweden,Sweden,Martin Dahlin,,6,False,False
+1994-07-03,Saudi Arabia,Sweden,Sweden,Kennet Andersson,,51,False,False
+1994-07-03,Saudi Arabia,Sweden,Saudi Arabia,Fahad Al-Ghesheyan,,85,False,False
+1994-07-03,Saudi Arabia,Sweden,Sweden,Kennet Andersson,,88,False,False
+1994-07-03,Romania,Argentina,Romania,Ilie Dumitrescu,,11,False,False
+1994-07-03,Romania,Argentina,Argentina,Gabriel Batistuta,,16,False,True
+1994-07-03,Romania,Argentina,Romania,Ilie Dumitrescu,,18,False,False
+1994-07-03,Romania,Argentina,Romania,Gheorghe Hagi,,58,False,False
+1994-07-03,Romania,Argentina,Argentina,Abel Balbo,,75,False,False
+1994-07-04,Netherlands,Republic of Ireland,Netherlands,Dennis Bergkamp,,11,False,False
+1994-07-04,Netherlands,Republic of Ireland,Netherlands,Wim Jonk,,41,False,False
+1994-07-04,Brazil,United States,Brazil,not applicable Bebeto,,72,False,False
+1994-07-05,Nigeria,Italy,Nigeria,Emmanuel Amunike,,25,False,False
+1994-07-05,Nigeria,Italy,Italy,Roberto Baggio,,88,False,False
+1994-07-05,Nigeria,Italy,Italy,Roberto Baggio,,102,False,True
+1994-07-05,Mexico,Bulgaria,Bulgaria,Hristo Stoichkov,,6,False,False
+1994-07-05,Mexico,Bulgaria,Mexico,Alberto García Aspe,,18,False,True
+1994-07-09,Italy,Spain,Italy,Dino Baggio,,25,False,False
+1994-07-09,Italy,Spain,Spain,José Luis Caminero,,58,False,False
+1994-07-09,Italy,Spain,Italy,Roberto Baggio,,88,False,False
+1994-07-09,Netherlands,Brazil,Brazil,not applicable Romário,,53,False,False
+1994-07-09,Netherlands,Brazil,Brazil,not applicable Bebeto,,63,False,False
+1994-07-09,Netherlands,Brazil,Netherlands,Dennis Bergkamp,,64,False,False
+1994-07-09,Netherlands,Brazil,Netherlands,Aron Winter,,76,False,False
+1994-07-09,Netherlands,Brazil,Brazil,not applicable Branco,,81,False,False
+1994-07-10,Bulgaria,Germany,Germany,Lothar Matthäus,,47,False,True
+1994-07-10,Bulgaria,Germany,Bulgaria,Hristo Stoichkov,,75,False,False
+1994-07-10,Bulgaria,Germany,Bulgaria,Yordan Letchkov,,78,False,False
+1994-07-10,Romania,Sweden,Sweden,Tomas Brolin,,78,False,False
+1994-07-10,Romania,Sweden,Romania,Florin Răducioiu,,88,False,False
+1994-07-10,Romania,Sweden,Romania,Florin Răducioiu,,101,False,False
+1994-07-10,Romania,Sweden,Sweden,Kennet Andersson,,115,False,False
+1994-07-13,Bulgaria,Italy,Italy,Roberto Baggio,,21,False,False
+1994-07-13,Bulgaria,Italy,Italy,Roberto Baggio,,25,False,False
+1994-07-13,Bulgaria,Italy,Bulgaria,Hristo Stoichkov,,44,False,True
+1994-07-13,Sweden,Brazil,Brazil,not applicable Romário,,80,False,False
+1994-07-16,Sweden,Bulgaria,Sweden,Tomas Brolin,,8,False,False
+1994-07-16,Sweden,Bulgaria,Sweden,Håkan Mild,,30,False,False
+1994-07-16,Sweden,Bulgaria,Sweden,Henrik Larsson,,37,False,False
+1994-07-16,Sweden,Bulgaria,Sweden,Kennet Andersson,,39,False,False
+1998-06-10,Brazil,Scotland,Brazil,César Sampaio,,5,False,False
+1998-06-10,Brazil,Scotland,Scotland,John Collins,,38,False,True
+1998-06-10,Brazil,Scotland,Brazil,Tom Boyd,,74,True,False
+1998-06-10,Morocco,Norway,Morocco,Mustapha Hadji,,37,False,False
+1998-06-10,Morocco,Norway,Norway,Youssef Chippo,,46,True,False
+1998-06-10,Morocco,Norway,Morocco,Abdeljalil Hadda,,60,False,False
+1998-06-10,Morocco,Norway,Norway,Dan Eggen,,61,False,False
+1998-06-11,Italy,Chile,Italy,Christian Vieri,,10,False,False
+1998-06-11,Italy,Chile,Chile,Marcelo Salas,,48,False,False
+1998-06-11,Italy,Chile,Chile,Marcelo Salas,,50,False,False
+1998-06-11,Italy,Chile,Italy,Roberto Baggio,,84,False,True
+1998-06-11,Cameroon,Austria,Cameroon,Pierre Njanka,,77,False,False
+1998-06-11,Cameroon,Austria,Austria,Toni Polster,,91,False,False
+1998-06-12,Saudi Arabia,Denmark,Denmark,Marc Rieper,,69,False,False
+1998-06-12,France,South Africa,France,Christophe Dugarry,,35,False,False
+1998-06-12,France,South Africa,France,Pierre Issa,,77,True,False
+1998-06-12,France,South Africa,France,Thierry Henry,,92,False,False
+1998-06-13,Spain,Nigeria,Spain,Fernando Hierro,,21,False,False
+1998-06-13,Spain,Nigeria,Nigeria,Mutiu Adepoju,,24,False,False
+1998-06-13,Spain,Nigeria,Spain,not applicable Raúl,,47,False,False
+1998-06-13,Spain,Nigeria,Nigeria,Andoni Zubizarreta,,73,True,False
+1998-06-13,Spain,Nigeria,Nigeria,Sunday Oliseh,,78,False,False
+1998-06-13,South Korea,Mexico,South Korea,Seok-ju Ha,,27,False,False
+1998-06-13,South Korea,Mexico,Mexico,Ricardo Peláez,,50,False,False
+1998-06-13,South Korea,Mexico,Mexico,Luis Hernández,,75,False,False
+1998-06-13,South Korea,Mexico,Mexico,Luis Hernández,,84,False,False
+1998-06-14,Argentina,Japan,Argentina,Gabriel Batistuta,,28,False,False
+1998-06-14,Yugoslavia,Iran,Yugoslavia,Siniša Mihajlović,,73,False,False
+1998-06-14,Jamaica,Croatia,Croatia,Mario Stanić,,27,False,False
+1998-06-14,Jamaica,Croatia,Jamaica,Robbie Earle,,45,False,False
+1998-06-14,Jamaica,Croatia,Croatia,Robert Prosinečki,,53,False,False
+1998-06-14,Jamaica,Croatia,Croatia,Davor Šuker,,69,False,False
+1998-06-15,England,Tunisia,England,Alan Shearer,,42,False,False
+1998-06-15,England,Tunisia,England,Paul Scholes,,89,False,False
+1998-06-15,Romania,Colombia,Romania,Adrian Ilie,,46,False,False
+1998-06-15,Germany,United States,Germany,Andreas Möller,,9,False,False
+1998-06-15,Germany,United States,Germany,Jürgen Klinsmann,,65,False,False
+1998-06-16,Scotland,Norway,Norway,Håvard Flo,,46,False,False
+1998-06-16,Scotland,Norway,Scotland,Craig Burley,,66,False,False
+1998-06-16,Brazil,Morocco,Brazil,not applicable Ronaldo,,9,False,False
+1998-06-16,Brazil,Morocco,Brazil,not applicable Rivaldo,,47,False,False
+1998-06-16,Brazil,Morocco,Brazil,not applicable Bebeto,,50,False,False
+1998-06-17,Chile,Austria,Chile,Marcelo Salas,,70,False,False
+1998-06-17,Chile,Austria,Austria,Ivica Vastić,,92,False,False
+1998-06-17,Italy,Cameroon,Italy,Luigi Di Biagio,,7,False,False
+1998-06-17,Italy,Cameroon,Italy,Christian Vieri,,75,False,False
+1998-06-17,Italy,Cameroon,Italy,Christian Vieri,,89,False,False
+1998-06-18,South Africa,Denmark,Denmark,Allan Nielsen,,12,False,False
+1998-06-18,South Africa,Denmark,South Africa,Benni McCarthy,,51,False,False
+1998-06-18,France,Saudi Arabia,France,Thierry Henry,,37,False,False
+1998-06-18,France,Saudi Arabia,France,David Trezeguet,,68,False,False
+1998-06-18,France,Saudi Arabia,France,Thierry Henry,,78,False,False
+1998-06-18,France,Saudi Arabia,France,Bixente Lizarazu,,85,False,False
+1998-06-19,Nigeria,Bulgaria,Nigeria,Victor Ikpeba,,28,False,False
+1998-06-20,Japan,Croatia,Croatia,Davor Šuker,,77,False,False
+1998-06-20,Belgium,Mexico,Belgium,Marc Wilmots,,42,False,False
+1998-06-20,Belgium,Mexico,Belgium,Marc Wilmots,,47,False,False
+1998-06-20,Belgium,Mexico,Mexico,Alberto García Aspe,,55,False,True
+1998-06-20,Belgium,Mexico,Mexico,Cuauhtémoc Blanco,,62,False,False
+1998-06-20,Netherlands,South Korea,Netherlands,Phillip Cocu,,37,False,False
+1998-06-20,Netherlands,South Korea,Netherlands,Marc Overmars,,41,False,False
+1998-06-20,Netherlands,South Korea,Netherlands,Dennis Bergkamp,,71,False,False
+1998-06-20,Netherlands,South Korea,Netherlands,Pierre van Hooijdonk,,80,False,False
+1998-06-20,Netherlands,South Korea,Netherlands,Ronald de Boer,,83,False,False
+1998-06-21,Germany,Yugoslavia,Yugoslavia,Predrag Mijatović,,13,False,False
+1998-06-21,Germany,Yugoslavia,Yugoslavia,Dragan Stojković,,52,False,False
+1998-06-21,Germany,Yugoslavia,Germany,Siniša Mihajlović,,72,True,False
+1998-06-21,Germany,Yugoslavia,Germany,Oliver Bierhoff,,78,False,False
+1998-06-21,Argentina,Jamaica,Argentina,Ariel Ortega,,31,False,False
+1998-06-21,Argentina,Jamaica,Argentina,Ariel Ortega,,55,False,False
+1998-06-21,Argentina,Jamaica,Argentina,Gabriel Batistuta,,73,False,False
+1998-06-21,Argentina,Jamaica,Argentina,Gabriel Batistuta,,78,False,False
+1998-06-21,Argentina,Jamaica,Argentina,Gabriel Batistuta,,83,False,True
+1998-06-21,United States,Iran,Iran,Hamid Estili,,40,False,False
+1998-06-21,United States,Iran,Iran,Mehdi Mahdavikia,,84,False,False
+1998-06-21,United States,Iran,United States,Brian McBride,,87,False,False
+1998-06-22,Colombia,Tunisia,Colombia,Léider Preciado,,82,False,False
+1998-06-22,Romania,England,Romania,Viorel Moldovan,,46,False,False
+1998-06-22,Romania,England,England,Michael Owen,,81,False,False
+1998-06-22,Romania,England,Romania,Dan Petrescu,,90,False,False
+1998-06-23,Chile,Cameroon,Chile,José Luis Sierra,,20,False,False
+1998-06-23,Chile,Cameroon,Cameroon,Patrick M'Boma,,56,False,False
+1998-06-23,Italy,Austria,Italy,Christian Vieri,,48,False,False
+1998-06-23,Italy,Austria,Italy,Roberto Baggio,,90,False,False
+1998-06-23,Italy,Austria,Austria,Andi Herzog,,92,False,True
+1998-06-23,Brazil,Norway,Brazil,not applicable Bebeto,,78,False,False
+1998-06-23,Brazil,Norway,Norway,Tore André Flo,,83,False,False
+1998-06-23,Brazil,Norway,Norway,Kjetil Rekdal,,89,False,True
+1998-06-23,Scotland,Morocco,Morocco,Salaheddine Bassir,,23,False,False
+1998-06-23,Scotland,Morocco,Morocco,Abdeljalil Hadda,,46,False,False
+1998-06-23,Scotland,Morocco,Morocco,Salaheddine Bassir,,85,False,False
+1998-06-24,France,Denmark,France,Youri Djorkaeff,,12,False,True
+1998-06-24,France,Denmark,Denmark,Michael Laudrup,,42,False,True
+1998-06-24,France,Denmark,France,Emmanuel Petit,,56,False,False
+1998-06-24,South Africa,Saudi Arabia,South Africa,Shaun Bartlett,,18,False,False
+1998-06-24,South Africa,Saudi Arabia,Saudi Arabia,Sami Al-Jaber,,47,False,True
+1998-06-24,South Africa,Saudi Arabia,Saudi Arabia,Yousuf Al-Thunayan,,74,False,True
+1998-06-24,South Africa,Saudi Arabia,South Africa,Shaun Bartlett,,93,False,True
+1998-06-24,Nigeria,Paraguay,Paraguay,Celso Ayala,,1,False,False
+1998-06-24,Nigeria,Paraguay,Nigeria,Wilson Oruma,,11,False,False
+1998-06-24,Nigeria,Paraguay,Paraguay,Miguel Ángel Benítez,,58,False,False
+1998-06-24,Nigeria,Paraguay,Paraguay,José Cardozo,,86,False,False
+1998-06-24,Spain,Bulgaria,Spain,Fernando Hierro,,6,False,True
+1998-06-24,Spain,Bulgaria,Spain,Luis Enrique,,18,False,False
+1998-06-24,Spain,Bulgaria,Spain,Fernando Morientes,,55,False,False
+1998-06-24,Spain,Bulgaria,Bulgaria,Emil Kostadinov,,58,False,False
+1998-06-24,Spain,Bulgaria,Spain,Fernando Morientes,,81,False,False
+1998-06-24,Spain,Bulgaria,Spain,Georgi Bachev,,88,True,False
+1998-06-24,Spain,Bulgaria,Spain,not applicable Kiko,,94,False,False
+1998-06-25,Belgium,South Korea,Belgium,Luc Nilis,,7,False,False
+1998-06-25,Belgium,South Korea,South Korea,Sang-chul Yoo,,72,False,False
+1998-06-25,Netherlands,Mexico,Netherlands,Phillip Cocu,,4,False,False
+1998-06-25,Netherlands,Mexico,Netherlands,Ronald de Boer,,18,False,False
+1998-06-25,Netherlands,Mexico,Mexico,Ricardo Peláez,,75,False,False
+1998-06-25,Netherlands,Mexico,Mexico,Luis Hernández,,94,False,False
+1998-06-25,Germany,Iran,Germany,Oliver Bierhoff,,50,False,False
+1998-06-25,Germany,Iran,Germany,Jürgen Klinsmann,,57,False,False
+1998-06-25,United States,Yugoslavia,Yugoslavia,Slobodan Komljenović,,4,False,False
+1998-06-26,Argentina,Croatia,Argentina,Mauricio Pineda,,36,False,False
+1998-06-26,Japan,Jamaica,Jamaica,Theodore Whitmore,,39,False,False
+1998-06-26,Japan,Jamaica,Jamaica,Theodore Whitmore,,54,False,False
+1998-06-26,Japan,Jamaica,Japan,Masashi Nakayama,,74,False,False
+1998-06-26,Colombia,England,England,Darren Anderton,,20,False,False
+1998-06-26,Colombia,England,England,David Beckham,,29,False,False
+1998-06-26,Romania,Tunisia,Tunisia,Skander Souayah,,12,False,True
+1998-06-26,Romania,Tunisia,Romania,Viorel Moldovan,,71,False,False
+1998-06-27,Italy,Norway,Italy,Christian Vieri,,18,False,False
+1998-06-27,Brazil,Chile,Brazil,César Sampaio,,11,False,False
+1998-06-27,Brazil,Chile,Brazil,César Sampaio,,26,False,False
+1998-06-27,Brazil,Chile,Brazil,not applicable Ronaldo,,48,False,True
+1998-06-27,Brazil,Chile,Chile,Marcelo Salas,,70,False,False
+1998-06-27,Brazil,Chile,Brazil,not applicable Ronaldo,,72,False,False
+1998-06-28,France,Paraguay,France,Laurent Blanc,,114,False,False
+1998-06-28,Nigeria,Denmark,Denmark,Peter Møller,,3,False,False
+1998-06-28,Nigeria,Denmark,Denmark,Brian Laudrup,,12,False,False
+1998-06-28,Nigeria,Denmark,Denmark,Ebbe Sand,,58,False,False
+1998-06-28,Nigeria,Denmark,Denmark,Thomas Helveg,,76,False,False
+1998-06-28,Nigeria,Denmark,Nigeria,Tijani Babangida,,77,False,False
+1998-06-29,Germany,Mexico,Mexico,Luis Hernández,,47,False,False
+1998-06-29,Germany,Mexico,Germany,Jürgen Klinsmann,,74,False,False
+1998-06-29,Germany,Mexico,Germany,Oliver Bierhoff,,86,False,False
+1998-06-29,Netherlands,Yugoslavia,Netherlands,Dennis Bergkamp,,38,False,False
+1998-06-29,Netherlands,Yugoslavia,Yugoslavia,Slobodan Komljenović,,48,False,False
+1998-06-29,Netherlands,Yugoslavia,Netherlands,Edgar Davids,,92,False,False
+1998-06-30,Romania,Croatia,Croatia,Davor Šuker,,47,False,True
+1998-06-30,Argentina,England,Argentina,Gabriel Batistuta,,5,False,True
+1998-06-30,Argentina,England,England,Alan Shearer,,9,False,True
+1998-06-30,Argentina,England,England,Michael Owen,,16,False,False
+1998-06-30,Argentina,England,Argentina,Javier Zanetti,,46,False,False
+1998-07-03,Brazil,Denmark,Denmark,Martin Jørgensen,,2,False,False
+1998-07-03,Brazil,Denmark,Brazil,not applicable Bebeto,,10,False,False
+1998-07-03,Brazil,Denmark,Brazil,not applicable Rivaldo,,25,False,False
+1998-07-03,Brazil,Denmark,Denmark,Brian Laudrup,,50,False,False
+1998-07-03,Brazil,Denmark,Brazil,not applicable Rivaldo,,59,False,False
+1998-07-04,Netherlands,Argentina,Netherlands,Patrick Kluivert,,12,False,False
+1998-07-04,Netherlands,Argentina,Argentina,Claudio López,,17,False,False
+1998-07-04,Netherlands,Argentina,Netherlands,Dennis Bergkamp,,90,False,False
+1998-07-04,Germany,Croatia,Croatia,Robert Jarni,,48,False,False
+1998-07-04,Germany,Croatia,Croatia,Goran Vlaović,,80,False,False
+1998-07-04,Germany,Croatia,Croatia,Davor Šuker,,85,False,False
+1998-07-07,Brazil,Netherlands,Brazil,not applicable Ronaldo,,46,False,False
+1998-07-07,Brazil,Netherlands,Netherlands,Patrick Kluivert,,87,False,False
+1998-07-08,France,Croatia,Croatia,Davor Šuker,,46,False,False
+1998-07-08,France,Croatia,France,Lilian Thuram,,47,False,False
+1998-07-08,France,Croatia,France,Lilian Thuram,,70,False,False
+1998-07-11,Netherlands,Croatia,Croatia,Robert Prosinečki,,14,False,False
+1998-07-11,Netherlands,Croatia,Netherlands,Boudewijn Zenden,,22,False,False
+1998-07-11,Netherlands,Croatia,Croatia,Davor Šuker,,36,False,False
+1998-07-12,Brazil,France,France,Zinedine Zidane,,27,False,False
+1998-07-12,Brazil,France,France,Zinedine Zidane,,46,False,False
+1998-07-12,Brazil,France,France,Emmanuel Petit,,93,False,False
+2002-05-31,France,Senegal,Senegal,Papa Bouba Diop,,30,False,False
+2002-06-01,Republic of Ireland,Cameroon,Cameroon,Patrick M'Boma,,39,False,False
+2002-06-01,Republic of Ireland,Cameroon,Republic of Ireland,Matt Holland,,52,False,False
+2002-06-01,Uruguay,Denmark,Denmark,Jon Dahl Tomasson,,45,False,False
+2002-06-01,Uruguay,Denmark,Uruguay,Darío Rodríguez,,47,False,False
+2002-06-01,Uruguay,Denmark,Denmark,Jon Dahl Tomasson,,83,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Miroslav Klose,,20,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Miroslav Klose,,25,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Michael Ballack,,40,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Carsten Jancker,,46,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Miroslav Klose,,70,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Thomas Linke,,73,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Oliver Bierhoff,,84,False,False
+2002-06-01,Germany,Saudi Arabia,Germany,Bernd Schneider,,91,False,False
+2002-06-02,Argentina,Nigeria,Argentina,Gabriel Batistuta,,63,False,False
+2002-06-02,Paraguay,South Africa,Paraguay,Roque Santa Cruz,,39,False,False
+2002-06-02,Paraguay,South Africa,Paraguay,Francisco Arce,,55,False,False
+2002-06-02,Paraguay,South Africa,South Africa,Teboho Mokoena,,63,False,False
+2002-06-02,Paraguay,South Africa,South Africa,Quinton Fortune,,91,False,True
+2002-06-02,England,Sweden,England,Sol Campbell,,24,False,False
+2002-06-02,England,Sweden,Sweden,Niclas Alexandersson,,59,False,False
+2002-06-02,Spain,Slovenia,Spain,not applicable Raúl,,44,False,False
+2002-06-02,Spain,Slovenia,Spain,Juan Carlos Valerón,,74,False,False
+2002-06-02,Spain,Slovenia,Slovenia,Sebastjan Cimirotič,,82,False,False
+2002-06-02,Spain,Slovenia,Spain,Fernando Hierro,,87,False,True
+2002-06-03,Croatia,Mexico,Mexico,Cuauhtémoc Blanco,,60,False,True
+2002-06-03,Brazil,Turkey,Turkey,Hasan Şaş,,47,False,False
+2002-06-03,Brazil,Turkey,Brazil,not applicable Ronaldo,,50,False,False
+2002-06-03,Brazil,Turkey,Brazil,not applicable Rivaldo,,87,False,True
+2002-06-03,Italy,Ecuador,Italy,Christian Vieri,,7,False,False
+2002-06-03,Italy,Ecuador,Italy,Christian Vieri,,27,False,False
+2002-06-04,China,Costa Rica,Costa Rica,Rónald Gómez,,61,False,False
+2002-06-04,China,Costa Rica,Costa Rica,Mauricio Wright,,65,False,False
+2002-06-04,Japan,Belgium,Belgium,Marc Wilmots,,57,False,False
+2002-06-04,Japan,Belgium,Japan,Takayuki Suzuki,,59,False,False
+2002-06-04,Japan,Belgium,Japan,Junichi Inamoto,,67,False,False
+2002-06-04,Japan,Belgium,Belgium,Peter Van der Heyden,,75,False,False
+2002-06-04,South Korea,Poland,South Korea,Sun-hong Hwang,,26,False,False
+2002-06-04,South Korea,Poland,South Korea,Sang-chul Yoo,,53,False,False
+2002-06-05,Russia,Tunisia,Russia,Yegor Titov,,59,False,False
+2002-06-05,Russia,Tunisia,Russia,Valeri Karpin,,64,False,True
+2002-06-05,United States,Portugal,United States,John O'Brien,,4,False,False
+2002-06-05,United States,Portugal,United States,Jorge Costa,,29,True,False
+2002-06-05,United States,Portugal,United States,Brian McBride,,36,False,False
+2002-06-05,United States,Portugal,Portugal,not applicable Beto,,39,False,False
+2002-06-05,United States,Portugal,Portugal,Jeff Agoos,,71,True,False
+2002-06-05,Germany,Republic of Ireland,Germany,Miroslav Klose,,19,False,False
+2002-06-05,Germany,Republic of Ireland,Republic of Ireland,Robbie Keane,,92,False,False
+2002-06-06,Denmark,Senegal,Denmark,Jon Dahl Tomasson,,16,False,True
+2002-06-06,Denmark,Senegal,Senegal,Salif Diao,,52,False,False
+2002-06-06,Cameroon,Saudi Arabia,Cameroon,Samuel Eto'o,,66,False,False
+2002-06-07,Sweden,Nigeria,Nigeria,Julius Aghahowa,,27,False,False
+2002-06-07,Sweden,Nigeria,Sweden,Henrik Larsson,,35,False,False
+2002-06-07,Sweden,Nigeria,Sweden,Henrik Larsson,,63,False,True
+2002-06-07,Spain,Paraguay,Paraguay,Carles Puyol,,10,True,False
+2002-06-07,Spain,Paraguay,Spain,Fernando Morientes,,53,False,False
+2002-06-07,Spain,Paraguay,Spain,Fernando Morientes,,69,False,False
+2002-06-07,Spain,Paraguay,Spain,Fernando Hierro,,83,False,True
+2002-06-07,Argentina,England,England,David Beckham,,44,False,True
+2002-06-08,South Africa,Slovenia,South Africa,Siyabonga Nomvethe,,4,False,False
+2002-06-08,Italy,Croatia,Italy,Christian Vieri,,55,False,False
+2002-06-08,Italy,Croatia,Croatia,Ivica Olić,,73,False,False
+2002-06-08,Italy,Croatia,Croatia,Milan Rapaić,,76,False,False
+2002-06-08,Brazil,China,Brazil,Roberto Carlos,,15,False,False
+2002-06-08,Brazil,China,Brazil,not applicable Rivaldo,,32,False,False
+2002-06-08,Brazil,China,Brazil,not applicable Ronaldinho,,45,False,True
+2002-06-08,Brazil,China,Brazil,not applicable Ronaldo,,55,False,False
+2002-06-09,Mexico,Ecuador,Ecuador,Agustín Delgado,,5,False,False
+2002-06-09,Mexico,Ecuador,Mexico,Jared Borgetti,,28,False,False
+2002-06-09,Mexico,Ecuador,Mexico,Gerardo Torrado,,57,False,False
+2002-06-09,Costa Rica,Turkey,Turkey,Emre Belözoğlu,,56,False,False
+2002-06-09,Costa Rica,Turkey,Costa Rica,Winston Parks,,86,False,False
+2002-06-09,Japan,Russia,Japan,Junichi Inamoto,,51,False,False
+2002-06-10,South Korea,United States,United States,Clint Mathis,,24,False,False
+2002-06-10,South Korea,United States,South Korea,Jung-hwan Ahn,,78,False,False
+2002-06-10,Tunisia,Belgium,Belgium,Marc Wilmots,,13,False,False
+2002-06-10,Tunisia,Belgium,Tunisia,Raouf Bouzaiene,,17,False,False
+2002-06-10,Portugal,Poland,Portugal,not applicable Pauleta,,14,False,False
+2002-06-10,Portugal,Poland,Portugal,not applicable Pauleta,,65,False,False
+2002-06-10,Portugal,Poland,Portugal,not applicable Pauleta,,77,False,False
+2002-06-10,Portugal,Poland,Portugal,Rui Costa,,88,False,False
+2002-06-11,Denmark,France,Denmark,Dennis Rommedahl,,22,False,False
+2002-06-11,Denmark,France,Denmark,Jon Dahl Tomasson,,67,False,False
+2002-06-11,Senegal,Uruguay,Senegal,Khalilou Fadiga,,20,False,True
+2002-06-11,Senegal,Uruguay,Senegal,Papa Bouba Diop,,26,False,False
+2002-06-11,Senegal,Uruguay,Senegal,Papa Bouba Diop,,38,False,False
+2002-06-11,Senegal,Uruguay,Uruguay,Richard Morales,,46,False,False
+2002-06-11,Senegal,Uruguay,Uruguay,Diego Forlán,,69,False,False
+2002-06-11,Senegal,Uruguay,Uruguay,Álvaro Recoba,,88,False,True
+2002-06-11,Cameroon,Germany,Germany,Marco Bode,,50,False,False
+2002-06-11,Cameroon,Germany,Germany,Miroslav Klose,,79,False,False
+2002-06-11,Saudi Arabia,Republic of Ireland,Republic of Ireland,Robbie Keane,,7,False,False
+2002-06-11,Saudi Arabia,Republic of Ireland,Republic of Ireland,Gary Breen,,61,False,False
+2002-06-11,Saudi Arabia,Republic of Ireland,Republic of Ireland,Damien Duff,,87,False,False
+2002-06-12,Sweden,Argentina,Sweden,Anders Svensson,,59,False,False
+2002-06-12,Sweden,Argentina,Argentina,Hernán Crespo,,88,False,False
+2002-06-12,Slovenia,Paraguay,Slovenia,Milenko Ačimovič,,46,False,False
+2002-06-12,Slovenia,Paraguay,Paraguay,Nelson Cuevas,,65,False,False
+2002-06-12,Slovenia,Paraguay,Paraguay,Jorge Luis Campos,,73,False,False
+2002-06-12,Slovenia,Paraguay,Paraguay,Nelson Cuevas,,84,False,False
+2002-06-12,South Africa,Spain,Spain,not applicable Raúl,,4,False,False
+2002-06-12,South Africa,Spain,South Africa,Benni McCarthy,,31,False,False
+2002-06-12,South Africa,Spain,Spain,Gaizka Mendieta,,46,False,False
+2002-06-12,South Africa,Spain,South Africa,Lucas Radebe,,53,False,False
+2002-06-12,South Africa,Spain,Spain,not applicable Raúl,,56,False,False
+2002-06-13,Costa Rica,Brazil,Brazil,not applicable Ronaldo,,10,False,False
+2002-06-13,Costa Rica,Brazil,Brazil,not applicable Ronaldo,,13,False,False
+2002-06-13,Costa Rica,Brazil,Brazil,not applicable Edmílson,,38,False,False
+2002-06-13,Costa Rica,Brazil,Costa Rica,Paulo Wanchope,,39,False,False
+2002-06-13,Costa Rica,Brazil,Costa Rica,Rónald Gómez,,56,False,False
+2002-06-13,Costa Rica,Brazil,Brazil,not applicable Rivaldo,,62,False,False
+2002-06-13,Costa Rica,Brazil,Brazil,not applicable Júnior,,64,False,False
+2002-06-13,Turkey,China,Turkey,Hasan Şaş,,6,False,False
+2002-06-13,Turkey,China,Turkey,Bülent Korkmaz,,9,False,False
+2002-06-13,Turkey,China,Turkey,Ümit Davala,,85,False,False
+2002-06-13,Ecuador,Croatia,Ecuador,Édison Méndez,,48,False,False
+2002-06-13,Mexico,Italy,Mexico,Jared Borgetti,,34,False,False
+2002-06-13,Mexico,Italy,Italy,Alessandro Del Piero,,85,False,False
+2002-06-14,Belgium,Russia,Belgium,Johan Walem,,7,False,False
+2002-06-14,Belgium,Russia,Russia,Vladimir Beschastnykh,,52,False,False
+2002-06-14,Belgium,Russia,Belgium,Wesley Sonck,,78,False,False
+2002-06-14,Belgium,Russia,Belgium,Marc Wilmots,,82,False,False
+2002-06-14,Belgium,Russia,Russia,Dmitri Sychev,,88,False,False
+2002-06-14,Tunisia,Japan,Japan,Hiroaki Morishima,,48,False,False
+2002-06-14,Tunisia,Japan,Japan,Hidetoshi Nakata,,75,False,False
+2002-06-14,Poland,United States,Poland,Emmanuel Olisadebe,,3,False,False
+2002-06-14,Poland,United States,Poland,Paweł Kryszałowicz,,5,False,False
+2002-06-14,Poland,United States,Poland,Marcin Żewłakow,,66,False,False
+2002-06-14,Poland,United States,United States,Landon Donovan,,83,False,False
+2002-06-14,Portugal,South Korea,South Korea,Ji-sung Park,,70,False,False
+2002-06-15,Germany,Paraguay,Germany,Oliver Neuville,,88,False,False
+2002-06-15,Denmark,England,England,Rio Ferdinand,,5,False,False
+2002-06-15,Denmark,England,England,Michael Owen,,22,False,False
+2002-06-15,Denmark,England,England,Emile Heskey,,44,False,False
+2002-06-16,Sweden,Senegal,Sweden,Henrik Larsson,,11,False,False
+2002-06-16,Sweden,Senegal,Senegal,Henri Camara,,37,False,False
+2002-06-16,Sweden,Senegal,Senegal,Henri Camara,,104,False,False
+2002-06-16,Spain,Republic of Ireland,Spain,Fernando Morientes,,8,False,False
+2002-06-16,Spain,Republic of Ireland,Republic of Ireland,Robbie Keane,,90,False,True
+2002-06-17,Mexico,United States,United States,Brian McBride,,8,False,False
+2002-06-17,Mexico,United States,United States,Landon Donovan,,65,False,False
+2002-06-17,Brazil,Belgium,Brazil,not applicable Rivaldo,,67,False,False
+2002-06-17,Brazil,Belgium,Brazil,not applicable Ronaldo,,87,False,False
+2002-06-18,Japan,Turkey,Turkey,Ümit Davala,,12,False,False
+2002-06-18,South Korea,Italy,Italy,Christian Vieri,,18,False,False
+2002-06-18,South Korea,Italy,South Korea,Ki-hyeon Seol,,88,False,False
+2002-06-18,South Korea,Italy,South Korea,Jung-hwan Ahn,,117,False,False
+2002-06-21,England,Brazil,England,Michael Owen,,23,False,False
+2002-06-21,England,Brazil,Brazil,not applicable Rivaldo,,47,False,False
+2002-06-21,England,Brazil,Brazil,not applicable Ronaldinho,,50,False,False
+2002-06-21,Germany,United States,Germany,Michael Ballack,,39,False,False
+2002-06-22,Senegal,Turkey,Turkey,İlhan Mansız,,94,False,False
+2002-06-25,Germany,South Korea,Germany,Michael Ballack,,75,False,False
+2002-06-26,Brazil,Turkey,Brazil,not applicable Ronaldo,,49,False,False
+2002-06-29,South Korea,Turkey,Turkey,Hakan Şükür,,1,False,False
+2002-06-29,South Korea,Turkey,South Korea,Eul-yong Lee,,9,False,False
+2002-06-29,South Korea,Turkey,Turkey,İlhan Mansız,,13,False,False
+2002-06-29,South Korea,Turkey,Turkey,İlhan Mansız,,32,False,False
+2002-06-29,South Korea,Turkey,South Korea,Chong-gug Song,,93,False,False
+2002-06-30,Germany,Brazil,Brazil,not applicable Ronaldo,,67,False,False
+2002-06-30,Germany,Brazil,Brazil,not applicable Ronaldo,,79,False,False
+2006-06-09,Germany,Costa Rica,Germany,Philipp Lahm,,6,False,False
+2006-06-09,Germany,Costa Rica,Costa Rica,Paulo Wanchope,,12,False,False
+2006-06-09,Germany,Costa Rica,Germany,Miroslav Klose,,17,False,False
+2006-06-09,Germany,Costa Rica,Germany,Miroslav Klose,,61,False,False
+2006-06-09,Germany,Costa Rica,Costa Rica,Paulo Wanchope,,73,False,False
+2006-06-09,Germany,Costa Rica,Germany,Torsten Frings,,87,False,False
+2006-06-09,Poland,Ecuador,Ecuador,Carlos Tenorio,,24,False,False
+2006-06-09,Poland,Ecuador,Ecuador,Agustín Delgado,,80,False,False
+2006-06-10,England,Paraguay,England,Carlos Gamarra,,3,True,False
+2006-06-10,Argentina,Ivory Coast,Argentina,Hernán Crespo,,24,False,False
+2006-06-10,Argentina,Ivory Coast,Argentina,Javier Saviola,,38,False,False
+2006-06-10,Argentina,Ivory Coast,Ivory Coast,Didier Drogba,,82,False,False
+2006-06-11,Serbia and Montenegro,Netherlands,Netherlands,Arjen Robben,,18,False,False
+2006-06-11,Mexico,Iran,Mexico,Omar Bravo,,28,False,False
+2006-06-11,Mexico,Iran,Iran,Yahya Golmohammadi,,36,False,False
+2006-06-11,Mexico,Iran,Mexico,Omar Bravo,,76,False,False
+2006-06-11,Mexico,Iran,Mexico,not applicable Sinha,,79,False,False
+2006-06-11,Angola,Portugal,Portugal,not applicable Pauleta,,4,False,False
+2006-06-12,Australia,Japan,Japan,Shunsuke Nakamura,,26,False,False
+2006-06-12,Australia,Japan,Australia,Tim Cahill,,84,False,False
+2006-06-12,Australia,Japan,Australia,Tim Cahill,,89,False,False
+2006-06-12,Australia,Japan,Australia,John Aloisi,,92,False,False
+2006-06-12,United States,Czech Republic,Czech Republic,Jan Koller,,5,False,False
+2006-06-12,United States,Czech Republic,Czech Republic,Tomáš Rosický,,36,False,False
+2006-06-12,United States,Czech Republic,Czech Republic,Tomáš Rosický,,76,False,False
+2006-06-12,Italy,Ghana,Italy,Andrea Pirlo,,40,False,False
+2006-06-12,Italy,Ghana,Italy,Vincenzo Iaquinta,,83,False,False
+2006-06-13,South Korea,Togo,Togo,Mohamed Kader,,31,False,False
+2006-06-13,South Korea,Togo,South Korea,Chun-soo Lee,,54,False,False
+2006-06-13,South Korea,Togo,South Korea,Jung-hwan Ahn,,72,False,False
+2006-06-13,Brazil,Croatia,Brazil,not applicable Kaká,,44,False,False
+2006-06-14,Spain,Ukraine,Spain,Xabi Alonso,,13,False,False
+2006-06-14,Spain,Ukraine,Spain,David Villa,,17,False,False
+2006-06-14,Spain,Ukraine,Spain,David Villa,,48,False,True
+2006-06-14,Spain,Ukraine,Spain,Fernando Torres,,81,False,False
+2006-06-14,Tunisia,Saudi Arabia,Tunisia,Ziad Jaziri,,23,False,False
+2006-06-14,Tunisia,Saudi Arabia,Saudi Arabia,Yasser Al-Qahtani,,57,False,False
+2006-06-14,Tunisia,Saudi Arabia,Saudi Arabia,Sami Al-Jaber,,84,False,False
+2006-06-14,Tunisia,Saudi Arabia,Tunisia,Radhi Jaïdi,,92,False,False
+2006-06-14,Germany,Poland,Germany,Oliver Neuville,,91,False,False
+2006-06-15,Ecuador,Costa Rica,Ecuador,Carlos Tenorio,,8,False,False
+2006-06-15,Ecuador,Costa Rica,Ecuador,Agustín Delgado,,54,False,False
+2006-06-15,Ecuador,Costa Rica,Ecuador,Iván Kaviedes,,92,False,False
+2006-06-15,England,Trinidad and Tobago,England,Peter Crouch,,83,False,False
+2006-06-15,England,Trinidad and Tobago,England,Steven Gerrard,,91,False,False
+2006-06-15,Sweden,Paraguay,Sweden,Freddie Ljungberg,,89,False,False
+2006-06-16,Argentina,Serbia and Montenegro,Argentina,Maxi Rodríguez,,6,False,False
+2006-06-16,Argentina,Serbia and Montenegro,Argentina,Esteban Cambiasso,,31,False,False
+2006-06-16,Argentina,Serbia and Montenegro,Argentina,Maxi Rodríguez,,41,False,False
+2006-06-16,Argentina,Serbia and Montenegro,Argentina,Hernán Crespo,,78,False,False
+2006-06-16,Argentina,Serbia and Montenegro,Argentina,Carlos Tevez,,84,False,False
+2006-06-16,Argentina,Serbia and Montenegro,Argentina,Lionel Messi,,88,False,False
+2006-06-16,Netherlands,Ivory Coast,Netherlands,Robin van Persie,,23,False,False
+2006-06-16,Netherlands,Ivory Coast,Netherlands,Ruud van Nistelrooy,,27,False,False
+2006-06-16,Netherlands,Ivory Coast,Ivory Coast,Bakari Koné,,38,False,False
+2006-06-17,Portugal,Iran,Portugal,not applicable Deco,,63,False,False
+2006-06-17,Portugal,Iran,Portugal,Cristiano Ronaldo,,80,False,True
+2006-06-17,Czech Republic,Ghana,Ghana,Asamoah Gyan,,2,False,False
+2006-06-17,Czech Republic,Ghana,Ghana,Sulley Muntari,,82,False,False
+2006-06-17,Italy,United States,Italy,Alberto Gilardino,,22,False,False
+2006-06-17,Italy,United States,United States,Cristian Zaccardo,,27,True,False
+2006-06-18,Brazil,Australia,Brazil,not applicable Adriano,,49,False,False
+2006-06-18,Brazil,Australia,Brazil,not applicable Fred,,90,False,False
+2006-06-18,France,South Korea,France,Thierry Henry,,9,False,False
+2006-06-18,France,South Korea,South Korea,Ji-sung Park,,81,False,False
+2006-06-19,Togo,Switzerland,Switzerland,Alexander Frei,,16,False,False
+2006-06-19,Togo,Switzerland,Switzerland,Tranquillo Barnetta,,88,False,False
+2006-06-19,Saudi Arabia,Ukraine,Ukraine,Andriy Rusol,,4,False,False
+2006-06-19,Saudi Arabia,Ukraine,Ukraine,Serhii Rebrov,,36,False,False
+2006-06-19,Saudi Arabia,Ukraine,Ukraine,Andriy Shevchenko,,46,False,False
+2006-06-19,Saudi Arabia,Ukraine,Ukraine,Maksym Kalynychenko,,84,False,False
+2006-06-19,Spain,Tunisia,Tunisia,Jawhar Mnari,,8,False,False
+2006-06-19,Spain,Tunisia,Spain,not applicable Raúl,,71,False,False
+2006-06-19,Spain,Tunisia,Spain,Fernando Torres,,76,False,False
+2006-06-19,Spain,Tunisia,Spain,Fernando Torres,,91,False,True
+2006-06-20,Costa Rica,Poland,Costa Rica,Rónald Gómez,,25,False,False
+2006-06-20,Costa Rica,Poland,Poland,Bartosz Bosacki,,33,False,False
+2006-06-20,Costa Rica,Poland,Poland,Bartosz Bosacki,,65,False,False
+2006-06-20,Ecuador,Germany,Germany,Miroslav Klose,,4,False,False
+2006-06-20,Ecuador,Germany,Germany,Miroslav Klose,,44,False,False
+2006-06-20,Ecuador,Germany,Germany,Lukas Podolski,,57,False,False
+2006-06-20,Paraguay,Trinidad and Tobago,Paraguay,Brent Sancho,,25,True,False
+2006-06-20,Paraguay,Trinidad and Tobago,Paraguay,Nelson Cuevas,,86,False,False
+2006-06-20,Sweden,England,England,Joe Cole,,34,False,False
+2006-06-20,Sweden,England,Sweden,Marcus Allbäck,,51,False,False
+2006-06-20,Sweden,England,England,Steven Gerrard,,85,False,False
+2006-06-20,Sweden,England,Sweden,Henrik Larsson,,90,False,False
+2006-06-21,Iran,Angola,Angola,not applicable Flávio,,60,False,False
+2006-06-21,Iran,Angola,Iran,Sohrab Bakhtiarizadeh,,75,False,False
+2006-06-21,Portugal,Mexico,Portugal,not applicable Maniche,,6,False,False
+2006-06-21,Portugal,Mexico,Portugal,not applicable Simão,,24,False,True
+2006-06-21,Portugal,Mexico,Mexico,Francisco Fonseca,,29,False,False
+2006-06-21,Ivory Coast,Serbia and Montenegro,Serbia and Montenegro,Nikola Žigić,,10,False,False
+2006-06-21,Ivory Coast,Serbia and Montenegro,Serbia and Montenegro,Saša Ilić,,20,False,False
+2006-06-21,Ivory Coast,Serbia and Montenegro,Ivory Coast,Aruna Dindane,,37,False,True
+2006-06-21,Ivory Coast,Serbia and Montenegro,Ivory Coast,Aruna Dindane,,67,False,False
+2006-06-21,Ivory Coast,Serbia and Montenegro,Ivory Coast,Bonaventure Kalou,,86,False,True
+2006-06-22,Czech Republic,Italy,Italy,Marco Materazzi,,26,False,False
+2006-06-22,Czech Republic,Italy,Italy,Filippo Inzaghi,,87,False,False
+2006-06-22,Ghana,United States,Ghana,Haminu Draman,,22,False,False
+2006-06-22,Ghana,United States,United States,Clint Dempsey,,43,False,False
+2006-06-22,Ghana,United States,Ghana,Stephen Appiah,,47,False,True
+2006-06-22,Croatia,Australia,Croatia,Darijo Srna,,2,False,False
+2006-06-22,Croatia,Australia,Australia,Craig Moore,,38,False,True
+2006-06-22,Croatia,Australia,Croatia,Niko Kovač,,56,False,False
+2006-06-22,Croatia,Australia,Australia,Harry Kewell,,79,False,False
+2006-06-22,Japan,Brazil,Japan,Keiji Tamada,,34,False,False
+2006-06-22,Japan,Brazil,Brazil,not applicable Ronaldo,,46,False,False
+2006-06-22,Japan,Brazil,Brazil,Juninho Pernambucano,,53,False,False
+2006-06-22,Japan,Brazil,Brazil,not applicable Gilberto,,59,False,False
+2006-06-22,Japan,Brazil,Brazil,not applicable Ronaldo,,81,False,False
+2006-06-23,Saudi Arabia,Spain,Spain,not applicable Juanito,,36,False,False
+2006-06-23,Ukraine,Tunisia,Ukraine,Andriy Shevchenko,,70,False,True
+2006-06-23,Switzerland,South Korea,Switzerland,Philippe Senderos,,23,False,False
+2006-06-23,Switzerland,South Korea,Switzerland,Alexander Frei,,77,False,False
+2006-06-23,Togo,France,France,Patrick Vieira,,55,False,False
+2006-06-23,Togo,France,France,Thierry Henry,,61,False,False
+2006-06-24,Germany,Sweden,Germany,Lukas Podolski,,4,False,False
+2006-06-24,Germany,Sweden,Germany,Lukas Podolski,,12,False,False
+2006-06-24,Argentina,Mexico,Mexico,Rafael Márquez,,6,False,False
+2006-06-24,Argentina,Mexico,Argentina,Hernán Crespo,,10,False,False
+2006-06-24,Argentina,Mexico,Argentina,Maxi Rodríguez,,98,False,False
+2006-06-25,England,Ecuador,England,David Beckham,,60,False,False
+2006-06-25,Portugal,Netherlands,Portugal,not applicable Maniche,,23,False,False
+2006-06-26,Italy,Australia,Italy,Francesco Totti,,95,False,True
+2006-06-27,Brazil,Ghana,Brazil,not applicable Ronaldo,,5,False,False
+2006-06-27,Brazil,Ghana,Brazil,not applicable Adriano,,46,False,False
+2006-06-27,Brazil,Ghana,Brazil,not applicable Zé Roberto,,84,False,False
+2006-06-27,Spain,France,Spain,David Villa,,28,False,True
+2006-06-27,Spain,France,France,Franck Ribéry,,41,False,False
+2006-06-27,Spain,France,France,Patrick Vieira,,83,False,False
+2006-06-27,Spain,France,France,Zinedine Zidane,,92,False,False
+2006-06-30,Germany,Argentina,Argentina,Roberto Ayala,,49,False,False
+2006-06-30,Germany,Argentina,Germany,Miroslav Klose,,80,False,False
+2006-06-30,Italy,Ukraine,Italy,Gianluca Zambrotta,,6,False,False
+2006-06-30,Italy,Ukraine,Italy,Luca Toni,,59,False,False
+2006-06-30,Italy,Ukraine,Italy,Luca Toni,,69,False,False
+2006-07-01,Brazil,France,France,Thierry Henry,,57,False,False
+2006-07-04,Germany,Italy,Italy,Fabio Grosso,,119,False,False
+2006-07-04,Germany,Italy,Italy,Alessandro Del Piero,,121,False,False
+2006-07-05,Portugal,France,France,Zinedine Zidane,,33,False,True
+2006-07-08,Germany,Portugal,Germany,Bastian Schweinsteiger,,56,False,False
+2006-07-08,Germany,Portugal,Germany,not applicable Petit,,60,True,False
+2006-07-08,Germany,Portugal,Germany,Bastian Schweinsteiger,,78,False,False
+2006-07-08,Germany,Portugal,Portugal,Nuno Gomes,,88,False,False
+2006-07-09,Italy,France,France,Zinedine Zidane,,7,False,True
+2006-07-09,Italy,France,Italy,Marco Materazzi,,19,False,False
+2010-06-11,South Africa,Mexico,South Africa,Siphiwe Tshabalala,,55,False,False
+2010-06-11,South Africa,Mexico,Mexico,Rafael Márquez,,79,False,False
+2010-06-12,South Korea,Greece,South Korea,Jung-soo Lee,,7,False,False
+2010-06-12,South Korea,Greece,South Korea,Ji-sung Park,,52,False,False
+2010-06-12,Argentina,Nigeria,Argentina,Gabriel Heinze,,6,False,False
+2010-06-12,England,United States,England,Steven Gerrard,,4,False,False
+2010-06-12,England,United States,United States,Clint Dempsey,,40,False,False
+2010-06-13,Algeria,Slovenia,Slovenia,Robert Koren,,79,False,False
+2010-06-13,Serbia,Ghana,Ghana,Asamoah Gyan,,85,False,True
+2010-06-13,Germany,Australia,Germany,Lukas Podolski,,8,False,False
+2010-06-13,Germany,Australia,Germany,Miroslav Klose,,26,False,False
+2010-06-13,Germany,Australia,Germany,Thomas Müller,,68,False,False
+2010-06-13,Germany,Australia,Germany,not applicable Cacau,,70,False,False
+2010-06-14,Netherlands,Denmark,Netherlands,Daniel Agger,,46,True,False
+2010-06-14,Netherlands,Denmark,Netherlands,Dirk Kuyt,,85,False,False
+2010-06-14,Japan,Cameroon,Japan,Keisuke Honda,,39,False,False
+2010-06-14,Italy,Paraguay,Paraguay,Antolín Alcaraz,,39,False,False
+2010-06-14,Italy,Paraguay,Italy,Daniele De Rossi,,63,False,False
+2010-06-15,New Zealand,Slovakia,Slovakia,Róbert Vittek,,50,False,False
+2010-06-15,New Zealand,Slovakia,New Zealand,Winston Reid,,93,False,False
+2010-06-15,Brazil,North Korea,Brazil,not applicable Maicon,,55,False,False
+2010-06-15,Brazil,North Korea,Brazil,not applicable Elano,,72,False,False
+2010-06-15,Brazil,North Korea,North Korea,Yun-nam Ji,,89,False,False
+2010-06-16,Honduras,Chile,Chile,Jean Beausejour,,34,False,False
+2010-06-16,Spain,Switzerland,Switzerland,Gélson Fernandes,,52,False,False
+2010-06-16,South Africa,Uruguay,Uruguay,Diego Forlán,,24,False,False
+2010-06-16,South Africa,Uruguay,Uruguay,Diego Forlán,,80,False,True
+2010-06-16,South Africa,Uruguay,Uruguay,Álvaro Pereira,,95,False,False
+2010-06-17,Argentina,South Korea,Argentina,Chu-young Park,,17,True,False
+2010-06-17,Argentina,South Korea,Argentina,Gonzalo Higuaín,,33,False,False
+2010-06-17,Argentina,South Korea,South Korea,Chung-yong Lee,,46,False,False
+2010-06-17,Argentina,South Korea,Argentina,Gonzalo Higuaín,,76,False,False
+2010-06-17,Argentina,South Korea,Argentina,Gonzalo Higuaín,,80,False,False
+2010-06-17,Greece,Nigeria,Nigeria,Kalu Uche,,16,False,False
+2010-06-17,Greece,Nigeria,Greece,Dimitris Salpingidis,,44,False,False
+2010-06-17,Greece,Nigeria,Greece,Vasilis Torosidis,,71,False,False
+2010-06-17,France,Mexico,Mexico,Javier Hernández,,64,False,False
+2010-06-17,France,Mexico,Mexico,Cuauhtémoc Blanco,,79,False,True
+2010-06-18,Germany,Serbia,Serbia,Milan Jovanović,,38,False,False
+2010-06-18,Slovenia,United States,Slovenia,Valter Birsa,,13,False,False
+2010-06-18,Slovenia,United States,Slovenia,Zlatan Ljubijankić,,42,False,False
+2010-06-18,Slovenia,United States,United States,Landon Donovan,,48,False,False
+2010-06-18,Slovenia,United States,United States,Michael Bradley,,82,False,False
+2010-06-19,Netherlands,Japan,Netherlands,Wesley Sneijder,,53,False,False
+2010-06-19,Ghana,Australia,Australia,Brett Holman,,11,False,False
+2010-06-19,Ghana,Australia,Ghana,Asamoah Gyan,,25,False,True
+2010-06-19,Cameroon,Denmark,Cameroon,Samuel Eto'o,,10,False,False
+2010-06-19,Cameroon,Denmark,Denmark,Nicklas Bendtner,,33,False,False
+2010-06-19,Cameroon,Denmark,Denmark,Dennis Rommedahl,,61,False,False
+2010-06-20,Slovakia,Paraguay,Paraguay,Enrique Vera,,27,False,False
+2010-06-20,Slovakia,Paraguay,Paraguay,Cristian Riveros,,86,False,False
+2010-06-20,Italy,New Zealand,New Zealand,Shane Smeltz,,7,False,False
+2010-06-20,Italy,New Zealand,Italy,Vincenzo Iaquinta,,29,False,True
+2010-06-20,Brazil,Ivory Coast,Brazil,Luís Fabiano,,25,False,False
+2010-06-20,Brazil,Ivory Coast,Brazil,Luís Fabiano,,50,False,False
+2010-06-20,Brazil,Ivory Coast,Brazil,not applicable Elano,,62,False,False
+2010-06-20,Brazil,Ivory Coast,Ivory Coast,Didier Drogba,,79,False,False
+2010-06-21,Portugal,North Korea,Portugal,Raul Meireles,,29,False,False
+2010-06-21,Portugal,North Korea,Portugal,not applicable Simão,,53,False,False
+2010-06-21,Portugal,North Korea,Portugal,Hugo Almeida,,56,False,False
+2010-06-21,Portugal,North Korea,Portugal,not applicable Tiago,,60,False,False
+2010-06-21,Portugal,North Korea,Portugal,not applicable Liédson,,81,False,False
+2010-06-21,Portugal,North Korea,Portugal,Cristiano Ronaldo,,87,False,False
+2010-06-21,Portugal,North Korea,Portugal,not applicable Tiago,,89,False,False
+2010-06-21,Chile,Switzerland,Chile,Mark González,,75,False,False
+2010-06-21,Spain,Honduras,Spain,David Villa,,17,False,False
+2010-06-21,Spain,Honduras,Spain,David Villa,,51,False,False
+2010-06-22,France,South Africa,South Africa,Bongani Khumalo,,20,False,False
+2010-06-22,France,South Africa,South Africa,Katlego Mphela,,37,False,False
+2010-06-22,France,South Africa,France,Florent Malouda,,70,False,False
+2010-06-22,Mexico,Uruguay,Uruguay,Luis Suárez,,43,False,False
+2010-06-22,Greece,Argentina,Argentina,Martín Demichelis,,77,False,False
+2010-06-22,Greece,Argentina,Argentina,Martín Palermo,,89,False,False
+2010-06-22,Nigeria,South Korea,Nigeria,Kalu Uche,,12,False,False
+2010-06-22,Nigeria,South Korea,South Korea,Jung-soo Lee,,38,False,False
+2010-06-22,Nigeria,South Korea,South Korea,Chu-young Park,,49,False,False
+2010-06-22,Nigeria,South Korea,Nigeria,not applicable Yakubu,,69,False,True
+2010-06-23,Slovenia,England,England,Jermain Defoe,,23,False,False
+2010-06-23,United States,Algeria,United States,Landon Donovan,,91,False,False
+2010-06-23,Australia,Serbia,Australia,Tim Cahill,,69,False,False
+2010-06-23,Australia,Serbia,Australia,Brett Holman,,73,False,False
+2010-06-23,Australia,Serbia,Serbia,Marko Pantelić,,84,False,False
+2010-06-23,Ghana,Germany,Germany,Mesut Özil,,60,False,False
+2010-06-24,Slovakia,Italy,Slovakia,Róbert Vittek,,25,False,False
+2010-06-24,Slovakia,Italy,Slovakia,Róbert Vittek,,73,False,False
+2010-06-24,Slovakia,Italy,Italy,Antonio Di Natale,,81,False,False
+2010-06-24,Slovakia,Italy,Slovakia,Kamil Kopúnek,,89,False,False
+2010-06-24,Slovakia,Italy,Italy,Fabio Quagliarella,,92,False,False
+2010-06-24,Cameroon,Netherlands,Netherlands,Robin van Persie,,36,False,False
+2010-06-24,Cameroon,Netherlands,Cameroon,Samuel Eto'o,,65,False,True
+2010-06-24,Cameroon,Netherlands,Netherlands,Klaas-Jan Huntelaar,,83,False,False
+2010-06-24,Denmark,Japan,Japan,Keisuke Honda,,17,False,False
+2010-06-24,Denmark,Japan,Japan,Yasuhito Endō,,30,False,False
+2010-06-24,Denmark,Japan,Denmark,Jon Dahl Tomasson,,81,False,False
+2010-06-24,Denmark,Japan,Japan,Shinji Okazaki,,87,False,False
+2010-06-25,North Korea,Ivory Coast,Ivory Coast,Yaya Touré,,14,False,False
+2010-06-25,North Korea,Ivory Coast,Ivory Coast,not applicable Romaric,,20,False,False
+2010-06-25,North Korea,Ivory Coast,Ivory Coast,Salomon Kalou,,82,False,False
+2010-06-25,Chile,Spain,Spain,David Villa,,24,False,False
+2010-06-25,Chile,Spain,Spain,Andrés Iniesta,,37,False,False
+2010-06-25,Chile,Spain,Chile,Rodrigo Millar,,47,False,False
+2010-06-26,Uruguay,South Korea,Uruguay,Luis Suárez,,8,False,False
+2010-06-26,Uruguay,South Korea,South Korea,Chung-yong Lee,,68,False,False
+2010-06-26,Uruguay,South Korea,Uruguay,Luis Suárez,,80,False,False
+2010-06-26,United States,Ghana,Ghana,Kevin-Prince Boateng,,5,False,False
+2010-06-26,United States,Ghana,United States,Landon Donovan,,62,False,True
+2010-06-26,United States,Ghana,Ghana,Asamoah Gyan,,93,False,False
+2010-06-27,Germany,England,Germany,Miroslav Klose,,20,False,False
+2010-06-27,Germany,England,Germany,Lukas Podolski,,32,False,False
+2010-06-27,Germany,England,England,Matthew Upson,,37,False,False
+2010-06-27,Germany,England,Germany,Thomas Müller,,67,False,False
+2010-06-27,Germany,England,Germany,Thomas Müller,,70,False,False
+2010-06-27,Argentina,Mexico,Argentina,Carlos Tevez,,26,False,False
+2010-06-27,Argentina,Mexico,Argentina,Gonzalo Higuaín,,33,False,False
+2010-06-27,Argentina,Mexico,Argentina,Carlos Tevez,,52,False,False
+2010-06-27,Argentina,Mexico,Mexico,Javier Hernández,,71,False,False
+2010-06-28,Netherlands,Slovakia,Netherlands,Arjen Robben,,18,False,False
+2010-06-28,Netherlands,Slovakia,Netherlands,Wesley Sneijder,,84,False,False
+2010-06-28,Netherlands,Slovakia,Slovakia,Róbert Vittek,,94,False,True
+2010-06-28,Brazil,Chile,Brazil,not applicable Juan,,35,False,False
+2010-06-28,Brazil,Chile,Brazil,Luís Fabiano,,38,False,False
+2010-06-28,Brazil,Chile,Brazil,not applicable Robinho,,59,False,False
+2010-06-29,Spain,Portugal,Spain,David Villa,,63,False,False
+2010-07-02,Netherlands,Brazil,Brazil,not applicable Robinho,,10,False,False
+2010-07-02,Netherlands,Brazil,Netherlands,Wesley Sneijder,,53,False,False
+2010-07-02,Netherlands,Brazil,Netherlands,Wesley Sneijder,,68,False,False
+2010-07-02,Uruguay,Ghana,Ghana,Sulley Muntari,,47,False,False
+2010-07-02,Uruguay,Ghana,Uruguay,Diego Forlán,,55,False,False
+2010-07-03,Argentina,Germany,Germany,Thomas Müller,,3,False,False
+2010-07-03,Argentina,Germany,Germany,Miroslav Klose,,68,False,False
+2010-07-03,Argentina,Germany,Germany,Arne Friedrich,,74,False,False
+2010-07-03,Argentina,Germany,Germany,Miroslav Klose,,89,False,False
+2010-07-03,Paraguay,Spain,Spain,David Villa,,83,False,False
+2010-07-06,Uruguay,Netherlands,Netherlands,Giovanni van Bronckhorst,,18,False,False
+2010-07-06,Uruguay,Netherlands,Uruguay,Diego Forlán,,41,False,False
+2010-07-06,Uruguay,Netherlands,Netherlands,Wesley Sneijder,,70,False,False
+2010-07-06,Uruguay,Netherlands,Netherlands,Arjen Robben,,73,False,False
+2010-07-06,Uruguay,Netherlands,Uruguay,Maxi Pereira,,92,False,False
+2010-07-07,Germany,Spain,Spain,Carles Puyol,,73,False,False
+2010-07-10,Uruguay,Germany,Germany,Thomas Müller,,19,False,False
+2010-07-10,Uruguay,Germany,Uruguay,Edinson Cavani,,28,False,False
+2010-07-10,Uruguay,Germany,Uruguay,Diego Forlán,,51,False,False
+2010-07-10,Uruguay,Germany,Germany,Marcell Jansen,,56,False,False
+2010-07-10,Uruguay,Germany,Germany,Sami Khedira,,82,False,False
+2010-07-11,Netherlands,Spain,Spain,Andrés Iniesta,,116,False,False
+2014-06-12,Brazil,Croatia,Croatia,not applicable Marcelo,,12,True,False
+2014-06-12,Brazil,Croatia,Brazil,not applicable Neymar,,29,False,False
+2014-06-12,Brazil,Croatia,Brazil,not applicable Neymar,,71,False,True
+2014-06-12,Brazil,Croatia,Brazil,not applicable Oscar,,91,False,False
+2014-06-13,Mexico,Cameroon,Mexico,Oribe Peralta,,61,False,False
+2014-06-13,Spain,Netherlands,Spain,Xabi Alonso,,27,False,True
+2014-06-13,Spain,Netherlands,Netherlands,Robin van Persie,,44,False,False
+2014-06-13,Spain,Netherlands,Netherlands,Arjen Robben,,53,False,False
+2014-06-13,Spain,Netherlands,Netherlands,Stefan de Vrij,,64,False,False
+2014-06-13,Spain,Netherlands,Netherlands,Robin van Persie,,72,False,False
+2014-06-13,Spain,Netherlands,Netherlands,Arjen Robben,,80,False,False
+2014-06-13,Chile,Australia,Chile,Alexis Sánchez,,12,False,False
+2014-06-13,Chile,Australia,Chile,Jorge Valdivia,,14,False,False
+2014-06-13,Chile,Australia,Australia,Tim Cahill,,35,False,False
+2014-06-13,Chile,Australia,Chile,Jean Beausejour,,92,False,False
+2014-06-14,Colombia,Greece,Colombia,Pablo Armero,,5,False,False
+2014-06-14,Colombia,Greece,Colombia,Teófilo Gutiérrez,,58,False,False
+2014-06-14,Colombia,Greece,Colombia,James Rodríguez,,93,False,False
+2014-06-14,Uruguay,Costa Rica,Uruguay,Edinson Cavani,,24,False,True
+2014-06-14,Uruguay,Costa Rica,Costa Rica,Joel Campbell,,54,False,False
+2014-06-14,Uruguay,Costa Rica,Costa Rica,Óscar Duarte,,57,False,False
+2014-06-14,Uruguay,Costa Rica,Costa Rica,Marco Ureña,,84,False,False
+2014-06-14,England,Italy,Italy,Claudio Marchisio,,35,False,False
+2014-06-14,England,Italy,England,Daniel Sturridge,,37,False,False
+2014-06-14,England,Italy,Italy,Mario Balotelli,,50,False,False
+2014-06-14,Ivory Coast,Japan,Japan,Keisuke Honda,,16,False,False
+2014-06-14,Ivory Coast,Japan,Ivory Coast,Wilfried Bony,,64,False,False
+2014-06-14,Ivory Coast,Japan,Ivory Coast,not applicable Gervinho,,66,False,False
+2014-06-15,Switzerland,Ecuador,Ecuador,Enner Valencia,,22,False,False
+2014-06-15,Switzerland,Ecuador,Switzerland,Admir Mehmedi,,48,False,False
+2014-06-15,Switzerland,Ecuador,Switzerland,Haris Seferovic,,93,False,False
+2014-06-15,France,Honduras,France,Karim Benzema,,45,False,True
+2014-06-15,France,Honduras,France,Noel Valladares,,48,True,False
+2014-06-15,France,Honduras,France,Karim Benzema,,72,False,False
+2014-06-15,Argentina,Bosnia and Herzegovina,Argentina,Sead Kolašinac,,3,True,False
+2014-06-15,Argentina,Bosnia and Herzegovina,Argentina,Lionel Messi,,65,False,False
+2014-06-15,Argentina,Bosnia and Herzegovina,Bosnia and Herzegovina,Vedad Ibišević,,85,False,False
+2014-06-16,Germany,Portugal,Germany,Thomas Müller,,12,False,True
+2014-06-16,Germany,Portugal,Germany,Mats Hummels,,32,False,False
+2014-06-16,Germany,Portugal,Germany,Thomas Müller,,46,False,False
+2014-06-16,Germany,Portugal,Germany,Thomas Müller,,78,False,False
+2014-06-16,Ghana,United States,United States,Clint Dempsey,,1,False,False
+2014-06-16,Ghana,United States,Ghana,André Ayew,,82,False,False
+2014-06-16,Ghana,United States,United States,John Brooks,,86,False,False
+2014-06-17,Belgium,Algeria,Algeria,Sofiane Feghouli,,25,False,True
+2014-06-17,Belgium,Algeria,Belgium,Marouane Fellaini,,70,False,False
+2014-06-17,Belgium,Algeria,Belgium,Dries Mertens,,80,False,False
+2014-06-17,Russia,South Korea,South Korea,Keun-ho Lee,,68,False,False
+2014-06-17,Russia,South Korea,Russia,Aleksandr Kerzhakov,,74,False,False
+2014-06-18,Australia,Netherlands,Netherlands,Arjen Robben,,20,False,False
+2014-06-18,Australia,Netherlands,Australia,Tim Cahill,,21,False,False
+2014-06-18,Australia,Netherlands,Australia,Mile Jedinak,,54,False,True
+2014-06-18,Australia,Netherlands,Netherlands,Robin van Persie,,58,False,False
+2014-06-18,Australia,Netherlands,Netherlands,Memphis Depay,,68,False,False
+2014-06-18,Spain,Chile,Chile,Eduardo Vargas,,20,False,False
+2014-06-18,Spain,Chile,Chile,Charles Aránguiz,,43,False,False
+2014-06-18,Cameroon,Croatia,Croatia,Ivica Olić,,11,False,False
+2014-06-18,Cameroon,Croatia,Croatia,Ivan Perišić,,48,False,False
+2014-06-18,Cameroon,Croatia,Croatia,Mario Mandžukić,,61,False,False
+2014-06-18,Cameroon,Croatia,Croatia,Mario Mandžukić,,73,False,False
+2014-06-19,Colombia,Ivory Coast,Colombia,James Rodríguez,,64,False,False
+2014-06-19,Colombia,Ivory Coast,Colombia,Juan Fernando Quintero,,70,False,False
+2014-06-19,Colombia,Ivory Coast,Ivory Coast,not applicable Gervinho,,73,False,False
+2014-06-19,Uruguay,England,Uruguay,Luis Suárez,,39,False,False
+2014-06-19,Uruguay,England,England,Wayne Rooney,,75,False,False
+2014-06-19,Uruguay,England,Uruguay,Luis Suárez,,85,False,False
+2014-06-20,Italy,Costa Rica,Costa Rica,Bryan Ruiz,,44,False,False
+2014-06-20,Switzerland,France,France,Olivier Giroud,,17,False,False
+2014-06-20,Switzerland,France,France,Blaise Matuidi,,18,False,False
+2014-06-20,Switzerland,France,France,Mathieu Valbuena,,40,False,False
+2014-06-20,Switzerland,France,France,Karim Benzema,,67,False,False
+2014-06-20,Switzerland,France,France,Moussa Sissoko,,73,False,False
+2014-06-20,Switzerland,France,Switzerland,Blerim Džemaili,,81,False,False
+2014-06-20,Switzerland,France,Switzerland,Granit Xhaka,,87,False,False
+2014-06-20,Honduras,Ecuador,Honduras,Carlo Costly,,31,False,False
+2014-06-20,Honduras,Ecuador,Ecuador,Enner Valencia,,34,False,False
+2014-06-20,Honduras,Ecuador,Ecuador,Enner Valencia,,65,False,False
+2014-06-21,Argentina,Iran,Argentina,Lionel Messi,,91,False,False
+2014-06-21,Germany,Ghana,Germany,Mario Götze,,51,False,False
+2014-06-21,Germany,Ghana,Ghana,André Ayew,,54,False,False
+2014-06-21,Germany,Ghana,Ghana,Asamoah Gyan,,63,False,False
+2014-06-21,Germany,Ghana,Germany,Miroslav Klose,,71,False,False
+2014-06-21,Nigeria,Bosnia and Herzegovina,Nigeria,Peter Odemwingie,,29,False,False
+2014-06-22,Belgium,Russia,Belgium,Divock Origi,,88,False,False
+2014-06-22,South Korea,Algeria,Algeria,Islam Slimani,,26,False,False
+2014-06-22,South Korea,Algeria,Algeria,Rafik Halliche,,28,False,False
+2014-06-22,South Korea,Algeria,Algeria,Abdelmoumene Djabou,,38,False,False
+2014-06-22,South Korea,Algeria,South Korea,Heung-min Son,,50,False,False
+2014-06-22,South Korea,Algeria,Algeria,Yacine Brahimi,,62,False,False
+2014-06-22,South Korea,Algeria,South Korea,Ja-cheol Koo,,72,False,False
+2014-06-22,United States,Portugal,Portugal,not applicable Nani,,5,False,False
+2014-06-22,United States,Portugal,United States,Jermaine Jones,,64,False,False
+2014-06-22,United States,Portugal,United States,Clint Dempsey,,81,False,False
+2014-06-22,United States,Portugal,Portugal,Silvestre Varela,,95,False,False
+2014-06-23,Australia,Spain,Spain,David Villa,,36,False,False
+2014-06-23,Australia,Spain,Spain,Fernando Torres,,69,False,False
+2014-06-23,Australia,Spain,Spain,Juan Mata,,82,False,False
+2014-06-23,Netherlands,Chile,Netherlands,Leroy Fer,,77,False,False
+2014-06-23,Netherlands,Chile,Netherlands,Memphis Depay,,92,False,False
+2014-06-23,Cameroon,Brazil,Brazil,not applicable Neymar,,17,False,False
+2014-06-23,Cameroon,Brazil,Cameroon,Joël Matip,,26,False,False
+2014-06-23,Cameroon,Brazil,Brazil,not applicable Neymar,,35,False,False
+2014-06-23,Cameroon,Brazil,Brazil,not applicable Fred,,49,False,False
+2014-06-23,Cameroon,Brazil,Brazil,not applicable Fernandinho,,84,False,False
+2014-06-23,Croatia,Mexico,Mexico,Rafael Márquez,,72,False,False
+2014-06-23,Croatia,Mexico,Mexico,Andrés Guardado,,75,False,False
+2014-06-23,Croatia,Mexico,Mexico,Javier Hernández,,82,False,False
+2014-06-23,Croatia,Mexico,Croatia,Ivan Perišić,,87,False,False
+2014-06-24,Italy,Uruguay,Uruguay,Diego Godín,,81,False,False
+2014-06-24,Japan,Colombia,Colombia,Juan Cuadrado,,17,False,True
+2014-06-24,Japan,Colombia,Japan,Shinji Okazaki,,46,False,False
+2014-06-24,Japan,Colombia,Colombia,Jackson Martínez,,55,False,False
+2014-06-24,Japan,Colombia,Colombia,Jackson Martínez,,82,False,False
+2014-06-24,Japan,Colombia,Colombia,James Rodríguez,,90,False,False
+2014-06-24,Greece,Ivory Coast,Greece,Andreas Samaris,,42,False,False
+2014-06-24,Greece,Ivory Coast,Ivory Coast,Wilfried Bony,,74,False,False
+2014-06-24,Greece,Ivory Coast,Greece,Georgios Samaras,,93,False,True
+2014-06-25,Bosnia and Herzegovina,Iran,Bosnia and Herzegovina,Edin Džeko,,23,False,False
+2014-06-25,Bosnia and Herzegovina,Iran,Bosnia and Herzegovina,Miralem Pjanić,,59,False,False
+2014-06-25,Bosnia and Herzegovina,Iran,Iran,Reza Ghoochannejhad,,82,False,False
+2014-06-25,Bosnia and Herzegovina,Iran,Bosnia and Herzegovina,Avdija Vršajević,,83,False,False
+2014-06-25,Nigeria,Argentina,Argentina,Lionel Messi,,3,False,False
+2014-06-25,Nigeria,Argentina,Nigeria,Ahmed Musa,,4,False,False
+2014-06-25,Nigeria,Argentina,Argentina,Lionel Messi,,46,False,False
+2014-06-25,Nigeria,Argentina,Nigeria,Ahmed Musa,,47,False,False
+2014-06-25,Nigeria,Argentina,Argentina,Marcos Rojo,,50,False,False
+2014-06-25,Honduras,Switzerland,Switzerland,Xherdan Shaqiri,,6,False,False
+2014-06-25,Honduras,Switzerland,Switzerland,Xherdan Shaqiri,,31,False,False
+2014-06-25,Honduras,Switzerland,Switzerland,Xherdan Shaqiri,,71,False,False
+2014-06-26,Portugal,Ghana,Portugal,John Boye,,31,True,False
+2014-06-26,Portugal,Ghana,Ghana,Asamoah Gyan,,57,False,False
+2014-06-26,Portugal,Ghana,Portugal,Cristiano Ronaldo,,80,False,False
+2014-06-26,United States,Germany,Germany,Thomas Müller,,55,False,False
+2014-06-26,Algeria,Russia,Russia,Aleksandr Kokorin,,6,False,False
+2014-06-26,Algeria,Russia,Algeria,Islam Slimani,,60,False,False
+2014-06-26,South Korea,Belgium,Belgium,Jan Vertonghen,,78,False,False
+2014-06-28,Brazil,Chile,Brazil,David Luiz,,18,False,False
+2014-06-28,Brazil,Chile,Chile,Alexis Sánchez,,32,False,False
+2014-06-28,Colombia,Uruguay,Colombia,James Rodríguez,,28,False,False
+2014-06-28,Colombia,Uruguay,Colombia,James Rodríguez,,50,False,False
+2014-06-29,Netherlands,Mexico,Mexico,Giovani dos Santos,,48,False,False
+2014-06-29,Netherlands,Mexico,Netherlands,Wesley Sneijder,,88,False,False
+2014-06-29,Netherlands,Mexico,Netherlands,Klaas-Jan Huntelaar,,94,False,True
+2014-06-29,Costa Rica,Greece,Costa Rica,Bryan Ruiz,,52,False,False
+2014-06-29,Costa Rica,Greece,Greece,Sokratis Papastathopoulos,,91,False,False
+2014-06-30,France,Nigeria,France,Paul Pogba,,79,False,False
+2014-06-30,France,Nigeria,France,Joseph Yobo,,92,True,False
+2014-06-30,Germany,Algeria,Germany,André Schürrle,,92,False,False
+2014-06-30,Germany,Algeria,Germany,Mesut Özil,,120,False,False
+2014-06-30,Germany,Algeria,Algeria,Abdelmoumene Djabou,,121,False,False
+2014-07-01,Argentina,Switzerland,Argentina,Ángel Di María,,118,False,False
+2014-07-01,Belgium,United States,Belgium,Kevin De Bruyne,,93,False,False
+2014-07-01,Belgium,United States,Belgium,Romelu Lukaku,,105,False,False
+2014-07-01,Belgium,United States,United States,Julian Green,,107,False,False
+2014-07-04,France,Germany,Germany,Mats Hummels,,13,False,False
+2014-07-04,Brazil,Colombia,Brazil,Thiago Silva,,7,False,False
+2014-07-04,Brazil,Colombia,Brazil,David Luiz,,69,False,False
+2014-07-04,Brazil,Colombia,Colombia,James Rodríguez,,80,False,True
+2014-07-05,Argentina,Belgium,Argentina,Gonzalo Higuaín,,8,False,False
+2014-07-08,Brazil,Germany,Germany,Thomas Müller,,11,False,False
+2014-07-08,Brazil,Germany,Germany,Miroslav Klose,,23,False,False
+2014-07-08,Brazil,Germany,Germany,Toni Kroos,,24,False,False
+2014-07-08,Brazil,Germany,Germany,Toni Kroos,,26,False,False
+2014-07-08,Brazil,Germany,Germany,Sami Khedira,,29,False,False
+2014-07-08,Brazil,Germany,Germany,André Schürrle,,69,False,False
+2014-07-08,Brazil,Germany,Germany,André Schürrle,,79,False,False
+2014-07-08,Brazil,Germany,Brazil,not applicable Oscar,,90,False,False
+2014-07-12,Brazil,Netherlands,Netherlands,Robin van Persie,,3,False,True
+2014-07-12,Brazil,Netherlands,Netherlands,Daley Blind,,17,False,False
+2014-07-12,Brazil,Netherlands,Netherlands,Georginio Wijnaldum,,91,False,False
+2014-07-13,Germany,Argentina,Germany,Mario Götze,,113,False,False
+2018-06-14,Russia,Saudi Arabia,Russia,Yury Gazinsky,,12,False,False
+2018-06-14,Russia,Saudi Arabia,Russia,Denis Cheryshev,,43,False,False
+2018-06-14,Russia,Saudi Arabia,Russia,Artem Dzyuba,,71,False,False
+2018-06-14,Russia,Saudi Arabia,Russia,Denis Cheryshev,,91,False,False
+2018-06-14,Russia,Saudi Arabia,Russia,Aleksandr Golovin,,94,False,False
+2018-06-15,Egypt,Uruguay,Uruguay,José Giménez,,89,False,False
+2018-06-15,Morocco,Iran,Iran,Aziz Bouhaddouz,,95,True,False
+2018-06-15,Portugal,Spain,Portugal,Cristiano Ronaldo,,4,False,True
+2018-06-15,Portugal,Spain,Spain,Diego Costa,,24,False,False
+2018-06-15,Portugal,Spain,Portugal,Cristiano Ronaldo,,44,False,False
+2018-06-15,Portugal,Spain,Spain,Diego Costa,,55,False,False
+2018-06-15,Portugal,Spain,Spain,not applicable Nacho,,58,False,False
+2018-06-15,Portugal,Spain,Portugal,Cristiano Ronaldo,,88,False,False
+2018-06-16,France,Australia,France,Antoine Griezmann,,58,False,True
+2018-06-16,France,Australia,Australia,Mile Jedinak,,62,False,True
+2018-06-16,France,Australia,France,Aziz Behich,,81,True,False
+2018-06-16,Argentina,Iceland,Argentina,Sergio Agüero,,19,False,False
+2018-06-16,Argentina,Iceland,Iceland,Alfreð Finnbogason,,23,False,False
+2018-06-16,Peru,Denmark,Denmark,Yussuf Poulsen,,59,False,False
+2018-06-16,Croatia,Nigeria,Croatia,Peter Etebo,,32,True,False
+2018-06-16,Croatia,Nigeria,Croatia,Luka Modrić,,71,False,True
+2018-06-17,Costa Rica,Serbia,Serbia,Aleksandar Kolarov,,56,False,False
+2018-06-17,Germany,Mexico,Mexico,Hirving Lozano,,35,False,False
+2018-06-17,Brazil,Switzerland,Brazil,Philippe Coutinho,,20,False,False
+2018-06-17,Brazil,Switzerland,Switzerland,Steven Zuber,,50,False,False
+2018-06-18,Sweden,South Korea,Sweden,Andreas Granqvist,,65,False,True
+2018-06-18,Belgium,Panama,Belgium,Dries Mertens,,47,False,False
+2018-06-18,Belgium,Panama,Belgium,Romelu Lukaku,,69,False,False
+2018-06-18,Belgium,Panama,Belgium,Romelu Lukaku,,75,False,False
+2018-06-18,Tunisia,England,England,Harry Kane,,11,False,False
+2018-06-18,Tunisia,England,Tunisia,Ferjani Sassi,,35,False,True
+2018-06-18,Tunisia,England,England,Harry Kane,,91,False,False
+2018-06-19,Colombia,Japan,Japan,Shinji Kagawa,,6,False,True
+2018-06-19,Colombia,Japan,Colombia,Juan Fernando Quintero,,39,False,False
+2018-06-19,Colombia,Japan,Japan,Yuya Osako,,73,False,False
+2018-06-19,Poland,Senegal,Senegal,Thiago Cionek,,37,True,False
+2018-06-19,Poland,Senegal,Senegal,M'Baye Niang,,60,False,False
+2018-06-19,Poland,Senegal,Poland,Grzegorz Krychowiak,,86,False,False
+2018-06-19,Russia,Egypt,Russia,Ahmed Fathy,,47,True,False
+2018-06-19,Russia,Egypt,Russia,Denis Cheryshev,,59,False,False
+2018-06-19,Russia,Egypt,Russia,Artem Dzyuba,,62,False,False
+2018-06-19,Russia,Egypt,Egypt,Mohamed Salah,,73,False,True
+2018-06-20,Portugal,Morocco,Portugal,Cristiano Ronaldo,,4,False,False
+2018-06-20,Uruguay,Saudi Arabia,Uruguay,Luis Suárez,,23,False,False
+2018-06-20,Iran,Spain,Spain,Diego Costa,,54,False,False
+2018-06-21,Denmark,Australia,Denmark,Christian Eriksen,,7,False,False
+2018-06-21,Denmark,Australia,Australia,Mile Jedinak,,38,False,True
+2018-06-21,France,Peru,France,Kylian Mbappé,,34,False,False
+2018-06-21,Argentina,Croatia,Croatia,Ante Rebić,,53,False,False
+2018-06-21,Argentina,Croatia,Croatia,Luka Modrić,,80,False,False
+2018-06-21,Argentina,Croatia,Croatia,Ivan Rakitić,,91,False,False
+2018-06-22,Brazil,Costa Rica,Brazil,Philippe Coutinho,,91,False,False
+2018-06-22,Brazil,Costa Rica,Brazil,not applicable Neymar,,97,False,False
+2018-06-22,Nigeria,Iceland,Nigeria,Ahmed Musa,,49,False,False
+2018-06-22,Nigeria,Iceland,Nigeria,Ahmed Musa,,75,False,False
+2018-06-22,Serbia,Switzerland,Serbia,Aleksandar Mitrović,,5,False,False
+2018-06-22,Serbia,Switzerland,Switzerland,Granit Xhaka,,52,False,False
+2018-06-22,Serbia,Switzerland,Switzerland,Xherdan Shaqiri,,90,False,False
+2018-06-23,Belgium,Tunisia,Belgium,Eden Hazard,,6,False,True
+2018-06-23,Belgium,Tunisia,Belgium,Romelu Lukaku,,16,False,False
+2018-06-23,Belgium,Tunisia,Tunisia,Dylan Bronn,,18,False,False
+2018-06-23,Belgium,Tunisia,Belgium,Romelu Lukaku,,48,False,False
+2018-06-23,Belgium,Tunisia,Belgium,Eden Hazard,,51,False,False
+2018-06-23,Belgium,Tunisia,Belgium,Michy Batshuayi,,90,False,False
+2018-06-23,Belgium,Tunisia,Tunisia,Wahbi Khazri,,93,False,False
+2018-06-23,South Korea,Mexico,Mexico,Carlos Vela,,26,False,True
+2018-06-23,South Korea,Mexico,Mexico,Javier Hernández,,66,False,False
+2018-06-23,South Korea,Mexico,South Korea,Heung-min Son,,93,False,False
+2018-06-23,Germany,Sweden,Sweden,Ola Toivonen,,32,False,False
+2018-06-23,Germany,Sweden,Germany,Marco Reus,,48,False,False
+2018-06-23,Germany,Sweden,Germany,Toni Kroos,,95,False,False
+2018-06-24,England,Panama,England,John Stones,,8,False,False
+2018-06-24,England,Panama,England,Harry Kane,,22,False,True
+2018-06-24,England,Panama,England,Jesse Lingard,,36,False,False
+2018-06-24,England,Panama,England,John Stones,,40,False,False
+2018-06-24,England,Panama,England,Harry Kane,,46,False,True
+2018-06-24,England,Panama,England,Harry Kane,,62,False,False
+2018-06-24,England,Panama,Panama,Felipe Baloy,,78,False,False
+2018-06-24,Japan,Senegal,Senegal,Sadio Mané,,11,False,False
+2018-06-24,Japan,Senegal,Japan,Takashi Inui,,34,False,False
+2018-06-24,Japan,Senegal,Senegal,Moussa Wagué,,71,False,False
+2018-06-24,Japan,Senegal,Japan,Keisuke Honda,,78,False,False
+2018-06-24,Poland,Colombia,Colombia,Yerry Mina,,40,False,False
+2018-06-24,Poland,Colombia,Colombia,Radamel Falcao,,70,False,False
+2018-06-24,Poland,Colombia,Colombia,Juan Cuadrado,,75,False,False
+2018-06-25,Saudi Arabia,Egypt,Egypt,Mohamed Salah,,22,False,False
+2018-06-25,Saudi Arabia,Egypt,Saudi Arabia,Salman Al-Faraj,,51,False,True
+2018-06-25,Saudi Arabia,Egypt,Saudi Arabia,Salem Al-Dawsari,,95,False,False
+2018-06-25,Uruguay,Russia,Uruguay,Luis Suárez,,10,False,False
+2018-06-25,Uruguay,Russia,Uruguay,Denis Cheryshev,,23,True,False
+2018-06-25,Uruguay,Russia,Uruguay,Edinson Cavani,,90,False,False
+2018-06-25,Spain,Morocco,Morocco,Khalid Boutaïb,,14,False,False
+2018-06-25,Spain,Morocco,Spain,not applicable Isco,,19,False,False
+2018-06-25,Spain,Morocco,Morocco,Youssef En-Nesyri,,81,False,False
+2018-06-25,Spain,Morocco,Spain,Iago Aspas,,91,False,False
+2018-06-25,Iran,Portugal,Portugal,Ricardo Quaresma,,45,False,False
+2018-06-25,Iran,Portugal,Iran,Karim Ansarifard,,93,False,True
+2018-06-26,Australia,Peru,Peru,André Carrillo,,18,False,False
+2018-06-26,Australia,Peru,Peru,Paolo Guerrero,,50,False,False
+2018-06-26,Iceland,Croatia,Croatia,Milan Badelj,,53,False,False
+2018-06-26,Iceland,Croatia,Iceland,Gylfi Sigurðsson,,76,False,True
+2018-06-26,Iceland,Croatia,Croatia,Ivan Perišić,,90,False,False
+2018-06-26,Nigeria,Argentina,Argentina,Lionel Messi,,14,False,False
+2018-06-26,Nigeria,Argentina,Nigeria,Victor Moses,,51,False,True
+2018-06-26,Nigeria,Argentina,Argentina,Marcos Rojo,,86,False,False
+2018-06-27,South Korea,Germany,South Korea,Young-gwon Kim,,92,False,False
+2018-06-27,South Korea,Germany,South Korea,Heung-min Son,,96,False,False
+2018-06-27,Mexico,Sweden,Sweden,Ludwig Augustinsson,,50,False,False
+2018-06-27,Mexico,Sweden,Sweden,Andreas Granqvist,,62,False,True
+2018-06-27,Mexico,Sweden,Sweden,Edson Álvarez,,74,True,False
+2018-06-27,Serbia,Brazil,Brazil,not applicable Paulinho,,36,False,False
+2018-06-27,Serbia,Brazil,Brazil,Thiago Silva,,68,False,False
+2018-06-27,Switzerland,Costa Rica,Switzerland,Blerim Džemaili,,31,False,False
+2018-06-27,Switzerland,Costa Rica,Costa Rica,Kendall Waston,,56,False,False
+2018-06-27,Switzerland,Costa Rica,Switzerland,Josip Drmić,,88,False,False
+2018-06-27,Switzerland,Costa Rica,Costa Rica,Yann Sommer,,93,True,False
+2018-06-28,Japan,Poland,Poland,Jan Bednarek,,59,False,False
+2018-06-28,Senegal,Colombia,Colombia,Yerry Mina,,74,False,False
+2018-06-28,England,Belgium,Belgium,Adnan Januzaj,,51,False,False
+2018-06-28,Panama,Tunisia,Panama,Yassine Meriah,,33,True,False
+2018-06-28,Panama,Tunisia,Tunisia,Fakhreddine Ben Youssef,,51,False,False
+2018-06-28,Panama,Tunisia,Tunisia,Wahbi Khazri,,66,False,False
+2018-06-30,France,Argentina,France,Antoine Griezmann,,13,False,True
+2018-06-30,France,Argentina,Argentina,Ángel Di María,,41,False,False
+2018-06-30,France,Argentina,Argentina,Gabriel Mercado,,48,False,False
+2018-06-30,France,Argentina,France,Benjamin Pavard,,57,False,False
+2018-06-30,France,Argentina,France,Kylian Mbappé,,64,False,False
+2018-06-30,France,Argentina,France,Kylian Mbappé,,68,False,False
+2018-06-30,France,Argentina,Argentina,Sergio Agüero,,93,False,False
+2018-06-30,Uruguay,Portugal,Uruguay,Edinson Cavani,,7,False,False
+2018-06-30,Uruguay,Portugal,Portugal,not applicable Pepe,,55,False,False
+2018-06-30,Uruguay,Portugal,Uruguay,Edinson Cavani,,62,False,False
+2018-07-01,Spain,Russia,Spain,Sergei Ignashevich,,12,True,False
+2018-07-01,Spain,Russia,Russia,Artem Dzyuba,,41,False,True
+2018-07-01,Croatia,Denmark,Denmark,Mathias Jørgensen,,1,False,False
+2018-07-01,Croatia,Denmark,Croatia,Mario Mandžukić,,4,False,False
+2018-07-02,Brazil,Mexico,Brazil,not applicable Neymar,,51,False,False
+2018-07-02,Brazil,Mexico,Brazil,Roberto Firmino,,88,False,False
+2018-07-02,Belgium,Japan,Japan,Genki Haraguchi,,48,False,False
+2018-07-02,Belgium,Japan,Japan,Takashi Inui,,52,False,False
+2018-07-02,Belgium,Japan,Belgium,Jan Vertonghen,,69,False,False
+2018-07-02,Belgium,Japan,Belgium,Marouane Fellaini,,74,False,False
+2018-07-02,Belgium,Japan,Belgium,Nacer Chadli,,94,False,False
+2018-07-03,Sweden,Switzerland,Sweden,Emil Forsberg,,66,False,False
+2018-07-03,Colombia,England,England,Harry Kane,,57,False,True
+2018-07-03,Colombia,England,Colombia,Yerry Mina,,93,False,False
+2018-07-06,Uruguay,France,France,Raphaël Varane,,40,False,False
+2018-07-06,Uruguay,France,France,Antoine Griezmann,,61,False,False
+2018-07-06,Brazil,Belgium,Belgium,not applicable Fernandinho,,13,True,False
+2018-07-06,Brazil,Belgium,Belgium,Kevin De Bruyne,,31,False,False
+2018-07-06,Brazil,Belgium,Brazil,Renato Augusto,,76,False,False
+2018-07-07,Sweden,England,England,Harry Maguire,,30,False,False
+2018-07-07,Sweden,England,England,Dele Alli,,59,False,False
+2018-07-07,Russia,Croatia,Russia,Denis Cheryshev,,31,False,False
+2018-07-07,Russia,Croatia,Croatia,Andrej Kramarić,,39,False,False
+2018-07-07,Russia,Croatia,Croatia,Domagoj Vida,,101,False,False
+2018-07-07,Russia,Croatia,Russia,Mário Fernandes,,115,False,False
+2018-07-10,France,Belgium,France,Samuel Umtiti,,51,False,False
+2018-07-11,Croatia,England,England,Kieran Trippier,,5,False,False
+2018-07-11,Croatia,England,Croatia,Ivan Perišić,,68,False,False
+2018-07-11,Croatia,England,Croatia,Mario Mandžukić,,109,False,False
+2018-07-14,Belgium,England,Belgium,Thomas Meunier,,4,False,False
+2018-07-14,Belgium,England,Belgium,Eden Hazard,,82,False,False
+2018-07-15,France,Croatia,France,Mario Mandžukić,,18,True,False
+2018-07-15,France,Croatia,Croatia,Ivan Perišić,,28,False,False
+2018-07-15,France,Croatia,France,Antoine Griezmann,,38,False,True
+2018-07-15,France,Croatia,France,Paul Pogba,,59,False,False
+2018-07-15,France,Croatia,France,Kylian Mbappé,,65,False,False
+2018-07-15,France,Croatia,Croatia,Mario Mandžukić,,69,False,False
+2022-11-20,Qatar,Ecuador,Ecuador,Enner Valencia,,16,False,True
+2022-11-20,Qatar,Ecuador,Ecuador,Enner Valencia,,31,False,False
+2022-11-21,England,Iran,England,Jude Bellingham,,35,False,False
+2022-11-21,England,Iran,England,Bukayo Saka,,43,False,False
+2022-11-21,England,Iran,England,Raheem Sterling,,46,False,False
+2022-11-21,England,Iran,England,Bukayo Saka,,62,False,False
+2022-11-21,England,Iran,Iran,Mehdi Taremi,,65,False,False
+2022-11-21,England,Iran,England,Marcus Rashford,,71,False,False
+2022-11-21,England,Iran,England,Jack Grealish,,90,False,False
+2022-11-21,England,Iran,Iran,Mehdi Taremi,,103,False,True
+2022-11-21,Senegal,Netherlands,Netherlands,Cody Gakpo,,84,False,False
+2022-11-21,Senegal,Netherlands,Netherlands,Davy Klaassen,,99,False,False
+2022-11-21,United States,Wales,United States,Timothy Weah,,36,False,False
+2022-11-21,United States,Wales,Wales,Gareth Bale,,82,False,True
+2022-11-22,Argentina,Saudi Arabia,Argentina,Lionel Messi,,10,False,True
+2022-11-22,Argentina,Saudi Arabia,Saudi Arabia,Saleh Al-Shehri,,48,False,False
+2022-11-22,Argentina,Saudi Arabia,Saudi Arabia,Salem Al-Dawsari,,53,False,False
+2022-11-22,France,Australia,Australia,Craig Goodwin,,9,False,False
+2022-11-22,France,Australia,France,Adrien Rabiot,,27,False,False
+2022-11-22,France,Australia,France,Olivier Giroud,,32,False,False
+2022-11-22,France,Australia,France,Kylian Mbappé,,68,False,False
+2022-11-22,France,Australia,France,Olivier Giroud,,71,False,False
+2022-11-23,Germany,Japan,Germany,İlkay Gündoğan,,33,False,True
+2022-11-23,Germany,Japan,Japan,Ritsu Dōan,,75,False,False
+2022-11-23,Germany,Japan,Japan,Takuma Asano,,83,False,False
+2022-11-23,Spain,Costa Rica,Spain,Dani Olmo,,11,False,False
+2022-11-23,Spain,Costa Rica,Spain,Marco Asensio,,21,False,False
+2022-11-23,Spain,Costa Rica,Spain,Ferran Torres,,31,False,True
+2022-11-23,Spain,Costa Rica,Spain,Ferran Torres,,54,False,False
+2022-11-23,Spain,Costa Rica,Spain,not applicable Gavi,,74,False,False
+2022-11-23,Spain,Costa Rica,Spain,Carlos Soler,,90,False,False
+2022-11-23,Spain,Costa Rica,Spain,Álvaro Morata,,92,False,False
+2022-11-23,Belgium,Canada,Belgium,Michy Batshuayi,,44,False,False
+2022-11-24,Switzerland,Cameroon,Switzerland,Breel Embolo,,48,False,False
+2022-11-24,Portugal,Ghana,Portugal,Cristiano Ronaldo,,65,False,True
+2022-11-24,Portugal,Ghana,Ghana,André Ayew,,73,False,False
+2022-11-24,Portugal,Ghana,Portugal,João Félix,,78,False,False
+2022-11-24,Portugal,Ghana,Portugal,Rafael Leão,,80,False,False
+2022-11-24,Portugal,Ghana,Ghana,Osman Bukari,,89,False,False
+2022-11-24,Brazil,Serbia,Brazil,not applicable Richarlison,,62,False,False
+2022-11-24,Brazil,Serbia,Brazil,not applicable Richarlison,,73,False,False
+2022-11-25,Wales,Iran,Iran,Rouzbeh Cheshmi,,98,False,False
+2022-11-25,Wales,Iran,Iran,Ramin Rezaeian,,101,False,False
+2022-11-25,Qatar,Senegal,Senegal,Boulaye Dia,,41,False,False
+2022-11-25,Qatar,Senegal,Senegal,Famara Diédhiou,,48,False,False
+2022-11-25,Qatar,Senegal,Qatar,Mohammed Muntari,,78,False,False
+2022-11-25,Qatar,Senegal,Senegal,Bamba Dieng,,84,False,False
+2022-11-25,Netherlands,Ecuador,Netherlands,Cody Gakpo,,6,False,False
+2022-11-25,Netherlands,Ecuador,Ecuador,Enner Valencia,,49,False,False
+2022-11-26,Tunisia,Australia,Australia,Mitchell Duke,,23,False,False
+2022-11-26,Poland,Saudi Arabia,Poland,Piotr Zieliński,,39,False,False
+2022-11-26,Poland,Saudi Arabia,Poland,Robert Lewandowski,,82,False,False
+2022-11-26,France,Denmark,France,Kylian Mbappé,,61,False,False
+2022-11-26,France,Denmark,Denmark,Andreas Christensen,,68,False,False
+2022-11-26,France,Denmark,France,Kylian Mbappé,,86,False,False
+2022-11-26,Argentina,Mexico,Argentina,Lionel Messi,,64,False,False
+2022-11-26,Argentina,Mexico,Argentina,Enzo Fernández,,87,False,False
+2022-11-27,Japan,Costa Rica,Costa Rica,Keysher Fuller,,81,False,False
+2022-11-27,Belgium,Morocco,Morocco,Romain Saïss,,73,False,False
+2022-11-27,Belgium,Morocco,Morocco,Zakaria Aboukhlal,,92,False,False
+2022-11-27,Croatia,Canada,Canada,Alphonso Davies,,2,False,False
+2022-11-27,Croatia,Canada,Croatia,Andrej Kramarić,,36,False,False
+2022-11-27,Croatia,Canada,Croatia,Marko Livaja,,44,False,False
+2022-11-27,Croatia,Canada,Croatia,Andrej Kramarić,,70,False,False
+2022-11-27,Croatia,Canada,Croatia,Lovro Majer,,94,False,False
+2022-11-27,Spain,Germany,Spain,Álvaro Morata,,62,False,False
+2022-11-27,Spain,Germany,Germany,Niclas Füllkrug,,83,False,False
+2022-11-28,Cameroon,Serbia,Cameroon,Jean-Charles Castelletto,,29,False,False
+2022-11-28,Cameroon,Serbia,Serbia,Strahinja Pavlović,,46,False,False
+2022-11-28,Cameroon,Serbia,Serbia,Sergej Milinković-Savić,,48,False,False
+2022-11-28,Cameroon,Serbia,Serbia,Aleksandar Mitrović,,53,False,False
+2022-11-28,Cameroon,Serbia,Cameroon,Vincent Aboubakar,,63,False,False
+2022-11-28,Cameroon,Serbia,Cameroon,Eric Maxim Choupo-Moting,,66,False,False
+2022-11-28,South Korea,Ghana,Ghana,Mohammed Salisu,,24,False,False
+2022-11-28,South Korea,Ghana,Ghana,Mohammed Kudus,,34,False,False
+2022-11-28,South Korea,Ghana,South Korea,Cho Gue-sung,,58,False,False
+2022-11-28,South Korea,Ghana,South Korea,Cho Gue-sung,,61,False,False
+2022-11-28,South Korea,Ghana,Ghana,Mohammed Kudus,,68,False,False
+2022-11-28,Brazil,Switzerland,Brazil,not applicable Casemiro,,83,False,False
+2022-11-28,Portugal,Uruguay,Portugal,Bruno Fernandes,,54,False,False
+2022-11-28,Portugal,Uruguay,Portugal,Bruno Fernandes,,93,False,True
+2022-11-29,Ecuador,Senegal,Senegal,Ismaïla Sarr,,44,False,True
+2022-11-29,Ecuador,Senegal,Ecuador,Moisés Caicedo,,67,False,False
+2022-11-29,Ecuador,Senegal,Senegal,Kalidou Koulibaly,,70,False,False
+2022-11-29,Netherlands,Qatar,Netherlands,Cody Gakpo,,26,False,False
+2022-11-29,Netherlands,Qatar,Netherlands,Frenkie de Jong,,49,False,False
+2022-11-29,Iran,United States,United States,Christian Pulisic,,38,False,False
+2022-11-29,Wales,England,England,Marcus Rashford,,50,False,False
+2022-11-29,Wales,England,England,Phil Foden,,51,False,False
+2022-11-29,Wales,England,England,Marcus Rashford,,68,False,False
+2022-11-30,Australia,Denmark,Australia,Mathew Leckie,,60,False,False
+2022-11-30,Tunisia,France,Tunisia,Wahbi Khazri,,58,False,False
+2022-11-30,Poland,Argentina,Argentina,Alexis Mac Allister,,46,False,False
+2022-11-30,Poland,Argentina,Argentina,Julián Álvarez,,67,False,False
+2022-11-30,Saudi Arabia,Mexico,Mexico,Henry Martín,,47,False,False
+2022-11-30,Saudi Arabia,Mexico,Mexico,Luis Chávez,,52,False,False
+2022-11-30,Saudi Arabia,Mexico,Saudi Arabia,Salem Al-Dawsari,,95,False,False
+2022-12-01,Canada,Morocco,Morocco,Hakim Ziyech,,4,False,False
+2022-12-01,Canada,Morocco,Morocco,Youssef En-Nesyri,,23,False,False
+2022-12-01,Canada,Morocco,Canada,Nayef Aguerd,,40,True,False
+2022-12-01,Costa Rica,Germany,Germany,Serge Gnabry,,10,False,False
+2022-12-01,Costa Rica,Germany,Costa Rica,Yeltsin Tejeda,,58,False,False
+2022-12-01,Costa Rica,Germany,Costa Rica,Juan Pablo Vargas,,70,False,False
+2022-12-01,Costa Rica,Germany,Germany,Kai Havertz,,73,False,False
+2022-12-01,Costa Rica,Germany,Germany,Kai Havertz,,85,False,False
+2022-12-01,Costa Rica,Germany,Germany,Niclas Füllkrug,,89,False,False
+2022-12-01,Japan,Spain,Spain,Álvaro Morata,,11,False,False
+2022-12-01,Japan,Spain,Japan,Ritsu Dōan,,48,False,False
+2022-12-01,Japan,Spain,Japan,Ao Tanaka,,51,False,False
+2022-12-02,Ghana,Uruguay,Uruguay,Giorgian De Arrascaeta,,26,False,False
+2022-12-02,Ghana,Uruguay,Uruguay,Giorgian De Arrascaeta,,32,False,False
+2022-12-02,South Korea,Portugal,Portugal,Ricardo Horta,,5,False,False
+2022-12-02,South Korea,Portugal,South Korea,Young-gwon Kim,,27,False,False
+2022-12-02,South Korea,Portugal,South Korea,Hee-chan Hwang,,91,False,False
+2022-12-02,Cameroon,Brazil,Cameroon,Vincent Aboubakar,,92,False,False
+2022-12-02,Serbia,Switzerland,Switzerland,Xherdan Shaqiri,,20,False,False
+2022-12-02,Serbia,Switzerland,Serbia,Aleksandar Mitrović,,26,False,False
+2022-12-02,Serbia,Switzerland,Serbia,Dušan Vlahović,,35,False,False
+2022-12-02,Serbia,Switzerland,Switzerland,Breel Embolo,,44,False,False
+2022-12-02,Serbia,Switzerland,Switzerland,Remo Freuler,,48,False,False
+2022-12-03,Netherlands,United States,Netherlands,Memphis Depay,,10,False,False
+2022-12-03,Netherlands,United States,Netherlands,Daley Blind,,46,False,False
+2022-12-03,Netherlands,United States,United States,Haji Wright,,76,False,False
+2022-12-03,Netherlands,United States,Netherlands,Denzel Dumfries,,81,False,False
+2022-12-03,Argentina,Australia,Argentina,Lionel Messi,,35,False,False
+2022-12-03,Argentina,Australia,Argentina,Julián Álvarez,,57,False,False
+2022-12-03,Argentina,Australia,Australia,Enzo Fernández,,77,True,False
+2022-12-04,France,Poland,France,Olivier Giroud,,44,False,False
+2022-12-04,France,Poland,France,Kylian Mbappé,,74,False,False
+2022-12-04,France,Poland,France,Kylian Mbappé,,91,False,False
+2022-12-04,France,Poland,Poland,Robert Lewandowski,,99,False,True
+2022-12-04,England,Senegal,England,Jordan Henderson,,38,False,False
+2022-12-04,England,Senegal,England,Harry Kane,,48,False,False
+2022-12-04,England,Senegal,England,Bukayo Saka,,57,False,False
+2022-12-05,Japan,Croatia,Japan,Daizen Maeda,,43,False,False
+2022-12-05,Japan,Croatia,Croatia,Ivan Perišić,,55,False,False
+2022-12-05,Brazil,South Korea,Brazil,Vinícius Júnior,,7,False,False
+2022-12-05,Brazil,South Korea,Brazil,not applicable Neymar,,13,False,True
+2022-12-05,Brazil,South Korea,Brazil,not applicable Richarlison,,29,False,False
+2022-12-05,Brazil,South Korea,Brazil,Lucas Paquetá,,36,False,False
+2022-12-05,Brazil,South Korea,South Korea,Paik Seung-ho,,76,False,False
+2022-12-06,Portugal,Switzerland,Portugal,Gonçalo Ramos,,17,False,False
+2022-12-06,Portugal,Switzerland,Portugal,not applicable Pepe,,33,False,False
+2022-12-06,Portugal,Switzerland,Portugal,Gonçalo Ramos,,51,False,False
+2022-12-06,Portugal,Switzerland,Portugal,Raphaël Guerreiro,,55,False,False
+2022-12-06,Portugal,Switzerland,Switzerland,Manuel Akanji,,58,False,False
+2022-12-06,Portugal,Switzerland,Portugal,Gonçalo Ramos,,67,False,False
+2022-12-06,Portugal,Switzerland,Portugal,Rafael Leão,,92,False,False
+2022-12-09,Croatia,Brazil,Brazil,not applicable Neymar,,106,False,False
+2022-12-09,Croatia,Brazil,Croatia,Bruno Petković,,117,False,False
+2022-12-09,Netherlands,Argentina,Argentina,Nahuel Molina,,35,False,False
+2022-12-09,Netherlands,Argentina,Argentina,Lionel Messi,,73,False,True
+2022-12-09,Netherlands,Argentina,Netherlands,Wout Weghorst,,83,False,False
+2022-12-09,Netherlands,Argentina,Netherlands,Wout Weghorst,,101,False,False
+2022-12-10,Morocco,Portugal,Morocco,Youssef En-Nesyri,,42,False,False
+2022-12-10,England,France,France,Aurélien Tchouaméni,,17,False,False
+2022-12-10,England,France,England,Harry Kane,,54,False,True
+2022-12-10,England,France,France,Olivier Giroud,,78,False,False
+2022-12-13,Argentina,Croatia,Argentina,Lionel Messi,,34,False,True
+2022-12-13,Argentina,Croatia,Argentina,Julián Álvarez,,39,False,False
+2022-12-13,Argentina,Croatia,Argentina,Julián Álvarez,,69,False,False
+2022-12-14,France,Morocco,France,Théo Hernandez,,5,False,False
+2022-12-14,France,Morocco,France,Randal Kolo Muani,,79,False,False
+2022-12-17,Croatia,Morocco,Croatia,Joško Gvardiol,,7,False,False
+2022-12-17,Croatia,Morocco,Morocco,Achraf Dari,,9,False,False
+2022-12-17,Croatia,Morocco,Croatia,Mislav Oršić,,42,False,False
+2022-12-18,Argentina,France,Argentina,Lionel Messi,,23,False,True
+2022-12-18,Argentina,France,Argentina,Ángel Di María,,36,False,False
+2022-12-18,Argentina,France,France,Kylian Mbappé,,80,False,True
+2022-12-18,Argentina,France,France,Kylian Mbappé,,81,False,False
+2022-12-18,Argentina,France,Argentina,Lionel Messi,,108,False,False
+2022-12-18,Argentina,France,France,Kylian Mbappé,,118,False,True

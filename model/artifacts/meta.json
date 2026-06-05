@@ -1,0 +1,22 @@
+{
+  "model_name": "CatBoost",
+  "accuracy": 0.5625,
+  "balanced_accuracy": 0.5217,
+  "log_loss": 1.1141,
+  "validation_year": 2024,
+  "training_rows": 704,
+  "train_rows": 640,
+  "validation_rows": 64,
+  "features": 91,
+  "numeric_features": 88,
+  "categorical_features": 3,
+  "train_from_year": 2006,
+  "data_start": "2006-06-09",
+  "data_end": "2024-07-15",
+  "validation_metrics": {
+    "accuracy": 0.5625,
+    "balanced_accuracy": 0.5217,
+    "log_loss": 1.1141
+  },
+  "model_policy": "fixed_catboost"
+}

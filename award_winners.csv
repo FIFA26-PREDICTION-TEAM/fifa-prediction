@@ -1,0 +1,142 @@
+tournament_id,tournament_name,date,award_id,award_name,player_id,player_name,team
+WC-1930,1930 FIFA Men's World Cup,1930-07-30,A-4,Golden Boot,P-56486,Guillermo Stábile,Argentina
+WC-1930,1930 FIFA Men's World Cup,1930-07-30,A-5,Silver Boot,P-18628,Pedro Cea,Uruguay
+WC-1930,1930 FIFA Men's World Cup,1930-07-30,A-6,Bronze Boot,P-71973,Bert Patenaude,United States
+WC-1934,1934 FIFA Men's World Cup,1934-06-10,A-4,Golden Boot,P-60513,Oldřich Nejedlý,Czechoslovakia
+WC-1934,1934 FIFA Men's World Cup,1934-06-10,A-5,Silver Boot,P-77348,Edmund Conen,Germany
+WC-1934,1934 FIFA Men's World Cup,1934-06-10,A-5,Silver Boot,P-56703,Angelo Schiavio,Italy
+WC-1938,1938 FIFA Men's World Cup,1938-06-19,A-4,Golden Boot,P-09730,not applicable Leônidas,Brazil
+WC-1938,1938 FIFA Men's World Cup,1938-06-19,A-5,Silver Boot,P-65885,Silvio Piola,Italy
+WC-1938,1938 FIFA Men's World Cup,1938-06-19,A-5,Silver Boot,P-89034,György Sárosi,Hungary
+WC-1938,1938 FIFA Men's World Cup,1938-06-19,A-5,Silver Boot,P-67652,Gyula Zsengellér,Hungary
+WC-1950,1950 FIFA Men's World Cup,1950-07-16,A-4,Golden Boot,P-49381,not applicable Ademir,Brazil
+WC-1950,1950 FIFA Men's World Cup,1950-07-16,A-5,Silver Boot,P-18523,Oscar Míguez,Uruguay
+WC-1950,1950 FIFA Men's World Cup,1950-07-16,A-6,Bronze Boot,P-26928,Estanislau Basora,Spain
+WC-1950,1950 FIFA Men's World Cup,1950-07-16,A-6,Bronze Boot,P-22428,not applicable Chico,Brazil
+WC-1950,1950 FIFA Men's World Cup,1950-07-16,A-6,Bronze Boot,P-16302,Alcides Ghiggia,Uruguay
+WC-1950,1950 FIFA Men's World Cup,1950-07-16,A-6,Bronze Boot,P-65220,Telmo Zarra,Spain
+WC-1954,1954 FIFA Men's World Cup,1954-07-04,A-4,Golden Boot,P-07028,Sándor Kocsis,Hungary
+WC-1954,1954 FIFA Men's World Cup,1954-07-04,A-5,Silver Boot,P-14406,Josef Hügi,Switzerland
+WC-1954,1954 FIFA Men's World Cup,1954-07-04,A-5,Silver Boot,P-05766,Max Morlock,West Germany
+WC-1954,1954 FIFA Men's World Cup,1954-07-04,A-5,Silver Boot,P-85257,Erich Probst,Austria
+WC-1958,1958 FIFA Men's World Cup,1958-06-29,A-4,Golden Boot,P-77939,Just Fontaine,France
+WC-1958,1958 FIFA Men's World Cup,1958-06-29,A-5,Silver Boot,P-38906,not applicable Pelé,Brazil
+WC-1958,1958 FIFA Men's World Cup,1958-06-29,A-5,Silver Boot,P-08136,Helmut Rahn,West Germany
+WC-1958,1958 FIFA Men's World Cup,1958-06-29,A-8,Best Young Player,P-38906,not applicable Pelé,Brazil
+WC-1962,1962 FIFA Men's World Cup,1962-07-17,A-4,Golden Boot,P-21188,Flórián Albert,Hungary
+WC-1962,1962 FIFA Men's World Cup,1962-07-17,A-4,Golden Boot,P-46080,not applicable Garrincha,Brazil
+WC-1962,1962 FIFA Men's World Cup,1962-07-17,A-4,Golden Boot,P-11702,Valentin Ivanov,Soviet Union
+WC-1962,1962 FIFA Men's World Cup,1962-07-17,A-4,Golden Boot,P-55024,Dražan Jerković,Yugoslavia
+WC-1962,1962 FIFA Men's World Cup,1962-07-17,A-4,Golden Boot,P-22224,Leonel Sánchez,Chile
+WC-1962,1962 FIFA Men's World Cup,1962-07-17,A-4,Golden Boot,P-45310,not applicable Vavá,Brazil
+WC-1962,1962 FIFA Men's World Cup,1962-07-17,A-8,Best Young Player,P-21188,Flórián Albert,Hungary
+WC-1966,1966 FIFA Men's World Cup,1966-07-30,A-4,Golden Boot,P-74747,not applicable Eusébio,Portugal
+WC-1966,1966 FIFA Men's World Cup,1966-07-30,A-5,Silver Boot,P-12272,Helmut Haller,West Germany
+WC-1966,1966 FIFA Men's World Cup,1966-07-30,A-6,Bronze Boot,P-72864,Franz Beckenbauer,West Germany
+WC-1966,1966 FIFA Men's World Cup,1966-07-30,A-6,Bronze Boot,P-82516,Ferenc Bene,Hungary
+WC-1966,1966 FIFA Men's World Cup,1966-07-30,A-6,Bronze Boot,P-34802,Geoff Hurst,England
+WC-1966,1966 FIFA Men's World Cup,1966-07-30,A-6,Bronze Boot,P-53800,Valeriy Porkujan,Soviet Union
+WC-1966,1966 FIFA Men's World Cup,1966-07-30,A-8,Best Young Player,P-72864,Franz Beckenbauer,West Germany
+WC-1970,1970 FIFA Men's World Cup,1970-06-21,A-4,Golden Boot,P-72441,Gerd Müller,West Germany
+WC-1970,1970 FIFA Men's World Cup,1970-06-21,A-5,Silver Boot,P-77430,not applicable Jairzinho,Brazil
+WC-1970,1970 FIFA Men's World Cup,1970-06-21,A-6,Bronze Boot,P-96979,Teófilo Cubillas,Peru
+WC-1970,1970 FIFA Men's World Cup,1970-06-21,A-8,Best Young Player,P-96979,Teófilo Cubillas,Peru
+WC-1974,1974 FIFA Men's World Cup,1974-07-07,A-4,Golden Boot,P-21597,Grzegorz Lato,Poland
+WC-1974,1974 FIFA Men's World Cup,1974-07-07,A-5,Silver Boot,P-16991,Johan Neeskens,Netherlands
+WC-1974,1974 FIFA Men's World Cup,1974-07-07,A-5,Silver Boot,P-92867,Andrzej Szarmach,Poland
+WC-1974,1974 FIFA Men's World Cup,1974-07-07,A-8,Best Young Player,P-48883,Władysław Żmuda,Poland
+WC-1978,1978 FIFA Men's World Cup,1978-06-25,A-1,Golden Ball,P-35082,Mario Kempes,Argentina
+WC-1978,1978 FIFA Men's World Cup,1978-06-25,A-2,Silver Ball,P-91717,Paolo Rossi,Italy
+WC-1978,1978 FIFA Men's World Cup,1978-06-25,A-3,Bronze Ball,P-89519,not applicable Dirceu,Brazil
+WC-1978,1978 FIFA Men's World Cup,1978-06-25,A-4,Golden Boot,P-35082,Mario Kempes,Argentina
+WC-1978,1978 FIFA Men's World Cup,1978-06-25,A-5,Silver Boot,P-96979,Teófilo Cubillas,Peru
+WC-1978,1978 FIFA Men's World Cup,1978-06-25,A-6,Bronze Boot,P-63266,Rob Rensenbrink,Netherlands
+WC-1978,1978 FIFA Men's World Cup,1978-06-25,A-8,Best Young Player,P-03775,Antonio Cabrini,Italy
+WC-1982,1982 FIFA Men's World Cup,1982-07-11,A-1,Golden Ball,P-91717,Paolo Rossi,Italy
+WC-1982,1982 FIFA Men's World Cup,1982-07-11,A-2,Silver Ball,P-35736,not applicable Falcão,Brazil
+WC-1982,1982 FIFA Men's World Cup,1982-07-11,A-3,Bronze Ball,P-59574,Karl-Heinz Rummenigge,West Germany
+WC-1982,1982 FIFA Men's World Cup,1982-07-11,A-4,Golden Boot,P-91717,Paolo Rossi,Italy
+WC-1982,1982 FIFA Men's World Cup,1982-07-11,A-5,Silver Boot,P-59574,Karl-Heinz Rummenigge,West Germany
+WC-1982,1982 FIFA Men's World Cup,1982-07-11,A-6,Bronze Boot,P-37483,not applicable Zico,Brazil
+WC-1982,1982 FIFA Men's World Cup,1982-07-11,A-8,Best Young Player,P-69834,Manuel Amoros,France
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-1,Golden Ball,P-80404,Diego Maradona,Argentina
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-2,Silver Ball,P-07171,Harald Schumacher,West Germany
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-3,Bronze Ball,P-36502,Preben Elkjær,Denmark
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-4,Golden Boot,P-36651,Gary Lineker,England
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-5,Silver Boot,P-12940,Emilio Butragueño,Spain
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-5,Silver Boot,P-90635,not applicable Careca,Brazil
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-5,Silver Boot,P-80404,Diego Maradona,Argentina
+WC-1986,1986 FIFA Men's World Cup,1986-06-29,A-8,Best Young Player,P-97414,Enzo Scifo,Belgium
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-1,Golden Ball,P-76544,Salvatore Schillaci,Italy
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-2,Silver Ball,P-49502,Lothar Matthäus,West Germany
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-3,Bronze Ball,P-80404,Diego Maradona,Argentina
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-4,Golden Boot,P-76544,Salvatore Schillaci,Italy
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-5,Silver Boot,P-71260,Tomáš Skuhravý,Czechoslovakia
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-6,Bronze Boot,P-36651,Gary Lineker,England
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-6,Bronze Boot,P-58080,Roger Milla,Cameroon
+WC-1990,1990 FIFA Men's World Cup,1990-07-08,A-8,Best Young Player,P-62861,Robert Prosinečki,Yugoslavia
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-1,Golden Ball,P-61251,not applicable Romário,Brazil
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-2,Silver Ball,P-78756,Roberto Baggio,Italy
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-3,Bronze Ball,P-81648,Hristo Stoichkov,Bulgaria
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-4,Golden Boot,P-73354,Oleg Salenko,Russia
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-4,Golden Boot,P-81648,Hristo Stoichkov,Bulgaria
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-6,Bronze Boot,P-60371,Kennet Andersson,Sweden
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-6,Bronze Boot,P-61251,not applicable Romário,Brazil
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-7,Golden Glove,P-00531,Michel Preud'homme,Belgium
+WC-1994,1994 FIFA Men's World Cup,1994-07-17,A-8,Best Young Player,P-33834,Marc Overmars,Netherlands
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-1,Golden Ball,P-62722,not applicable Ronaldo,Brazil
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-2,Silver Ball,P-58374,Davor Šuker,Croatia
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-3,Bronze Ball,P-56947,Lilian Thuram,France
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-4,Golden Boot,P-58374,Davor Šuker,Croatia
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-5,Silver Boot,P-84542,Gabriel Batistuta,Argentina
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-5,Silver Boot,P-34670,Christian Vieri,Italy
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-7,Golden Glove,P-55991,Fabien Barthez,France
+WC-1998,1998 FIFA Men's World Cup,1998-07-12,A-8,Best Young Player,P-51130,Michael Owen,England
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-1,Golden Ball,P-33751,Oliver Kahn,Germany
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-2,Silver Ball,P-62722,not applicable Ronaldo,Brazil
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-3,Bronze Ball,P-55097,Myung-bo Hong,South Korea
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-4,Golden Boot,P-62722,not applicable Ronaldo,Brazil
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-5,Silver Boot,P-27787,Miroslav Klose,Germany
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-5,Silver Boot,P-74261,not applicable Rivaldo,Brazil
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-7,Golden Glove,P-33751,Oliver Kahn,Germany
+WC-2002,2002 FIFA Men's World Cup,2002-06-30,A-8,Best Young Player,P-05728,Landon Donovan,United States
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-1,Golden Ball,P-56430,Zinedine Zidane,France
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-2,Silver Ball,P-88863,Fabio Cannavaro,Italy
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-3,Bronze Ball,P-99537,Andrea Pirlo,Italy
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-4,Golden Boot,P-27787,Miroslav Klose,Germany
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-5,Silver Boot,P-19888,Hernán Crespo,Argentina
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-6,Bronze Boot,P-62722,not applicable Ronaldo,Brazil
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-7,Golden Glove,P-11392,Gianluigi Buffon,Italy
+WC-2006,2006 FIFA Men's World Cup,2006-07-09,A-8,Best Young Player,P-36287,Lukas Podolski,Germany
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-1,Golden Ball,P-86087,Diego Forlán,Uruguay
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-2,Silver Ball,P-51336,Wesley Sneijder,Netherlands
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-3,Bronze Ball,P-49097,David Villa,Spain
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-4,Golden Boot,P-28154,Thomas Müller,Germany
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-5,Silver Boot,P-49097,David Villa,Spain
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-6,Bronze Boot,P-51336,Wesley Sneijder,Netherlands
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-7,Golden Glove,P-61793,Iker Casillas,Spain
+WC-2010,2010 FIFA Men's World Cup,2010-07-11,A-8,Best Young Player,P-28154,Thomas Müller,Germany
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-1,Golden Ball,P-14758,Lionel Messi,Argentina
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-2,Silver Ball,P-28154,Thomas Müller,Germany
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-3,Bronze Ball,P-23705,Arjen Robben,Netherlands
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-4,Golden Boot,P-89392,James Rodríguez,Colombia
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-5,Silver Boot,P-28154,Thomas Müller,Germany
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-6,Bronze Boot,P-87008,not applicable Neymar,Brazil
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-7,Golden Glove,P-19408,Manuel Neuer,Germany
+WC-2014,2014 FIFA Men's World Cup,2014-07-13,A-8,Best Young Player,P-17509,Paul Pogba,France
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-1,Golden Ball,P-29491,Luka Modrić,Croatia
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-2,Silver Ball,P-72011,Eden Hazard,Belgium
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-3,Bronze Ball,P-90908,Antoine Griezmann,France
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-4,Golden Boot,P-58924,Harry Kane,England
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-5,Silver Boot,P-90908,Antoine Griezmann,France
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-6,Bronze Boot,P-72637,Romelu Lukaku,Belgium
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-7,Golden Glove,P-09658,Thibaut Courtois,Belgium
+WC-2018,2018 FIFA Men's World Cup,2018-07-15,A-8,Best Young Player,P-64077,Kylian Mbappé,France
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-1,Golden Ball,P-14758,Lionel Messi,Argentina
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-2,Silver Ball,P-64077,Kylian Mbappé,France
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-3,Bronze Ball,P-29491,Luka Modrić,Croatia
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-4,Golden Boot,P-64077,Kylian Mbappé,France
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-5,Silver Boot,P-14758,Lionel Messi,Argentina
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-6,Bronze Boot,P-89750,Olivier Giroud,France
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-7,Golden Glove,P-13162,Emiliano Martínez,Argentina
+WC-2022,2022 FIFA Men's World Cup,2022-12-18,A-8,Best Young Player,P-10739,Enzo Fernández,Argentina
