@@ -1,0 +1,22 @@
+{
+  "model_name": "CatBoostRegressor",
+  "validation_year": 2026,
+  "training_rows": 39266,
+  "train_rows": 38722,
+  "validation_rows": 544,
+  "features": 41,
+  "train_from_year": 2006,
+  "data_start": "2006-01-02",
+  "data_end": "2026-06-06",
+  "metrics": {
+    "team_a_mae": 0.9305,
+    "team_b_mae": 0.936,
+    "combined_mae": 0.9332,
+    "team_a_rmse": 1.2259,
+    "team_b_rmse": 1.2297,
+    "exact_score_accuracy": 0.114,
+    "over_2_5_accuracy": 0.6158
+  },
+  "venue_policy": "App predictions use the selected Team A home, Team B home, or neutral venue context.",
+  "data_source": "data/processed/matches_2006.csv"
+}

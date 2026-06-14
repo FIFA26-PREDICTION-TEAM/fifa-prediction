@@ -1,0 +1,27 @@
+{
+  "train_source_matches": 533,
+  "test_source_matches": 46,
+  "test_date_start": "2026-06-04",
+  "test_date_end": "2026-06-07",
+  "baseline": {
+    "model_name": "CatBoost",
+    "accuracy": 0.4891304347826087,
+    "balanced_accuracy": 0.4627039627039627,
+    "log_loss": 0.9844650258920665,
+    "train_rows": 1066,
+    "test_rows": 92
+  },
+  "augmented": {
+    "model_name": "CatBoost",
+    "accuracy": 0.6195652173913043,
+    "balanced_accuracy": 0.5920745920745921,
+    "log_loss": 0.8229646673777637,
+    "train_rows": 1066,
+    "test_rows": 92
+  },
+  "delta": {
+    "accuracy": 0.1304,
+    "balanced_accuracy": 0.1294,
+    "log_loss": -0.1615
+  }
+}

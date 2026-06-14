@@ -1,0 +1,64 @@
+match_id,date,team1,team2,team1_score,team2_score,result,winner,loser,goal_difference_team1,total_goals,team1_goal_scorers,team2_goal_scorers,source
+fwc2026_friendly_20260608_01,08-06-2026,France,Northern Ireland,3,1,team1_win,France,Northern Ireland,2,4,Michael Olise; Michael Olise; Michael Olise,Patrick Kelly,Reuters
+fwc2026_friendly_20260608_02,08-06-2026,Spain,Peru,3,1,team1_win,Spain,Peru,2,4,Mikel Oyarzabal; Pedri; Pedro Gallese (OG),Jairo Velez,Reuters
+fwc2026_friendly_20260608_03,08-06-2026,Netherlands,Uzbekistan,2,1,team1_win,Netherlands,Uzbekistan,1,3,,,International Friendly
+fwc2026_friendly_20260608_04,08-06-2026,Mauritania,Niger,1,0,team1_win,Mauritania,Niger,1,1,,,International Friendly
+fwc2026_friendly_20260607_01,07-06-2026,Colombia,Jordan,2,0,team1_win,Colombia,Jordan,2,2,"Arias (41, 55)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260607_02,07-06-2026,Ecuador,Guatemala,3,0,team1_win,Ecuador,Guatemala,3,3,"J. Caicedo (19 pen), Angulo (73), Estupinan (78)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260607_03,07-06-2026,Croatia,Slovenia,2,1,team1_win,Croatia,Slovenia,1,3,"Modric (51), Pasalic (90+3)",Sporar (83),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260607_04,07-06-2026,Morocco,Norway,1,1,draw,Draw,,0,2,Brahim Diaz (8),Odegaard (75),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260607_05,07-06-2026,Venezuela,Türkiye,1,2,team2_win,Türkiye,Venezuela,-1,3,Mendoza (13),"Yilmaz (44), Akgun (54)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260607_06,07-06-2026,Argentina,Honduras,2,0,team1_win,Argentina,Honduras,2,2,"Martinez (37), Simeone (54)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_01,06-06-2026,Qatar,El Salvador,0,0,draw,Draw,,0,0,,,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_02,06-06-2026,Cabo Verde,Bermuda,3,0,team1_win,Cabo Verde,Bermuda,3,3,"Semedo (33), Rodrigues (49), Nuno da Costa (90+1)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_03,06-06-2026,Curaçao,Aruba,4,0,team1_win,Curaçao,Aruba,4,4,"Brenet (54), Antonisse (68), Comenencia (83), J. Bacuna (90+1)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_04,06-06-2026,Panama,Bosnia and Herzegovina,1,1,draw,Draw,,0,2,Ramos (45+4),Katic (23),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_05,06-06-2026,Switzerland,Australia,1,1,draw,Draw,,0,2,Ndoye (14),Yengi (56),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_06,06-06-2026,Bolivia,Scotland,0,4,team2_win,Scotland,Bolivia,-4,4,,"Shankland (5), McTominay (23), Adams (30, 45)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_07,06-06-2026,England,New Zealand,1,0,team1_win,England,New Zealand,1,1,Kane (45+2),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_08,06-06-2026,Brazil,Egypt,2,1,team1_win,Brazil,Egypt,1,3,"Guimaraes (7), Endrick (52)",Ziko (11),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_09,06-06-2026,USA,Germany,1,2,team2_win,Germany,USA,-1,3,Antonee Robinson (37),"Kai Havertz (2), Leroy Sane (57)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_10,06-06-2026,Portugal,Chile,2,1,team1_win,Portugal,Chile,1,3,"Goncalo Guedes (58), Bruno Fernandes (75)",Lucas Cepeda (90+2),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260606_11,06-06-2026,Belgium,Tunisia,5,0,team1_win,Belgium,Tunisia,5,5,"Leandro Trossard (28), Charles De Ketelaere (53), Kevin De Bruyne (65), Dodi Lukebakio (85), Nicolas Raskin (87)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260605_01,05-06-2026,Canada,Republic of Ireland,1,1,draw,Draw,,0,2,Jake O’Brien (23 own goal),Chiedozie Ogbene (60),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260605_02,05-06-2026,Puerto Rico,Saudi Arabia,0,3,team2_win,Saudi Arabia,Puerto Rico,-3,3,,"Sultan Mandash (45+1), Abdullah Al Hamdan (50), Salem Al Dawsari (88)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260605_03,05-06-2026,Haiti,Peru,1,2,team2_win,Peru,Haiti,-1,3,Wilson Isidor (16),"Renzo Garces (81), Jairo Velez (84)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260605_04,05-06-2026,Paraguay,Nicaragua,4,0,team1_win,Paraguay,Nicaragua,4,4,"Kaka (17 pen), Miguel Almiron (42), Matias Galarza (62), Alexandro Maidana (65)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260604_01,04-06-2026,Mexico,Serbia,5,1,team1_win,Mexico,Serbia,4,6,"Johan Vasquez (34), Stefan Bukinac (45+2 OG), Raul Jimenez (57), Adem Avdic (72 OG), Luis Chavez (90)",Petar Stanic (19),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260604_02,04-06-2026,Czechia,Guatemala,3,1,team1_win,Czechia,Guatemala,2,4,"Patrik Schick (11), Tomas Chory (72), Denis Visinsky (79)",William Fajardo (40),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260604_03,04-06-2026,France,Côte d'Ivoire,1,2,team2_win,Côte d'Ivoire,France,-1,3,Rayan Cherki (45),"Guela Doue (53), Amad Diallo (84)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260604_04,04-06-2026,Spain,Iraq,1,1,draw,Draw,,0,2,Ferran Torres (16),Merchas Doski (27),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260604_05,04-06-2026,Sweden,Greece,2,2,draw,Draw,,0,4,"Viktor Gyokeres (53), Gustaf Nilsson (69)","Kostas Tsimkas (10), Giorgos Masouras (90+5)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260603_01,03-06-2026,Panama,Dominican Republic,4,2,team1_win,Panama,Dominican Republic,2,6,"Tomas Rodriguez (16), Victor Griffith (44), Cecilio Waterman (57), Jose Kadir (89)","Mariano (47), Erick Japa (67)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260603_02,03-06-2026,Korea Republic,El Salvador,1,0,team1_win,Korea Republic,El Salvador,1,1,Lee Donggyeong (57),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260603_03,03-06-2026,Netherlands,Algeria,0,1,team2_win,Algeria,Netherlands,-1,1,,Anis Hadj Moussa (86),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260603_04,03-06-2026,Congo DR,Denmark,0,0,draw,Draw,,0,0,,,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260602_01,02-06-2026,Haiti,New Zealand,4,0,team1_win,Haiti,New Zealand,4,4,"Ruben Providence (12), Lenny Joseph, Frantzdy Pierrot, Markhus Lacroix",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260602_02,02-06-2026,Wales,Ghana,1,1,draw,Draw,,0,2,Lewis Koumas (90+3),Caleb Yirenkyi (66),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260602_03,02-06-2026,Croatia,Belgium,0,2,team2_win,Belgium,Croatia,-2,2,,"Youri Tielemans (38), Romelu Lukaku (90+6)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260602_04,02-06-2026,Morocco,Madagascar,4,0,team1_win,Morocco,Madagascar,4,4,"Ismael Saibari (4, 25), Soufiane Rahmi (78 pen), Ayoub El Kaabi (87)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260601_01,01-06-2026,Canada,Uzbekistan,2,0,team1_win,Canada,Uzbekistan,2,2,"Jonathan Osorio (58), Jayden Nelson (90+1)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260601_02,01-06-2026,Colombia,Costa Rica,3,1,team1_win,Colombia,Costa Rica,2,4,"Davinson Sanchez (17), Luis Diaz (23), Luis Suarez (81)",Andrey Soto (33),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260601_03,01-06-2026,Austria,Tunisia,1,0,team1_win,Austria,Tunisia,1,1,Marcel Sabitzer (63),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260601_04,01-06-2026,Norway,Sweden,3,1,team1_win,Norway,Sweden,2,4,"Jorgen Strand Larsen (8, 33), Antonio Nusa (18)",Alexander Isak (76),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260601_05,01-06-2026,Türkiye,North Macedonia,4,0,team1_win,Türkiye,North Macedonia,4,4,"Orkun Kokcu (2), Can Uzun (16), Deniz Gul (52), Baris Alper Yilmaz (70)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260531_01,31-05-2026,Brazil,Panama,6,2,team1_win,Brazil,Panama,4,8,"Vinicius Junior (2), Casemiro (39), Rayan (53), Lucas Paqueta (60) Igor Thiago (63 pen), Danilo (81)","Matheus Cunha own goal (14), Carlos Harvey (84)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260531_02,31-05-2026,USA,Senegal,3,2,team1_win,USA,Senegal,1,5,"Sergino Dest (7), Christian Pulisic (20), Folarin Balogun (63)","Sadio Mane (44, 52)",FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260531_03,31-05-2026,Germany,Finland,4,0,team1_win,Germany,Finland,4,4,"Deniz Undav (34, 57), Florian Wirtz (48), Jamal Musiala (63)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260531_04,31-05-2026,Cabo Verde,Serbia,3,0,team1_win,Cabo Verde,Serbia,3,3,"Kevin Lenini (11), Laros Duarte (59), Gilson Benchimol (63)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260531_05,31-05-2026,Czechia,Kosovo,2,1,team1_win,Czechia,Kosovo,1,3,"Tomas Ladra (11), Adam Hlozek (31)",Lindon Emerllahu (79),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260531_06,31-05-2026,Switzerland,Jordan,4,1,team1_win,Switzerland,Jordan,3,5,"Breel Embolo (28 pen), Dan Ndoye (33), Granit Xhaka (45+9 pen), Christian Fassnacht (79)",Odeh Fakhoury (52),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260531_07,31-05-2026,Japan,Iceland,1,0,team1_win,Japan,Iceland,1,1,Koki Ogawa (87),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260530_01,30-05-2026,Mexico,Australia,1,0,team1_win,Mexico,Australia,1,1,Johan Vasquez (28),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260530_02,30-05-2026,Scotland,Curaçao,4,1,team1_win,Scotland,Curaçao,3,5,"Lawrence Shankland (59, 64), Findlay Curtis (45), Ryan Christie (81 pen)",Tahith Chong (17),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260530_03,30-05-2026,Ecuador,Saudi Arabia,2,1,team1_win,Ecuador,Saudi Arabia,1,3,"Jackson Porozo (39), Anthony Valencia (51)",Sultan Mandash (87),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260530_04,30-05-2026,Korea Republic,Trinidad and Tobago,5,0,team1_win,Korea Republic,Trinidad and Tobago,5,5,"Son Heungmin (40, 43 pen), Cho Guesung (65, 77), Hwang Heechan (75 pen)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260529_01,29-05-2026,Bosnia and Herzegovina,North Macedonia,0,0,draw,Draw,,0,0,,,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260529_02,29-05-2026,IR Iran,The Gambia,3,1,team1_win,IR Iran,The Gambia,2,4,"Arya Yousefi (47), Ramin Rezaeian (57), Mehdi Taremi (68)",Omar Colley (42),FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260529_03,29-05-2026,South Africa,Nicaragua,0,0,draw,Draw,,0,0,,,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260529_04,29-05-2026,Iraq,Andorra,1,0,team1_win,Iraq,Andorra,1,1,Ali Yousef (20),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260528_01,28-05-2026,Egypt,Russia,1,0,team1_win,Egypt,Russia,1,1,Mostafa Ziko (65),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260528_02,28-05-2026,Republic of Ireland,Qatar,1,0,team1_win,Republic of Ireland,Qatar,1,1,Nathan Collins (5),,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260526_01,26-05-2026,Morocco,Burundi,5,0,team1_win,Morocco,Burundi,5,5,"Ayoub El Kaabi (59, 63), Tawfik Bentayeb (71), Soufiane Benjdida (80, 90)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260522_01,22-05-2026,Mexico,Ghana,2,0,team1_win,Mexico,Ghana,2,2,"Brian Gutierrez (2), Guillermo Martinez (54)",,FIFA pasted text: Pre-World Cup friendly match results
+fwc2026_friendly_20260609_01,09-06-2026,DR Congo,Chile,1,2,team2_win,Chile,DR Congo,-1,3,,,Reuters

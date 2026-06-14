@@ -1,0 +1,538 @@
+{
+  "source_cap": 60,
+  "model_iterations": 5,
+  "results": [
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.671875,
+      "balanced_accuracy": 0.5212121212121212,
+      "log_loss": 1.0727121910139243,
+      "config": "base_open_2006",
+      "target": "world_cup_2014",
+      "train_source_matches": 3467,
+      "sampled_train_source_matches": 1804,
+      "validation_source_matches": 64,
+      "train_rows": 3608,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.59375,
+      "balanced_accuracy": 0.46060606060606063,
+      "log_loss": 1.0707253578961493,
+      "config": "base_open_2006",
+      "target": "world_cup_2018",
+      "train_source_matches": 5361,
+      "sampled_train_source_matches": 2719,
+      "validation_source_matches": 64,
+      "train_rows": 5438,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6015625,
+      "balanced_accuracy": 0.4753086419753087,
+      "log_loss": 1.0678851243075975,
+      "config": "base_open_2006",
+      "target": "world_cup_2022",
+      "train_source_matches": 7475,
+      "sampled_train_source_matches": 3550,
+      "validation_source_matches": 64,
+      "train_rows": 7100,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6764705882352942,
+      "balanced_accuracy": 0.5287356321839081,
+      "log_loss": 1.0446171952887386,
+      "config": "base_open_2006",
+      "target": "copa_2024",
+      "train_source_matches": 8598,
+      "sampled_train_source_matches": 3852,
+      "validation_source_matches": 34,
+      "train_rows": 7704,
+      "validation_rows": 68,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6796875,
+      "balanced_accuracy": 0.5272727272727273,
+      "log_loss": 1.0728810341820647,
+      "config": "base_plus_copa",
+      "target": "world_cup_2014",
+      "train_source_matches": 3467,
+      "sampled_train_source_matches": 1804,
+      "validation_source_matches": 64,
+      "train_rows": 3608,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.59375,
+      "balanced_accuracy": 0.46060606060606063,
+      "log_loss": 1.0691178375527892,
+      "config": "base_plus_copa",
+      "target": "world_cup_2018",
+      "train_source_matches": 5361,
+      "sampled_train_source_matches": 2719,
+      "validation_source_matches": 64,
+      "train_rows": 5438,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.59375,
+      "balanced_accuracy": 0.46913580246913583,
+      "log_loss": 1.0687143928780722,
+      "config": "base_plus_copa",
+      "target": "world_cup_2022",
+      "train_source_matches": 7475,
+      "sampled_train_source_matches": 3550,
+      "validation_source_matches": 64,
+      "train_rows": 7100,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6363636363636364,
+      "balanced_accuracy": 0.5384615384615384,
+      "log_loss": 1.0521985360837207,
+      "config": "base_plus_copa",
+      "target": "copa_2024",
+      "train_source_matches": 8598,
+      "sampled_train_source_matches": 3852,
+      "validation_source_matches": 66,
+      "train_rows": 7704,
+      "validation_rows": 132,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6640625,
+      "balanced_accuracy": 0.5151515151515151,
+      "log_loss": 1.0696601515920343,
+      "config": "base_plus_friendlies_context",
+      "target": "world_cup_2014",
+      "train_source_matches": 3467,
+      "sampled_train_source_matches": 1804,
+      "validation_source_matches": 64,
+      "train_rows": 3608,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.5859375,
+      "balanced_accuracy": 0.4545454545454546,
+      "log_loss": 1.0696984237952225,
+      "config": "base_plus_friendlies_context",
+      "target": "world_cup_2018",
+      "train_source_matches": 5361,
+      "sampled_train_source_matches": 2719,
+      "validation_source_matches": 64,
+      "train_rows": 5438,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6015625,
+      "balanced_accuracy": 0.4753086419753087,
+      "log_loss": 1.069156468518481,
+      "config": "base_plus_friendlies_context",
+      "target": "world_cup_2022",
+      "train_source_matches": 7475,
+      "sampled_train_source_matches": 3550,
+      "validation_source_matches": 64,
+      "train_rows": 7100,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6764705882352942,
+      "balanced_accuracy": 0.5287356321839081,
+      "log_loss": 1.0420825154918782,
+      "config": "base_plus_friendlies_context",
+      "target": "copa_2024",
+      "train_source_matches": 8598,
+      "sampled_train_source_matches": 3852,
+      "validation_source_matches": 34,
+      "train_rows": 7704,
+      "validation_rows": 68,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.4891304347826087,
+      "balanced_accuracy": 0.4545454545454546,
+      "log_loss": 1.0719109707652144,
+      "config": "base_plus_friendlies_context",
+      "target": "friendlies_2026_tail",
+      "train_source_matches": 10265,
+      "sampled_train_source_matches": 4615,
+      "validation_source_matches": 46,
+      "train_rows": 9230,
+      "validation_rows": 92,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6328125,
+      "balanced_accuracy": 0.4909090909090909,
+      "log_loss": 1.0719790807735996,
+      "config": "current_all_without_friendlies_target",
+      "target": "world_cup_2014",
+      "train_source_matches": 3467,
+      "sampled_train_source_matches": 1804,
+      "validation_source_matches": 64,
+      "train_rows": 3608,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.609375,
+      "balanced_accuracy": 0.4727272727272727,
+      "log_loss": 1.0696403637965861,
+      "config": "current_all_without_friendlies_target",
+      "target": "world_cup_2018",
+      "train_source_matches": 5361,
+      "sampled_train_source_matches": 2719,
+      "validation_source_matches": 64,
+      "train_rows": 5438,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6015625,
+      "balanced_accuracy": 0.4753086419753087,
+      "log_loss": 1.0693203847092851,
+      "config": "current_all_without_friendlies_target",
+      "target": "world_cup_2022",
+      "train_source_matches": 7475,
+      "sampled_train_source_matches": 3550,
+      "validation_source_matches": 64,
+      "train_rows": 7100,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6439393939393939,
+      "balanced_accuracy": 0.5448717948717948,
+      "log_loss": 1.0469647376318607,
+      "config": "current_all_without_friendlies_target",
+      "target": "copa_2024",
+      "train_source_matches": 8598,
+      "sampled_train_source_matches": 3852,
+      "validation_source_matches": 66,
+      "train_rows": 7704,
+      "validation_rows": 132,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.4646464646464647,
+      "log_loss": 1.0715474520621153,
+      "config": "current_all_without_friendlies_target",
+      "target": "friendlies_2026_tail",
+      "train_source_matches": 10297,
+      "sampled_train_source_matches": 4615,
+      "validation_source_matches": 46,
+      "train_rows": 9230,
+      "validation_rows": 92,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.671875,
+      "balanced_accuracy": 0.5212121212121212,
+      "log_loss": 1.0709245610687823,
+      "config": "current_all_with_friendlies_target",
+      "target": "world_cup_2014",
+      "train_source_matches": 3467,
+      "sampled_train_source_matches": 1804,
+      "validation_source_matches": 64,
+      "train_rows": 3608,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.5859375,
+      "balanced_accuracy": 0.4545454545454546,
+      "log_loss": 1.0706842009819812,
+      "config": "current_all_with_friendlies_target",
+      "target": "world_cup_2018",
+      "train_source_matches": 5361,
+      "sampled_train_source_matches": 2719,
+      "validation_source_matches": 64,
+      "train_rows": 5438,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6015625,
+      "balanced_accuracy": 0.4753086419753087,
+      "log_loss": 1.0681571861184729,
+      "config": "current_all_with_friendlies_target",
+      "target": "world_cup_2022",
+      "train_source_matches": 7475,
+      "sampled_train_source_matches": 3550,
+      "validation_source_matches": 64,
+      "train_rows": 7100,
+      "validation_rows": 128,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.6287878787878788,
+      "balanced_accuracy": 0.532051282051282,
+      "log_loss": 1.0482203415608298,
+      "config": "current_all_with_friendlies_target",
+      "target": "copa_2024",
+      "train_source_matches": 8598,
+      "sampled_train_source_matches": 3852,
+      "validation_source_matches": 66,
+      "train_rows": 7704,
+      "validation_rows": 132,
+      "feature_columns": 120
+    },
+    {
+      "model_name": "CatBoost",
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.4646464646464647,
+      "log_loss": 1.0715474520621153,
+      "config": "current_all_with_friendlies_target",
+      "target": "friendlies_2026_tail",
+      "train_source_matches": 10297,
+      "sampled_train_source_matches": 4615,
+      "validation_source_matches": 46,
+      "train_rows": 9230,
+      "validation_rows": 92,
+      "feature_columns": 120
+    }
+  ],
+  "summary": {
+    "copa_2024": [
+      {
+        "config": "base_plus_friendlies_context",
+        "folds": 1,
+        "accuracy": 0.6765,
+        "balanced_accuracy": 0.5287,
+        "log_loss": 1.0421
+      },
+      {
+        "config": "base_open_2006",
+        "folds": 1,
+        "accuracy": 0.6765,
+        "balanced_accuracy": 0.5287,
+        "log_loss": 1.0446
+      },
+      {
+        "config": "current_all_without_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.6439,
+        "balanced_accuracy": 0.5449,
+        "log_loss": 1.047
+      },
+      {
+        "config": "base_plus_copa",
+        "folds": 1,
+        "accuracy": 0.6364,
+        "balanced_accuracy": 0.5385,
+        "log_loss": 1.0522
+      },
+      {
+        "config": "current_all_with_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.6288,
+        "balanced_accuracy": 0.5321,
+        "log_loss": 1.0482
+      }
+    ],
+    "friendlies_2026_tail": [
+      {
+        "config": "current_all_with_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.4646,
+        "log_loss": 1.0715
+      },
+      {
+        "config": "current_all_without_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.4646,
+        "log_loss": 1.0715
+      },
+      {
+        "config": "base_plus_friendlies_context",
+        "folds": 1,
+        "accuracy": 0.4891,
+        "balanced_accuracy": 0.4545,
+        "log_loss": 1.0719
+      }
+    ],
+    "world_cup_2014": [
+      {
+        "config": "base_plus_copa",
+        "folds": 1,
+        "accuracy": 0.6797,
+        "balanced_accuracy": 0.5273,
+        "log_loss": 1.0729
+      },
+      {
+        "config": "current_all_with_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.6719,
+        "balanced_accuracy": 0.5212,
+        "log_loss": 1.0709
+      },
+      {
+        "config": "base_open_2006",
+        "folds": 1,
+        "accuracy": 0.6719,
+        "balanced_accuracy": 0.5212,
+        "log_loss": 1.0727
+      },
+      {
+        "config": "base_plus_friendlies_context",
+        "folds": 1,
+        "accuracy": 0.6641,
+        "balanced_accuracy": 0.5152,
+        "log_loss": 1.0697
+      },
+      {
+        "config": "current_all_without_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.6328,
+        "balanced_accuracy": 0.4909,
+        "log_loss": 1.072
+      }
+    ],
+    "world_cup_2018": [
+      {
+        "config": "current_all_without_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.6094,
+        "balanced_accuracy": 0.4727,
+        "log_loss": 1.0696
+      },
+      {
+        "config": "base_plus_copa",
+        "folds": 1,
+        "accuracy": 0.5938,
+        "balanced_accuracy": 0.4606,
+        "log_loss": 1.0691
+      },
+      {
+        "config": "base_open_2006",
+        "folds": 1,
+        "accuracy": 0.5938,
+        "balanced_accuracy": 0.4606,
+        "log_loss": 1.0707
+      },
+      {
+        "config": "base_plus_friendlies_context",
+        "folds": 1,
+        "accuracy": 0.5859,
+        "balanced_accuracy": 0.4545,
+        "log_loss": 1.0697
+      },
+      {
+        "config": "current_all_with_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.5859,
+        "balanced_accuracy": 0.4545,
+        "log_loss": 1.0707
+      }
+    ],
+    "world_cup_2022": [
+      {
+        "config": "base_open_2006",
+        "folds": 1,
+        "accuracy": 0.6016,
+        "balanced_accuracy": 0.4753,
+        "log_loss": 1.0679
+      },
+      {
+        "config": "current_all_with_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.6016,
+        "balanced_accuracy": 0.4753,
+        "log_loss": 1.0682
+      },
+      {
+        "config": "base_plus_friendlies_context",
+        "folds": 1,
+        "accuracy": 0.6016,
+        "balanced_accuracy": 0.4753,
+        "log_loss": 1.0692
+      },
+      {
+        "config": "current_all_without_friendlies_target",
+        "folds": 1,
+        "accuracy": 0.6016,
+        "balanced_accuracy": 0.4753,
+        "log_loss": 1.0693
+      },
+      {
+        "config": "base_plus_copa",
+        "folds": 1,
+        "accuracy": 0.5938,
+        "balanced_accuracy": 0.4691,
+        "log_loss": 1.0687
+      }
+    ],
+    "world_cup_average": [
+      {
+        "config": "base_plus_copa",
+        "folds": 3,
+        "accuracy": 0.6224,
+        "balanced_accuracy": 0.4857,
+        "log_loss": 1.0702
+      },
+      {
+        "config": "base_open_2006",
+        "folds": 3,
+        "accuracy": 0.6224,
+        "balanced_accuracy": 0.4857,
+        "log_loss": 1.0704
+      },
+      {
+        "config": "current_all_with_friendlies_target",
+        "folds": 3,
+        "accuracy": 0.6198,
+        "balanced_accuracy": 0.4837,
+        "log_loss": 1.0699
+      },
+      {
+        "config": "base_plus_friendlies_context",
+        "folds": 3,
+        "accuracy": 0.6172,
+        "balanced_accuracy": 0.4817,
+        "log_loss": 1.0695
+      },
+      {
+        "config": "current_all_without_friendlies_target",
+        "folds": 3,
+        "accuracy": 0.6146,
+        "balanced_accuracy": 0.4796,
+        "log_loss": 1.0703
+      }
+    ]
+  }
+}

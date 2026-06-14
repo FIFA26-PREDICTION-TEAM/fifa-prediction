@@ -1,0 +1,308 @@
+date,home_team,away_team,winner,first_shooter
+2006-02-04,Nigeria,Tunisia,Nigeria,Nigeria
+2006-02-04,Cameroon,Ivory Coast,Ivory Coast,Cameroon
+2006-02-10,Egypt,Ivory Coast,Egypt,Egypt
+2006-02-28,Finland,Kazakhstan,Kazakhstan,
+2006-03-01,Finland,Belarus,Finland,
+2006-04-29,Lesotho,Mozambique,Lesotho,
+2006-04-30,Mauritius,Mozambique,Mozambique,
+2006-05-21,Botswana,South Africa,Botswana,
+2006-06-03,Northern Cyprus,Zanzibar,Northern Cyprus,
+2006-06-26,Switzerland,Ukraine,Ukraine,Ukraine
+2006-06-30,Germany,Argentina,Germany,Germany
+2006-07-01,England,Portugal,Portugal,Portugal
+2006-07-09,Italy,France,Italy,Italy
+2006-07-22,Namibia,Seychelles,Seychelles,
+2007-04-29,Mozambique,Zimbabwe,Mozambique,
+2007-05-06,Guernsey,Jersey,Jersey,
+2007-05-26,Malawi,South Africa,South Africa,
+2007-05-26,Eswatini,Mauritius,Mauritius,
+2007-07-10,Uruguay,Brazil,Brazil,Brazil
+2007-07-21,Japan,Australia,Japan,Australia
+2007-07-22,Iran,South Korea,South Korea,South Korea
+2007-07-25,Iraq,South Korea,Iraq,South Korea
+2007-07-28,South Korea,Japan,South Korea,South Korea
+2007-07-29,Botswana,Angola,Botswana,
+2007-08-18,Mauritius,Mayotte,Mayotte,
+2007-08-18,Madagascar,Réunion,Réunion,
+2007-10-24,South Africa,Zambia,South Africa,
+2008-05-05,Jersey,Guernsey,Jersey,
+2008-06-20,Croatia,Turkey,Turkey,Croatia
+2008-06-22,Spain,Italy,Spain,Spain
+2008-07-27,Zambia,Zimbabwe,Zambia,
+2008-09-30,New Caledonia,Martinique,Martinique,
+2009-06-26,Provence,Sápmi,Sápmi,
+2009-07-23,Costa Rica,Mexico,Mexico,Mexico
+2009-10-28,Zimbabwe,South Africa,Zimbabwe,
+2010-01-25,Zambia,Nigeria,Nigeria,Zambia
+2010-05-21,Corsica,Gabon,Corsica,
+2010-06-29,Paraguay,Japan,Paraguay,Paraguay
+2010-07-02,Uruguay,Ghana,Uruguay,Uruguay
+2010-09-22,French Guiana,Mayotte,Mayotte,
+2010-09-23,Guadeloupe,New Caledonia,New Caledonia,
+2010-09-26,Guadeloupe,Tahiti,Tahiti,
+2010-09-29,New Caledonia,Tahiti,Tahiti,
+2010-10-02,Réunion,Martinique,Martinique,
+2011-01-25,Japan,South Korea,Japan,Japan
+2011-02-08,Romania,Ukraine,Ukraine,
+2011-02-09,Sweden,Ukraine,Ukraine,
+2011-05-08,Guernsey,Jersey,Jersey,
+2011-06-08,Uruguay,Netherlands,Uruguay,Netherlands
+2011-06-18,Costa Rica,Honduras,Honduras,Costa Rica
+2011-06-19,Panama,El Salvador,Panama,Panama
+2011-06-29,Saare County,Åland Islands,Åland Islands,
+2011-06-30,Isle of Man,Menorca,Menorca,
+2011-07-12,Saint Lucia,Aruba,Saint Lucia,
+2011-07-16,Argentina,Uruguay,Uruguay,Argentina
+2011-07-17,Brazil,Paraguay,Paraguay,Brazil
+2011-07-20,Paraguay,Venezuela,Paraguay,Paraguay
+2011-08-11,Mayotte,Mauritius,Mauritius,
+2011-08-13,Seychelles,Mauritius,Seychelles,
+2012-02-05,Gabon,Mali,Mali,Gabon
+2012-02-12,Zambia,Ivory Coast,Zambia,Ivory Coast
+2012-06-03,Finland,Latvia,Latvia,Finland
+2012-06-17,Mozambique,Tanzania,Mozambique,
+2012-06-24,England,Italy,Italy,Italy
+2012-06-27,Portugal,Spain,Spain,Spain
+2012-08-25,Alderney,Sealand,Sealand,
+2012-09-02,India,Cameroon,India,
+2012-09-29,Réunion,Martinique,Réunion,
+2012-10-13,Uganda,Zambia,Zambia,
+2012-11-21,Argentina,Brazil,Brazil,Argentina
+2013-01-23,Sweden,North Korea,Sweden,
+2013-02-02,South Africa,Mali,Mali,South Africa
+2013-02-06,Burkina Faso,Ghana,Burkina Faso,Ghana
+2013-06-27,Spain,Italy,Spain,Italy
+2013-06-30,Uruguay,Italy,Italy,Uruguay
+2013-07-13,Zimbabwe,Malawi,Zimbabwe,
+2013-07-14,Angola,Lesotho,Lesotho,
+2013-07-17,Zambia,South Africa,Zambia,
+2014-05-05,Sealand,Chagos Islands,Chagos Islands,
+2014-05-29,Latvia,Estonia,Latvia,Estonia
+2014-06-04,Abkhazia,South Ossetia,South Ossetia,
+2014-06-04,Ellan Vannin,Iraqi Kurdistan,Ellan Vannin,
+2014-06-05,Padania,Abkhazia,Padania,
+2014-06-05,Occitania,Iraqi Kurdistan,Iraqi Kurdistan,
+2014-06-07,Padania,Iraqi Kurdistan,Padania,
+2014-06-08,County of Nice,Ellan Vannin,County of Nice,
+2014-06-28,Brazil,Chile,Brazil,Brazil
+2014-06-29,Costa Rica,Greece,Costa Rica,Costa Rica
+2014-07-05,Netherlands,Costa Rica,Netherlands,Costa Rica
+2014-07-09,Netherlands,Argentina,Argentina,Netherlands
+2015-01-23,Iran,Iraq,Iraq,Iran
+2015-01-23,Japan,United Arab Emirates,United Arab Emirates,Japan
+2015-01-30,Curaçao,Aruba,Aruba,
+2015-02-07,Equatorial Guinea,DR Congo,DR Congo,Equatorial Guinea
+2015-02-08,Ivory Coast,Ghana,Ivory Coast,Ghana
+2015-05-24,South Africa,Botswana,Botswana,
+2015-05-24,Zambia,Namibia,Namibia,
+2015-05-25,Mozambique,Malawi,Mozambique,
+2015-05-27,South Africa,Malawi,Malawi,
+2015-06-21,Ellan Vannin,Felvidék,Ellan Vannin,
+2015-06-26,Argentina,Colombia,Argentina,Colombia
+2015-06-27,Brazil,Paraguay,Paraguay,Brazil
+2015-07-02,Gibraltar,Åland Islands,Åland Islands,
+2015-07-04,Chile,Argentina,Chile,Chile
+2015-07-19,Trinidad and Tobago,Panama,Panama,Panama
+2015-07-25,United States,Panama,Panama,United States
+2015-10-13,El Salvador,Guatemala,Guatemala,
+2016-05-27,Corsica,Basque Country,Basque Country,
+2016-06-01,United Koreans in Japan,Northern Cyprus,Northern Cyprus,
+2016-06-02,Iraqi Kurdistan,Padania,Padania,
+2016-06-03,Iraqi Kurdistan,Western Armenia,Western Armenia,
+2016-06-03,Vietnam,Hong Kong,Vietnam,
+2016-06-03,Chagos Islands,Raetia,Raetia,
+2016-06-03,Bosnia and Herzegovina,Denmark,Bosnia and Herzegovina,
+2016-06-03,Thailand,Syria,Thailand,
+2016-06-04,United Koreans in Japan,Iraqi Kurdistan,United Koreans in Japan,United Koreans in Japan
+2016-06-05,Abkhazia,Panjab,Abkhazia,
+2016-06-11,Papua New Guinea,New Zealand,New Zealand,New Zealand
+2016-06-17,Peru,Colombia,Colombia,Colombia
+2016-06-18,Namibia,Botswana,Botswana,
+2016-06-18,South Africa,Lesotho,South Africa,
+2016-06-19,Zambia,Eswatini,Eswatini,
+2016-06-22,Botswana,DR Congo,Botswana,
+2016-06-25,Switzerland,Poland,Poland,Switzerland
+2016-06-26,Argentina,Chile,Chile,Chile
+2016-06-30,Poland,Portugal,Portugal,Portugal
+2016-07-02,Germany,Italy,Germany,Italy
+2016-08-01,Felvidék,Kárpátalja,Felvidék,
+2016-11-12,Nepal,Laos,Nepal,
+2016-11-12,Macau,Brunei,Macau,Brunei
+2017-01-11,Chile,Croatia,Chile,
+2017-01-14,China,Croatia,China,
+2017-01-28,Senegal,Cameroon,Cameroon,Senegal
+2017-02-01,Burkina Faso,Egypt,Egypt,Egypt
+2017-06-09,Padania,Abkhazia,Padania,
+2017-06-09,Kárpátalja,Ellan Vannin,Kárpátalja,
+2017-06-10,Northern Cyprus,Padania,Padania,
+2017-06-28,Portugal,Chile,Chile,Chile
+2017-06-29,Hitra,Western Isles,Western Isles,
+2017-06-29,Greenland,Menorca,Greenland,
+2017-07-01,Namibia,Lesotho,Lesotho,
+2017-07-07,Tanzania,Lesotho,Tanzania,
+2017-07-16,Thailand,Belarus,Thailand,
+2018-03-21,Zambia,Zimbabwe,Zambia,
+2018-03-21,South Africa,Angola,South Africa,
+2018-03-22,Thailand,Gabon,Thailand,
+2018-03-24,Angola,Zimbabwe,Angola,
+2018-06-02,Zambia,Namibia,Zambia,
+2018-06-03,Andorra,Cape Verde,Cape Verde,
+2018-06-03,South Africa,Madagascar,Madagascar,
+2018-06-03,Zimbabwe,Botswana,Zimbabwe,
+2018-06-05,Matabeleland,Kabylia,Kabylia,
+2018-06-06,Lesotho,Zimbabwe,Zimbabwe,
+2018-06-09,Northern Cyprus,Kárpátalja,Kárpátalja,
+2018-06-09,Padania,Székely Land,Padania,
+2018-06-09,Tibet,United Koreans in Japan,United Koreans in Japan,
+2018-06-09,Panjab,Cascadia,Panjab,
+2018-07-01,Russia,Spain,Russia,Spain
+2018-07-01,Croatia,Denmark,Croatia,Denmark
+2018-07-03,Colombia,England,England,Colombia
+2018-07-07,Russia,Croatia,Croatia,Russia
+2019-01-20,Jordan,Vietnam,Vietnam,Vietnam
+2019-01-21,Australia,Uzbekistan,Australia,Australia
+2019-03-23,Oman,Singapore,Oman,
+2019-05-11,Guernsey,Jersey,Jersey,
+2019-06-01,Lesotho,Uganda,Lesotho,
+2019-06-02,South Africa,Botswana,Botswana,
+2019-06-02,Zambia,Malawi,Zambia,
+2019-06-04,South Africa,Uganda,South Africa,
+2019-06-05,Zimbabwe,Zambia,Zambia,
+2019-06-06,Abkhazia,Western Armenia,Western Armenia,
+2019-06-06,South Ossetia,Chameria,South Ossetia,
+2019-06-07,Lesotho,Zimbabwe,Zimbabwe,
+2019-06-07,South Africa,Malawi,South Africa,
+2019-06-08,Abkhazia,Chameria,Abkhazia,
+2019-06-09,Switzerland,England,England,England
+2019-06-27,Brazil,Paraguay,Brazil,Paraguay
+2019-06-28,Colombia,Chile,Chile,Colombia
+2019-06-29,Mexico,Costa Rica,Mexico,Mexico
+2019-06-29,Uruguay,Peru,Peru,Uruguay
+2019-07-05,Morocco,Benin,Benin,Benin
+2019-07-07,Madagascar,DR Congo,Madagascar,Madagascar
+2019-07-08,Ghana,Tunisia,Tunisia,Ghana
+2019-07-11,Ivory Coast,Algeria,Algeria,Algeria
+2019-07-28,Mauritius,Réunion,Réunion,
+2019-09-08,Tanzania,Burundi,Tanzania,Tanzania
+2019-10-13,Chad,Liberia,Chad,
+2019-10-13,Gambia,Djibouti,Gambia,
+2020-10-08,Bosnia and Herzegovina,Northern Ireland,Northern Ireland,Bosnia and Herzegovina
+2020-10-08,Slovakia,Republic of Ireland,Slovakia,Slovakia
+2020-10-08,Scotland,Israel,Scotland,Scotland
+2020-11-12,Serbia,Scotland,Scotland,Scotland
+2021-06-03,Mexico,Costa Rica,Mexico,Mexico
+2021-06-06,Honduras,Costa Rica,Honduras,Costa Rica
+2021-06-28,France,Switzerland,Switzerland,Switzerland
+2021-07-02,Peru,Paraguay,Peru,Paraguay
+2021-07-02,Switzerland,Spain,Spain,Spain
+2021-07-03,Uruguay,Colombia,Colombia,Colombia
+2021-07-06,Italy,Spain,Italy,Italy
+2021-07-06,Trinidad and Tobago,French Guiana,Trinidad and Tobago,French Guiana
+2021-07-06,Argentina,Colombia,Argentina,Colombia
+2021-07-06,Guatemala,Guadeloupe,Guadeloupe,Guatemala
+2021-07-11,England,Italy,Italy,Italy
+2021-07-16,Senegal,Eswatini,Senegal,Eswatini
+2021-07-18,Eswatini,Mozambique,Eswatini,Mozambique
+2021-07-18,South Africa,Senegal,South Africa,South Africa
+2021-11-19,Sri Lanka,Seychelles,Seychelles,
+2021-12-11,Morocco,Algeria,Algeria,Algeria
+2021-12-18,Qatar,Egypt,Qatar,Qatar
+2022-01-23,Burkina Faso,Gabon,Burkina Faso,Gabon
+2022-01-26,Mali,Equatorial Guinea,Equatorial Guinea,Equatorial Guinea
+2022-01-26,Ivory Coast,Egypt,Egypt,Ivory Coast
+2022-02-03,Cameroon,Egypt,Egypt,Cameroon
+2022-02-05,Cameroon,Burkina Faso,Cameroon,Cameroon
+2022-02-06,Senegal,Egypt,Senegal,Senegal
+2022-03-25,Tajikistan,Uganda,Uganda,
+2022-03-29,Kazakhstan,Moldova,Kazakhstan,Moldova
+2022-03-29,Senegal,Egypt,Senegal,Senegal
+2022-06-13,Australia,Peru,Australia,Australia
+2022-06-14,Chile,Ghana,Ghana,Chile
+2022-07-12,Zambia,Botswana,Zambia,
+2022-07-13,South Africa,Mozambique,Mozambique,
+2022-07-13,Senegal,Eswatini,Senegal,
+2022-07-17,Mozambique,Senegal,Senegal,
+2022-09-22,Thailand,Malaysia,Malaysia,
+2022-09-23,Iraq,Oman,Oman,
+2022-09-25,Malaysia,Tajikistan,Tajikistan,
+2022-11-16,Lithuania,Iceland,Iceland,Lithuania
+2022-11-16,Latvia,Estonia,Latvia,Latvia
+2022-11-19,Latvia,Iceland,Iceland,Iceland
+2022-12-05,Japan,Croatia,Croatia,Japan
+2022-12-06,Morocco,Spain,Morocco,Morocco
+2022-12-09,Croatia,Brazil,Croatia,Croatia
+2022-12-09,Netherlands,Argentina,Argentina,Netherlands
+2022-12-18,Argentina,France,Argentina,France
+2023-06-16,Curaçao,Saint Kitts and Nevis,Saint Kitts and Nevis,Saint Kitts and Nevis
+2023-06-17,Guyana,Grenada,Guyana,Guyana
+2023-06-17,Suriname,Puerto Rico,Puerto Rico,Suriname
+2023-06-18,Croatia,Spain,Spain,Croatia
+2023-06-20,Saint Kitts and Nevis,French Guiana,Saint Kitts and Nevis,French Guiana
+2023-07-01,India,Lebanon,India,India
+2023-07-04,India,Kuwait,India,India
+2023-07-09,United States,Canada,United States,Canada
+2023-07-09,Orkney,Greenland,Greenland,
+2023-07-12,United States,Panama,Panama,United States
+2023-07-13,Åland Islands,Falkland Islands,Åland Islands,Åland Islands
+2023-07-14,Malawi,Lesotho,Lesotho,
+2023-07-16,South Africa,Malawi,South Africa,
+2023-09-07,Iraq,India,Iraq,India
+2023-09-10,Thailand,Iraq,Iraq,Thailand
+2023-10-13,Iraq,Qatar,Qatar,Qatar
+2023-11-21,Mexico,Honduras,Mexico,Mexico
+2023-12-02,Solomon Islands,New Caledonia,New Caledonia,
+2024-01-28,Egypt,DR Congo,DR Congo,Egypt
+2024-01-28,Tajikistan,United Arab Emirates,Tajikistan,Tajikistan
+2024-01-29,Ivory Coast,Senegal,Ivory Coast,Senegal
+2024-01-30,Saudi Arabia,South Korea,South Korea,Saudi Arabia
+2024-01-31,Iran,Syria,Iran,Iran
+2024-02-03,Qatar,Uzbekistan,Qatar,Uzbekistan
+2024-02-03,Cape Verde,South Africa,South Africa,Cape Verde
+2024-02-07,Nigeria,South Africa,Nigeria,Nigeria
+2024-03-23,Tunisia,Croatia,Croatia,Croatia
+2024-03-26,New Zealand,Tunisia,Tunisia,New Zealand
+2024-03-26,Wales,Poland,Poland,Poland
+2024-03-26,Georgia,Greece,Georgia,Georgia
+2024-03-26,Turks and Caicos Islands,Anguilla,Anguilla,Turks and Caicos Islands
+2024-03-26,British Virgin Islands,United States Virgin Islands,British Virgin Islands,British Virgin Islands
+2024-06-11,Lithuania,Estonia,Estonia,Lithuania
+2024-07-01,Portugal,Slovenia,Portugal,Slovenia
+2024-07-04,Argentina,Ecuador,Argentina,Argentina
+2024-07-05,Portugal,France,France,France
+2024-07-05,Venezuela,Canada,Canada,Venezuela
+2024-07-06,England,Switzerland,England,England
+2024-07-06,Uruguay,Brazil,Uruguay,Uruguay
+2024-07-13,Canada,Uruguay,Uruguay,Canada
+2024-09-08,Tajikistan,Philippines,Tajikistan,
+2024-09-10,Cambodia,Sri Lanka,Sri Lanka,Cambodia
+2025-06-08,Portugal,Spain,Portugal,Portugal
+2025-06-28,Panama,Honduras,Honduras,Panama
+2025-06-29,Canada,Guatemala,Guatemala,Canada
+2025-06-29,United States,Costa Rica,United States,Costa Rica
+2025-07-13,Gozo,Shetland,Gozo,Gozo
+2025-07-17,Gozo,Western Isles,Gozo,
+2025-08-13,United States Virgin Islands,Turks and Caicos Islands,United States Virgin Islands,
+2025-11-13,Iran,Cape Verde,Iran,
+2025-11-16,Nigeria,DR Congo,DR Congo,Nigeria
+2025-11-17,Cape Verde,Egypt,Egypt,
+2025-11-18,Iran,Uzbekistan,Uzbekistan,
+2025-11-23,Papua New Guinea,Vanuatu,Vanuatu,
+2025-11-25,Palestine,Libya,Palestine,
+2025-11-26,Oman,Somalia,Oman,
+2025-11-26,Comoros,Yemen,Comoros,
+2025-12-12,Algeria,United Arab Emirates,United Arab Emirates,
+2026-01-03,Mali,Tunisia,Mali,Tunisia
+2026-01-14,Morocco,Nigeria,Morocco,Morocco
+2026-01-17,Egypt,Nigeria,Nigeria,Nigeria
+2026-03-26,Wales,Bosnia and Herzegovina,Bosnia and Herzegovina,Bosnia and Herzegovina
+2026-03-26,Czech Republic,Republic of Ireland,Czech Republic,Republic of Ireland
+2026-03-27,Kenya,Estonia,Estonia,Estonia
+2026-03-28,Namibia,Comoros,Namibia,
+2026-03-30,Azerbaijan,Sierra Leone,Azerbaijan,
+2026-03-30,Cape Verde,Finland,Cape Verde,Cape Verde
+2026-03-30,Gabon,Trinidad and Tobago,Gabon,
+2026-03-30,Uzbekistan,Venezuela,Uzbekistan,
+2026-03-31,Czech Republic,Denmark,Czech Republic,Denmark
+2026-03-31,Bosnia and Herzegovina,Italy,Bosnia and Herzegovina,Bosnia and Herzegovina
+2026-06-06,Lithuania,Latvia,Lithuania,Lithuania
