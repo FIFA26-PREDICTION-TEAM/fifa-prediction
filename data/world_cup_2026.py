@@ -49,7 +49,11 @@ def _first_existing(*paths: str) -> str | None:
 
 WORLD_CUP_2026_MATCHES_PATH = os.getenv(
     "ML_PRJCT_WORLD_CUP_2026_MATCHES_PATH",
-) or _first_existing(_default_path("wc2026_matches.csv"), WORLD_CUP_2026_MATCHES_REPO_PATH) or WORLD_CUP_2026_MATCHES_REPO_PATH
+) or _first_existing(
+    _default_path("wc2026_matches_12thjune.csv"),
+    _default_path("wc2026_matches.csv"),
+    WORLD_CUP_2026_MATCHES_REPO_PATH,
+) or WORLD_CUP_2026_MATCHES_REPO_PATH
 
 REQUIRED_COLUMNS = [
     "Group",
