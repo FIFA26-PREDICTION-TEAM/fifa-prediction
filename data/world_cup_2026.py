@@ -47,13 +47,34 @@ def _first_existing(*paths: str) -> str | None:
     return next((path for path in paths if path and os.path.exists(path)), None)
 
 
-WORLD_CUP_2026_MATCHES_PATH = os.getenv(
-    "ML_PRJCT_WORLD_CUP_2026_MATCHES_PATH",
-) or _first_existing(
-    _default_path("wc2026_matches_12thjune.csv"),
-    _default_path("wc2026_matches.csv"),
-    WORLD_CUP_2026_MATCHES_REPO_PATH,
-) or WORLD_CUP_2026_MATCHES_REPO_PATH
+MATCH_FEED_ENCODINGS = ("utf-8-sig", "utf-8", "cp1252", "latin-1")
+
+
+def _resolve_world_cup_2026_matches_path() -> str:
+    override = os.getenv("ML_PRJCT_WORLD_CUP_2026_MATCHES_PATH")
+    if override:
+        return override
+    return _first_existing(
+        WORLD_CUP_2026_MATCHES_REPO_PATH,
+        _default_path("wc2026_matches_updated_15thjune.csv"),
+        _default_path("wc2026_matches_12thjune.csv"),
+        _default_path("wc2026_matches.csv"),
+    ) or WORLD_CUP_2026_MATCHES_REPO_PATH
+
+
+WORLD_CUP_2026_MATCHES_PATH = _resolve_world_cup_2026_matches_path()
+
+
+def _read_match_feed_csv(path: str) -> pd.DataFrame:
+    last_error: Exception | None = None
+    for encoding in MATCH_FEED_ENCODINGS:
+        try:
+            return pd.read_csv(path, encoding=encoding)
+        except UnicodeDecodeError as exc:
+            last_error = exc
+    raise ValueError(
+        f"Unable to decode {path!r} with {', '.join(MATCH_FEED_ENCODINGS)}"
+    ) from last_error
 
 REQUIRED_COLUMNS = [
     "Group",
@@ -237,14 +258,15 @@ def _parse_match_dates(values: pd.Series) -> pd.Series:
     return parsed
 
 
-def _prepare_current_matches(df: pd.DataFrame | None) -> pd.DataFrame:
+def _prepare_current_matches(df: pd.DataFrame | None, source_path: str | None = None) -> pd.DataFrame:
     if df is None or df.empty:
         return pd.DataFrame()
 
     required = {"date", "team_a", "team_b", "team_a_score", "team_b_score"}
     missing = sorted(required - set(df.columns))
     if missing:
-        st.warning(f"`{os.path.basename(WORLD_CUP_2026_MATCHES_PATH)}` is missing columns: {missing}")
+        source_name = os.path.basename(source_path or WORLD_CUP_2026_MATCHES_PATH)
+        st.warning(f"`{source_name}` is missing columns: {missing}")
         return pd.DataFrame()
 
     matches = df.copy()
@@ -312,6 +334,10 @@ def _derive_current_team_stats(matches: pd.DataFrame) -> pd.DataFrame:
                     "shots_on_target_against": _stat(match, opponent_prefix, "shots_on_target"),
                     "possession": _stat(match, prefix, "possession", np.nan),
                     "corners": _stat(match, prefix, "corners"),
+                    "assists": _stat(match, prefix, "assists"),
+                    "penalties_scored": _stat(match, prefix, "penalties_scored"),
+                    "goals_inside_box": _stat(match, prefix, "goals_inside_box"),
+                    "goals_outside_box": _stat(match, prefix, "goals_outside_box"),
                     "yellow_cards": _stat(match, prefix, "yellow_cards"),
                     "red_cards": _stat(match, prefix, "red_cards"),
                 }
@@ -336,21 +362,56 @@ def _derive_current_team_stats(matches: pd.DataFrame) -> pd.DataFrame:
         shots_on_target_against=("shots_on_target_against", "sum"),
         possession_avg=("possession", "mean"),
         corners=("corners", "sum"),
+        assists=("assists", "sum"),
+        penalties_scored=("penalties_scored", "sum"),
+        goals_inside_box=("goals_inside_box", "sum"),
+        goals_outside_box=("goals_outside_box", "sum"),
         yellow_cards=("yellow_cards", "sum"),
         red_cards=("red_cards", "sum"),
     )
     played = grouped["played"].replace(0, np.nan)
+    shots_total = grouped["shots_total"].replace(0, np.nan)
+    shots_on_target = grouped["shots_on_target"].replace(0, np.nan)
     grouped["goal_difference"] = grouped["goals_for"] - grouped["goals_against"]
     grouped["points_per_match"] = grouped["points"] / played
     grouped["goals_for_per_match"] = grouped["goals_for"] / played
     grouped["goals_against_per_match"] = grouped["goals_against"] / played
     grouped["shot_diff_per_match"] = (grouped["shots_total"] - grouped["shots_against"]) / played
+    grouped["shots_on_target_per_match"] = grouped["shots_on_target"] / played
     grouped["shots_on_target_diff_per_match"] = (
         grouped["shots_on_target"] - grouped["shots_on_target_against"]
     ) / played
+    grouped["shot_conversion_rate"] = grouped["goals_for"] / shots_total
+    grouped["shots_on_target_conversion_rate"] = grouped["goals_for"] / shots_on_target
+    grouped["assists_per_match"] = grouped["assists"] / played
+    grouped["open_play_goals"] = (grouped["goals_for"] - grouped["penalties_scored"]).clip(lower=0)
+    grouped["open_play_goals_per_match"] = grouped["open_play_goals"] / played
+    grouped["non_penalty_goal_share"] = grouped["open_play_goals"] / grouped["goals_for"].replace(0, np.nan)
     grouped["clean_sheet_rate"] = grouped["clean_sheets"] / played
     grouped["performance_score"] = grouped.apply(lambda row: _current_tournament_score(row.to_dict()), axis=1)
+    grouped["scoring_impact_score"] = grouped.apply(lambda row: _current_scoring_score(row.to_dict()), axis=1)
     return grouped.fillna(0.0).reset_index(drop=True)
+
+
+def _current_scoring_score(summary: dict | None) -> float:
+    if not summary or float(summary.get("played", 0.0)) <= 0:
+        return 0.5
+
+    goals_for = float(summary.get("goals_for_per_match", 0.0))
+    shots_on_target = float(summary.get("shots_on_target_per_match", 0.0))
+    shot_conversion = float(summary.get("shot_conversion_rate", 0.0))
+    open_play_goals = float(summary.get("open_play_goals_per_match", 0.0))
+    assists = float(summary.get("assists_per_match", 0.0))
+    non_penalty_share = float(summary.get("non_penalty_goal_share", 0.5))
+    score = (
+        np.clip(goals_for / 3.0, 0.0, 1.0) * 0.38
+        + np.clip(shots_on_target / 6.0, 0.0, 1.0) * 0.22
+        + np.clip(shot_conversion / 0.33, 0.0, 1.0) * 0.15
+        + np.clip(open_play_goals / 2.5, 0.0, 1.0) * 0.15
+        + np.clip(assists / 2.0, 0.0, 1.0) * 0.07
+        + np.clip(non_penalty_share, 0.0, 1.0) * 0.03
+    )
+    return float(np.clip(score, 0.0, 1.0))
 
 
 def _current_tournament_score(summary: dict | None) -> float:
@@ -492,8 +553,9 @@ def load_world_cup_2026_data() -> dict:
             ).fillna(0).astype(int)
             non_wc_squads = non_wc_squads.sort_values(["team", "squad_role", "shirt_number"]).reset_index(drop=True)
 
-    if os.path.exists(WORLD_CUP_2026_MATCHES_PATH):
-        matches = _prepare_current_matches(pd.read_csv(WORLD_CUP_2026_MATCHES_PATH, encoding="utf-8-sig"))
+    matches_path = _resolve_world_cup_2026_matches_path()
+    if os.path.exists(matches_path):
+        matches = _prepare_current_matches(_read_match_feed_csv(matches_path), matches_path)
         current_team_stats = _derive_current_team_stats(matches)
 
     return {
@@ -506,7 +568,7 @@ def load_world_cup_2026_data() -> dict:
         "path": TEAMS_PATH,
         "squads_path": SQUADS_PATH,
         "non_wc_squads_path": NON_WC_SQUADS_PATH,
-        "matches_path": WORLD_CUP_2026_MATCHES_PATH,
+        "matches_path": matches_path,
         "rows": int(len(teams)),
         "squad_rows": int(len(squads)),
         "non_wc_squad_rows": int(len(non_wc_squads)),
@@ -571,15 +633,29 @@ def _team_current_tournament_summary(team: str, world_cup_2026_data: dict | None
         "goals_for_per_match",
         "goals_against_per_match",
         "shot_diff_per_match",
+        "shots_on_target_per_match",
         "shots_on_target_diff_per_match",
+        "shot_conversion_rate",
+        "shots_on_target_conversion_rate",
+        "assists",
+        "assists_per_match",
+        "penalties_scored",
+        "goals_inside_box",
+        "goals_outside_box",
+        "open_play_goals",
+        "open_play_goals_per_match",
+        "non_penalty_goal_share",
         "possession_avg",
         "clean_sheet_rate",
+        "performance_score",
+        "scoring_impact_score",
     ]
     summary = {"team": row.get("team", normalized)}
     for field in numeric_fields:
         value = pd.to_numeric(row.get(field, 0.0), errors="coerce")
         summary[field] = 0.0 if pd.isna(value) else float(value)
     summary["performance_score"] = _current_tournament_score(summary)
+    summary["scoring_impact_score"] = _current_scoring_score(summary)
     return summary
 
 
@@ -764,9 +840,13 @@ def adjust_probabilities_for_2026_context(
     current_b = profile_b.get("current_tournament") or {}
     played_a = float(current_a.get("played", 0.0) or 0.0)
     played_b = float(current_b.get("played", 0.0) or 0.0)
-    current_score_delta = float(
+    current_performance_delta = float(
         current_a.get("performance_score", 0.5) - current_b.get("performance_score", 0.5)
     )
+    current_scoring_delta = float(
+        current_a.get("scoring_impact_score", 0.5) - current_b.get("scoring_impact_score", 0.5)
+    )
+    current_score_delta = (current_performance_delta * 0.74) + (current_scoring_delta * 0.26)
     current_sample_weight = min(max(played_a, played_b) / 3.0, 1.0)
     current_win_shift = float(np.clip(current_score_delta * 0.10 * current_sample_weight, -0.055, 0.055))
     win_shift = float(np.clip(squad_win_shift + current_win_shift, -0.12, 0.12))
@@ -798,6 +878,8 @@ def adjust_probabilities_for_2026_context(
             "current_tournament_applied": bool(played_a > 0 or played_b > 0),
             "team_a_current_tournament": current_a,
             "team_b_current_tournament": current_b,
+            "current_tournament_performance_delta": round(current_performance_delta, 4),
+            "current_scoring_impact_delta": round(current_scoring_delta, 4),
             "current_tournament_score_delta": round(current_score_delta, 4),
             "current_tournament_sample_weight": round(current_sample_weight, 4),
             "current_tournament_probability_shift": round(current_win_shift, 4),

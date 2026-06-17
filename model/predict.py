@@ -216,12 +216,20 @@ def _build_key_factors(team_a: str, team_b: str, feat: dict, ss_a, ss_b) -> list
     else:
         factors.append("FIFA rankings: no complete ranking snapshot available for both teams.")
 
+    current_scoring_note = ""
+    if "team_a_current_scoring_impact" in feat or "team_b_current_scoring_impact" in feat:
+        current_scoring_note = (
+            f"; 2026 scoring impact {team_a} "
+            f"{float(feat.get('team_a_current_scoring_impact', 0.0)):.2f}, {team_b} "
+            f"{float(feat.get('team_b_current_scoring_impact', 0.0)):.2f}"
+        )
     factors.append(
         f"Goalscoring profile: World Cup goals per match {team_a} "
         f"{float(feat.get('team_a_avg_goals_wc', 0.0)):.2f}, {team_b} "
         f"{float(feat.get('team_b_avg_goals_wc', 0.0)):.2f}; scoring-first win rate "
         f"{team_a} {_rate(feat.get('team_a_scoring_first_win_rate', 0.5))}, "
-        f"{team_b} {_rate(feat.get('team_b_scoring_first_win_rate', 0.5))}."
+        f"{team_b} {_rate(feat.get('team_b_scoring_first_win_rate', 0.5))}"
+        f"{current_scoring_note}."
     )
 
     supersub_notes = []
@@ -634,6 +642,11 @@ def predict_match(
             model_rank_date = str(latest_rank_date.date())
 
     display_feat = dict(feat_dict)
+    current_a = profile_a.get("current_tournament") or {}
+    current_b = profile_b.get("current_tournament") or {}
+    if current_a or current_b:
+        display_feat["team_a_current_scoring_impact"] = float(current_a.get("scoring_impact_score", 0.0) or 0.0)
+        display_feat["team_b_current_scoring_impact"] = float(current_b.get("scoring_impact_score", 0.0) or 0.0)
     rank_snapshot_date = (
         world_cup_2026_data.get("ranking_snapshot_date")
         if world_cup_2026_data else None

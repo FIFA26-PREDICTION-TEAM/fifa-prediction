@@ -28,6 +28,7 @@ except ImportError:
     HAS_CATBOOST = False
 
 from data.ingest import MAX_DATA_DATE, MIN_DATA_YEAR, load_rankings
+from data.world_cup_2026 import append_world_cup_2026_matches
 from model.features import get_tournament_weight, normalize_tournament_name
 
 
@@ -123,6 +124,11 @@ def load_goal_matches() -> pd.DataFrame:
         df["neutral"] = False
     mask = (df["date"].dt.year >= MIN_DATA_YEAR) & (df["date"] <= MAX_DATA_DATE)
     return df[mask].sort_values("date").reset_index(drop=True)
+
+
+def _load_goal_inference_matches() -> pd.DataFrame:
+    matches = append_world_cup_2026_matches(load_goal_matches())
+    return matches.sort_values("date").reset_index(drop=True)
 
 
 def _ranking_index(rankings_df: pd.DataFrame | None) -> dict:
@@ -426,6 +432,9 @@ def _fit_model(X: pd.DataFrame, y: np.ndarray) -> CatBoostRegressor:
 def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals: int = SCORELINE_MAX_GOALS) -> dict:
     lam_a = max(0.05, float(team_a_goals))
     lam_b = max(0.05, float(team_b_goals))
+    rounded_a = int(min(max_goals, max(0, math.floor(lam_a + 0.5))))
+    rounded_b = int(min(max_goals, max(0, math.floor(lam_b + 0.5))))
+    rounded_probability = 0.0
     best = (0, 0, -1.0)
     best_by_outcome = {
         "team_a_win": (1, 0, -1.0),
@@ -445,6 +454,8 @@ def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals
             pb = math.exp(-lam_b) * (lam_b**b) / math.factorial(b)
             prob = pa * pb
             grid_mass += prob
+            if a == rounded_a and b == rounded_b:
+                rounded_probability += prob
             if a + b > 2.5:
                 over_2_5 += prob
             if prob > best[2]:
@@ -464,6 +475,7 @@ def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals
 
     if grid_mass > 0:
         over_2_5 /= grid_mass
+        rounded_probability /= grid_mass
         for key in outcome_probs:
             outcome_probs[key] = float(outcome_probs[key] / grid_mass)
         best = (best[0], best[1], best[2] / grid_mass)
@@ -485,6 +497,10 @@ def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals
         "likely_team_a_goals": int(best[0]),
         "likely_team_b_goals": int(best[1]),
         "likely_score_probability": float(best[2]),
+        "rounded_expected_team_a_goals": rounded_a,
+        "rounded_expected_team_b_goals": rounded_b,
+        "rounded_expected_scoreline": f"{rounded_a}-{rounded_b}",
+        "rounded_expected_score_probability": float(rounded_probability),
         "over_2_5_probability": float(over_2_5),
         "under_2_5_probability": float(1.0 - over_2_5),
         "goal_outcome_probabilities": outcome_probs,
@@ -597,8 +613,12 @@ def predict_goals(
     venue_mode: str = "team_a_home",
 ) -> dict:
     bundle, meta = _load_or_train_bundle()
-    matches_df = load_goal_matches()
-    as_of_date = pd.Timestamp.now().normalize()
+    matches_df = _load_goal_inference_matches()
+    as_of_date = pd.Timestamp.now().normalize() + pd.Timedelta(days=1)
+    if "date" in matches_df.columns and not matches_df.empty:
+        latest_match_date = pd.to_datetime(matches_df["date"], errors="coerce").max()
+        if pd.notna(latest_match_date):
+            as_of_date = max(as_of_date, latest_match_date.normalize() + pd.Timedelta(days=1))
     history, h2h = _history_until(matches_df, as_of_date)
     rankings = _ranking_index(rankings_df if rankings_df is not None else load_rankings())
 
