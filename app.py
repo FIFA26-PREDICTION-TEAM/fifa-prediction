@@ -1596,6 +1596,10 @@ if predict_btn:
             f"over 2.5 accuracy {goal_metrics.get('over_2_5_accuracy', 0):.1%}"
             if goal_metrics else "Independent expected-goals model"
         )
+        rounded_scoreline = result.get(
+            "rounded_expected_scoreline",
+            f"{int(float(result['expected_team_a_goals']) + 0.5)}-{int(float(result['expected_team_b_goals']) + 0.5)}",
+        )
         st.markdown(
             f"""
             <section class="report-section">
@@ -1622,8 +1626,8 @@ if predict_btn:
                         <span class="stat-value">{result['expected_team_b_goals']:.2f}</span>
                     </div>
                     <div class="stat-tile">
-                        <span class="stat-label">Total expected goals</span>
-                        <span class="stat-value">{result['expected_total_goals']:.2f}</span>
+                        <span class="stat-label">Rounded xG score</span>
+                        <span class="stat-value">{escape(str(rounded_scoreline))}</span>
                     </div>
                     <div class="stat-tile">
                         <span class="stat-label">Over 2.5 goals</span>

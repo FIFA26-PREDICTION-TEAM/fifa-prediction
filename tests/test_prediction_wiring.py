@@ -58,9 +58,20 @@ class PredictionWiringTests(unittest.TestCase):
 
         self.assertAlmostEqual(sum(outcome.values()), 1.0, places=9)
         self.assertGreater(outcome["loss_prob"], outcome["win_prob"])
+        self.assertEqual(scoreline["rounded_expected_scoreline"], "1-2")
+        self.assertGreater(scoreline["rounded_expected_score_probability"], 0.0)
+        self.assertLessEqual(scoreline["rounded_expected_score_probability"], 1.0)
         self.assertEqual(scoreline["scorelines_by_outcome"]["team_a_win"]["scoreline"], "1-0")
         self.assertEqual(scoreline["scorelines_by_outcome"]["draw"]["scoreline"], "1-1")
         self.assertEqual(scoreline["scorelines_by_outcome"]["team_b_win"]["scoreline"], "0-1")
+
+    def test_rounded_expected_scoreline_uses_expected_goals(self):
+        scoreline = _scoreline_from_expected(2.06, 0.77)
+
+        self.assertEqual(scoreline["rounded_expected_team_a_goals"], 2)
+        self.assertEqual(scoreline["rounded_expected_team_b_goals"], 1)
+        self.assertEqual(scoreline["rounded_expected_scoreline"], "2-1")
+        self.assertGreater(scoreline["rounded_expected_score_probability"], 0.0)
 
     def test_blended_prediction_uses_max_ensemble_probability(self):
         classifier_probs = np.array([0.34, 0.24, 0.42])

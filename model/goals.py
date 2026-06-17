@@ -432,6 +432,9 @@ def _fit_model(X: pd.DataFrame, y: np.ndarray) -> CatBoostRegressor:
 def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals: int = SCORELINE_MAX_GOALS) -> dict:
     lam_a = max(0.05, float(team_a_goals))
     lam_b = max(0.05, float(team_b_goals))
+    rounded_a = int(min(max_goals, max(0, math.floor(lam_a + 0.5))))
+    rounded_b = int(min(max_goals, max(0, math.floor(lam_b + 0.5))))
+    rounded_probability = 0.0
     best = (0, 0, -1.0)
     best_by_outcome = {
         "team_a_win": (1, 0, -1.0),
@@ -451,6 +454,8 @@ def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals
             pb = math.exp(-lam_b) * (lam_b**b) / math.factorial(b)
             prob = pa * pb
             grid_mass += prob
+            if a == rounded_a and b == rounded_b:
+                rounded_probability += prob
             if a + b > 2.5:
                 over_2_5 += prob
             if prob > best[2]:
@@ -470,6 +475,7 @@ def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals
 
     if grid_mass > 0:
         over_2_5 /= grid_mass
+        rounded_probability /= grid_mass
         for key in outcome_probs:
             outcome_probs[key] = float(outcome_probs[key] / grid_mass)
         best = (best[0], best[1], best[2] / grid_mass)
@@ -491,6 +497,10 @@ def _scoreline_from_expected(team_a_goals: float, team_b_goals: float, max_goals
         "likely_team_a_goals": int(best[0]),
         "likely_team_b_goals": int(best[1]),
         "likely_score_probability": float(best[2]),
+        "rounded_expected_team_a_goals": rounded_a,
+        "rounded_expected_team_b_goals": rounded_b,
+        "rounded_expected_scoreline": f"{rounded_a}-{rounded_b}",
+        "rounded_expected_score_probability": float(rounded_probability),
         "over_2_5_probability": float(over_2_5),
         "under_2_5_probability": float(1.0 - over_2_5),
         "goal_outcome_probabilities": outcome_probs,
