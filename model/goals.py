@@ -28,6 +28,7 @@ except ImportError:
     HAS_CATBOOST = False
 
 from data.ingest import MAX_DATA_DATE, MIN_DATA_YEAR, load_rankings
+from data.world_cup_2026 import append_world_cup_2026_matches
 from model.features import get_tournament_weight, normalize_tournament_name
 
 
@@ -123,6 +124,11 @@ def load_goal_matches() -> pd.DataFrame:
         df["neutral"] = False
     mask = (df["date"].dt.year >= MIN_DATA_YEAR) & (df["date"] <= MAX_DATA_DATE)
     return df[mask].sort_values("date").reset_index(drop=True)
+
+
+def _load_goal_inference_matches() -> pd.DataFrame:
+    matches = append_world_cup_2026_matches(load_goal_matches())
+    return matches.sort_values("date").reset_index(drop=True)
 
 
 def _ranking_index(rankings_df: pd.DataFrame | None) -> dict:
@@ -597,8 +603,12 @@ def predict_goals(
     venue_mode: str = "team_a_home",
 ) -> dict:
     bundle, meta = _load_or_train_bundle()
-    matches_df = load_goal_matches()
-    as_of_date = pd.Timestamp.now().normalize()
+    matches_df = _load_goal_inference_matches()
+    as_of_date = pd.Timestamp.now().normalize() + pd.Timedelta(days=1)
+    if "date" in matches_df.columns and not matches_df.empty:
+        latest_match_date = pd.to_datetime(matches_df["date"], errors="coerce").max()
+        if pd.notna(latest_match_date):
+            as_of_date = max(as_of_date, latest_match_date.normalize() + pd.Timedelta(days=1))
     history, h2h = _history_until(matches_df, as_of_date)
     rankings = _ranking_index(rankings_df if rankings_df is not None else load_rankings())
 
