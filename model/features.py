@@ -3,6 +3,8 @@ Single source of truth for feature definitions, tournament weights,
 and recency decay. Imported by preprocess.py, train.py, and predict.py.
 """
 
+import os
+
 # Tournament tier weights
 TOURNAMENT_WEIGHTS = {
     "fifa world cup": 1.0,
@@ -25,6 +27,7 @@ TOURNAMENT_WEIGHTS = {
 }
 
 DEFAULT_TOURNAMENT_WEIGHT = 0.5  # for unrecognized tournaments
+WORLD_CUP_2026_WEIGHT = float(os.getenv("ML_PRJCT_WORLD_CUP_2026_WEIGHT", "1.35"))
 
 # Only use data from this year onwards — removes retired players and stale history
 DATA_FROM_YEAR = 2006
@@ -41,6 +44,14 @@ RAW_CONTEXT_COLUMNS = [
 def get_tournament_weight(tournament_name: str) -> float:
     if not tournament_name:
         return DEFAULT_TOURNAMENT_WEIGHT
+    raw_name = str(tournament_name).lower().strip()
+    if (
+        "2026" in raw_name
+        and "world cup" in raw_name
+        and "qualifier" not in raw_name
+        and "qualification" not in raw_name
+    ):
+        return WORLD_CUP_2026_WEIGHT
     normalized = normalize_tournament_name(tournament_name)
     return TOURNAMENT_WEIGHTS.get(normalized, DEFAULT_TOURNAMENT_WEIGHT)
 

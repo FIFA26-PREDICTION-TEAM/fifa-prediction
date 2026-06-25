@@ -17,7 +17,7 @@ from data.world_cup_2026 import append_world_cup_2026_matches, load_world_cup_20
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _PROCESSED = os.path.join(_ROOT, "data", "processed")
 _EXTERNAL = os.path.join(_ROOT, "data", "external")
-USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "1").strip().lower() in {
+USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "0").strip().lower() in {
     "1",
     "true",
     "yes",

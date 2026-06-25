@@ -54,7 +54,7 @@ def _team_form(team: str, matches: pd.DataFrame, n: int = 10) -> dict:
     if matches.empty or "tournament" not in matches.columns:
         return _zero
     if "_is_competitive" in matches.columns:
-        mask = matches["_is_competitive"].fillna(False)
+        mask = matches["_is_competitive"].fillna(False).astype(bool)
     else:
         # str.contains avoids the zero-column apply() bug on empty DataFrames
         mask = matches["tournament"].str.lower().str.contains(_COMPETITIVE_RE, na=False)
@@ -193,7 +193,10 @@ def _tournament_features(team: str, matches: pd.DataFrame, shootouts: pd.DataFra
     """
     wc = matches[
         ((matches["home_team"] == team) | (matches["away_team"] == team)) &
-        (matches["_is_wc"].fillna(False) if "_is_wc" in matches.columns else matches["tournament"].apply(_is_wc))
+        (
+            matches["_is_wc"].fillna(False).astype(bool)
+            if "_is_wc" in matches.columns else matches["tournament"].apply(_is_wc)
+        )
     ]
 
     # WC titles from known-titles dict (dataset has no stage column)

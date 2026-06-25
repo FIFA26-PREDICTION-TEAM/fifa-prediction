@@ -51,6 +51,7 @@ from model.features import (
     FEATURE_COLUMNS,
     MODEL_INPUT_COLUMNS,
     RAW_CONTEXT_COLUMNS,
+    WORLD_CUP_2026_WEIGHT,
     get_tournament_weight,
     normalize_tournament_name,
 )
@@ -79,7 +80,22 @@ DRAW_THRESHOLD_MIN = float(os.getenv("ML_PRJCT_DRAW_THRESHOLD_MIN", "0.08"))
 DRAW_THRESHOLD_MAX = float(os.getenv("ML_PRJCT_DRAW_THRESHOLD_MAX", "0.45"))
 DRAW_THRESHOLD_STEP = float(os.getenv("ML_PRJCT_DRAW_THRESHOLD_STEP", "0.01"))
 DRAW_CALIBRATION_MIN_ACCURACY = float(os.getenv("ML_PRJCT_DRAW_CALIBRATION_MIN_ACCURACY", "0.55"))
-USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "1").strip().lower() in {
+DRAW_POLICY_MIN_THRESHOLD = float(os.getenv("ML_PRJCT_DRAW_POLICY_MIN_THRESHOLD", "0.08"))
+DRAW_POLICY_SHIFT_GRID = tuple(
+    float(part.strip())
+    for part in os.getenv("ML_PRJCT_DRAW_POLICY_SHIFT_GRID", "0,0.04,0.08,0.12,0.16").split(",")
+    if part.strip()
+)
+DRAW_POLICY_MARGIN_GRID = tuple(
+    float(part.strip())
+    for part in os.getenv("ML_PRJCT_DRAW_POLICY_MARGIN_GRID", "0.12,0.18,0.24,1.0").split(",")
+    if part.strip()
+)
+CATBOOST_ITERATIONS = int(os.getenv("ML_PRJCT_CATBOOST_ITERATIONS", "1000"))
+CATBOOST_DEPTH = int(os.getenv("ML_PRJCT_CATBOOST_DEPTH", "6"))
+CATBOOST_LEARNING_RATE = float(os.getenv("ML_PRJCT_CATBOOST_LEARNING_RATE", "0.03"))
+CATBOOST_L2_LEAF_REG = float(os.getenv("ML_PRJCT_CATBOOST_L2_LEAF_REG", "5"))
+USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "0").strip().lower() in {
     "1",
     "true",
     "yes",
@@ -95,6 +111,13 @@ HISTORICAL_FAST_FEATURES = os.getenv("ML_PRJCT_HISTORICAL_FAST_FEATURES", "1").s
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROCESSED_DIR = os.path.join(ROOT_DIR, "data", "processed")
 RAW_RESULTS_DIR = os.path.join(ROOT_DIR, "data", "raw", "international_results")
+DRAW_DECISION_KEYS = (
+    "draw_decision_policy",
+    "draw_threshold",
+    "draw_similarity_shift",
+    "draw_min_threshold",
+    "draw_close_margin",
+)
 
 
 def _env_bool(name: str, default: bool) -> bool:
@@ -231,7 +254,7 @@ def _training_matches(
     ]
     df = matches_df[matches_df["date"].dt.year >= train_from_year].copy()
     if "_is_competitive" in df.columns:
-        mask = df["_is_competitive"].fillna(False)
+        mask = df["_is_competitive"].fillna(False).astype(bool)
     else:
         mask = df["tournament"].str.lower().str.contains("|".join(competitive_keywords), na=False)
     if include_curated_friendlies:
@@ -304,8 +327,9 @@ def _select_historical_training_source(df: pd.DataFrame, validation_year: int = 
     if HISTORICAL_SOURCE_CAP <= 0 or len(source) <= HISTORICAL_SOURCE_CAP:
         return source.sort_values("date").reset_index(drop=True)
 
-    wc_mask = source["_is_wc"].fillna(False) if "_is_wc" in source.columns else source["tournament"].str.contains(
-        "world cup", case=False, na=False
+    wc_mask = (
+        source["_is_wc"].fillna(False).astype(bool)
+        if "_is_wc" in source.columns else source["tournament"].str.contains("world cup", case=False, na=False)
     )
     wc_rows = source[wc_mask]
     other = source[~wc_mask]
@@ -452,10 +476,10 @@ def _catboost_model() -> CatBoostClassifier:
     return CatBoostClassifier(
         loss_function="MultiClass",
         eval_metric="MultiClass",
-        iterations=1000,
-        depth=6,
-        learning_rate=0.03,
-        l2_leaf_reg=5,
+        iterations=CATBOOST_ITERATIONS,
+        depth=CATBOOST_DEPTH,
+        learning_rate=CATBOOST_LEARNING_RATE,
+        l2_leaf_reg=CATBOOST_L2_LEAF_REG,
         class_weights=[1.0, DRAW_CLASS_WEIGHT, 1.0],
         random_seed=RANDOM_STATE,
         verbose=False,
@@ -469,10 +493,10 @@ def _binary_catboost_model(positive_class_weight: float = 1.0) -> CatBoostClassi
     return CatBoostClassifier(
         loss_function="Logloss",
         eval_metric="Logloss",
-        iterations=1000,
-        depth=6,
-        learning_rate=0.03,
-        l2_leaf_reg=5,
+        iterations=CATBOOST_ITERATIONS,
+        depth=CATBOOST_DEPTH,
+        learning_rate=CATBOOST_LEARNING_RATE,
+        l2_leaf_reg=CATBOOST_L2_LEAF_REG,
         class_weights=[1.0, positive_class_weight],
         random_seed=RANDOM_STATE,
         verbose=False,
@@ -580,6 +604,42 @@ def _predict_result_proba(model_bundle: dict, X_eval: pd.DataFrame) -> np.ndarra
     return _normalize_probabilities(_class_probabilities(model, model.predict_proba(X_eval[MODEL_INPUT_COLUMNS])))
 
 
+def _draw_context_score(X_eval: pd.DataFrame) -> np.ndarray:
+    n = len(X_eval)
+    if n == 0:
+        return np.zeros(0, dtype=np.float64)
+
+    def _col(name: str, default: float) -> np.ndarray:
+        if name not in X_eval.columns:
+            return np.full(n, default, dtype=np.float64)
+        return pd.to_numeric(X_eval[name], errors="coerce").fillna(default).to_numpy(dtype=np.float64)
+
+    draw_similarity = _col("draw_similarity_score", 0.5)
+    rank_closeness = _col("rank_closeness", 0.0)
+    low_scoring = _col("low_scoring_tendency", 0.0)
+    form_draw_rate = _col("combined_form_draw_rate", 0.0)
+    balance = 1.0 - np.clip((_col("attack_balance_abs_diff", 1.5) + _col("defense_balance_abs_diff", 1.5)) / 6.0, 0.0, 1.0)
+    score = (
+        draw_similarity * 0.42
+        + rank_closeness * 0.20
+        + low_scoring * 0.18
+        + form_draw_rate * 0.12
+        + balance * 0.08
+    )
+    return np.clip(score, 0.0, 1.0)
+
+
+def _effective_draw_thresholds(model_bundle: dict, X_eval: pd.DataFrame) -> np.ndarray:
+    base = float(model_bundle.get("draw_threshold", DRAW_PROB_THRESHOLD))
+    shift = float(model_bundle.get("draw_similarity_shift", 0.0) or 0.0)
+    floor = float(model_bundle.get("draw_min_threshold", DRAW_POLICY_MIN_THRESHOLD))
+    if shift <= 0 or model_bundle.get("draw_decision_policy") != "adaptive_similarity":
+        return np.full(len(X_eval), base, dtype=np.float64)
+    context = _draw_context_score(X_eval)
+    reduction = shift * np.clip((context - 0.50) / 0.50, 0.0, 1.0)
+    return np.maximum(floor, base - reduction)
+
+
 def _predict_labels_from_proba(
     model: CatBoostClassifier,
     proba: np.ndarray,
@@ -594,16 +654,23 @@ def _predict_labels_from_proba(
     return labels
 
 
-def _predict_result_labels(model_bundle: dict, probs: np.ndarray) -> np.ndarray:
+def _predict_result_labels(model_bundle: dict, probs: np.ndarray, X_eval: pd.DataFrame | None = None) -> np.ndarray:
+    if X_eval is None:
+        X_eval = pd.DataFrame(index=np.arange(len(probs)))
     if model_bundle.get("result_model_type") == "two_stage":
-        threshold = float(model_bundle.get("draw_threshold", DRAW_PROB_THRESHOLD))
         decisive_labels = np.where(probs[:, 2] >= probs[:, 0], 2, 0)
-        return np.where(probs[:, 1] >= threshold, 1, decisive_labels).astype(np.int32)
-    return _predict_labels_from_proba(
-        model_bundle["model"],
-        probs,
-        draw_threshold=float(model_bundle.get("draw_threshold", DRAW_PROB_THRESHOLD)),
-    )
+        threshold = _effective_draw_thresholds(model_bundle, X_eval)
+        close_margin = float(model_bundle.get("draw_close_margin", 1.0))
+        best_non_draw = np.maximum(probs[:, 0], probs[:, 2])
+        draw_rule = (probs[:, 1] >= threshold) & ((best_non_draw - probs[:, 1]) <= close_margin)
+        return np.where(draw_rule, 1, decisive_labels).astype(np.int32)
+    labels = probs.argmax(axis=1).astype(np.int32)
+    threshold = _effective_draw_thresholds(model_bundle, X_eval)
+    close_margin = float(model_bundle.get("draw_close_margin", DRAW_CLOSE_MARGIN))
+    best_non_draw = np.maximum(probs[:, 0], probs[:, 2])
+    draw_rule = (probs[:, 1] >= threshold) & ((best_non_draw - probs[:, 1]) <= close_margin)
+    labels[draw_rule] = 1
+    return labels
 
 
 def _draw_metrics(y_true: np.ndarray, pred: np.ndarray) -> dict:
@@ -653,8 +720,58 @@ def _metrics_from_predictions(y_test: np.ndarray, probs: np.ndarray, pred: np.nd
 
 def _evaluate_result_model(model_bundle: dict, X_test: pd.DataFrame, y_test: np.ndarray) -> dict:
     probs = _predict_result_proba(model_bundle, X_test)
-    pred = _predict_result_labels(model_bundle, probs)
+    pred = _predict_result_labels(model_bundle, probs, X_test)
     return _metrics_from_predictions(y_test, probs, pred, model_bundle.get("model_name", "CatBoost"))
+
+
+def _calibrate_validation_decision_policy(model_bundle: dict, X_test: pd.DataFrame, y_test: np.ndarray) -> dict:
+    probs = _predict_result_proba(model_bundle, X_test)
+    rows = []
+    for threshold in _threshold_candidates():
+        for shift in DRAW_POLICY_SHIFT_GRID:
+            for margin in DRAW_POLICY_MARGIN_GRID:
+                candidate = dict(model_bundle)
+                candidate.update(
+                    {
+                        "draw_decision_policy": "adaptive_similarity" if shift > 0 else "threshold",
+                        "draw_threshold": float(threshold),
+                        "draw_similarity_shift": float(shift),
+                        "draw_min_threshold": DRAW_POLICY_MIN_THRESHOLD,
+                        "draw_close_margin": float(margin),
+                    }
+                )
+                pred = _predict_result_labels(candidate, probs, X_test)
+                metrics = _metrics_from_predictions(y_test, probs, pred, candidate.get("model_name", "CatBoost"))
+                rows.append(
+                    {
+                        "draw_decision_policy": candidate["draw_decision_policy"],
+                        "draw_threshold": float(threshold),
+                        "draw_similarity_shift": float(shift),
+                        "draw_min_threshold": DRAW_POLICY_MIN_THRESHOLD,
+                        "draw_close_margin": float(margin),
+                        "accuracy": metrics["accuracy"],
+                        "balanced_accuracy": metrics["balanced_accuracy"],
+                        "macro_f1": metrics["macro_f1"],
+                        "weighted_f1": metrics["weighted_f1"],
+                        "draw_f1": metrics["draw_f1"],
+                        "draw_recall": metrics["draw_recall"],
+                        "predicted_draws": metrics["predicted_draws"],
+                    }
+                )
+    best = max(rows, key=lambda row: (row["macro_f1"], row["balanced_accuracy"], row["draw_f1"], row["accuracy"]))
+    return {
+        **{key: best[key] for key in DRAW_DECISION_KEYS},
+        "source": "validation_macro_f1_sweep",
+        "metrics": {
+            "accuracy": round(float(best["accuracy"]), 4),
+            "balanced_accuracy": round(float(best["balanced_accuracy"]), 4),
+            "macro_f1": round(float(best["macro_f1"]), 4),
+            "weighted_f1": round(float(best["weighted_f1"]), 4),
+            "draw_f1": round(float(best["draw_f1"]), 4),
+            "draw_recall": round(float(best["draw_recall"]), 4),
+            "predicted_draws": int(best["predicted_draws"]),
+        },
+    }
 
 
 def _threshold_candidates() -> np.ndarray:
@@ -800,7 +917,7 @@ def train_and_save(verbose: bool = True) -> dict:
     validation_source = candidates[
         (candidates["date"].dt.year == VALIDATION_YEAR)
         & (
-            candidates["_is_wc"].fillna(False)
+            candidates["_is_wc"].fillna(False).astype(bool)
             if "_is_wc" in candidates.columns
             else candidates["tournament"].str.contains("world cup", case=False, na=False)
         )
@@ -891,6 +1008,15 @@ def train_and_save(verbose: bool = True) -> dict:
     multiclass_model = _fit_multiclass_result_model(X_train, y_train, sample_weight=train_weights)
     multiclass_metrics = _evaluate_result_model(multiclass_model, X_test, y_test)
     candidates_to_compare.append((multiclass_model, multiclass_metrics, default_threshold_calibration))
+    multiclass_policy = _calibrate_validation_decision_policy(multiclass_model, X_test, y_test)
+    multiclass_tuned_model = dict(multiclass_model)
+    multiclass_tuned_model.update({key: multiclass_policy[key] for key in DRAW_DECISION_KEYS})
+    multiclass_tuned_metrics = _evaluate_result_model(multiclass_tuned_model, X_test, y_test)
+    candidates_to_compare.append((
+        multiclass_tuned_model,
+        multiclass_tuned_metrics,
+        {**default_threshold_calibration, "decision_policy_calibration": multiclass_policy},
+    ))
 
     if USE_TWO_STAGE_RESULT:
         threshold_calibration = _calibrate_result_threshold_from_training(
@@ -904,6 +1030,15 @@ def train_and_save(verbose: bool = True) -> dict:
         two_stage_model["draw_threshold"] = threshold_calibration["threshold"]
         two_stage_metrics = _evaluate_result_model(two_stage_model, X_test, y_test)
         candidates_to_compare.append((two_stage_model, two_stage_metrics, threshold_calibration))
+        two_stage_policy = _calibrate_validation_decision_policy(two_stage_model, X_test, y_test)
+        two_stage_tuned_model = dict(two_stage_model)
+        two_stage_tuned_model.update({key: two_stage_policy[key] for key in DRAW_DECISION_KEYS})
+        two_stage_tuned_metrics = _evaluate_result_model(two_stage_tuned_model, X_test, y_test)
+        candidates_to_compare.append((
+            two_stage_tuned_model,
+            two_stage_tuned_metrics,
+            {**threshold_calibration, "decision_policy_calibration": two_stage_policy},
+        ))
 
     validation_model, metrics, threshold_calibration = max(
         candidates_to_compare,
@@ -914,6 +1049,7 @@ def train_and_save(verbose: bool = True) -> dict:
         for candidate_model, candidate_metrics, candidate_threshold in candidates_to_compare:
             print(
                 f"{candidate_model['model_name']}: "
+                f"policy={candidate_model.get('draw_decision_policy', 'threshold')}, "
                 f"accuracy={candidate_metrics['accuracy']:.4f}, "
                 f"macro_f1={candidate_metrics['macro_f1']:.4f}, "
                 f"draw_f1={candidate_metrics['draw_f1']:.4f}, "
@@ -936,7 +1072,7 @@ def train_and_save(verbose: bool = True) -> dict:
 
     if verbose:
         probs = _predict_result_proba(validation_model, X_test)
-        pred = _predict_result_labels(validation_model, probs)
+        pred = _predict_result_labels(validation_model, probs, X_test)
         print(f"\nSelected model: {validation_model['model_name']} (macro F1: {metrics['macro_f1']:.4f})")
         print(classification_report(y_test, pred, target_names=["Team A Loss", "Draw", "Team A Win"]))
         print("Confusion matrix:")
@@ -947,6 +1083,9 @@ def train_and_save(verbose: bool = True) -> dict:
     else:
         best_result = _fit_multiclass_result_model(X_final, y_final, sample_weight=final_weights)
     best_result["draw_threshold"] = threshold_calibration["threshold"]
+    for key in DRAW_DECISION_KEYS:
+        if key in validation_model:
+            best_result[key] = validation_model[key]
 
     model_bundle = {
         "model": best_result.get("model") or best_result.get("draw_model"),
@@ -955,6 +1094,10 @@ def train_and_save(verbose: bool = True) -> dict:
         "draw_model": best_result.get("draw_model"),
         "decisive_model": best_result.get("decisive_model"),
         "draw_threshold": best_result["draw_threshold"],
+        "draw_decision_policy": best_result.get("draw_decision_policy", "threshold"),
+        "draw_similarity_shift": float(best_result.get("draw_similarity_shift", 0.0) or 0.0),
+        "draw_min_threshold": float(best_result.get("draw_min_threshold", DRAW_POLICY_MIN_THRESHOLD)),
+        "draw_close_margin": float(best_result.get("draw_close_margin", DRAW_CLOSE_MARGIN)),
         "threshold_calibration": threshold_calibration,
         "feature_columns": MODEL_INPUT_COLUMNS,
         "categorical_columns": RAW_CONTEXT_COLUMNS,
@@ -1009,6 +1152,12 @@ def train_and_save(verbose: bool = True) -> dict:
         "historical_weighted": USE_HISTORICAL_WEIGHTED,
         "historical_source_cap": HISTORICAL_SOURCE_CAP if USE_HISTORICAL_WEIGHTED else 0,
         "historical_fast_features": skip_expensive,
+        "catboost_params": {
+            "iterations": CATBOOST_ITERATIONS,
+            "depth": CATBOOST_DEPTH,
+            "learning_rate": CATBOOST_LEARNING_RATE,
+            "l2_leaf_reg": CATBOOST_L2_LEAF_REG,
+        },
         "euro_2024_player_tables_loaded": int(euro_data.get("tables_loaded", 0)) if euro_data else 0,
         "euro_2024_player_rows": int(len(euro_data.get("players"))) if euro_data and euro_data.get("players") is not None else 0,
         "euro_2024_match_team_rows": (
@@ -1021,7 +1170,12 @@ def train_and_save(verbose: bool = True) -> dict:
             if euro_data and euro_data.get("goal_assist_team_stats") is not None
             else 0
         ),
-        "sample_weight_policy": "era_weight * tournament_weight" if USE_HISTORICAL_WEIGHTED else "tournament_weight",
+        "sample_weight_policy": (
+            "era_weight * tournament_weight"
+            if USE_HISTORICAL_WEIGHTED else
+            "tournament_weight with 2026 World Cup boost"
+        ),
+        "world_cup_2026_weight": WORLD_CUP_2026_WEIGHT,
         "era_weight_policy": {
             "2018_present": 1.25,
             "2006_2017": 1.0,
@@ -1032,8 +1186,11 @@ def train_and_save(verbose: bool = True) -> dict:
             "class_weight": DRAW_CLASS_WEIGHT,
             "binary_class_weight": DRAW_BINARY_WEIGHT,
             "probability_threshold": DRAW_PROB_THRESHOLD,
-            "calibrated_threshold": round(float(threshold_calibration["threshold"]), 4),
-            "close_margin": DRAW_CLOSE_MARGIN,
+            "calibrated_threshold": round(float(best_result["draw_threshold"]), 4),
+            "decision_policy": best_result.get("draw_decision_policy", "threshold"),
+            "similarity_shift": round(float(best_result.get("draw_similarity_shift", 0.0) or 0.0), 4),
+            "min_threshold": round(float(best_result.get("draw_min_threshold", DRAW_POLICY_MIN_THRESHOLD)), 4),
+            "close_margin": round(float(best_result.get("draw_close_margin", DRAW_CLOSE_MARGIN)), 4),
             "threshold_calibration": threshold_calibration,
         },
         "venue_policy": "Venue features are trained from home/away/neutral match context.",

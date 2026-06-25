@@ -32,7 +32,7 @@ if str(ROOT) not in sys.path:
 from data.copa_america import load_copa_america_data
 from data.euro_2024 import load_euro_2024_data
 from data.international_friendlies import append_friendlies_matches, load_friendlies_data
-from data.ingest import load_award_winners, load_player_appearances, load_player_goals, load_rankings
+from data.ingest import load_award_winners, load_player_appearances, load_player_goals, load_rankings, load_substitutions
 from model import goals as goal_model
 from model import train as result_train
 from model.features import normalize_tournament_name
@@ -104,7 +104,7 @@ def _validation_source(matches_df: pd.DataFrame, meta: dict) -> pd.DataFrame:
         train_from_year=int(meta.get("train_from_year", 1872 if result_train.USE_HISTORICAL_WEIGHTED else result_train.TRAIN_FROM_YEAR)),
     )
     wc_mask = (
-        candidates["_is_wc"].fillna(False)
+        candidates["_is_wc"].fillna(False).astype(bool)
         if "_is_wc" in candidates.columns
         else candidates["tournament"].str.contains("world cup", case=False, na=False)
     )
@@ -181,7 +181,7 @@ def calibrate(write: bool = True) -> dict:
         goalscorers_df,
         shootouts_df,
         rankings_df,
-        None,
+        None if skip_expensive else load_substitutions(),
         None if skip_expensive else load_player_appearances(),
         None if skip_expensive else load_player_goals(),
         None if skip_expensive else load_award_winners(),
@@ -201,7 +201,7 @@ def calibrate(write: bool = True) -> dict:
         goalscorers_df,
         shootouts_df,
         rankings_df,
-        None,
+        None if skip_expensive else load_substitutions(),
         None if skip_expensive else load_player_appearances(),
         None if skip_expensive else load_player_goals(),
         None if skip_expensive else load_award_winners(),
@@ -226,16 +226,31 @@ def calibrate(write: bool = True) -> dict:
     candidates = []
     multiclass_model = result_train._fit_multiclass_result_model(x_train, y_train, sample_weight=train_weights)
     candidates.append((multiclass_model, result_train._evaluate_result_model(multiclass_model, x_test, y_test)))
+    multiclass_policy = result_train._calibrate_validation_decision_policy(multiclass_model, x_test, y_test)
+    multiclass_tuned_model = dict(multiclass_model)
+    multiclass_tuned_model.update({key: multiclass_policy[key] for key in result_train.DRAW_DECISION_KEYS})
+    candidates.append((
+        multiclass_tuned_model,
+        result_train._evaluate_result_model(multiclass_tuned_model, x_test, y_test),
+    ))
     if result_train.USE_TWO_STAGE_RESULT:
         two_stage_model = result_train._fit_two_stage_model(x_train, y_train, sample_weight=train_weights)
         two_stage_model["draw_threshold"] = threshold_calibration["threshold"]
         candidates.append((two_stage_model, result_train._evaluate_result_model(two_stage_model, x_test, y_test)))
+        two_stage_policy = result_train._calibrate_validation_decision_policy(two_stage_model, x_test, y_test)
+        two_stage_tuned_model = dict(two_stage_model)
+        two_stage_tuned_model.update({key: two_stage_policy[key] for key in result_train.DRAW_DECISION_KEYS})
+        candidates.append((
+            two_stage_tuned_model,
+            result_train._evaluate_result_model(two_stage_tuned_model, x_test, y_test),
+        ))
 
     validation_model, validation_metrics = max(
         candidates,
         key=lambda item: (item[1]["macro_f1"], item[1]["accuracy"], item[1]["draw_f1"]),
     )
     classifier_probs = _normalize(result_train._predict_result_proba(validation_model, x_test))
+    classifier_labels = result_train._predict_result_labels(validation_model, classifier_probs, x_test)
 
     goal_bundle = joblib.load(goal_model_path)
     goal_matches = goal_model.load_goal_matches()
@@ -264,11 +279,13 @@ def calibrate(write: bool = True) -> dict:
     rows = []
     for classifier_weight in np.round(np.arange(0.0, 1.0001, 0.05), 4):
         probs = _normalize((classifier_probs * classifier_weight) + (goal_probs * (1.0 - classifier_weight)))
-        pred = probs.argmax(axis=1).astype(np.int32)
+        uses_classifier_decision_label = bool(classifier_weight >= 0.999)
+        pred = classifier_labels if uses_classifier_decision_label else probs.argmax(axis=1).astype(np.int32)
         rows.append(
             {
                 "classifier_weight": float(classifier_weight),
                 "goal_weight": float(1.0 - classifier_weight),
+                "uses_classifier_decision_label": uses_classifier_decision_label,
                 "accuracy": float(accuracy_score(labels, pred)),
                 "balanced_accuracy": float(balanced_accuracy_score(labels, pred)),
                 "macro_f1": float(f1_score(labels, pred, average="macro", zero_division=0)),
@@ -282,6 +299,7 @@ def calibrate(write: bool = True) -> dict:
         "policy_name": "calibrated_outcome_ensemble",
         "classifier_weight": round(float(best["classifier_weight"]), 4),
         "goal_weight": round(float(best["goal_weight"]), 4),
+        "uses_classifier_decision_label": bool(best["uses_classifier_decision_label"]),
         "source": "world_cup_validation_sweep",
         "selection_policy": "highest_macro_f1_then_balanced_accuracy_then_lowest_log_loss",
         "validation_year": int(meta.get("validation_year", result_train.VALIDATION_YEAR)),
@@ -298,6 +316,7 @@ def calibrate(write: bool = True) -> dict:
             {
                 "classifier_weight": round(float(row["classifier_weight"]), 4),
                 "goal_weight": round(float(row["goal_weight"]), 4),
+                "uses_classifier_decision_label": bool(row["uses_classifier_decision_label"]),
                 "accuracy": round(float(row["accuracy"]), 4),
                 "balanced_accuracy": round(float(row["balanced_accuracy"]), 4),
                 "macro_f1": round(float(row["macro_f1"]), 4),

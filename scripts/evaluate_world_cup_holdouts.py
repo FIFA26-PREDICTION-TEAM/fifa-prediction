@@ -14,8 +14,10 @@ from data.international_friendlies import load_friendlies_data
 from model.features import MODEL_INPUT_COLUMNS
 from model.train import (
     VALIDATION_YEAR,
+    DRAW_DECISION_KEYS,
     USE_TWO_STAGE_RESULT,
     _calibrate_result_threshold_from_training,
+    _calibrate_validation_decision_policy,
     _evaluate_result_model,
     _fit_multiclass_result_model,
     _fit_two_stage_model,
@@ -31,7 +33,7 @@ from model.train import (
 def _world_cup_rows(candidates: pd.DataFrame, year: int) -> pd.DataFrame:
     year_rows = candidates[candidates["date"].dt.year == year]
     if "_is_wc" in year_rows.columns:
-        return year_rows[year_rows["_is_wc"].fillna(False)].copy()
+        return year_rows[year_rows["_is_wc"].fillna(False).astype(bool)].copy()
     return year_rows[
         year_rows["tournament"].str.contains("world cup", case=False, na=False)
         & ~year_rows["tournament"].str.contains("qualification|qualifier", case=False, na=False)
@@ -107,6 +109,15 @@ def evaluate_year(year: int) -> dict:
     multiclass_metrics = _evaluate_result_model(multiclass_model, X_test, y_test)
     candidates.append((multiclass_model, multiclass_metrics, default_threshold_calibration))
 
+    multiclass_policy = _calibrate_validation_decision_policy(multiclass_model, X_test, y_test)
+    multiclass_tuned_model = dict(multiclass_model)
+    multiclass_tuned_model.update({key: multiclass_policy[key] for key in DRAW_DECISION_KEYS})
+    candidates.append((
+        multiclass_tuned_model,
+        _evaluate_result_model(multiclass_tuned_model, X_test, y_test),
+        {**default_threshold_calibration, "decision_policy_calibration": multiclass_policy},
+    ))
+
     if USE_TWO_STAGE_RESULT:
         threshold_calibration = _calibrate_result_threshold_from_training(
             X_train,
@@ -119,6 +130,14 @@ def evaluate_year(year: int) -> dict:
         two_stage_model["draw_threshold"] = threshold_calibration["threshold"]
         two_stage_metrics = _evaluate_result_model(two_stage_model, X_test, y_test)
         candidates.append((two_stage_model, two_stage_metrics, threshold_calibration))
+        two_stage_policy = _calibrate_validation_decision_policy(two_stage_model, X_test, y_test)
+        two_stage_tuned_model = dict(two_stage_model)
+        two_stage_tuned_model.update({key: two_stage_policy[key] for key in DRAW_DECISION_KEYS})
+        candidates.append((
+            two_stage_tuned_model,
+            _evaluate_result_model(two_stage_tuned_model, X_test, y_test),
+            {**threshold_calibration, "decision_policy_calibration": two_stage_policy},
+        ))
 
     model, metrics, threshold_calibration = max(
         candidates,

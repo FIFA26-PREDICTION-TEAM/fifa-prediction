@@ -144,6 +144,25 @@ class PredictionWiringTests(unittest.TestCase):
         self.assertEqual(source, "result_classifier")
         self.assertIn("classifier diagnostic policy", policy)
 
+    def test_pure_classifier_policy_uses_calibrated_classifier_label(self):
+        label, policy, source, _, blended_probs, _ = _resolve_prediction_label(
+            np.array([0.44, 0.37, 0.19]),
+            _scoreline_from_expected(1.0, 1.0),
+            {
+                "classifier_weight": 1.0,
+                "goal_weight": 0.0,
+                "uses_classifier_decision_label": True,
+            },
+            classifier_label=1,
+            classifier_policy="calibrated draw threshold",
+        )
+
+        self.assertEqual(label, 1)
+        self.assertEqual(source, "result_classifier")
+        self.assertIn("calibrated draw threshold", policy)
+        self.assertEqual(label, _label_from_probs(blended_probs))
+        self.assertAlmostEqual(blended_probs.sum(), 1.0, places=9)
+
     def test_key_factors_cover_all_nine_data_categories(self):
         factors = _build_key_factors(
             "Morocco",

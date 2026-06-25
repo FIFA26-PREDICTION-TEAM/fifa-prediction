@@ -29,6 +29,7 @@ DEFAULT_OUTCOME_POLICY = {
     "policy_name": "default_calibrated_ensemble",
     "classifier_weight": 0.15,
     "goal_weight": 0.85,
+    "uses_classifier_decision_label": False,
     "source": "code_default",
 }
 
@@ -355,17 +356,54 @@ def _opposite_venue_mode(venue_mode: str) -> str:
     return "neutral"
 
 
-def _prediction_label(model_bundle: dict, probs: np.ndarray) -> tuple[int, str]:
+def _draw_context_score(feat: dict | None) -> float:
+    feat = feat or {}
+
+    def _value(name: str, default: float) -> float:
+        try:
+            return float(feat.get(name, default) or default)
+        except (TypeError, ValueError):
+            return default
+
+    attack_balance = _value("attack_balance_abs_diff", 1.5)
+    defense_balance = _value("defense_balance_abs_diff", 1.5)
+    balance = 1.0 - min(max((attack_balance + defense_balance) / 6.0, 0.0), 1.0)
+    score = (
+        _value("draw_similarity_score", 0.5) * 0.42
+        + _value("rank_closeness", 0.0) * 0.20
+        + _value("low_scoring_tendency", 0.0) * 0.18
+        + _value("combined_form_draw_rate", 0.0) * 0.12
+        + balance * 0.08
+    )
+    return float(np.clip(score, 0.0, 1.0))
+
+
+def _effective_draw_threshold(model_bundle: dict, feat: dict | None) -> float:
+    base = float(model_bundle.get("draw_threshold", 0.37))
+    shift = float(model_bundle.get("draw_similarity_shift", 0.0) or 0.0)
+    floor = float(model_bundle.get("draw_min_threshold", 0.08))
+    if model_bundle.get("draw_decision_policy") != "adaptive_similarity" or shift <= 0:
+        return base
+    reduction = shift * max((_draw_context_score(feat) - 0.50) / 0.50, 0.0)
+    return float(max(floor, base - reduction))
+
+
+def _prediction_label(model_bundle: dict, probs: np.ndarray, feat: dict | None = None) -> tuple[int, str]:
     if model_bundle.get("result_model_type") == "two_stage":
-        threshold = float(model_bundle.get("draw_threshold", 0.37))
-        if float(probs[1]) >= threshold:
-            return 1, f"calibrated draw threshold ({threshold:.0%})"
+        threshold = _effective_draw_threshold(model_bundle, feat)
+        best_non_draw = max(float(probs[0]), float(probs[2]))
+        close_margin = float(model_bundle.get("draw_close_margin", 1.0))
+        if float(probs[1]) >= threshold and best_non_draw - float(probs[1]) <= close_margin:
+            policy = model_bundle.get("draw_decision_policy", "threshold")
+            return 1, f"{policy} draw threshold ({threshold:.0%})"
         return (2 if probs[2] >= probs[0] else 0), "two-stage decisive model"
 
     best_non_draw = max(float(probs[0]), float(probs[2]))
-    threshold = float(model_bundle.get("draw_threshold", 0.24))
-    if float(probs[1]) >= threshold and best_non_draw - float(probs[1]) <= 0.15:
-        return 1, f"calibrated draw threshold ({threshold:.0%})"
+    threshold = _effective_draw_threshold(model_bundle, feat)
+    close_margin = float(model_bundle.get("draw_close_margin", 0.15))
+    if float(probs[1]) >= threshold and best_non_draw - float(probs[1]) <= close_margin:
+        policy = model_bundle.get("draw_decision_policy", "threshold")
+        return 1, f"{policy} draw threshold ({threshold:.0%})"
     return int(np.argmax(probs)), "highest model probability"
 
 
@@ -390,6 +428,25 @@ def _label_from_scoreline(team_a_goals: int, team_b_goals: int) -> int:
 def _label_from_probs(probs: np.ndarray) -> int:
     """Return label for probabilities ordered [Team A loss, draw, Team A win]."""
     return int(np.argmax(np.asarray(probs, dtype=np.float64)))
+
+
+def _align_probabilities_to_label(probs: np.ndarray, label: int) -> np.ndarray:
+    """Adjust displayed probabilities so their maximum matches a calibrated label."""
+    adjusted = _normalize_probabilities(np.asarray(probs, dtype=np.float64).reshape(1, -1))[0]
+    label = int(label)
+    if label < 0 or label >= len(adjusted) or _label_from_probs(adjusted) == label:
+        return adjusted
+
+    target = min(0.999999, float(adjusted.max()) + 1e-6)
+    remaining = max(1e-6, 1.0 - target)
+    other_idx = [idx for idx in range(len(adjusted)) if idx != label]
+    other_total = float(adjusted[other_idx].sum())
+    if other_total <= 0:
+        adjusted[other_idx] = remaining / max(len(other_idx), 1)
+    else:
+        adjusted[other_idx] = adjusted[other_idx] / other_total * remaining
+    adjusted[label] = target
+    return _normalize_probabilities(adjusted.reshape(1, -1))[0]
 
 
 def _goal_outcome_probs(goal_prediction: dict | None) -> np.ndarray | None:
@@ -463,12 +520,20 @@ def _resolve_prediction_label(
 ) -> tuple[int, str, str, str | None, np.ndarray, np.ndarray | None]:
     policy = outcome_policy or _load_outcome_policy()
     goal_probs = _goal_outcome_probs(goal_prediction)
+    classifier_weight = float(policy.get("classifier_weight", DEFAULT_OUTCOME_POLICY["classifier_weight"]))
     blended_probs, source = _blend_outcome_probabilities(
         classifier_probs,
         goal_probs,
-        float(policy.get("classifier_weight", DEFAULT_OUTCOME_POLICY["classifier_weight"])),
+        classifier_weight,
     )
-    predicted_label = _label_from_probs(blended_probs)
+    use_classifier_label = (
+        classifier_label is not None
+        and bool(policy.get("uses_classifier_decision_label", False))
+        and classifier_weight >= 0.999
+    )
+    predicted_label = int(classifier_label) if use_classifier_label else _label_from_probs(blended_probs)
+    if use_classifier_label:
+        blended_probs = _align_probabilities_to_label(blended_probs, predicted_label)
     goals_a, goals_b, score_probability = _scoreline_for_label(goal_prediction, predicted_label)
     scoreline = None
     if goals_a is not None and goals_b is not None:
@@ -480,10 +545,13 @@ def _resolve_prediction_label(
         goal_prediction["likely_team_b_goals"] = goals_b
         goal_prediction["likely_score_probability"] = float(score_probability or 0.0)
 
-    if source == "calibrated_ensemble":
+    if use_classifier_label:
+        source = "result_classifier"
+        decision_policy = classifier_policy or "result classifier calibrated decision label"
+    elif source == "calibrated_ensemble":
         decision_policy = (
             "calibrated outcome ensemble "
-            f"({float(policy.get('classifier_weight', 0.0)):.0%} result model, "
+            f"({classifier_weight:.0%} result model, "
             f"{float(policy.get('goal_weight', 0.0)):.0%} goal model)"
         )
     else:
@@ -669,7 +737,7 @@ def predict_match(
         display_feat["display_rank_date"] = team_a_rank_date
     key_factors = _build_key_factors(team_a, team_b, display_feat, ss_a, ss_b)
 
-    classifier_label, classifier_policy = _prediction_label(model_bundle, classifier_probs_array)
+    classifier_label, classifier_policy = _prediction_label(model_bundle, classifier_probs_array, feat_dict)
 
     goal_prediction = {}
     try:
