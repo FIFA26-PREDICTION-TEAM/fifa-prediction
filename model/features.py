@@ -27,7 +27,7 @@ TOURNAMENT_WEIGHTS = {
 }
 
 DEFAULT_TOURNAMENT_WEIGHT = 0.5  # for unrecognized tournaments
-WORLD_CUP_2026_WEIGHT = float(os.getenv("ML_PRJCT_WORLD_CUP_2026_WEIGHT", "1.35"))
+WORLD_CUP_2026_WEIGHT = float(os.getenv("ML_PRJCT_WORLD_CUP_2026_WEIGHT", "1.4"))
 
 # Only use data from this year onwards — removes retired players and stale history
 DATA_FROM_YEAR = 2006
