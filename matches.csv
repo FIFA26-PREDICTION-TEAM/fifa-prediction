@@ -119,7 +119,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 1958-06-15,Sweden,Wales,0,0,1958 FIFA Men's World Cup,Solna,Sweden,True,group stage,0,0,0,M-1958-17
 1958-06-15,Czechoslovakia,Argentina,6,1,1958 FIFA Men's World Cup,Helsingborg,Sweden,True,group stage,0,0,0,M-1958-18
 1958-06-15,West Germany,Northern Ireland,2,2,1958 FIFA Men's World Cup,MalmÃ¶,Sweden,True,group stage,0,0,0,M-1958-19
-1958-06-15,France,Scotland,2,1,1958 FIFA Men's World Cup,Ã–rebro,Sweden,True,group stage,0,0,0,M-1958-20
+1958-06-15,France,Scotland,2,1,1958 FIFA Men's World Cup,Ãrebro,Sweden,True,group stage,0,0,0,M-1958-20
 1958-06-15,Paraguay,Yugoslavia,3,3,1958 FIFA Men's World Cup,Eskilstuna,Sweden,True,group stage,0,0,0,M-1958-21
 1958-06-15,Hungary,Mexico,4,0,1958 FIFA Men's World Cup,Sandviken,Sweden,True,group stage,0,0,0,M-1958-22
 1958-06-15,Brazil,Soviet Union,2,0,1958 FIFA Men's World Cup,Gothenburg,Sweden,True,group stage,0,0,0,M-1958-23
@@ -526,19 +526,19 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 1998-06-13,South Korea,Mexico,1,3,1998 FIFA Men's World Cup,Lyon,France,True,group stage,0,0,0,M-1998-09
 1998-06-13,Netherlands,Belgium,0,0,1998 FIFA Men's World Cup,Saint-Denis,France,True,group stage,0,0,0,M-1998-10
 1998-06-14,Argentina,Japan,1,0,1998 FIFA Men's World Cup,Toulouse,France,True,group stage,0,0,0,M-1998-11
-1998-06-14,Yugoslavia,Iran,1,0,1998 FIFA Men's World Cup,Saint-Ã‰tienne,France,True,group stage,0,0,0,M-1998-12
+1998-06-14,Yugoslavia,Iran,1,0,1998 FIFA Men's World Cup,Saint-Ãtienne,France,True,group stage,0,0,0,M-1998-12
 1998-06-14,Jamaica,Croatia,1,3,1998 FIFA Men's World Cup,Lens,France,True,group stage,0,0,0,M-1998-13
 1998-06-15,England,Tunisia,2,0,1998 FIFA Men's World Cup,Marseille,France,True,group stage,0,0,0,M-1998-14
 1998-06-15,Romania,Colombia,1,0,1998 FIFA Men's World Cup,Lyon,France,True,group stage,0,0,0,M-1998-15
 1998-06-15,Germany,United States,2,0,1998 FIFA Men's World Cup,Paris,France,True,group stage,0,0,0,M-1998-16
 1998-06-16,Scotland,Norway,1,1,1998 FIFA Men's World Cup,Bordeaux,France,True,group stage,0,0,0,M-1998-17
 1998-06-16,Brazil,Morocco,3,0,1998 FIFA Men's World Cup,Nantes,France,True,group stage,0,0,0,M-1998-18
-1998-06-17,Chile,Austria,1,1,1998 FIFA Men's World Cup,Saint-Ã‰tienne,France,True,group stage,0,0,0,M-1998-19
+1998-06-17,Chile,Austria,1,1,1998 FIFA Men's World Cup,Saint-Ãtienne,France,True,group stage,0,0,0,M-1998-19
 1998-06-17,Italy,Cameroon,3,0,1998 FIFA Men's World Cup,Montpellier,France,True,group stage,0,0,0,M-1998-20
 1998-06-18,South Africa,Denmark,1,1,1998 FIFA Men's World Cup,Toulouse,France,True,group stage,0,0,0,M-1998-21
 1998-06-18,France,Saudi Arabia,4,0,1998 FIFA Men's World Cup,Saint-Denis,France,True,group stage,0,0,0,M-1998-22
 1998-06-19,Nigeria,Bulgaria,1,0,1998 FIFA Men's World Cup,Paris,France,True,group stage,0,0,0,M-1998-23
-1998-06-19,Spain,Paraguay,0,0,1998 FIFA Men's World Cup,Saint-Ã‰tienne,France,True,group stage,0,0,0,M-1998-24
+1998-06-19,Spain,Paraguay,0,0,1998 FIFA Men's World Cup,Saint-Ãtienne,France,True,group stage,0,0,0,M-1998-24
 1998-06-20,Japan,Croatia,0,1,1998 FIFA Men's World Cup,Nantes,France,True,group stage,0,0,0,M-1998-25
 1998-06-20,Belgium,Mexico,2,2,1998 FIFA Men's World Cup,Bordeaux,France,True,group stage,0,0,0,M-1998-26
 1998-06-20,Netherlands,South Korea,5,0,1998 FIFA Men's World Cup,Marseille,France,True,group stage,0,0,0,M-1998-27
@@ -550,13 +550,13 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 1998-06-23,Chile,Cameroon,1,1,1998 FIFA Men's World Cup,Nantes,France,True,group stage,0,0,0,M-1998-33
 1998-06-23,Italy,Austria,2,1,1998 FIFA Men's World Cup,Saint-Denis,France,True,group stage,0,0,0,M-1998-34
 1998-06-23,Brazil,Norway,1,2,1998 FIFA Men's World Cup,Marseille,France,True,group stage,0,0,0,M-1998-35
-1998-06-23,Scotland,Morocco,0,3,1998 FIFA Men's World Cup,Saint-Ã‰tienne,France,True,group stage,0,0,0,M-1998-36
+1998-06-23,Scotland,Morocco,0,3,1998 FIFA Men's World Cup,Saint-Ãtienne,France,True,group stage,0,0,0,M-1998-36
 1998-06-24,France,Denmark,2,1,1998 FIFA Men's World Cup,Lyon,France,True,group stage,0,0,0,M-1998-37
 1998-06-24,South Africa,Saudi Arabia,2,2,1998 FIFA Men's World Cup,Bordeaux,France,True,group stage,0,0,0,M-1998-38
 1998-06-24,Nigeria,Paraguay,1,3,1998 FIFA Men's World Cup,Toulouse,France,True,group stage,0,0,0,M-1998-39
 1998-06-24,Spain,Bulgaria,6,1,1998 FIFA Men's World Cup,Lens,France,True,group stage,0,0,0,M-1998-40
 1998-06-25,Belgium,South Korea,1,1,1998 FIFA Men's World Cup,Paris,France,True,group stage,0,0,0,M-1998-41
-1998-06-25,Netherlands,Mexico,2,2,1998 FIFA Men's World Cup,Saint-Ã‰tienne,France,True,group stage,0,0,0,M-1998-42
+1998-06-25,Netherlands,Mexico,2,2,1998 FIFA Men's World Cup,Saint-Ãtienne,France,True,group stage,0,0,0,M-1998-42
 1998-06-25,Germany,Iran,2,0,1998 FIFA Men's World Cup,Montpellier,France,True,group stage,0,0,0,M-1998-43
 1998-06-25,United States,Yugoslavia,0,1,1998 FIFA Men's World Cup,Nantes,France,True,group stage,0,0,0,M-1998-44
 1998-06-26,Argentina,Croatia,1,0,1998 FIFA Men's World Cup,Bordeaux,France,True,group stage,0,0,0,M-1998-45
@@ -570,7 +570,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 1998-06-29,Germany,Mexico,2,1,1998 FIFA Men's World Cup,Montpellier,France,True,round of 16,1,0,0,M-1998-53
 1998-06-29,Netherlands,Yugoslavia,2,1,1998 FIFA Men's World Cup,Toulouse,France,True,round of 16,1,0,0,M-1998-54
 1998-06-30,Romania,Croatia,0,1,1998 FIFA Men's World Cup,Bordeaux,France,True,round of 16,1,0,0,M-1998-55
-1998-06-30,Argentina,England,2,2,1998 FIFA Men's World Cup,Saint-Ã‰tienne,France,True,round of 16,1,1,1,M-1998-56
+1998-06-30,Argentina,England,2,2,1998 FIFA Men's World Cup,Saint-Ãtienne,France,True,round of 16,1,1,1,M-1998-56
 1998-07-03,Italy,France,0,0,1998 FIFA Men's World Cup,Saint-Denis,France,True,quarter-finals,1,1,1,M-1998-57
 1998-07-03,Brazil,Denmark,3,2,1998 FIFA Men's World Cup,Nantes,France,True,quarter-finals,1,0,0,M-1998-58
 1998-07-04,Netherlands,Argentina,2,1,1998 FIFA Men's World Cup,Marseille,France,True,quarter-finals,1,0,0,M-1998-59
@@ -609,7 +609,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 2002-06-09,Costa Rica,Turkey,1,1,2002 FIFA Men's World Cup,Incheon,South Korea,True,group stage,0,0,0,M-2002-28
 2002-06-09,Japan,Russia,1,0,2002 FIFA Men's World Cup,Yokohama,Japan,True,group stage,0,0,0,M-2002-29
 2002-06-10,South Korea,United States,1,1,2002 FIFA Men's World Cup,Daegu,South Korea,True,group stage,0,0,0,M-2002-30
-2002-06-10,Tunisia,Belgium,1,1,2002 FIFA Men's World Cup,ÅŒita,Japan,True,group stage,0,0,0,M-2002-31
+2002-06-10,Tunisia,Belgium,1,1,2002 FIFA Men's World Cup,Åita,Japan,True,group stage,0,0,0,M-2002-31
 2002-06-10,Portugal,Poland,4,0,2002 FIFA Men's World Cup,Jeonju,South Korea,True,group stage,0,0,0,M-2002-32
 2002-06-11,Denmark,France,2,0,2002 FIFA Men's World Cup,Incheon,South Korea,True,group stage,0,0,0,M-2002-33
 2002-06-11,Senegal,Uruguay,3,3,2002 FIFA Men's World Cup,Suwon,South Korea,True,group stage,0,0,0,M-2002-34
@@ -622,14 +622,14 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 2002-06-13,Costa Rica,Brazil,2,5,2002 FIFA Men's World Cup,Suwon,South Korea,True,group stage,0,0,0,M-2002-41
 2002-06-13,Turkey,China,3,0,2002 FIFA Men's World Cup,Seoul,South Korea,True,group stage,0,0,0,M-2002-42
 2002-06-13,Ecuador,Croatia,1,0,2002 FIFA Men's World Cup,Yokohama,Japan,True,group stage,0,0,0,M-2002-43
-2002-06-13,Mexico,Italy,1,1,2002 FIFA Men's World Cup,ÅŒita,Japan,True,group stage,0,0,0,M-2002-44
+2002-06-13,Mexico,Italy,1,1,2002 FIFA Men's World Cup,Åita,Japan,True,group stage,0,0,0,M-2002-44
 2002-06-14,Belgium,Russia,3,2,2002 FIFA Men's World Cup,Shizuoka,Japan,True,group stage,0,0,0,M-2002-45
 2002-06-14,Tunisia,Japan,0,2,2002 FIFA Men's World Cup,Osaka,Japan,True,group stage,0,0,0,M-2002-46
 2002-06-14,Poland,United States,3,1,2002 FIFA Men's World Cup,Daejeon,South Korea,True,group stage,0,0,0,M-2002-47
 2002-06-14,Portugal,South Korea,0,1,2002 FIFA Men's World Cup,Incheon,South Korea,True,group stage,0,0,0,M-2002-48
 2002-06-15,Germany,Paraguay,1,0,2002 FIFA Men's World Cup,Seogwipo,South Korea,True,round of 16,1,0,0,M-2002-49
 2002-06-15,Denmark,England,0,3,2002 FIFA Men's World Cup,Niigata,Japan,True,round of 16,1,0,0,M-2002-50
-2002-06-16,Sweden,Senegal,1,2,2002 FIFA Men's World Cup,ÅŒita,Japan,True,round of 16,1,1,0,M-2002-51
+2002-06-16,Sweden,Senegal,1,2,2002 FIFA Men's World Cup,Åita,Japan,True,round of 16,1,1,0,M-2002-51
 2002-06-16,Spain,Republic of Ireland,1,1,2002 FIFA Men's World Cup,Suwon,South Korea,True,round of 16,1,1,1,M-2002-52
 2002-06-17,Mexico,United States,0,2,2002 FIFA Men's World Cup,Jeonju,South Korea,True,round of 16,1,0,0,M-2002-53
 2002-06-17,Brazil,Belgium,2,0,2002 FIFA Men's World Cup,Kobe,Japan,True,round of 16,1,0,0,M-2002-54
@@ -995,7 +995,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 2026-06-19,Scotland,Morocco,0,1,2026 FIFA Men's World Cup,Boston,USA,True,group stage,0,0,0,M-2026-30
 2026-06-19,Turkey,Paraguay,0,1,2026 FIFA Men's World Cup,San Francisco,USA,True,group stage,0,0,0,M-2026-31
 2026-06-19,United States,Australia,2,0,2026 FIFA Men's World Cup,Seattle,USA,True,group stage,0,0,0,M-2026-32
-2026-06-20,Germany,Ivory Coast,2,1,2026 FIFA Men's World Cup,Toronto,Canada,True,group stage,0,0,0,M-2026-33
+2026-06-20,Germany,Côte d'Ivoire,2,1,2026 FIFA Men's World Cup,Toronto,Canada,True,group stage,0,0,0,M-2026-33
 2026-06-20,Ecuador,Curaçao,0,0,2026 FIFA Men's World Cup,Kansas City,USA,True,group stage,0,0,0,M-2026-34
 2026-06-20,Netherlands,Sweden,5,1,2026 FIFA Men's World Cup,Houston,USA,True,group stage,0,0,0,M-2026-35
 2026-06-20,Tunisia,Japan,0,4,2026 FIFA Men's World Cup,Monterrey,Mexico,True,group stage,0,0,0,M-2026-36
@@ -1029,3 +1029,13 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,s
 2026-06-26,New Zealand,Belgium,1,5,2026 FIFA Men's World Cup,Vancouver,Canada,True,group stage,0,0,0,M-2026-64
 2026-06-26,Cape Verde,Saudi Arabia,0,0,2026 FIFA Men's World Cup,Houston,USA,True,group stage,0,0,0,M-2026-65
 2026-06-26,Uruguay,Spain,0,1,2026 FIFA Men's World Cup,Guadalajara,Mexico,True,group stage,0,0,0,M-2026-66
+2026-06-27,Panama,England,0,2,2026 FIFA Men's World Cup,New Jersey,USA,True,group stage,0,0,0,M-2026-67
+2026-06-27,Croatia,Ghana,2,1,2026 FIFA Men's World Cup,Philadelphia,USA,True,group stage,0,0,0,M-2026-68
+2026-06-27,Algeria,Austria,3,3,2026 FIFA Men's World Cup,Kansas City,USA,True,group stage,0,0,0,M-2026-69
+2026-06-27,Jordan,Argentina,1,3,2026 FIFA Men's World Cup,Dallas,USA,True,group stage,0,0,0,M-2026-70
+2026-06-27,Colombia,Portugal,0,0,2026 FIFA Men's World Cup,Miami,USA,True,group stage,0,0,0,M-2026-71
+2026-06-27,DR Congo,Uzbekistan,3,1,2026 FIFA Men's World Cup,Atlanta,USA,True,group stage,0,0,0,M-2026-72
+2026-06-28,South Africa,Canada,0,1,2026 FIFA Men's World Cup,Los Angeles,USA,True,round of 32,1,0,0,M-2026-73
+2026-06-29,Germany,Paraguay,1,1,2026 FIFA Men's World Cup,Boston,USA,True,round of 32,1,0,1,M-2026-74
+2026-06-29,Netherlands,Morocco,1,1,2026 FIFA Men's World Cup,Monterrey,Mexico,True,round of 32,1,0,1,M-2026-75
+2026-06-29,Brazil,Japan,2,1,2026 FIFA Men's World Cup,Houston,USA,True,round of 32,1,0,0,M-2026-76
