@@ -17,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-from data.ingest import load_all, get_all_teams, count_loaded
+from data.ingest import load_all, get_all_teams, count_loaded, count_matches_file_rows
 from data.world_cup_2026 import get_non_world_cup_2026_squad, is_qualified_team
 from model.features import FEATURE_COLUMNS
 
@@ -1246,6 +1246,7 @@ model_name = meta.get("model_name", "Unknown")
 
 # ── Tournament masthead + status ──────────────────────────────────────────────
 
+historical_match_count = count_matches_file_rows()
 n_matches = len(matches_df)
 st.markdown(
     f"""
@@ -1266,7 +1267,7 @@ st.markdown(
     <div class="wc-status-grid">
         <div class="wc-status-item">
             <span class="wc-status-label">Historical matches</span>
-            <span class="wc-status-value">{n_matches:,}</span>
+            <span class="wc-status-value">{historical_match_count:,}</span>
         </div>
         <div class="wc-status-item">
             <span class="wc-status-label">Prediction engine</span>

@@ -240,6 +240,16 @@ def load_all() -> dict:
     }
 
 
+@st.cache_data(show_spinner=False)
+def count_matches_file_rows() -> int:
+    """Return the full row count from the root matches.csv file without app filters."""
+    path = os.path.join(_ROOT, "matches.csv")
+    if not os.path.exists(path):
+        return 0
+    df = pd.read_csv(path, usecols=["date"])
+    return int(len(df.dropna(how="all")))
+
+
 def get_all_teams(matches_df: pd.DataFrame) -> list[str]:
     """Return sorted list of all team names appearing in matches."""
     if matches_df is None:
