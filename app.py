@@ -17,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-from data.ingest import load_all, get_all_teams, count_loaded, count_matches_file_rows
+from data.ingest import load_all, get_all_teams, count_loaded
 from data.world_cup_2026 import get_non_world_cup_2026_squad, is_qualified_team
 from model.features import FEATURE_COLUMNS
 
@@ -26,6 +26,16 @@ META_PATH = os.path.join(ARTIFACTS_DIR, "meta.json")
 MODEL_PATH = os.path.join(ARTIFACTS_DIR, "model.pkl")
 SCALER_PATH = os.path.join(ARTIFACTS_DIR, "scaler.pkl")
 UI_BUILD = "2026.06.11-r9"
+
+
+@st.cache_data(show_spinner=False)
+def count_matches_file_rows() -> int:
+    """Return the full row count from the root matches.csv file without app filters."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "matches.csv")
+    if not os.path.exists(path):
+        return 0
+    df = pd.read_csv(path, usecols=["date"])
+    return int(len(df.dropna(how="all")))
 
 
 def format_probability_shift(value: float) -> str:
