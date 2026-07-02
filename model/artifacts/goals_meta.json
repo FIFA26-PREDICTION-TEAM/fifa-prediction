@@ -1,22 +1,31 @@
 {
   "model_name": "CatBoostRegressor",
   "validation_year": 2026,
-  "training_rows": 39266,
-  "train_rows": 38722,
-  "validation_rows": 544,
+  "training_rows": 96446,
+  "train_rows": 95770,
+  "validation_rows": 676,
   "features": 41,
-  "train_from_year": 2006,
-  "data_start": "2006-01-02",
-  "data_end": "2026-06-06",
+  "train_from_year": 1930,
+  "data_start": "1930-01-01",
+  "data_end": "2026-06-26",
   "metrics": {
-    "team_a_mae": 0.9305,
+    "team_a_mae": 0.9365,
     "team_b_mae": 0.936,
-    "combined_mae": 0.9332,
-    "team_a_rmse": 1.2259,
-    "team_b_rmse": 1.2297,
-    "exact_score_accuracy": 0.114,
-    "over_2_5_accuracy": 0.6158
+    "combined_mae": 0.9362,
+    "team_a_rmse": 1.2432,
+    "team_b_rmse": 1.2405,
+    "exact_score_accuracy": 0.0962,
+    "over_2_5_accuracy": 0.6109
   },
   "venue_policy": "App predictions use the selected Team A home, Team B home, or neutral venue context.",
-  "data_source": "data/processed/matches_2006.csv"
+  "data_source": "data/processed/matches_all.csv",
+  "historical_weighted": true,
+  "world_cup_2026_weight": 1.4,
+  "sample_weight_policy": "era_weight * tournament_weight",
+  "era_weight_policy": {
+    "2026_present": 1.4,
+    "2018_2025": 1.1,
+    "2000_2017": 1.0,
+    "1930_1999": 0.5
+  }
 }

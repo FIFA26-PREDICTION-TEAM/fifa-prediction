@@ -27,9 +27,16 @@ try:
 except ImportError:
     HAS_CATBOOST = False
 
-from data.ingest import MAX_DATA_DATE, MIN_DATA_YEAR, load_rankings
-from data.world_cup_2026 import append_world_cup_2026_matches
-from model.features import get_tournament_weight, normalize_tournament_name
+from data.ingest import (
+    MAX_DATA_DATE,
+    MIN_DATA_YEAR,
+    ROOT_MATCHES_PATH,
+    USE_HISTORICAL_WEIGHTED,
+    load_rankings,
+    overlay_root_world_cup_matches,
+)
+from data.world_cup_2026 import append_world_cup_2026_matches, normalize_team_name
+from model.features import WORLD_CUP_2026_WEIGHT, get_tournament_weight, normalize_tournament_name
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -85,8 +92,45 @@ GOAL_INPUT_COLUMNS = GOAL_CATEGORICAL_COLUMNS + GOAL_NUMERIC_COLUMNS
 
 
 def _goal_matches_path() -> str:
-    processed = os.path.join(ROOT, "data", "processed", f"matches_{MIN_DATA_YEAR}.csv")
-    return processed if os.path.exists(processed) else os.path.join(ROOT, "matches.csv")
+    processed_dir = os.path.join(ROOT, "data", "processed")
+    candidates = []
+    if USE_HISTORICAL_WEIGHTED:
+        candidates.append(os.path.join(processed_dir, "matches_all.csv"))
+    candidates.extend(
+        [
+            os.path.join(processed_dir, f"matches_{MIN_DATA_YEAR}.csv"),
+            ROOT_MATCHES_PATH,
+        ]
+    )
+    return next((path for path in candidates if os.path.exists(path)), ROOT_MATCHES_PATH)
+
+
+def _has_2026_world_cup_matches(matches_df: pd.DataFrame) -> bool:
+    if matches_df.empty or "tournament" not in matches_df.columns:
+        return False
+    dates = pd.to_datetime(matches_df["date"], errors="coerce")
+    tournament = matches_df["tournament"].fillna("").astype(str).str.lower()
+    wc_2026 = (
+        (dates.dt.year == 2026)
+        & tournament.str.contains("world cup", na=False)
+        & ~tournament.str.contains("qualifier|qualification", na=False)
+    )
+    return bool(wc_2026.any())
+
+
+def _era_weight(match_date) -> float:
+    year = pd.Timestamp(match_date).year
+    if year >= 2026:
+        return 1.4
+    if year >= 2018:
+        return 1.1
+    if year >= 2000:
+        return 1.0
+    return 0.5
+
+
+def _goal_sample_weight(row: pd.Series) -> float:
+    return float(_era_weight(row["date"]) * get_tournament_weight(row.get("tournament", "")))
 
 
 @lru_cache(maxsize=1)
@@ -102,6 +146,8 @@ def load_goal_matches() -> pd.DataFrame:
     if missing:
         raise RuntimeError(f"Goal training data is missing columns: {missing}")
 
+    for col in ("home_team", "away_team"):
+        df[col] = df[col].map(normalize_team_name)
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df = df.dropna(subset=["date", "home_team", "away_team"])
     df["home_score"] = pd.to_numeric(df["home_score"], errors="coerce")
@@ -122,12 +168,16 @@ def load_goal_matches() -> pd.DataFrame:
             df["neutral"] = neutral.astype(bool)
     else:
         df["neutral"] = False
+    if os.path.basename(path) == "matches_all.csv":
+        df = overlay_root_world_cup_matches(df)
     mask = (df["date"].dt.year >= MIN_DATA_YEAR) & (df["date"] <= MAX_DATA_DATE)
     return df[mask].sort_values("date").reset_index(drop=True)
 
 
 def _load_goal_inference_matches() -> pd.DataFrame:
-    matches = append_world_cup_2026_matches(load_goal_matches())
+    matches = load_goal_matches()
+    if not _has_2026_world_cup_matches(matches):
+        matches = append_world_cup_2026_matches(matches)
     return matches.sort_values("date").reset_index(drop=True)
 
 
@@ -337,10 +387,11 @@ def build_goal_training_data(
     matches_df: pd.DataFrame,
     rankings_df: pd.DataFrame | None,
     verbose: bool = True,
-) -> tuple[pd.DataFrame, np.ndarray, pd.Series]:
+) -> tuple[pd.DataFrame, np.ndarray, pd.Series, np.ndarray]:
     rows = []
     targets = []
     dates = []
+    weights = []
     history: dict[str, list[dict]] = defaultdict(list)
     h2h: dict[frozenset, list[dict]] = defaultdict(list)
     rankings = _ranking_index(rankings_df)
@@ -366,6 +417,7 @@ def build_goal_training_data(
         )
         targets.append([int(match["home_score"]), int(match["away_score"])])
         dates.append(match_date)
+        weights.append(_goal_sample_weight(match))
 
         rows.append(
             _build_goal_row(
@@ -381,6 +433,7 @@ def build_goal_training_data(
         )
         targets.append([int(match["away_score"]), int(match["home_score"])])
         dates.append(match_date)
+        weights.append(_goal_sample_weight(match))
 
         _append_match_to_history(match, history, h2h)
 
@@ -392,7 +445,12 @@ def build_goal_training_data(
         X[col] = X[col].fillna("unknown").astype(str)
     for col in GOAL_NUMERIC_COLUMNS:
         X[col] = pd.to_numeric(X[col], errors="coerce").fillna(0.0)
-    return X, np.asarray(targets, dtype=np.float32), pd.to_datetime(pd.Series(dates))
+    return (
+        X,
+        np.asarray(targets, dtype=np.float32),
+        pd.to_datetime(pd.Series(dates)),
+        np.asarray(weights, dtype=np.float32),
+    )
 
 
 def _time_split(dates: pd.Series, validation_year: int | None = None) -> tuple[np.ndarray, np.ndarray, int]:
@@ -423,9 +481,9 @@ def _goal_model() -> CatBoostRegressor:
     )
 
 
-def _fit_model(X: pd.DataFrame, y: np.ndarray) -> CatBoostRegressor:
+def _fit_model(X: pd.DataFrame, y: np.ndarray, sample_weight: np.ndarray | None = None) -> CatBoostRegressor:
     model = _goal_model()
-    model.fit(X[GOAL_INPUT_COLUMNS], y, cat_features=GOAL_CATEGORICAL_COLUMNS)
+    model.fit(X[GOAL_INPUT_COLUMNS], y, cat_features=GOAL_CATEGORICAL_COLUMNS, sample_weight=sample_weight)
     return model
 
 
@@ -539,22 +597,23 @@ def train_and_save_goals(verbose: bool = True) -> dict:
     rankings_df = load_rankings()
     if verbose:
         print(f"Building goal features for {len(matches_df)} matches...")
-    X, y, dates = build_goal_training_data(matches_df, rankings_df, verbose=verbose)
+    X, y, dates, weights = build_goal_training_data(matches_df, rankings_df, verbose=verbose)
     train_mask, test_mask, validation_year = _time_split(dates)
     X_train, X_test = X.loc[train_mask], X.loc[test_mask]
     y_train, y_test = y[train_mask], y[test_mask]
+    train_weights = weights[train_mask]
 
     if verbose:
         print(f"Goal validation year: {validation_year}")
         print("Training Team A goals model...")
-    model_a = _fit_model(X_train, y_train[:, 0])
+    model_a = _fit_model(X_train, y_train[:, 0], sample_weight=train_weights)
     if verbose:
         print("Training Team B goals model...")
-    model_b = _fit_model(X_train, y_train[:, 1])
+    model_b = _fit_model(X_train, y_train[:, 1], sample_weight=train_weights)
     metrics = _evaluate(model_a, model_b, X_test, y_test)
 
-    final_a = _fit_model(X, y[:, 0])
-    final_b = _fit_model(X, y[:, 1])
+    final_a = _fit_model(X, y[:, 0], sample_weight=weights)
+    final_b = _fit_model(X, y[:, 1], sample_weight=weights)
     bundle = {
         "team_a_model": final_a,
         "team_b_model": final_b,
@@ -577,6 +636,15 @@ def train_and_save_goals(verbose: bool = True) -> dict:
         "metrics": {key: round(value, 4) for key, value in metrics.items()},
         "venue_policy": "App predictions use the selected Team A home, Team B home, or neutral venue context.",
         "data_source": os.path.relpath(_goal_matches_path(), ROOT),
+        "historical_weighted": USE_HISTORICAL_WEIGHTED,
+        "world_cup_2026_weight": WORLD_CUP_2026_WEIGHT,
+        "sample_weight_policy": "era_weight * tournament_weight",
+        "era_weight_policy": {
+            "2026_present": 1.4,
+            "2018_2025": 1.1,
+            "2000_2017": 1.0,
+            "1930_1999": 0.5,
+        },
     }
     with open(GOALS_META_PATH, "w") as f:
         json.dump(meta, f, indent=2)
