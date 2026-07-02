@@ -232,14 +232,15 @@ World Cup-specific pedigree for each team.
 | Feature | Description |
 |---------|-------------|
 | `team_a_wc_titles` | World Cup titles won (from a hardcoded known-winners dict) |
-| `team_a_wc_finals_reached` | WC finals reached (lower bound = title count; exact stage not in dataset) |
-| `team_a_wc_win_rate_knockouts` | Overall WC win rate used as a proxy for knockout performance |
+| `team_a_wc_finals_reached` | WC finals reached, counted directly from `stage_name == "final"` rows in matches.csv |
+| `team_a_wc_win_rate_knockouts` | Win rate restricted to rows where `knockout_stage == 1` |
+| `team_a_wc_extra_time_rate` | Share of the team's knockout matches that went to extra time (`extra_time == 1`) |
 | `team_a_penalty_shootout_wins` | Penalty shootout wins (from shootouts.csv) |
 | `team_a_penalty_shootout_losses` | Penalty shootout losses |
 
-All 5 features are mirrored for Team B.
+All 6 features are mirrored for Team B.
 
-> **Design note:** The main `matches.csv` dataset does not include a match-stage column (e.g., "Quarter-Final"). WC titles are stored in a hardcoded dictionary: Brazil=5, Germany=4, Italy=4, Argentina=3, France=2, Uruguay=2, England=1, Spain=1. Knockout win rate is computed directly from WC match results as an approximation.
+> **Design note:** `matches.csv` carries `stage_name`, `knockout_stage`, and `extra_time` columns, so the stats above are computed directly from real match-stage data rather than approximated. WC titles remain a hardcoded dictionary: Brazil=5, Germany=4, Italy=4, Argentina=3, France=2, Uruguay=2, England=1, Spain=1. If a row lacks stage data (e.g. rows appended from Copa America/friendlies sources, which don't carry these columns), the code falls back to the old whole-tournament proxy for that team.
 
 ---
 
@@ -479,7 +480,7 @@ competitive_keywords = [
 
 Optionally, **curated 2026 pre-World Cup friendlies** can be included via `ML_PRJCT_INCLUDE_FRIENDLIES_TRAIN=1`.
 
-Training data starts from `TRAIN_FROM_YEAR = 2006` in standard mode. When historical-weighted mode is active (`USE_HISTORICAL_WEIGHTED = True`), data extends back to 1872 with older data heavily downweighted.
+Training data starts from `TRAIN_FROM_YEAR = 1930` in standard mode (the full range of `matches.csv`), configurable via `ML_PRJCT_TRAIN_FROM_YEAR`. Era weighting (Section 6.2) still downweights older matches so they don't dominate. When historical-weighted mode is active (`USE_HISTORICAL_WEIGHTED = True`), the data source switches entirely to the larger external dataset extending back to 1872.
 
 ---
 
@@ -495,10 +496,10 @@ sample_weight = era_weight(match_date) × tournament_weight(tournament)
 
 | Era | Weight | Rationale |
 |-----|--------|-----------|
-| 2018–present | 1.25 | Most relevant to modern football |
-| 2006–2017 | 1.00 | Baseline modern era |
-| 2002–2005 | 0.45 | Some relevance — partial transition era |
-| Pre-2002 | 0.08 | Very old data; minimal influence |
+| 2026–present | 1.4 | Current World Cup cycle |
+| 2018–2025 | 1.1 | Recent, highly relevant era |
+| 2000–2017 | 1.0 | Baseline modern era |
+| 1930–1999 | 0.5 | Real signal (rivalries, WC pedigree) but a very different era of football |
 
 #### Tournament Weights
 
@@ -825,12 +826,13 @@ All tuneable parameters can be overridden via **environment variables**.
 | `ML_PRJCT_INCLUDE_FRIENDLIES` | `1` (on) | Include 2026 friendlies context features |
 | `ML_PRJCT_INCLUDE_FRIENDLIES_TRAIN` | `0` (off) | Include friendlies matches in training set |
 | `ML_PRJCT_TRAIN_SAMPLE_SIZE` | *(unset)* | Cap training rows for quick experiments |
+| `ML_PRJCT_TRAIN_FROM_YEAR` | `1930` | Earliest year in standard training mode |
 
 **Hardcoded constants** (change in source code):
 
 | Constant | Value | Location | Description |
 |---------|-------|----------|-------------|
-| `TRAIN_FROM_YEAR` | 2006 | `train.py` | Earliest year in standard training mode |
+| `TRAIN_FROM_YEAR` | 1930 (env-overridable) | `train.py` | Earliest year in standard training mode |
 | `VALIDATION_YEAR` | 2022 | `train.py` | WC held out for model evaluation |
 | `CURATED_FRIENDLIES_FROM_YEAR` | 2026 | `train.py` | Friendlies included from this year |
 | `RANDOM_STATE` | 42 | `train.py` | Reproducibility seed |

@@ -51,7 +51,6 @@ from model.features import (
     FEATURE_COLUMNS,
     MODEL_INPUT_COLUMNS,
     RAW_CONTEXT_COLUMNS,
-    WORLD_CUP_2026_WEIGHT,
     get_tournament_weight,
     normalize_tournament_name,
 )
@@ -62,7 +61,7 @@ SCALER_PATH = os.path.join(ARTIFACTS_DIR, "scaler.pkl")
 FEATURES_PATH = os.path.join(ARTIFACTS_DIR, "feature_columns.json")
 META_PATH = os.path.join(ARTIFACTS_DIR, "meta.json")
 
-TRAIN_FROM_YEAR = 2006
+TRAIN_FROM_YEAR = int(os.getenv("ML_PRJCT_TRAIN_FROM_YEAR", "1930"))
 RANDOM_STATE = 42
 VALIDATION_YEAR = 2022  # Hold out the latest completed FIFA World Cup for validation.
 CURATED_FRIENDLIES_FROM_YEAR = 2026
@@ -200,13 +199,13 @@ def _load_historical_shootouts() -> pd.DataFrame | None:
 
 def _era_weight(match_date) -> float:
     year = pd.Timestamp(match_date).year
+    if year >= 2026:
+        return 1.4
     if year >= 2018:
-        return 1.25
-    if year >= 2006:
+        return 1.1
+    if year >= 2000:
         return 1.0
-    if year >= 2002:
-        return 0.45
-    return 0.08
+    return 0.5  # 1930-1999: real signal (rivalries, WC pedigree) but a very different era of football
 
 
 def _match_sample_weight(row: pd.Series) -> float:
@@ -1170,18 +1169,13 @@ def train_and_save(verbose: bool = True) -> dict:
             if euro_data and euro_data.get("goal_assist_team_stats") is not None
             else 0
         ),
-        "sample_weight_policy": (
-            "era_weight * tournament_weight"
-            if USE_HISTORICAL_WEIGHTED else
-            "tournament_weight with 2026 World Cup boost"
-        ),
-        "world_cup_2026_weight": WORLD_CUP_2026_WEIGHT,
+        "sample_weight_policy": "era_weight * tournament_weight",
         "era_weight_policy": {
-            "2018_present": 1.25,
-            "2006_2017": 1.0,
-            "2002_2005": 0.45,
-            "pre_2002": 0.08,
-        } if USE_HISTORICAL_WEIGHTED else None,
+            "2026_present": 1.4,
+            "2018_2025": 1.1,
+            "2000_2017": 1.0,
+            "1930_1999": 0.5,
+        },
         "draw_policy": {
             "class_weight": DRAW_CLASS_WEIGHT,
             "binary_class_weight": DRAW_BINARY_WEIGHT,

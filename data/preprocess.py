@@ -186,10 +186,11 @@ def _h2h_features(team_a: str, team_b: str, matches: pd.DataFrame, ref_date) -> 
 def _tournament_features(team: str, matches: pd.DataFrame, shootouts: pd.DataFrame | None) -> dict:
     """WC tournament stats for a team.
 
-    Note: matches.csv uses 'FIFA World Cup' as the tournament string with no
-    stage column, so wc_finals_reached is derived from WC_TITLES (known winners
-    reached the final by definition) and wc_win_rate_knockouts is the overall
-    WC win rate (a reasonable proxy for knockout strength).
+    stage_name/knockout_stage/extra_time come straight from matches.csv. Older
+    appended sources (Copa, friendlies, live 2026 feed rows) don't carry these
+    columns, so their rows show up as NaN and are simply excluded from the
+    stage-aware calculations below; wc_finals_reached and wc_win_rate_knockouts
+    fall back to the WC_TITLES-based proxy only when no stage data exists at all.
     """
     wc = matches[
         ((matches["home_team"] == team) | (matches["away_team"] == team)) &
@@ -199,15 +200,22 @@ def _tournament_features(team: str, matches: pd.DataFrame, shootouts: pd.DataFra
         )
     ]
 
-    # WC titles from known-titles dict (dataset has no stage column)
     titles = WC_TITLES.get(team, 0)
 
-    # Finals reached: title winners reached at least as many finals as titles
-    finals_reached = titles  # lower bound; exact count not derivable without stage data
+    has_stage_col = "stage_name" in wc.columns and wc["stage_name"].notna().any()
+    if has_stage_col:
+        finals_reached = int((wc["stage_name"].fillna("") == "final").sum())
+    else:
+        finals_reached = titles  # lower bound; exact count not derivable without stage data
 
-    # Overall WC win rate (proxy for knockout performance)
-    ko_wins = ko_total = 0
-    for _, row in wc.iterrows():
+    has_knockout_col = "knockout_stage" in wc.columns and wc["knockout_stage"].notna().any()
+    if has_knockout_col:
+        ko_matches = wc[pd.to_numeric(wc["knockout_stage"], errors="coerce").fillna(0) == 1]
+    else:
+        ko_matches = wc  # proxy: overall WC record when no stage data exists
+
+    ko_wins = ko_total = et_matches = 0
+    for _, row in ko_matches.iterrows():
         if row["home_team"] == team:
             gf, ga = row["home_score"], row["away_score"]
         else:
@@ -215,8 +223,11 @@ def _tournament_features(team: str, matches: pd.DataFrame, shootouts: pd.DataFra
         ko_total += 1
         if gf > ga:
             ko_wins += 1
+        if has_knockout_col and float(row.get("extra_time", 0) or 0) == 1:
+            et_matches += 1
 
     ko_win_rate = ko_wins / ko_total if ko_total > 0 else 0.0
+    et_rate = et_matches / ko_total if (has_knockout_col and ko_total > 0) else 0.0
 
     # Penalty shootout record (from shootouts.csv)
     so_wins = so_losses = 0
@@ -234,6 +245,7 @@ def _tournament_features(team: str, matches: pd.DataFrame, shootouts: pd.DataFra
         "wc_titles": titles,
         "wc_finals_reached": finals_reached,
         "wc_win_rate_knockouts": ko_win_rate,
+        "wc_extra_time_rate": et_rate,
         "penalty_shootout_wins": so_wins,
         "penalty_shootout_losses": so_losses,
     }

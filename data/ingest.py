@@ -23,7 +23,7 @@ USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "0").str
     "yes",
     "on",
 }
-MIN_DATA_YEAR = int(os.getenv("ML_PRJCT_MIN_DATA_YEAR", "1872" if USE_HISTORICAL_WEIGHTED else "2006"))
+MIN_DATA_YEAR = int(os.getenv("ML_PRJCT_MIN_DATA_YEAR", "1872" if USE_HISTORICAL_WEIGHTED else "1930"))
 MAX_DATA_DATE = pd.Timestamp(os.getenv("ML_PRJCT_MAX_DATA_DATE", pd.Timestamp.today().date().isoformat()))
 USE_PROCESSED_DATA = os.getenv("ML_PRJCT_USE_PROCESSED", "0").strip().lower() in {"1", "true", "yes", "on"}
 
