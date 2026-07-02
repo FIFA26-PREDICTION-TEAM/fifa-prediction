@@ -11,19 +11,21 @@ import streamlit as st
 from data.copa_america import append_copa_matches, load_copa_america_data
 from data.euro_2024 import load_euro_2024_data
 from data.international_friendlies import append_friendlies_matches, load_friendlies_data
-from data.world_cup_2026 import append_world_cup_2026_matches, load_world_cup_2026_data
+from data.world_cup_2026 import append_world_cup_2026_matches, load_world_cup_2026_data, normalize_team_name
 
 # CSVs are expected in the project root (one level up from data/)
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _PROCESSED = os.path.join(_ROOT, "data", "processed")
 _EXTERNAL = os.path.join(_ROOT, "data", "external")
-USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "0").strip().lower() in {
+ROOT_MATCHES_PATH = os.path.join(_ROOT, "matches.csv")
+ROOT_GOALSCORERS_PATH = os.path.join(_ROOT, "goalscorers.csv")
+USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "1").strip().lower() in {
     "1",
     "true",
     "yes",
     "on",
 }
-MIN_DATA_YEAR = int(os.getenv("ML_PRJCT_MIN_DATA_YEAR", "1872" if USE_HISTORICAL_WEIGHTED else "1930"))
+MIN_DATA_YEAR = int(os.getenv("ML_PRJCT_MIN_DATA_YEAR", "1930"))
 MAX_DATA_DATE = pd.Timestamp(os.getenv("ML_PRJCT_MAX_DATA_DATE", pd.Timestamp.today().date().isoformat()))
 USE_PROCESSED_DATA = os.getenv("ML_PRJCT_USE_PROCESSED", "0").strip().lower() in {"1", "true", "yes", "on"}
 
@@ -58,6 +60,120 @@ def _filter_date_window(df: pd.DataFrame, date_col: str = "date") -> pd.DataFram
     return df[mask].reset_index(drop=True)
 
 
+def _parse_bool_series(series: pd.Series) -> pd.Series:
+    if series.dtype == object:
+        return series.fillna(False).astype(str).str.strip().str.lower().isin({"1", "true", "yes"})
+    return series.fillna(False).astype(bool)
+
+
+def _prepare_matches_frame(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    for col in ("home_team", "away_team"):
+        df[col] = df[col].map(normalize_team_name)
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    df = df.dropna(subset=["date", "home_team", "away_team"])
+    df["home_score"] = pd.to_numeric(df["home_score"], errors="coerce").fillna(0).astype(int)
+    df["away_score"] = pd.to_numeric(df["away_score"], errors="coerce").fillna(0).astype(int)
+    df["neutral"] = _parse_bool_series(df["neutral"]) if "neutral" in df.columns else False
+    df["tournament"] = df["tournament"].fillna("Unknown").astype(str)
+    return df.sort_values("date").reset_index(drop=True)
+
+
+def _prepare_goalscorers_frame(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    for col in ("home_team", "away_team", "team"):
+        if col in df.columns:
+            df[col] = df[col].map(normalize_team_name)
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    df = df.dropna(subset=["date", "home_team", "away_team"])
+    df["minute"] = pd.to_numeric(df.get("minute"), errors="coerce")
+    df["own_goal"] = _parse_bool_series(df["own_goal"]) if "own_goal" in df.columns else False
+    df["penalty"] = _parse_bool_series(df["penalty"]) if "penalty" in df.columns else False
+    return df.sort_values("date").reset_index(drop=True)
+
+
+def _world_cup_mask(df: pd.DataFrame) -> pd.Series:
+    tournament = df["tournament"].fillna("").astype(str).str.lower()
+    return tournament.str.contains("world cup", na=False) & ~tournament.str.contains(
+        "qualifier|qualification", na=False
+    )
+
+
+def _match_overlay_key(df: pd.DataFrame) -> pd.Series:
+    return (
+        pd.to_datetime(df["date"], errors="coerce").dt.strftime("%Y-%m-%d")
+        + "|"
+        + df["home_team"].fillna("").astype(str)
+        + "|"
+        + df["away_team"].fillna("").astype(str)
+    )
+
+
+def overlay_root_world_cup_matches(matches_df: pd.DataFrame) -> pd.DataFrame:
+    """Overlay the curated root World Cup file onto the broad historical source."""
+    if matches_df is None or not os.path.exists(ROOT_MATCHES_PATH):
+        return matches_df
+    root = _prepare_matches_frame(pd.read_csv(ROOT_MATCHES_PATH))
+    root = root[_world_cup_mask(root)].copy()
+    if root.empty:
+        return matches_df
+    root_tournament = root["tournament"].fillna("").astype(str).str.lower()
+    root["_is_competitive"] = root_tournament.str.contains(COMPETITIVE_PATTERN, na=False)
+    root["_is_wc"] = _world_cup_mask(root)
+
+    base = matches_df.copy()
+    root_keys = set(_match_overlay_key(root))
+    base_dates = pd.to_datetime(base["date"], errors="coerce")
+    stale_2026_wc = (base_dates.dt.year == 2026) & _world_cup_mask(base)
+    duplicate_wc = _match_overlay_key(base).isin(root_keys)
+    combined = pd.concat(
+        [base[~(duplicate_wc | stale_2026_wc)], root],
+        ignore_index=True,
+        sort=False,
+    )
+    return combined.sort_values("date").reset_index(drop=True)
+
+
+def overlay_root_goalscorers(goalscorers_df: pd.DataFrame) -> pd.DataFrame:
+    """Add curated World Cup scorer rows without dropping the broad scorer history."""
+    if goalscorers_df is None or not os.path.exists(ROOT_GOALSCORERS_PATH):
+        return goalscorers_df
+    root = _prepare_goalscorers_frame(pd.read_csv(ROOT_GOALSCORERS_PATH))
+    if root.empty:
+        return goalscorers_df
+
+    combined = pd.concat([goalscorers_df.copy(), root], ignore_index=True, sort=False)
+    key_cols = ["date", "home_team", "away_team", "team", "scorer", "minute", "own_goal", "penalty"]
+    for col in key_cols:
+        if col not in combined.columns:
+            combined[col] = ""
+    combined["_key"] = (
+        pd.to_datetime(combined["date"], errors="coerce").dt.strftime("%Y-%m-%d")
+        + "|"
+        + combined["home_team"].fillna("").astype(str)
+        + "|"
+        + combined["away_team"].fillna("").astype(str)
+        + "|"
+        + combined["team"].fillna("").astype(str)
+        + "|"
+        + combined["scorer"].fillna("").astype(str)
+        + "|"
+        + combined["minute"].fillna(-1).astype(str)
+        + "|"
+        + combined["own_goal"].fillna(False).astype(str)
+        + "|"
+        + combined["penalty"].fillna(False).astype(str)
+    )
+    return combined.drop_duplicates("_key", keep="last").drop(columns=["_key"]).sort_values("date").reset_index(drop=True)
+
+
+def _has_2026_world_cup_matches(df: pd.DataFrame) -> bool:
+    if df is None or df.empty or "tournament" not in df.columns:
+        return False
+    dates = pd.to_datetime(df["date"], errors="coerce")
+    return bool(((dates.dt.year == 2026) & _world_cup_mask(df)).any())
+
+
 def _add_tournament_flags(df: pd.DataFrame) -> pd.DataFrame:
     if "tournament" not in df.columns:
         return df
@@ -78,7 +194,7 @@ def load_matches(
     include_friendlies: bool = True,
     include_world_cup_2026: bool = True,
 ) -> pd.DataFrame | None:
-    candidates = [os.path.join(_ROOT, "matches.csv")]
+    candidates = [ROOT_MATCHES_PATH]
     if USE_HISTORICAL_WEIGHTED:
         candidates.insert(0, os.path.join(_PROCESSED, "matches_all.csv"))
     if USE_PROCESSED_DATA:
@@ -89,19 +205,15 @@ def load_matches(
         return None
     df = pd.read_csv(path)
     df = _check_columns(df, REQUIRED_COLUMNS["matches"], "matches.csv")
-    df["date"] = pd.to_datetime(df["date"], errors="coerce")
-    df = df.dropna(subset=["date", "home_team", "away_team"])
-    df["home_score"] = pd.to_numeric(df["home_score"], errors="coerce").fillna(0).astype(int)
-    df["away_score"] = pd.to_numeric(df["away_score"], errors="coerce").fillna(0).astype(int)
-    df["neutral"] = df.get("neutral", False)
-    df["tournament"] = df["tournament"].fillna("Unknown")
-    df = df.reset_index(drop=True)
+    df = _prepare_matches_frame(df)
     loaded_historical = os.path.basename(path) == "matches_all.csv"
+    if loaded_historical:
+        df = overlay_root_world_cup_matches(df)
     if include_copa and not loaded_historical:
         df = append_copa_matches(df)
     if include_friendlies:
         df = append_friendlies_matches(df)
-    if include_world_cup_2026:
+    if include_world_cup_2026 and not _has_2026_world_cup_matches(df):
         df = append_world_cup_2026_matches(df)
     df = _filter_date_window(df).sort_values("date").reset_index(drop=True)
     return _add_tournament_flags(df)
@@ -109,7 +221,7 @@ def load_matches(
 
 @st.cache_data(show_spinner=False)
 def load_goalscorers() -> pd.DataFrame | None:
-    candidates = [os.path.join(_ROOT, "goalscorers.csv")]
+    candidates = [ROOT_GOALSCORERS_PATH]
     if USE_HISTORICAL_WEIGHTED:
         candidates.insert(0, os.path.join(_PROCESSED, "goalscorers_all.csv"))
     if USE_PROCESSED_DATA:
@@ -120,11 +232,9 @@ def load_goalscorers() -> pd.DataFrame | None:
         return None
     df = pd.read_csv(path)
     df = _check_columns(df, REQUIRED_COLUMNS["goalscorers"], "goalscorers.csv")
-    df["date"] = pd.to_datetime(df["date"], errors="coerce")
-    df = df.dropna(subset=["date", "home_team", "away_team"])
-    df["minute"] = pd.to_numeric(df["minute"], errors="coerce")
-    df["own_goal"] = df.get("own_goal", False)
-    df["penalty"] = df.get("penalty", False)
+    df = _prepare_goalscorers_frame(df)
+    if os.path.basename(path) == "goalscorers_all.csv":
+        df = overlay_root_goalscorers(df)
     return _filter_date_window(df).reset_index(drop=True)
 
 
@@ -242,12 +352,11 @@ def load_all() -> dict:
 
 @st.cache_data(show_spinner=False)
 def count_matches_file_rows() -> int:
-    """Return the full row count from the root matches.csv file without app filters."""
-    path = os.path.join(_ROOT, "matches.csv")
-    if not os.path.exists(path):
+    """Return the full match context count used by the app."""
+    df = load_matches(include_copa=False, include_friendlies=True, include_world_cup_2026=True)
+    if df is None:
         return 0
-    df = pd.read_csv(path, usecols=["date"])
-    return int(len(df.dropna(how="all")))
+    return int(len(df))
 
 
 def get_all_teams(matches_df: pd.DataFrame) -> list[str]:

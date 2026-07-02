@@ -17,14 +17,20 @@ from model.features import DATA_FROM_YEAR
 ATTACK_POSITIONS = {"FW", "CF", "LW", "RW", "LF", "RF", "SS", "AM"}
 
 _FROM = pd.Timestamp(f"{DATA_FROM_YEAR}-01-01")
+_PLAYER_FEATURE_CACHE: dict[tuple[str, int, int, int, int], dict] = {}
 
 
-def _filter(df: pd.DataFrame, as_of_date, date_col: str = "date") -> pd.DataFrame:
+def _filter(df: pd.DataFrame, as_of_date, date_col: str = "date", team: str | None = None) -> pd.DataFrame:
     if df is None or df.empty:
         return pd.DataFrame()
-    col = pd.to_datetime(df[date_col], errors="coerce")
+    col = df[date_col]
+    if not pd.api.types.is_datetime64_any_dtype(col):
+        col = pd.to_datetime(col, errors="coerce")
     cutoff = pd.Timestamp(as_of_date)
-    return df[(col < cutoff) & (col >= _FROM)].copy()
+    mask = (col < cutoff) & (col >= _FROM)
+    if team is not None and "team" in df.columns:
+        mask = mask & (df["team"] == team)
+    return df[mask].copy()
 
 
 def compute_player_features(
@@ -53,15 +59,25 @@ def compute_player_features(
         "golden_glove_count": 0,
         "avg_player_experience": 0.0,
     }
+    cache_key = (
+        team,
+        pd.Timestamp(as_of_date).value,
+        id(player_appearances_df),
+        id(player_goals_df),
+        id(award_winners_df),
+    )
+    cached = _PLAYER_FEATURE_CACHE.get(cache_key)
+    if cached is not None:
+        return dict(cached)
 
-    pa = _filter(player_appearances_df, as_of_date) if player_appearances_df is not None else pd.DataFrame()
-    pg = _filter(player_goals_df, as_of_date) if player_goals_df is not None else pd.DataFrame()
-    aw = _filter(award_winners_df, as_of_date) if award_winners_df is not None else pd.DataFrame()
+    pa = _filter(player_appearances_df, as_of_date, team=team) if player_appearances_df is not None else pd.DataFrame()
+    pg = _filter(player_goals_df, as_of_date, team=team) if player_goals_df is not None else pd.DataFrame()
+    aw = _filter(award_winners_df, as_of_date, team=team) if award_winners_df is not None else pd.DataFrame()
 
     # ── Team slices ───────────────────────────────────────────────────────────
-    team_pa = pa[pa["team"] == team] if not pa.empty else pd.DataFrame()
-    team_pg = pg[(pg["team"] == team) & (~pg["own_goal"])] if not pg.empty else pd.DataFrame()
-    team_aw = aw[aw["team"] == team] if not aw.empty else pd.DataFrame()
+    team_pa = pa
+    team_pg = pg[~pg["own_goal"]] if not pg.empty else pd.DataFrame()
+    team_aw = aw
 
     if team_pa.empty and team_pg.empty:
         return defaults
@@ -98,6 +114,9 @@ def compute_player_features(
         exp = team_pa.groupby("player_id")["tournament_id"].nunique()
         defaults["avg_player_experience"] = float(exp.mean())
 
+    if len(_PLAYER_FEATURE_CACHE) > 20000:
+        _PLAYER_FEATURE_CACHE.clear()
+    _PLAYER_FEATURE_CACHE[cache_key] = dict(defaults)
     return defaults
 
 
@@ -115,13 +134,13 @@ def get_key_players(
     Each dict:
         name, goals, appearances, goal_rate, position, awards (list of award names)
     """
-    pa = _filter(player_appearances_df, as_of_date) if player_appearances_df is not None else pd.DataFrame()
-    pg = _filter(player_goals_df, as_of_date) if player_goals_df is not None else pd.DataFrame()
-    aw = _filter(award_winners_df, as_of_date) if award_winners_df is not None else pd.DataFrame()
+    pa = _filter(player_appearances_df, as_of_date, team=team) if player_appearances_df is not None else pd.DataFrame()
+    pg = _filter(player_goals_df, as_of_date, team=team) if player_goals_df is not None else pd.DataFrame()
+    aw = _filter(award_winners_df, as_of_date, team=team) if award_winners_df is not None else pd.DataFrame()
 
-    team_pa = pa[pa["team"] == team] if not pa.empty else pd.DataFrame()
-    team_pg = pg[(pg["team"] == team) & (~pg["own_goal"])] if not pg.empty else pd.DataFrame()
-    team_aw = aw[aw["team"] == team] if not aw.empty else pd.DataFrame()
+    team_pa = pa
+    team_pg = pg[~pg["own_goal"]] if not pg.empty else pd.DataFrame()
+    team_aw = aw
 
     if team_pa.empty and team_pg.empty:
         return []

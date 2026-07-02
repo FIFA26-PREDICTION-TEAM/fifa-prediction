@@ -27,6 +27,7 @@ TOURNAMENT_WEIGHTS = {
 }
 
 DEFAULT_TOURNAMENT_WEIGHT = 0.5  # for unrecognized tournaments
+WORLD_CUP_2026_WEIGHT = float(os.getenv("ML_PRJCT_WORLD_CUP_2026_WEIGHT", "1.4"))
 
 # Only use data from this year onwards — removes retired players and stale history
 DATA_FROM_YEAR = 2006
@@ -43,6 +44,8 @@ RAW_CONTEXT_COLUMNS = [
 def get_tournament_weight(tournament_name: str) -> float:
     if not tournament_name:
         return DEFAULT_TOURNAMENT_WEIGHT
+    if "2026" in str(tournament_name) and "world cup" in str(tournament_name).lower():
+        return WORLD_CUP_2026_WEIGHT
     normalized = normalize_tournament_name(tournament_name)
     return TOURNAMENT_WEIGHTS.get(normalized, DEFAULT_TOURNAMENT_WEIGHT)
 

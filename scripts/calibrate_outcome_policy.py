@@ -101,7 +101,7 @@ def _validation_source(matches_df: pd.DataFrame, meta: dict) -> pd.DataFrame:
     candidates = result_train._training_matches(
         matches_df,
         include_curated_friendlies=bool(meta.get("include_friendlies_train", False)),
-        train_from_year=int(meta.get("train_from_year", 1872 if result_train.USE_HISTORICAL_WEIGHTED else result_train.TRAIN_FROM_YEAR)),
+        train_from_year=int(meta.get("train_from_year", result_train.TRAIN_FROM_YEAR)),
     )
     wc_mask = (
         candidates["_is_wc"].fillna(False).astype(bool)
@@ -167,7 +167,7 @@ def calibrate(write: bool = True) -> dict:
     train_source = result_train._training_matches(
         matches_df,
         include_curated_friendlies=bool(meta.get("include_friendlies_train", False)),
-        train_from_year=int(meta.get("train_from_year", 1872 if result_train.USE_HISTORICAL_WEIGHTED else result_train.TRAIN_FROM_YEAR)),
+        train_from_year=int(meta.get("train_from_year", result_train.TRAIN_FROM_YEAR)),
     )
     train_source = train_source[train_source["date"].dt.year < int(meta.get("validation_year", result_train.VALIDATION_YEAR))].copy()
     if result_train.USE_HISTORICAL_WEIGHTED:

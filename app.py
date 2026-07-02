@@ -28,16 +28,6 @@ SCALER_PATH = os.path.join(ARTIFACTS_DIR, "scaler.pkl")
 UI_BUILD = "2026.06.11-r9"
 
 
-@st.cache_data(show_spinner=False)
-def count_matches_file_rows() -> int:
-    """Return the full row count from the root matches.csv file without app filters."""
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "matches.csv")
-    if not os.path.exists(path):
-        return 0
-    df = pd.read_csv(path, usecols=["date"])
-    return int(len(df.dropna(how="all")))
-
-
 def format_probability_shift(value: float) -> str:
     """Format a probability shift without presenting rounded zero as positive."""
     percentage_points = float(value) * 100
@@ -1256,7 +1246,6 @@ model_name = meta.get("model_name", "Unknown")
 
 # ── Tournament masthead + status ──────────────────────────────────────────────
 
-historical_match_count = count_matches_file_rows()
 n_matches = len(matches_df)
 st.markdown(
     f"""
@@ -1277,7 +1266,7 @@ st.markdown(
     <div class="wc-status-grid">
         <div class="wc-status-item">
             <span class="wc-status-label">Historical matches</span>
-            <span class="wc-status-value">{historical_match_count:,}</span>
+            <span class="wc-status-value">{n_matches:,}</span>
         </div>
         <div class="wc-status-item">
             <span class="wc-status-label">Prediction engine</span>

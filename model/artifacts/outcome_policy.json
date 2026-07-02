@@ -6,209 +6,209 @@
   "source": "world_cup_validation_sweep",
   "selection_policy": "highest_macro_f1_then_balanced_accuracy_then_lowest_log_loss",
   "validation_year": 2022,
-  "validation_rows": 128,
+  "validation_rows": 130,
   "metrics": {
-    "accuracy": 0.5859,
-    "balanced_accuracy": 0.5259,
-    "macro_f1": 0.5304,
-    "log_loss": 1.2051
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.5258,
+    "macro_f1": 0.5277,
+    "log_loss": 0.9957
   },
-  "result_validation_model": "TwoStageCatBoost",
+  "result_validation_model": "CatBoost",
   "result_validation_metrics": {
-    "accuracy": 0.5859,
-    "balanced_accuracy": 0.5259,
-    "macro_f1": 0.5304,
-    "log_loss": 1.2051
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.5258,
+    "macro_f1": 0.5277,
+    "log_loss": 0.9957
   },
   "candidates": [
     {
       "classifier_weight": 0.0,
       "goal_weight": 1.0,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.625,
-      "balanced_accuracy": 0.4938,
-      "macro_f1": 0.452,
-      "log_loss": 0.9488
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.4727,
+      "macro_f1": 0.4333,
+      "log_loss": 0.9611
     },
     {
       "classifier_weight": 0.05,
       "goal_weight": 0.95,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.625,
-      "balanced_accuracy": 0.4938,
-      "macro_f1": 0.452,
-      "log_loss": 0.9416
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.4727,
+      "macro_f1": 0.4333,
+      "log_loss": 0.9616
     },
     {
       "classifier_weight": 0.1,
       "goal_weight": 0.9,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.625,
-      "balanced_accuracy": 0.4938,
-      "macro_f1": 0.452,
-      "log_loss": 0.9354
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.4727,
+      "macro_f1": 0.4333,
+      "log_loss": 0.9623
     },
     {
       "classifier_weight": 0.15,
       "goal_weight": 0.85,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.625,
-      "balanced_accuracy": 0.4938,
-      "macro_f1": 0.452,
-      "log_loss": 0.9302
+      "accuracy": 0.6077,
+      "balanced_accuracy": 0.4788,
+      "macro_f1": 0.4389,
+      "log_loss": 0.963
     },
     {
       "classifier_weight": 0.2,
       "goal_weight": 0.8,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.625,
-      "balanced_accuracy": 0.4938,
-      "macro_f1": 0.452,
-      "log_loss": 0.9261
+      "accuracy": 0.6077,
+      "balanced_accuracy": 0.4788,
+      "macro_f1": 0.4389,
+      "log_loss": 0.9639
     },
     {
       "classifier_weight": 0.25,
       "goal_weight": 0.75,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.6172,
-      "balanced_accuracy": 0.4877,
-      "macro_f1": 0.4463,
-      "log_loss": 0.9231
+      "accuracy": 0.6154,
+      "balanced_accuracy": 0.4848,
+      "macro_f1": 0.4444,
+      "log_loss": 0.9649
     },
     {
       "classifier_weight": 0.3,
       "goal_weight": 0.7,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.6172,
-      "balanced_accuracy": 0.4877,
-      "macro_f1": 0.4463,
-      "log_loss": 0.9212
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.4909,
+      "macro_f1": 0.45,
+      "log_loss": 0.966
     },
     {
       "classifier_weight": 0.35,
       "goal_weight": 0.65,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.6094,
-      "balanced_accuracy": 0.4815,
-      "macro_f1": 0.4406,
-      "log_loss": 0.9204
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.4909,
+      "macro_f1": 0.45,
+      "log_loss": 0.9673
     },
     {
       "classifier_weight": 0.4,
       "goal_weight": 0.6,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.6094,
-      "balanced_accuracy": 0.4815,
-      "macro_f1": 0.4406,
-      "log_loss": 0.9208
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.4909,
+      "macro_f1": 0.45,
+      "log_loss": 0.9686
     },
     {
       "classifier_weight": 0.45,
       "goal_weight": 0.55,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.6016,
-      "balanced_accuracy": 0.4753,
-      "macro_f1": 0.4349,
-      "log_loss": 0.9224
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.4909,
+      "macro_f1": 0.45,
+      "log_loss": 0.9701
     },
     {
       "classifier_weight": 0.5,
       "goal_weight": 0.5,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5938,
-      "balanced_accuracy": 0.4691,
-      "macro_f1": 0.4291,
-      "log_loss": 0.9255
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.4909,
+      "macro_f1": 0.45,
+      "log_loss": 0.9718
     },
     {
       "classifier_weight": 0.55,
       "goal_weight": 0.45,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5859,
-      "balanced_accuracy": 0.463,
-      "macro_f1": 0.4236,
-      "log_loss": 0.9301
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.4909,
+      "macro_f1": 0.45,
+      "log_loss": 0.9735
     },
     {
       "classifier_weight": 0.6,
       "goal_weight": 0.4,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5859,
-      "balanced_accuracy": 0.463,
-      "macro_f1": 0.4236,
-      "log_loss": 0.9365
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.4909,
+      "macro_f1": 0.45,
+      "log_loss": 0.9754
     },
     {
       "classifier_weight": 0.65,
       "goal_weight": 0.35,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5859,
-      "balanced_accuracy": 0.463,
-      "macro_f1": 0.4236,
-      "log_loss": 0.945
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.5015,
+      "macro_f1": 0.478,
+      "log_loss": 0.9774
     },
     {
       "classifier_weight": 0.7,
       "goal_weight": 0.3,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5859,
-      "balanced_accuracy": 0.463,
-      "macro_f1": 0.4238,
-      "log_loss": 0.9558
+      "accuracy": 0.6231,
+      "balanced_accuracy": 0.5015,
+      "macro_f1": 0.478,
+      "log_loss": 0.9796
     },
     {
       "classifier_weight": 0.75,
       "goal_weight": 0.25,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5859,
-      "balanced_accuracy": 0.463,
-      "macro_f1": 0.4239,
-      "log_loss": 0.9697
+      "accuracy": 0.6154,
+      "balanced_accuracy": 0.4955,
+      "macro_f1": 0.4725,
+      "log_loss": 0.9819
     },
     {
       "classifier_weight": 0.8,
       "goal_weight": 0.2,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5781,
-      "balanced_accuracy": 0.4568,
-      "macro_f1": 0.4182,
-      "log_loss": 0.9876
+      "accuracy": 0.6077,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.491,
+      "log_loss": 0.9843
     },
     {
       "classifier_weight": 0.85,
       "goal_weight": 0.15,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5703,
-      "balanced_accuracy": 0.4506,
-      "macro_f1": 0.4125,
-      "log_loss": 1.011
+      "accuracy": 0.6077,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.491,
+      "log_loss": 0.9869
     },
     {
       "classifier_weight": 0.9,
       "goal_weight": 0.1,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5703,
-      "balanced_accuracy": 0.4506,
-      "macro_f1": 0.4125,
-      "log_loss": 1.0431
+      "accuracy": 0.6077,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4901,
+      "log_loss": 0.9897
     },
     {
       "classifier_weight": 0.95,
       "goal_weight": 0.05,
       "uses_classifier_decision_label": false,
-      "accuracy": 0.5703,
-      "balanced_accuracy": 0.4506,
-      "macro_f1": 0.4125,
-      "log_loss": 1.0916
+      "accuracy": 0.6077,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4901,
+      "log_loss": 0.9926
     },
     {
       "classifier_weight": 1.0,
       "goal_weight": 0.0,
       "uses_classifier_decision_label": true,
-      "accuracy": 0.5859,
-      "balanced_accuracy": 0.5259,
-      "macro_f1": 0.5304,
-      "log_loss": 1.2051
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.5258,
+      "macro_f1": 0.5277,
+      "log_loss": 0.9957
     }
   ]
 }

@@ -42,6 +42,61 @@ def _is_wc(tournament: str) -> bool:
 
 
 _COMPETITIVE_RE = "|".join(_COMPETITIVE_KEYWORDS)
+_WINDOW_CACHE: dict[tuple[str, int, int], pd.DataFrame] = {}
+_GOALSCORING_CACHE: dict[tuple[str, int, int], dict] = {}
+_WC_MASK_CACHE: dict[int, pd.Series] = {}
+_FIRST_GOAL_CACHE: dict[int, pd.DataFrame] = {}
+_RANKING_GROUP_CACHE: dict[int, dict[str, pd.DataFrame]] = {}
+_RANKING_FEATURE_CACHE: dict[tuple[str, int, int], dict] = {}
+
+
+def _window_before(name: str, df: pd.DataFrame | None, cutoff: pd.Timestamp) -> pd.DataFrame | None:
+    if df is None:
+        return None
+    key = (name, id(df), cutoff.value)
+    cached = _WINDOW_CACHE.get(key)
+    if cached is not None:
+        return cached
+    if len(_WINDOW_CACHE) > 24:
+        _WINDOW_CACHE.clear()
+        _WC_MASK_CACHE.clear()
+        _FIRST_GOAL_CACHE.clear()
+    out = df[df["date"] < cutoff]
+    _WINDOW_CACHE[key] = out
+    return out
+
+
+def _wc_mask_for(matches: pd.DataFrame) -> pd.Series:
+    key = id(matches)
+    cached = _WC_MASK_CACHE.get(key)
+    if cached is not None:
+        return cached
+    if "_is_wc" in matches.columns:
+        mask = matches["_is_wc"].fillna(False).astype(bool)
+    else:
+        mask = matches["tournament"].apply(_is_wc)
+    if len(_WC_MASK_CACHE) > 10000:
+        _WC_MASK_CACHE.clear()
+    _WC_MASK_CACHE[key] = mask
+    return mask
+
+
+def _first_goal_lookup(goalscorers: pd.DataFrame) -> pd.DataFrame:
+    key = id(goalscorers)
+    cached = _FIRST_GOAL_CACHE.get(key)
+    if cached is not None:
+        return cached
+    first_goals = (
+        goalscorers[goalscorers["own_goal"] == False]  # noqa: E712
+        .sort_values(["date", "home_team", "away_team", "minute"])
+        .drop_duplicates(["date", "home_team", "away_team"], keep="first")
+        [["date", "home_team", "away_team", "team"]]
+        .rename(columns={"team": "first_scorer_team"})
+    )
+    if len(_FIRST_GOAL_CACHE) > 10000:
+        _FIRST_GOAL_CACHE.clear()
+    _FIRST_GOAL_CACHE[key] = first_goals
+    return first_goals
 
 
 def _team_form(team: str, matches: pd.DataFrame, n: int = 10) -> dict:
@@ -255,17 +310,35 @@ def _ranking_features(team: str, rankings: pd.DataFrame | None, ref_date) -> dic
     """Most recent FIFA ranking for team as of ref_date."""
     if rankings is None:
         return {"rank": 0, "rank_points": 0.0}
-    past = rankings[
-        (rankings["country_full"] == team) &
-        (rankings["rank_date"] <= ref_date)
-    ]
-    if past.empty:
+    cutoff = pd.Timestamp(ref_date)
+    cache_key = (team, cutoff.value, id(rankings))
+    cached = _RANKING_FEATURE_CACHE.get(cache_key)
+    if cached is not None:
+        return cached
+
+    grouped = _RANKING_GROUP_CACHE.get(id(rankings))
+    if grouped is None:
+        grouped = {
+            country: frame.sort_values("rank_date").reset_index(drop=True)
+            for country, frame in rankings.groupby("country_full", dropna=False)
+        }
+        _RANKING_GROUP_CACHE[id(rankings)] = grouped
+
+    team_rankings = grouped.get(team)
+    if team_rankings is None or team_rankings.empty:
         return {"rank": 0, "rank_points": 0.0}
-    latest = past.sort_values("rank_date").iloc[-1]
-    return {
+    pos = team_rankings["rank_date"].searchsorted(cutoff, side="right") - 1
+    if pos < 0:
+        return {"rank": 0, "rank_points": 0.0}
+    latest = team_rankings.iloc[int(pos)]
+    result = {
         "rank": int(latest["rank"]),
         "rank_points": float(latest["total_points"]) if pd.notna(latest["total_points"]) else 0.0,
     }
+    if len(_RANKING_FEATURE_CACHE) > 50000:
+        _RANKING_FEATURE_CACHE.clear()
+    _RANKING_FEATURE_CACHE[cache_key] = result
+    return result
 
 
 def _goalscoring_features(
@@ -274,51 +347,49 @@ def _goalscoring_features(
     goalscorers: pd.DataFrame | None,
 ) -> dict:
     """WC avg goals and scoring-first win rate for a team."""
-    wc_matches = matches[
-        ((matches["home_team"] == team) | (matches["away_team"] == team)) &
-        (matches["_is_wc"].fillna(False) if "_is_wc" in matches.columns else matches["tournament"].apply(_is_wc))
-    ]
-    wc_goals = 0
-    wc_n = len(wc_matches)
-    for _, row in wc_matches.iterrows():
-        if row["home_team"] == team:
-            wc_goals += row["home_score"]
-        else:
-            wc_goals += row["away_score"]
+    cache_key = (team, id(matches), id(goalscorers) if goalscorers is not None else 0)
+    cached = _GOALSCORING_CACHE.get(cache_key)
+    if cached is not None:
+        return cached
+
+    team_mask = (matches["home_team"] == team) | (matches["away_team"] == team)
+    wc_mask = _wc_mask_for(matches)
+    wc_home = matches[team_mask & wc_mask & (matches["home_team"] == team)]
+    wc_away = matches[team_mask & wc_mask & (matches["away_team"] == team)]
+    wc_n = int(len(wc_home) + len(wc_away))
+    wc_goals = int(wc_home["home_score"].sum() + wc_away["away_score"].sum())
     avg_wc = wc_goals / wc_n if wc_n > 0 else 0.0
 
     # Scoring-first win rate
     scoring_first_wins = scoring_first_total = 0
     if goalscorers is not None:
-        team_matches = matches[
-            (matches["home_team"] == team) | (matches["away_team"] == team)
-        ]
-        for _, mrow in team_matches.iterrows():
-            match_goals = goalscorers[
-                (goalscorers["date"] == mrow["date"]) &
-                (goalscorers["home_team"] == mrow["home_team"]) &
-                (goalscorers["away_team"] == mrow["away_team"]) &
-                (goalscorers["own_goal"] == False)  # noqa: E712
-            ].sort_values("minute")
-            if match_goals.empty:
-                continue
-            first_scorer_team = match_goals.iloc[0]["team"]
-            if first_scorer_team == team:
-                scoring_first_total += 1
-                if mrow["home_team"] == team:
-                    if mrow["home_score"] > mrow["away_score"]:
-                        scoring_first_wins += 1
-                else:
-                    if mrow["away_score"] > mrow["home_score"]:
-                        scoring_first_wins += 1
+        team_matches = matches[team_mask]
+        first_goals = _first_goal_lookup(goalscorers)
+        scored_first = team_matches.merge(first_goals, on=["date", "home_team", "away_team"], how="inner")
+        scored_first = scored_first[scored_first["first_scorer_team"] == team]
+        scoring_first_total = int(len(scored_first))
+        if scoring_first_total:
+            home_wins = (
+                (scored_first["home_team"] == team)
+                & (scored_first["home_score"] > scored_first["away_score"])
+            )
+            away_wins = (
+                (scored_first["away_team"] == team)
+                & (scored_first["away_score"] > scored_first["home_score"])
+            )
+            scoring_first_wins = int((home_wins | away_wins).sum())
 
     # Bayesian smoothing toward 0.5 prior — prevents extreme values from tiny samples
     sf_win_rate = (scoring_first_wins + 2) / (scoring_first_total + 4)
 
-    return {
+    result = {
         "avg_goals_wc": avg_wc,
         "scoring_first_win_rate": sf_win_rate,
     }
+    if len(_GOALSCORING_CACHE) > 20000:
+        _GOALSCORING_CACHE.clear()
+    _GOALSCORING_CACHE[cache_key] = result
+    return result
 
 
 def build_feature_row(
@@ -353,19 +424,10 @@ def build_feature_row(
     # Match history (form, H2H, WC stats) uses the full historical record so that
     # long-term WC pedigree (e.g. France's 1998 title, Brazil's dominance) is captured.
     _cutoff = pd.Timestamp(as_of_date)
-    matches = matches_df[matches_df["date"] < _cutoff].copy()
-    goalscorers = (
-        goalscorers_df[goalscorers_df["date"] < _cutoff].copy()
-        if goalscorers_df is not None else None
-    )
-    shootouts = (
-        shootouts_df[shootouts_df["date"] < _cutoff].copy()
-        if shootouts_df is not None else None
-    )
-    substitutions = (
-        substitutions_df[substitutions_df["date"] < _cutoff].copy()
-        if substitutions_df is not None else None
-    )
+    matches = _window_before("matches", matches_df, _cutoff)
+    goalscorers = _window_before("goalscorers", goalscorers_df, _cutoff)
+    shootouts = _window_before("shootouts", shootouts_df, _cutoff)
+    substitutions = _window_before("substitutions", substitutions_df, _cutoff)
     rankings = rankings_df  # rankings are snapshot-based
 
     ref_date = pd.Timestamp(as_of_date)

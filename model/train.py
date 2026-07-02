@@ -12,6 +12,7 @@ bundle for inference.
 import json
 import os
 import time
+import warnings
 
 import joblib
 import numpy as np
@@ -25,6 +26,8 @@ from sklearn.metrics import (
     log_loss,
     precision_recall_fscore_support,
 )
+
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 try:
     from catboost import CatBoostClassifier
@@ -42,6 +45,8 @@ from data.ingest import (
     load_rankings,
     load_shootouts,
     load_substitutions,
+    overlay_root_goalscorers,
+    overlay_root_world_cup_matches,
 )
 from data.copa_america import load_copa_america_data
 from data.euro_2024 import load_euro_2024_data
@@ -51,6 +56,7 @@ from model.features import (
     FEATURE_COLUMNS,
     MODEL_INPUT_COLUMNS,
     RAW_CONTEXT_COLUMNS,
+    WORLD_CUP_2026_WEIGHT,
     get_tournament_weight,
     normalize_tournament_name,
 )
@@ -94,14 +100,14 @@ CATBOOST_ITERATIONS = int(os.getenv("ML_PRJCT_CATBOOST_ITERATIONS", "1000"))
 CATBOOST_DEPTH = int(os.getenv("ML_PRJCT_CATBOOST_DEPTH", "6"))
 CATBOOST_LEARNING_RATE = float(os.getenv("ML_PRJCT_CATBOOST_LEARNING_RATE", "0.03"))
 CATBOOST_L2_LEAF_REG = float(os.getenv("ML_PRJCT_CATBOOST_L2_LEAF_REG", "5"))
-USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "0").strip().lower() in {
+USE_HISTORICAL_WEIGHTED = os.getenv("ML_PRJCT_USE_HISTORICAL_WEIGHTED", "1").strip().lower() in {
     "1",
     "true",
     "yes",
     "on",
 }
 HISTORICAL_SOURCE_CAP = int(os.getenv("ML_PRJCT_HISTORICAL_SOURCE_CAP", "5000"))
-HISTORICAL_FAST_FEATURES = os.getenv("ML_PRJCT_HISTORICAL_FAST_FEATURES", "1").strip().lower() in {
+HISTORICAL_FAST_FEATURES = os.getenv("ML_PRJCT_HISTORICAL_FAST_FEATURES", "0").strip().lower() in {
     "1",
     "true",
     "yes",
@@ -168,7 +174,7 @@ def _load_historical_matches() -> pd.DataFrame | None:
     )
     if not path:
         return None
-    return _prepare_matches_frame(pd.read_csv(path))
+    return overlay_root_world_cup_matches(_prepare_matches_frame(pd.read_csv(path)))
 
 
 def _load_historical_goalscorers() -> pd.DataFrame | None:
@@ -183,7 +189,7 @@ def _load_historical_goalscorers() -> pd.DataFrame | None:
     df["minute"] = pd.to_numeric(df.get("minute"), errors="coerce")
     df["own_goal"] = _parse_bool_series(df["own_goal"]) if "own_goal" in df.columns else False
     df["penalty"] = _parse_bool_series(df["penalty"]) if "penalty" in df.columns else False
-    return df
+    return overlay_root_goalscorers(df)
 
 
 def _load_historical_shootouts() -> pd.DataFrame | None:
@@ -907,7 +913,7 @@ def train_and_save(verbose: bool = True) -> dict:
     if matches_df is None:
         raise RuntimeError("matches.csv is required for training. Drop it into the project root.")
 
-    train_from_year = 1872 if USE_HISTORICAL_WEIGHTED else TRAIN_FROM_YEAR
+    train_from_year = TRAIN_FROM_YEAR
     candidates = _training_matches(
         matches_df,
         include_curated_friendlies=include_friendlies_train,
@@ -1126,7 +1132,7 @@ def train_and_save(verbose: bool = True) -> dict:
         "features": int(len(MODEL_INPUT_COLUMNS)),
         "numeric_features": int(len(FEATURE_COLUMNS)),
         "categorical_features": int(len(RAW_CONTEXT_COLUMNS)),
-        "train_from_year": 1872 if USE_HISTORICAL_WEIGHTED else TRAIN_FROM_YEAR,
+        "train_from_year": TRAIN_FROM_YEAR,
         "data_start": str(data_min.date()) if pd.notna(data_min) else None,
         "data_end": str(data_max.date()) if pd.notna(data_max) else None,
         "ranking_rows": int(len(rankings_df)) if rankings_df is not None else 0,
@@ -1151,6 +1157,7 @@ def train_and_save(verbose: bool = True) -> dict:
         "historical_weighted": USE_HISTORICAL_WEIGHTED,
         "historical_source_cap": HISTORICAL_SOURCE_CAP if USE_HISTORICAL_WEIGHTED else 0,
         "historical_fast_features": skip_expensive,
+        "world_cup_2026_weight": WORLD_CUP_2026_WEIGHT,
         "catboost_params": {
             "iterations": CATBOOST_ITERATIONS,
             "depth": CATBOOST_DEPTH,
